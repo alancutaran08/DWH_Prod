@@ -45,7 +45,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:XE25jOLAk57yqh3gefyTW5Lyi5u/jup6dNO7ZZv3"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:9vvRf9SXAjc9EYSCkW6tn2kJZLEzITdRRL4QRONr"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -80,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:oBvGRN504tWxnm9WOHpX71Nysh6DD8Ciq/NFoHRL"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2Br+AsgH+ZfndPISz+byd0+oiurrfQGkzHuesxn6"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -131,14 +131,14 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;RBCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Nrk1BLihCj1aJlvf34zvGrpAvmDoO/LwGX9kcFE30FKYdE6RxcbZiSe/"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9VgHWj9Gy7BPYesgvHnE8ZUc25CBwV7YPdjv80ec6t+QYVqy2BUte/Tl"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DEMOGRAPHIC&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DEMOGRAPHICID&#13;&#10;&#9;,ACCOUNTID&#13;&#10;&#9;,DEMOGRAPHICTYPE&#13;&#10;&#9;,MARITAL_STATUS&#13;&#10;&#9;,EMPLOYMENT_STATUS&#13;&#10;&#9;,ANNUAL_SALARY_INCOME&#13;&#10;&#9;,TOTALHOUSEHOLDINCM&#13;&#10;&#9;,EMPLOYERSNAME&#13;&#10;&#9;,SOURCEOFINCOME&#13;&#10;&#9;,EMPLOYERID&#13;&#10;&#9;,ORGKEY&#13;&#10;&#9;,TMDATE&#13;&#10;FROM CRMUSER.DEMOGRAPHIC WHERE ACCOUNTID IN (&#13;&#10;&#9;SELECT ACCOUNTID &#13;&#10;&#9;FROM CRMUSER.ACCOUNTS)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DEMOGRAPHICID&#13;&#10;&#9;,ACCOUNTID&#13;&#10;&#9;,DEMOGRAPHICTYPE&#13;&#10;&#9;,MARITAL_STATUS&#13;&#10;&#9;,EMPLOYMENT_STATUS&#13;&#10;&#9;,ANNUAL_SALARY_INCOME&#13;&#10;&#9;,TOTALHOUSEHOLDINCM&#13;&#10;&#9;,EMPLOYERSNAME&#13;&#10;&#9;,SOURCEOFINCOME&#13;&#10;&#9;,EMPLOYERID&#13;&#10;&#9;,ORGKEY&#13;&#10;&#9;,TMDATE&#13;&#10;FROM CRMUSER.DEMOGRAPHIC WHERE ACCOUNTID IN (&#13;&#10;&#9;SELECT ACCOUNTID &#13;&#10;&#9;FROM CRMUSER.ACCOUNTS&#13;&#10;WHERE TRUNC(RELATIONSHIPOPENINGDATE) = &quot;+context.ExtractDate+&quot;)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -271,13 +271,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Staging&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:z5AMBqwJl6ijZ+r0FO38tz5AR95n6GyqjhQyI5+wu1/h/Mrq46Ia8VdBWQ=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TEMP_FIN_DEMOGRAPHIC&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bWCV6DAKlGUl3P1VGB0mGul4IuybUjYPtotbvdTQ7AvjFcTINc/xaHMkGA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_DEMOGRAPHIC&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
-    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
     <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="ACCOUNTID"/>
     <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
     <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
@@ -437,14 +437,14 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;RBCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:x9haKOdwumTcDyH2zD5gKEpazhKoQUBcZiHTAXRJROaNnYTEkpMVi7iy"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:aEOiWI90Neubo4B5HLcRzvbhrx89MFLEAjwwnddwRbBONC+MO/xZhdmI"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ADDRESS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT ADDRESSID&#13;&#10;&#9;,CORP_ID&#13;&#10;&#9;,ACCOUNTID&#13;&#10;&#9;,ADDRESSCATEGORY&#13;&#10;&#9;,ADDRESS_LINE1&#13;&#10;&#9;,ADDRESS_LINE2&#13;&#10;&#9;,ADDRESS_LINE3&#13;&#10;&#9;,CITY&#13;&#10;&#9;,STATE&#13;&#10;&#9;,ZIP&#13;&#10;&#9;,COUNTRY&#13;&#10;&#9;,CAST(START_DATE AS VARCHAR(20)) AS START_DATE&#13;&#10;&#9;,NAME&#13;&#10;&#9;,SALUTATION_CODE&#13;&#10;&#9;,CITY_CODE&#13;&#10;&#9;,STATE_CODE&#13;&#10;&#9;,COUNTRY_CODE&#13;&#10;&#9;,CORE_CUST_ID&#13;&#10;&#9;,PREFERREDADDRESS&#13;&#10;&#9;,FREETEXTADDRESS&#13;&#10;&#9;,FREETEXTLABEL&#13;&#10;&#9;,ORGKEY&#13;&#10;&#9;,SALUTATION&#13;&#10;&#9;,SWIFT_NAME&#13;&#10;&#9;,TMDATE&#13;&#10;FROM CRMUSER.ADDRESS&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT ADDRESSID&#13;&#10;&#9;,CORP_ID&#13;&#10;&#9;,ACCOUNTID&#13;&#10;&#9;,ADDRESSCATEGORY&#13;&#10;&#9;,ADDRESS_LINE1&#13;&#10;&#9;,ADDRESS_LINE2&#13;&#10;&#9;,ADDRESS_LINE3&#13;&#10;&#9;,CITY&#13;&#10;&#9;,STATE&#13;&#10;&#9;,ZIP&#13;&#10;&#9;,COUNTRY&#13;&#10;&#9;,CAST(START_DATE AS VARCHAR(20)) AS START_DATE&#13;&#10;&#9;,NAME&#13;&#10;&#9;,SALUTATION_CODE&#13;&#10;&#9;,CITY_CODE&#13;&#10;&#9;,STATE_CODE&#13;&#10;&#9;,COUNTRY_CODE&#13;&#10;&#9;,CORE_CUST_ID&#13;&#10;&#9;,PREFERREDADDRESS&#13;&#10;&#9;,FREETEXTADDRESS&#13;&#10;&#9;,FREETEXTLABEL&#13;&#10;&#9;,ORGKEY&#13;&#10;&#9;,SALUTATION&#13;&#10;&#9;,SWIFT_NAME&#13;&#10;&#9;,TMDATE&#13;&#10;FROM CRMUSER.ADDRESS&#13;&#10;WHERE TRUNC(TMDATE) = &quot;+context.ExtractDate"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -655,13 +655,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Staging&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:z4RDn6PwdcSrVK2XmH2cV9mU5pXxYqrxJ/ukmcwV5i352AKZEfTUqkc5/g=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TEMP_FIN_ADDRESS&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Qa41Ss+j8AiRlcE9H0ledxi9Gjx1G9UGy4e4xvOkjCRh5TPjQbE6gGKpHw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_ADDRESS&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
-    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
     <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="ADDRESSID"/>
     <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
     <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
@@ -925,14 +925,14 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;RBCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:95EUJuoXk0MrG75zFyk/Z7ZObyutvsqq9KuZrGIZDFRLhSXsORrczp6Y"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:E3VSC2O0H7kH+ZIa/vR4lPHj94Wkl4/27yzXV+/9IEgZNscOHLiHBI0p"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;CORPORATE&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT CORP_ID&#13;&#10;&#9;,CORP_KEY&#13;&#10;&#9;,ENTITY_TYPE&#13;&#10;&#9;,CORPORATE_NAME&#13;&#10;&#9;,CORPORATENAME_NATIVE&#13;&#10;&#9;,SHORT_NAME&#13;&#10;&#9;,RELATIONSHIP_STARTDATE&#13;&#10;&#9;,PRIORITY&#13;&#10;&#9;,SUSPEND_FLAG&#13;&#10;&#9;,BLACKLIST_FLAG&#13;&#10;&#9;,NEGATIVE_FLAG&#13;&#10;&#9;,LEGALENTITY_TYPE&#13;&#10;&#9;,SEGMENT&#13;&#10;&#9;,SUBSEGMENT&#13;&#10;&#9;,KEYCONTACT_PERSONNAME&#13;&#10;&#9;,PHONECITYCODE&#13;&#10;&#9;,PHONELOCALCODE&#13;&#10;&#9;,PHONECOUNTRYCODE&#13;&#10;&#9;,NOTES&#13;&#10;&#9;,BUSINESS_TYPE&#13;&#10;&#9;,PRINCIPLE_PLACEOPERATION&#13;&#10;&#9;,CAST(DATE_OF_INCORPORATION AS VARCHAR(20)) AS DATE_OF_INCORPORATION&#13;&#10;&#9;,REGION&#13;&#10;&#9;,PRIMARY_SERVICE_CENTER&#13;&#10;&#9;,RELATIONSHIP_TYPE&#13;&#10;&#9;,SECTOR&#13;&#10;&#9;,SUBSECTOR&#13;&#10;&#9;,ENTITYCLASS&#13;&#10;&#9;,HEALTH_CODE&#13;&#10;&#9;,RECORD_STATUS&#13;&#10;&#9;,DEFAULTADDRESSTYPE&#13;&#10;&#9;,ACCESSOWNERSEGMENT&#13;&#10;&#9;,COUNTRYOFORIGIN&#13;&#10;&#9;,STRUSERFIELD1&#13;&#10;&#9;,LASTOPERPERFORMED&#13;&#10;&#9;,ISDUMMY&#13;&#10;&#9;,ADDRESS_LINE1&#13;&#10;&#9;,ADDRESS_LINE2&#13;&#10;&#9;,ADDRESS_LINE3&#13;&#10;&#9;,CITY&#13;&#10;&#9;,STATE&#13;&#10;&#9;,COUNTRY&#13;&#10;&#9;,ZIP&#13;&#10;&#9;,TMDATE&#13;&#10;&#9;,BOCREATEDBY&#13;&#10;&#9;,BODATECREATED&#13;&#10;FROM CRMUSER.CORPORATE&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT CORP_ID&#13;&#10;&#9;,CORP_KEY&#13;&#10;&#9;,ENTITY_TYPE&#13;&#10;&#9;,CORPORATE_NAME&#13;&#10;&#9;,CORPORATENAME_NATIVE&#13;&#10;&#9;,SHORT_NAME&#13;&#10;&#9;,RELATIONSHIP_STARTDATE&#13;&#10;&#9;,PRIORITY&#13;&#10;&#9;,SUSPEND_FLAG&#13;&#10;&#9;,BLACKLIST_FLAG&#13;&#10;&#9;,NEGATIVE_FLAG&#13;&#10;&#9;,LEGALENTITY_TYPE&#13;&#10;&#9;,SEGMENT&#13;&#10;&#9;,SUBSEGMENT&#13;&#10;&#9;,KEYCONTACT_PERSONNAME&#13;&#10;&#9;,PHONECITYCODE&#13;&#10;&#9;,PHONELOCALCODE&#13;&#10;&#9;,PHONECOUNTRYCODE&#13;&#10;&#9;,NOTES&#13;&#10;&#9;,BUSINESS_TYPE&#13;&#10;&#9;,PRINCIPLE_PLACEOPERATION&#13;&#10;&#9;,CAST(DATE_OF_INCORPORATION AS VARCHAR(20)) AS DATE_OF_INCORPORATION&#13;&#10;&#9;,REGION&#13;&#10;&#9;,PRIMARY_SERVICE_CENTER&#13;&#10;&#9;,RELATIONSHIP_TYPE&#13;&#10;&#9;,SECTOR&#13;&#10;&#9;,SUBSECTOR&#13;&#10;&#9;,ENTITYCLASS&#13;&#10;&#9;,HEALTH_CODE&#13;&#10;&#9;,RECORD_STATUS&#13;&#10;&#9;,DEFAULTADDRESSTYPE&#13;&#10;&#9;,ACCESSOWNERSEGMENT&#13;&#10;&#9;,COUNTRYOFORIGIN&#13;&#10;&#9;,STRUSERFIELD1&#13;&#10;&#9;,LASTOPERPERFORMED&#13;&#10;&#9;,ISDUMMY&#13;&#10;&#9;,ADDRESS_LINE1&#13;&#10;&#9;,ADDRESS_LINE2&#13;&#10;&#9;,ADDRESS_LINE3&#13;&#10;&#9;,CITY&#13;&#10;&#9;,STATE&#13;&#10;&#9;,COUNTRY&#13;&#10;&#9;,ZIP&#13;&#10;&#9;,TMDATE&#13;&#10;&#9;,BOCREATEDBY&#13;&#10;&#9;,BODATECREATED&#13;&#10;FROM CRMUSER.CORPORATE&#13;&#10;WHERE TRUNC(RELATIONSHIP_STARTDATE) = &quot;+context.ExtractDate"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1268,13 +1268,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Staging&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7V8ftI2DJQn3+aMkIlzOfEAu+O8wuoJ/GWw9Wm6GKByFFB1cue9vJaVTVQ=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TEMP_FIN_CORPORATE&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ZR0JD2Kn6KqzU53Yaa1SB8qNqDVf0/S1THuXccEcLzrr5N3BURWCfjVFOQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_CORPORATE&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
-    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
     <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="CORP_ID"/>
     <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
     <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
@@ -1692,6 +1692,7 @@
   </node>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_yMB10LAZEeynYYW0sERf_g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1706,7 +1707,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;RBCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gBHP0SmNbJkAP9eAmJrqt7EolSruyeQGprxuuFxDsGgagvLJkPuXMMwo"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hf35nkiMJIPVorpA2+DcIKAreapZAD9RQixs4oczGK3jR2Ip/C2GC+up"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ACCOUNTS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1897,6 +1898,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -2081,6 +2083,7 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Teo24HJ0Eeu5GroC-jAKrw"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -2092,7 +2095,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Staging&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YD6IELTFE5UHdtShh/y2wG386gIIbgzkJ4iX426iia7XjSrsjEQlVVOxOQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4Qyfo81WBYbeS/B3gS1RxnfewpcNyTeEtGWkL7yvJWs6UAXFH4FvYJERjg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TEMP_FIN_CLIENTS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2507,6 +2510,7 @@
   </node>
   <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowMeter_11"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;FIN_CLIENTS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
@@ -2591,13 +2595,13 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;RBCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ziwgfJEYzf20ALxaRHcWtIu8r6akOkorspihnGTbROKrQZ9ZQemb4lq7"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:3ZYN8f5IDDsQLK4aKPJHK2swZBjoFfYlIz3xCkdSf6P9P8HBLYZjqI2G"/>
     <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
     <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:PSXTfCgYB/qHhfFVqqU/9cA6bzJwKg9U7cvIclvq"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:U56hb6COGQcw1ydCrjPVES4eP+KFm/SyoV0nM/Q+"/>
     <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
     <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:wWSEQiZB2bFvyzjd6qZF/7kAPlr0CyWaHVBRoF30"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:QUS9c7g4V9eN81Ol57jNRuUI9lJy9D7/19d+MJPN"/>
     <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -2624,7 +2628,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kCnneDnrYGm+cON/IqdWSAvb5EMddvJu2oLDpyTsTxpMrNPynZyIvuwa8A=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TDAL5GGBMCdyKB7+cnyMhQv+tZM405aIrnzut/os4K9T6z3fvywyg2pjbA=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -2777,17 +2781,21 @@
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBInput_2">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="FLOW" label="cliout" lineStyle="0" metaname="cliout" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cliout"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tFlowMeter_11">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
@@ -2849,13 +2857,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1189a144-f204-4b8a-b970-fb1ae37bbea1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>41sTqaFP3uxIK94UsGgcuKnPDF3e2ImqQR6A29dbxZ+5ry/8VAbbi+BOA18uqUr/IHe5zlT1jP4E&#13;
-5NdMhggXqw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fcb2f364-1b8e-43ec-8ef7-e812bcad7a5d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xzBSWgkP2SH/xlNshSJhiTRGmuo/yOi0os5db4nCkEnyNVI0CvdxVGXwdy+FYFONoOTgWVsArXtu&#13;
-n70Q1l6XWg==</DigestValue></Reference></SignedInfo><SignatureValue>UIVRf8iPimDjb+3ZUNARSl/oi48rUeONlUA93chz69wX62YgBZWp27XgYxT+f2m2VIewSGHWkF45&#13;
-5rB2Q99ah82B+461BQsV7zM1jXfUpv/1xZKgOTmWbx5Hj2j4hkAa5hsBL+VFSvtBRebs+6PMruP/&#13;
-ZTr6np0HtrvgKh1JG/QW0/voNGDkagIiGs0ANDNkxD17v1Xtq9tnyvMvneqBg98yogwBHtKpy7b/&#13;
-sVJWNc6fYMDv5F1j9yWnFmVj4CqtKZ93oSCC31f5q/bFipDEam0P/ri/AWWxPeUV8wQy3EIjA/9U&#13;
-PfGM30f5BtAVo5u6E0QvTK2oqsdUaVukL5YABw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f44afe54-8f3e-4987-8865-41a56d5e1873"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hfzpRf6wg1VrIkV0v+xZmFuIta1/3jbNQOFCXLj2ecVmbPPq6V50FcVd5fvAZUnU7mKFE/M3Gtgs&#13;
+GroYNvJ/Pw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2abd5398-526d-4fb0-9114-34455a392220"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6dnujlzehUcWlZGz+DY2rVy5n0LlO/kWj9BJFQISd3u6ZaJX5EEz/1aIh1h+7VqNzZOz8+CkRjVm&#13;
+joD23i7KjQ==</DigestValue></Reference></SignedInfo><SignatureValue>Zb56noubHP53yNxaTwaCYm1HX/jZ8S2Ah/L7raKL9Hx+lnCAOoAXS1HebdI4iYDmncuG1Wd4f/kI&#13;
+OgO7chJLfQ8yvYoCwuPsPcS6NxEDaN3WfMjfjIzpvaHftDElEl2+c4xma5ZUECYfxSEAvzXDozE2&#13;
+ASD2zhCLHXWcUPJOlyRLTt+bQmaLtmzUWaqUbHxh4rO5CLO8vE5y2bdMKjT5brZhu6l6AzndRimg&#13;
+yir7GTPxXc0XLJklIgO8jsiqf7wzcWYpi6JP/vZbSRZ0hSqV3jjiQOD/SHQk3Vf2TTrr1Axx0Hhx&#13;
+WJJ6RMTFq+lUCRUxubYQOeQC/69UpcR5UCH0sQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2877,4 +2885,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fcb2f364-1b8e-43ec-8ef7-e812bcad7a5d" Target="#_1189a144-f204-4b8a-b970-fb1ae37bbea1"><Timestamp>2022-07-04 03:31:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2abd5398-526d-4fb0-9114-34455a392220" Target="#_f44afe54-8f3e-4987-8865-41a56d5e1873"><Timestamp>2022-07-05 13:35:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

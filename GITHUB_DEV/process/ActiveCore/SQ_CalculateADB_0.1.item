@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+R1sQ/8l+PbY6sJCCYHF9DrmthHUcH743Ruhm2uZ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:UoigGr2q97ec/uQ+1ss5rMmUeIKtN/eNWQdkGGsG"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -64,7 +64,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Installers/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;E:/Talend_Workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -84,7 +84,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:teSbPsTik95p4Cn+UnN3uXd/iHhm/5DqUTj4Fnex"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:69wK39928Y240JQmQagPPQMu/d+UR5vkH/hPHW8g"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -128,6 +128,7 @@
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="TR_CalculateADB"/>
@@ -160,8 +161,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="288">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="TR_CalculateADB"/>
@@ -194,8 +196,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_2"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="288">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="TR_CalculateADB"/>
@@ -229,14 +232,17 @@
     <metadata connector="FLOW" name="tRunJob_3"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="(TalendDate.getPartOfDate(&quot;MONTH&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.EndDate))+1)%3 == 0"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_3">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="TalendDate.getPartOfDate(&quot;YEAR&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.EndDate)) != TalendDate.getPartOfDate(&quot;YEAR&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.RunDate))"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If3"/>
   </connection>
   <note opaque="true" posX="32" posY="32" sizeHeight="193" sizeWidth="513" text="Jobname: TR_CalculateADB&#13;&#10;Developer: Michael Garcia&#13;&#10;Description: Calculates ADB for a specific period&#13;&#10;Frequency: Monthly Quarterly Annual YearToDate&#13;&#10;&#13;&#10;Pre-requisites: &#13;&#10;- All data of the previous month have been loaded into the database&#13;&#10;- RunDate - Current Date if blank">
@@ -265,13 +271,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bb5bc4c4-42c4-40fd-886e-fdc1ad2a42f9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y9q+r9SBEDTw/W7BxcxabpG5Ekta04bItqHBbJb/BgNhHohMl1yz0jd22xwnPTZofRWkppFpV37m&#13;
-SR48IjPmKw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8cdf62d8-040d-4b9f-b270-a72d63e34765"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>35kULUAz/WAlkp8FfMYjrnFsyvXc1CR/DnGOp4zGQbViy5lp+Nb/d6Wt8d9ev6IbNgxGA/ZHS+o/&#13;
-hf5rqiAd7Q==</DigestValue></Reference></SignedInfo><SignatureValue>Y+f5mPh6lpbxKaWXr6hWAu2ErfVhIDjphueOgzo9gIi4y5A0s9TDSzsOd8fvLYdhXJVE5g0G6Bo3&#13;
-Y5BLQNscNQw8S70Atdjxql1m4mkXi8wLbAvNiK5PQ7IODNuyVAkMpHI45YSMvK6W8Q4kjwiHASDI&#13;
-YtfiwMvY1dv9GUiBtBZ1/GRIbiT4JlrUYx2jQlvwMDk+RkU1YKpkZs1QB4Wa/1vQsc4YzhrkFpwf&#13;
-8D9HploA9jG2PC5RAvjdDnMYl5rsF/kLTw33CN/MVBGCN0C4jzXvTwPf/NUA2SqW98C+box3O1rb&#13;
-MbIzk3Oljb08cqc2sRdtW259KQYaqazQGvielQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1a037238-3cad-42b5-8737-af18527897b7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6oJjPcqho87/s0IgS/EJWCz+vvK2UqiH0kQnmYTL57gboRo5lrmu417mHRF8hnIU5huWamvesdnf&#13;
+FxPRgzlT5g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_93d8985f-846b-4a1e-a692-675e7fb9eace"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hTJn8HbPGv6PR7GHqB61wi/vsG9vNGbArcglQ9CXLp+7WcaNeXYm3XaWbsnVZJvj6hqxttPEaQM5&#13;
+V4QqsaANbQ==</DigestValue></Reference></SignedInfo><SignatureValue>Tyw2h1EWc5R12jyEk/IEY2GPLg3aPeglaixMZNLGJGePWMnxV7QCiSHb+ppgrO3WHnMtSPO7xyR5&#13;
+Dp7egqsewngtD4qAsmUgZ3JVJ553R2Np3vSXy/c1jKJk9irFVG0jGJ57IvJRjsrlgZN3ePP9N8In&#13;
+itTYLE5wqfPXx2LVlhbBroDvc3WakGBy5lBypyWCh0n8ya9//5DlDHIP4pCHqapJAuTo02jOZEaU&#13;
+3C7BVtnjbj75c7DZsOUVLEIR5AlaiKvxRi2p7xdaL0O3hXgbAooxhFrNVcea95CZlxxFoHtEyUSt&#13;
+UpJ47zrytqiiGMt0PLHtQYrqkoyjxTAXS0CVLg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -293,4 +299,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8cdf62d8-040d-4b9f-b270-a72d63e34765" Target="#_bb5bc4c4-42c4-40fd-886e-fdc1ad2a42f9"><Timestamp>2022-05-05 04:17:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_93d8985f-846b-4a1e-a692-675e7fb9eace" Target="#_1a037238-3cad-42b5-8737-af18527897b7"><Timestamp>2022-07-21 06:48:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

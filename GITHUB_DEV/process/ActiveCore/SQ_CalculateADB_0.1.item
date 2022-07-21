@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:UoigGr2q97ec/uQ+1ss5rMmUeIKtN/eNWQdkGGsG"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:OGbFK6/loYt5sPL1GjdEOY0MRcjzSqAqVEZbAYPl"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -84,7 +84,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:69wK39928Y240JQmQagPPQMu/d+UR5vkH/hPHW8g"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:y97eZgy2v2pIXNSX/uDJCz3DPlsC5h+lhzB+RfPP"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -128,7 +128,6 @@
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="TR_CalculateADB"/>
@@ -163,7 +162,6 @@
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="TR_CalculateADB"/>
@@ -198,7 +196,6 @@
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="TR_CalculateADB"/>
@@ -232,17 +229,14 @@
     <metadata connector="FLOW" name="tRunJob_3"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="(TalendDate.getPartOfDate(&quot;MONTH&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.EndDate))+1)%3 == 0"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_3">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="TalendDate.getPartOfDate(&quot;YEAR&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.EndDate)) != TalendDate.getPartOfDate(&quot;YEAR&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.RunDate))"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If3"/>
   </connection>
   <note opaque="true" posX="32" posY="32" sizeHeight="193" sizeWidth="513" text="Jobname: TR_CalculateADB&#13;&#10;Developer: Michael Garcia&#13;&#10;Description: Calculates ADB for a specific period&#13;&#10;Frequency: Monthly Quarterly Annual YearToDate&#13;&#10;&#13;&#10;Pre-requisites: &#13;&#10;- All data of the previous month have been loaded into the database&#13;&#10;- RunDate - Current Date if blank">
@@ -271,13 +265,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1a037238-3cad-42b5-8737-af18527897b7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6oJjPcqho87/s0IgS/EJWCz+vvK2UqiH0kQnmYTL57gboRo5lrmu417mHRF8hnIU5huWamvesdnf&#13;
-FxPRgzlT5g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_93d8985f-846b-4a1e-a692-675e7fb9eace"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hTJn8HbPGv6PR7GHqB61wi/vsG9vNGbArcglQ9CXLp+7WcaNeXYm3XaWbsnVZJvj6hqxttPEaQM5&#13;
-V4QqsaANbQ==</DigestValue></Reference></SignedInfo><SignatureValue>Tyw2h1EWc5R12jyEk/IEY2GPLg3aPeglaixMZNLGJGePWMnxV7QCiSHb+ppgrO3WHnMtSPO7xyR5&#13;
-Dp7egqsewngtD4qAsmUgZ3JVJ553R2Np3vSXy/c1jKJk9irFVG0jGJ57IvJRjsrlgZN3ePP9N8In&#13;
-itTYLE5wqfPXx2LVlhbBroDvc3WakGBy5lBypyWCh0n8ya9//5DlDHIP4pCHqapJAuTo02jOZEaU&#13;
-3C7BVtnjbj75c7DZsOUVLEIR5AlaiKvxRi2p7xdaL0O3hXgbAooxhFrNVcea95CZlxxFoHtEyUSt&#13;
-UpJ47zrytqiiGMt0PLHtQYrqkoyjxTAXS0CVLg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f68c162d-1f73-4954-92a0-5735a7967ad0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HhHbsNp3R4wLoZ/6ENVi5np9GrG6NCdzo8GNtkwEmSaMi0FQpgnPm8sOWxRUhcuGisWM9audV8x6&#13;
+Qdeu16XtBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_49a3c179-a796-4d41-8a7e-375e3354bd1e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VXpb57kFXJblG7FoWCK/Zj7m2byYlu26TMjnSGpITfFBslnCgpcbImV4OF1a1eRwRTN9DndQCWzJ&#13;
+fqfx2g8B7g==</DigestValue></Reference></SignedInfo><SignatureValue>NtuVPbrn/QYuX1JIVHoXTf3khdnzgF3BdAiVoa2de/0449DS76NWYS0rnoUEWeQzgMblox6KXYzO&#13;
+gcNKMbOc2C2fs24koskgavTETiPxZ5vsDWRtyCqItrS56JYeqBLI/4s2+cCIovRED9QxrVV0d+0f&#13;
+tbDv8m9a17+iZGgJt5UrCZwsWERFnnHhTEoloBZ1jtts4Svv1UGzOc0130gcpLYAipwstdgzfC7n&#13;
+2v4Rm8k7TztyJafRq3F0ngURODQ/qwA4oCmPQjynOe9VRzx13TVNihqw63qiMoRogsbVnd7FAf2F&#13;
+tYNcLlpB0hTxBn69sDlJgsvjdJuFodD6Tf9E8w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -299,4 +293,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_93d8985f-846b-4a1e-a692-675e7fb9eace" Target="#_1a037238-3cad-42b5-8737-af18527897b7"><Timestamp>2022-07-21 06:48:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_49a3c179-a796-4d41-8a7e-375e3354bd1e" Target="#_f68c162d-1f73-4954-92a0-5735a7967ad0"><Timestamp>2022-07-21 06:54:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:BzYY0ZMGHPHW6hE8LEvRkM7A9neo3bHDi1k0Xa7N"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:st0wS7+JeyqFlXkrseZyR7IhYvXWTzQTp1wak6xH"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Kci72l46U+P0kwUT13d+7REhsliyjEh8KJrr2Bz/"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fJqax5J7OF/bC8O7sDHT60O/wsJWqKb631IYbJG4"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -131,7 +131,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:m1wJwOVjLuCnAdx6wa/hXKEaCrW5kadHRHC6DEGpSwjBq7pZaxSbe9feog=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MJfAqHr1n9PyifrzQaWsw2fl2Qz1XFD4dWoWdNc84WqoBIm+hOCKBLdH2g=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -157,7 +157,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+5OGAGe8//n9OKjoNzyO8BO4NxfW3KkS+NSpVwo2/V+jbXjFRfim8geJ3Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:plVkNphdk2ETtLlUniXWLLzdVNHRevfjM9wxQg4fmljI/e87u+zsdF7FIQ=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -196,7 +196,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FdZKA71kQWBvPoUZtN+SaHBB/dNBBKK1s/3yKCeKLf2U9bJ0JfSQcnuzFA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:mdGGFaqklqZRrKgPh3e5wcLOZhwJkVIMrZWMhy1uCAAtGkNo1v/lvboWxw=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_bK-BgLvsEeyJGOOVk-YFpA - ACCOUNTS_MASTER"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ACCOUNTS_MASTER&quot;"/>
@@ -227,7 +227,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_PREFIX"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FORACID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_NUMBER"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_NAME"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -279,106 +279,111 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FREE_TEXT"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOAD_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="ACCOUNTS_MASTER" name="tDBInput_1">
-      <column comment="" key="false" length="11" name="ACID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="11" name="ACID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="ENTITY_CRE_FLG" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="1" name="ENTITY_CRE_FLG" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="DEL_FLG" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="1" name="DEL_FLG" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="8" name="SOL_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="8" name="SOL_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="CIF_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="50" name="CIF_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2" name="ACCT_PREFIX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="2" name="ACCT_PREFIX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="16" name="FORACID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="16" name="ACCT_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="80" name="ACCT_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="80" name="ACCT_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ACCT_SHORT_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="10" name="ACCT_SHORT_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="SCHM_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="5" name="SCHM_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="SCHM_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="3" name="SCHM_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="6" name="ACCT_RPT_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="6" name="ACCT_RPT_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ACCT_OPN_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+      <column key="false" length="10" name="ACCT_OPN_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="ACCT_CLS_FLG" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="1" name="ACCT_CLS_FLG" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ACCT_CLS_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+      <column key="false" length="10" name="ACCT_CLS_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="ACCT_CRNCY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="3" name="ACCT_CRNCY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="ACCT_MGR_USER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="15" name="ACCT_MGR_USER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="ACCT_CLASSIFICATION_FLG" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="1" name="ACCT_CLASSIFICATION_FLG" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LAST_TRAN_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+      <column key="false" length="10" name="LAST_TRAN_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="CRNCY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="3" name="CRNCY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="SOURCE_OF_FUND" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="5" name="SOURCE_OF_FUND" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="LIEN_AMT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column key="false" length="20" name="LIEN_AMT" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="8" name="BANK_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="8" name="BANK_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="FREZ_CODE" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="1" name="FREZ_CODE" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="FREZ_REASON_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="5" name="FREZ_REASON_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="LCHG_USER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="15" name="LCHG_USER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LCHG_TIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+      <column key="false" length="10" name="LCHG_TIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="RCRE_USER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="15" name="RCRE_USER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="RCRE_TIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+      <column key="false" length="10" name="RCRE_TIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="ACCT_STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="20" name="ACCT_STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="ACCT_STATUS_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column key="false" length="23" name="ACCT_STATUS_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="240" name="FREE_TEXT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column key="false" length="240" name="FREE_TEXT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="LOAD_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -579,7 +584,7 @@
         <mapperTableEntries name="SOL_ID" nullable="true" type="id_String"/>
         <mapperTableEntries name="CIF_ID" nullable="true" type="id_String"/>
         <mapperTableEntries name="ACCT_PREFIX" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FORACID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ACCT_NUMBER" nullable="true" type="id_String"/>
         <mapperTableEntries name="ACCT_NAME" nullable="true" type="id_String"/>
         <mapperTableEntries name="ACCT_SHORT_NAME" nullable="true" type="id_String"/>
         <mapperTableEntries name="SCHM_CODE" nullable="true" type="id_String"/>
@@ -605,6 +610,7 @@
         <mapperTableEntries name="ACCT_STATUS" nullable="true" type="id_String"/>
         <mapperTableEntries name="ACCT_STATUS_DATE" nullable="true" type="id_Date"/>
         <mapperTableEntries name="FREE_TEXT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LOAD_DATE" nullable="true" type="id_Date"/>
       </inputTables>
       <inputTables activateCondensedTool="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row6" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.ACID" name="acid" nullable="true" type="id_String"/>
@@ -634,7 +640,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:aOYjbY0SLOmBXEN2uaE9z0uqOpVwyo5R84eGHRRy+CB8l/uyExEn8NUY7g=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:awUJlNSL1Gc16ShuOHyx16d9kZ+Dh1+7d+eiK/l9WEZwbBIA8WALh0EFSg=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - EOD_BAL"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;EOD_BAL&quot;"/>
@@ -699,7 +705,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Lt3vDUOLbVDnWu3mNH/sQSgyg7aKJUwZYnOlFQ1IRNqF2Pxzdy6g6UqSxw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:b/UG5FYFOibslpjmcjAXtDqjtEDlJeOnzyEADBPCSB3UBOZvapmtm1lV9g=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - EXCHANGE_RATES"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;EXCHANGE_RATES&quot;"/>
@@ -1144,7 +1150,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xSe2r5vrWFlGLOdM+MdpueVQOEQggJaNkTHDCK/UfNvwlSqwhKuIKpbN0Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:OnAzrZ77Qg4GQLl/EnADXfDBzjIBZ9EcWZQY2kRIN3KHAbbT3mlT7EKAFg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SERVICE_OUTLET&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1200,7 +1206,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nIwyZbx8ngn9HbQDd7NCbStjFoSyaFRTIGy75ka8lgXr3KbpuJFbky3DmQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Srwx9OEQHn2KhL3cIWQhdBBZAEjjF2rrPOW2sYxiNJlawDdNaiXzWNVmnQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SCHEME_MASTER&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1244,7 +1250,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:RJwOnU6YG9yZOszoax26NgNjeyeJpYncLsB2oEIDqO51fwoPUOJWDYvfeA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:P0kLEpiu67kOS2L7DPBW3Eje8+b5XYX1S91+j6xNfqBWUewSc/tiJzsIYw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ENTITY_INTEREST&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1466,7 +1472,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:sbpa+wMADVqpCrDwvdF1MnQKygVgJ5/zIHRS9B4+"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+ldDUceVnm08chrfyVm9veR7xkKsiNZSUBM56kXG"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DEPOSITS_MM&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1741,7 +1747,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nm3OkP8vFdD5+LS9GAwEngCp0ru4EcLkqDmKTp/H"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Gy4md2dCDvro3/nQzJaZYVp0VDQav1XOYjImp+ri"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DEPOSITS_MM&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2012,7 +2018,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+kYaAFUd5Unk9W4ee9SlICb/f6dATIjyb+W0wQAN"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/28n2ELBCQFNPCDc22JuYqmujonKYaXaXLHk5iVi"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DEPOSITS_MM&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2512,7 +2518,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -2527,13 +2533,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a5222d14-a8ee-4935-bc77-f3bf5edcf88b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5+Z8CeXKgGgvFRnheNz5l446FMNP99kzUvRrGdRnVhuf3Tc78YKm5I9pZAwOc8/iFuYd5gylFHOM&#13;
-M9xoT5t0YA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dec086f2-d39e-443b-9b2d-fc6a8ead0e3e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nfgCdKntL4ezrKfMWT1AsI3Sf7/qrXcjxVoonftJGU0qxYOCKrZK7K4lLYRsF0oCTII4yfs2uy+X&#13;
-4Guyaec5pQ==</DigestValue></Reference></SignedInfo><SignatureValue>XT0YONca7jHpd/58dn74zTt18qYbQ2Hr1Tij29EhIncSupmhxEfoongd5Mnyaq5oLxt2YHFFnLU8&#13;
-tcdqtL2glnCSwtWKK8akDauHl6Ml0BgtNtFCAKjwVXFAiR4u8NJ6Z2bmmJFoAajKxmYGApFuBo9W&#13;
-LNTs2vvWyE6lGnegKG8Vu7HAOsQGv8EafX1P1JrK37FUurLF3B1L3TfUekVd9QyJpfEJ7xLAjaPP&#13;
-1ZixWvjUhP3AXKXgSCdJWW/0/hV/0NZwa/maeDoHka4EtAiC9eqTdsOypgfje6goS2b0Q/spncFT&#13;
-wawybqdl0NTCwfANyXqwz2pqASeDOBORPzke+w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f489d20a-8dbb-43dc-9c6c-b59087f07f3e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>izTRELxvf77zSY/C2/8B0gnvrNHKJKxLa71TSz8eaAY+Jb1X5r3c6Pc53y3cY7coxyGEJbbJQnKD&#13;
+dg3MC9B+xQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8270649a-4dc9-4db9-b3c5-f4704c3609cb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FxJVmM163jdMU0cXnr62CTNlbudDPTGyjGXD4/pVIjVo1J8r8MxgL3u35XdoQM+n3ssaGPCv9rq9&#13;
+dEFwnqjXfw==</DigestValue></Reference></SignedInfo><SignatureValue>T56gFI8VYfnNilxo/i6/LU4jYbi8wLKFEE5RAF9H+OrVebZiYosxz2V1q0MbJv1ERvh4Vp02UrvT&#13;
+3E4nwGUA1hu93SMZ/GoYNaF0xMg4B1mepPrE89H/Hm0XKLx/KItV3KXlZfT8X0RV5zB6uncRTNNY&#13;
+C7WiWS1Kk2phuP/rdp4UAcG1O9sGDV1PPO585VTFY7Wz5Jo3sNDWuajVpqFfyeQpk3UHHOZfqhBA&#13;
+3gmBWCwXo2zDU4L7SgETecl4W9yFw0+Ff6ppaHwovcymy7EWCJgxGjnV0GKtploNSyaWd7jpDAjK&#13;
+qAkAyhhSNHm1FDquUSjhNT0MqiDPBCoQR1ZvBA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2555,4 +2561,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dec086f2-d39e-443b-9b2d-fc6a8ead0e3e" Target="#_a5222d14-a8ee-4935-bc77-f3bf5edcf88b"><Timestamp>2022-08-10 05:51:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8270649a-4dc9-4db9-b3c5-f4704c3609cb" Target="#_f489d20a-8dbb-43dc-9c6c-b59087f07f3e"><Timestamp>2022-08-10 06:39:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

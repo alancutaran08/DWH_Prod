@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:FKItvfQppUSIYY03sfOVuL5bZK1hI7mRr1p2XXa3"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:eMnWj2zcrdhio3t2kfv7nmgZgX/AbjhBtkdYyRSk"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Qrte63lHFDlKaynJvCFrXFc6L9nKcXiHCTiCc+mT"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:eqAnaL+TsxKFbak2u+Hz93/TywFB/RYp9410qKZV"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -127,7 +127,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:b6fRnux5E9tam2Fh6tMNKbSphk0lRlcTaI/AtPwPMLdCwP9FJZcdZLCq+w=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:F/+PLUzXL4MbEGFYn3bJ1bPds4AIr/FY5ntB3mGCxPdjvmZcGHwG6fIK6A=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -160,7 +160,7 @@
   <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_4"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_bK-BgLvsEeyJGOOVk-YFpA"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
@@ -170,13 +170,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:tTpy1tn/R9D9oFFOPxhc+/2Q2Orgq7Bsi89hKGhebj6pC/sNPryyCmDtuQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:jChOAZQ4uZeZ0KmAjoTKjeAPFWESETqZgXP2XY67mcPNjbXfsasPfnM/ww=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMASTER.dbo.TD_MASTER&#13;&#10;WHERE ACID IN (SELECT ACID FROM RBSTAGE.dbo.UPD_TDA)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBCEDWDV.dbo.FIN_TD_ACCOUNT&#13;&#10;WHERE ACID IN (SELECT ACID FROM RBSTAGE.dbo.FIN_UPD_TDA)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -192,7 +192,7 @@
     <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
-    <elementParameter field="TEXT" name="LABEL" value="RBMASTER"/>
+    <elementParameter field="TEXT" name="LABEL" value="RBCEDW"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBRow_4"/>
     <metadata connector="REJECT" name="REJECT">
@@ -214,7 +214,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xhemcMqpidBcCohTlB7JSkkklgcedwePjAbGlfHDF9DOHWk5bwpfjuhQhg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8IusoaoxtVVxVzF0n7Ol19lndWn8FUt0s4hGluO6LLNkUMdvmM54ffbR4g=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RAtAMHjEeyGtfWT1EFyTg - FIN_ACCOUNTS"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;UPD_ACCOUNTS&quot;"/>
@@ -397,7 +397,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_gRMTEMVxEeyYZd1eWTVB0g-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_cV43ABe2Ee2KiYB74uM_-Q-tMap_4-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -600,7 +600,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Staging&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FKyUqzkMIs8k0QWXkuXNfZBPFGIdKYFb35rTxohzeoVXNQgrk0/EiazzVA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5M2TB6hoV05zumCtrr0m0TVV5qKEQU25eV7BAD8oeP7xqMqqBSiL40E13w=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -648,7 +648,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/zuA7veeHPVwTBi5iFLtcP4rx5vlu7dBRkkL2OVaXhWQ7WBCHuYpIv+Tnw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lzD2+WCPThZc+iqPeFRj9m/B5aKDTudQ2/ecWB0H00DRmIhkSvnWXGRzvg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ACCOUNTS_MASTER&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1055,13 +1055,13 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;RBCDB&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9nIQnbEpjjlzWAk/ML2YsTPK/v/CwtnusX/ow/xkOiYAwnD9Juu2szeK"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rGyBYQBJ7ozyamQpW6z+JzqyNl0sv7TuTEuF2V1VlHHLbUsn3IZJMBTM"/>
     <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
     <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:eWDypAvPGqXPbI8ta/lXB+Nh7jaSTe+VMZtPaw0Y"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:AIathwKxAbJV34E/jvBoiNdhMBC/TCkkj7McsUlC"/>
     <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
     <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:YvQm+5Qw5O5xpGVUyRbGH2gNNZg/bGHUKA5vICwT"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:EUh1ysjJMz1sgFfKULIJcO/vnKZHSDrpPPqCgWxD"/>
     <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -1088,7 +1088,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GH9jyMn+bsrAqrTal5Q19XkAMsjVBbxOzxHFjFx0f3VUTtAgJnRPucZiyQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8zOPOIh+QOIzHDeSyj08sQrrng2bf4hFyFEuS6ZkY0zUfukpxKPH0gotXg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -1114,7 +1114,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XpTJyfFsbxed5lVauC6QsyNYvN3NTckh87GGPhI+E4dVl+7Exd2rrGtuJg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vXrD96X8Q0MmW71H1uQG0RxHOWWf/Ex0yU6FrVBa98tkW8ixbFIwp/SA7Q=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -1142,15 +1142,15 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SzKn4mkJS7OImThHSafM0O8zp+wAhfBLLufur30X9IxAgqsYvtptPMuz1g=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:THmpOru90BcP5Z1iTA2qJ71XzQpcmvpEBqv+3QrfDNZFQ4mTeqvrLxw15g=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RAtAMHjEeyGtfWT1EFyTg - FIN_TDA"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;UPD_TDA&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_UPD_TDA&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.UPD_TDA.ACID,&#10;&#9;&#9;dbo.UPD_TDA.DEPOSIT_PERIOD_MTHS,&#10;&#9;&#9;dbo.UPD_TDA.DEPOSIT_PERIOD_DAYS,&#10;&#9;&#9;dbo.UPD_TDA.OPEN_EFFECTIVE_DATE,&#10;&#9;&#9;dbo.UPD_TDA.MATURITY_DATE,&#10;&#9;&#9;dbo.UPD_TDA.DEPOSIT_AMOUNT,&#10;&#9;&#9;dbo.UPD_TDA.MATURITY_AMOUNT,&#10;&#9;&#9;dbo.UPD_TDA.ADJUSTED_COMM_AMT,&#10;&#9;&#9;dbo.UPD_TDA.DEPOSIT_STATUS,&#10;&#9;&#9;dbo.UPD_TDA.ACCT_SEGMENT,&#10;&#9;&#9;dbo.UPD_TDA.SAFE_CUSTODY_FLG,&#10;&#9;&#9;dbo.UPD_TDA.NOMINEE_PRINT_FLG,&#10;&#9;&#9;dbo.UPD_TDA.PRINTING_FLG,&#10;&#9;&#9;dbo.UPD_TDA.SPL_CATG_IND,&#10;&#9;&#9;dbo.UPD_TDA.XFER_IN_IND,&#10;&#9;&#9;dbo.UPD_TDA.LAST_INT_PROVISION_DATE,&#10;&#9;&#9;dbo.UPD_TDA.LAST_REPAYMENT_DATE,&#10;&#9;&#9;dbo.UPD_TDA.CUMULATIVE_PRINCIPAL,&#10;&#9;&#9;dbo.UPD_TDA.CUMULATIVE_INSTL_PAID,&#10;&#9;&#9;dbo.UPD_TDA.CUMULATIVE_REPAYMENT_PAID,&#10;&#9;&#9;dbo.UPD_TDA.CUMULATIVE_INT_PAID,&#10;&#9;&#9;dbo.UPD_TDA.CUMULATIVE_INT_CREDITED,&#10;&#9;&#9;dbo.UPD_TDA.INT_ACCRUAL_FLG,&#10;&#9;&#9;dbo.UPD_TDA.RELATED_ACID,&#10;&#9;&#9;dbo.UPD_TDA.PENAL_PCNT,&#10;&#9;&#9;dbo.UPD_TDA.REPAYMENT_ACID,&#10;&#9;&#9;dbo.UPD_TDA.LOAN_ACID,&#10;&#9;&#9;dbo.UPD_TDA.PENALTY_AMOUNT,&#10;&#9;&#9;dbo.UPD_TDA.PENALTY_RECOVERED,&#10;&#9;&#9;dbo.UPD_TDA.PENALTY_WAIVED,&#10;&#9;&#9;dbo.UPD_TDA.AGENT_EMP_IND,&#10;&#9;&#9;dbo.UPD_TDA.AGENT_CODE,&#10;&#9;&#9;dbo.UPD_TDA.MATURITY_NOTICE_DATE,&#10;&#9;&#9;dbo.UPD_TDA.LCHG_USER_ID,&#10;&#9;&#9;dbo.UPD_TDA.LCHG_TIME,&#10;&#9;&#9;dbo.UPD_TDA.RCRE_USER_ID,&#10;&#9;&#9;dbo.UPD_TDA.RCRE_TIME,&#10;&#9;&#9;dbo.UPD_TDA.TDS_AMT,&#10;&#9;&#9;dbo.UPD_TDA.INT_CR_RATE_CODE,&#10;&#9;&#9;dbo.UPD_TDA.NOSTRO_VALUE_DATE,&#10;&#9;&#9;dbo.UPD_TDA.OVERDUE_INT_AMT,&#10;&#9;&#9;dbo.UPD_TDA.CLS_VALUE_DATE,&#10;&#9;&#9;dbo.UPD_TDA.AUTO_RENEWAL_FLG,&#10;&#9;&#9;dbo.UPD_TDA.PERD_MTHS_FOR_AUTO_RENEW,&#10;&#9;&#9;dbo.UPD_TDA.PERD_DAYS_FOR_AUTO_RENEW,&#10;&#9;&#9;dbo.UPD_TDA.MAX_AUTO_RENEWAL_ALLOWED,&#10;&#9;&#9;dbo.UPD_TDA.AUTO_RENEWED_COUNTER,&#10;&#9;&#9;dbo.UPD_TDA.CLOSE_ON_MATURITY_FLG,&#10;&#9;&#9;dbo.UPD_TDA.AUTO_RENEWAL_SCHM_CODE,&#10;&#9;&#9;dbo.UPD_TDA.AUTO_RENEWAL_INT_TBL_CODE,&#10;&#9;&#9;dbo.UPD_TDA.AUTO_RENWL_GL_SUBHEAD_CODE,&#10;&#9;&#9;dbo.UPD_TDA.RENEWAL_CRNCY,&#10;&#9;&#9;dbo.UPD_TDA.RENEWAL_RATE_CODE,&#10;&#9;&#9;dbo.UPD_TDA.RENEWAL_RATE,&#10;&#9;&#9;dbo.UPD_TDA.TS_CNT,&#10;&#9;&#9;dbo.UPD_TDA.SOL_ID,&#10;&#9;&#9;dbo.UPD_TDA.ORIGINAL_DEPOSIT_AMOUNT,&#10;&#9;&#9;dbo.UPD_TDA.NOTICE_PERIOD_MNTHS,&#10;&#9;&#9;dbo.UPD_TDA.NOTICE_PERIOD_DAYS,&#10;&#9;&#9;dbo.UPD_TDA.NOTICE_DATE,&#10;&#9;&#9;dbo.UPD_TDA.ACCT_CLOSE_INTEREST_RATE,&#10;&#9;&#9;dbo.UPD_TDA.TRAN_ID,&#10;&#9;&#9;dbo.UPD_TDA.TXOD_REGL_OVERDRAFT,&#10;&#9;&#9;dbo.UPD_TDA.ORIGINAL_MATURITY_AMOUNT,&#10;&#9;&#9;dbo.UPD_TDA.REN_SRL_NUM,&#10;&#9;&#9;dbo.UPD_TDA.DEPOSIT_TYPE,&#10;&#9;&#9;dbo.UPD_TDA.LINK_OPER_ACCOUNT,&#10;&#9;&#9;dbo.UPD_TDA.OUTFLOW_MULTIPLE_AMT,&#10;&#9;&#9;dbo.UPD_TDA.AVAIL_DEPOSIT_AMT,&#10;&#9;&#9;dbo.UPD_TDA.CUST_INST_TYPE,&#10;&#9;&#9;dbo.UPD_TDA.TDS_TOTAL_FROM_SELF_ACCT,&#10;&#9;&#9;dbo.UPD_TDA.INT_FLOW_FREQ_MTHS,&#10;&#9;&#9;dbo.UPD_TDA.INT_FLOW_FREQ_DAYS,&#10;&#9;&#9;dbo.UPD_TDA.TAM_CRNCY_CODE,&#10;&#9;&#9;dbo.UPD_TDA.MASTER_B2K_ID,&#10;&#9;&#9;dbo.UPD_TDA.ACCT_STATUS,&#10;&#9;&#9;dbo.UPD_TDA.ACCT_STATUS_DATE,&#10;&#9;&#9;dbo.UPD_TDA.FIXED_INSTALLMENT_AMT,&#10;&#9;&#9;dbo.UPD_TDA.NRML_INSTALLMENT_PCNT,&#10;&#9;&#9;dbo.UPD_TDA.INSTALLMENT_BASIS,&#10;&#9;&#9;dbo.UPD_TDA.MAX_MISS_CONTRIB_ALLOW,&#10;&#9;&#9;dbo.UPD_TDA.AUTO_CLOSURE_OF_IRREGULAR_ACCT,&#10;&#9;&#9;dbo.UPD_TDA.TOTAL_NO_OF_MISS_CONTRIB,&#10;&#9;&#9;dbo.UPD_TDA.ACCT_IRREGULAR_STATUS,&#10;&#9;&#9;dbo.UPD_TDA.ACCT_IRREGULAR_STATUS_DATE,&#10;&#9;&#9;dbo.UPD_TDA.CUMULATIVE_NRML_INSTL_PAID,&#10;&#9;&#9;dbo.UPD_TDA.CUMULATIVE_INITIAL_DEP_PAID,&#10;&#9;&#9;dbo.UPD_TDA.CUMULATIVE_TOP_UP_PAID,&#10;&#9;&#9;dbo.UPD_TDA.AUTO_CLOSURE_OF_ZERO_BAL_MNTHS,&#10;&#9;&#9;dbo.UPD_TDA.AUTO_CLOSURE_OF_ZERO_BAL_DAYS,&#10;&#9;&#9;dbo.UPD_TDA.BANK_ID,&#10;&#9;&#9;dbo.UPD_TDA.PENALTY_CHARGE_EVENT_ID,&#10;&#9;&#9;dbo.UPD_TDA.NUM_OF_GRACE_DAYS_UTIL,&#10;&#9;&#9;dbo.UPD_TDA.ABSOLUTE_PENAL_INT_AMT,&#10;&#9;&#9;dbo.UPD_TDA.LAST_BONUS_RUN_DATE,&#10;&#9;&#9;dbo.UPD_TDA.LAST_CALC_BONUS_AMOUNT,&#10;&#9;&#9;dbo.UPD_TDA.BONUS_UPTO_DATE,&#10;&#9;&#9;dbo.UPD_TDA.NEXT_BONUS_RUN_DATE,&#10;&#9;&#9;dbo.UPD_TDA.NRML_INT_PAID_TIL_LST_BONUS,&#10;&#9;&#9;dbo.UPD_TDA.BONUS_CYCLE,&#10;&#9;&#9;dbo.UPD_TDA.LAST_CALC_BONUS_PCNT,&#10;&#9;&#9;dbo.UPD_TDA.ACCT_CLS_REASON_CODE,&#10;&#9;&#9;dbo.UPD_TDA.LAST_LOCAL_CAL_UPDATE,&#10;&#9;&#9;dbo.UPD_TDA.LOC_DEPOSIT_PERIOD_MTHS,&#10;&#9;&#9;dbo.UPD_TDA.LOC_DEPOSIT_PERIOD_DAYS,&#10;&#9;&#9;dbo.UPD_TDA.ACCT_CLOSE_FWC_NUM,&#10;&#9;&#9;dbo.UPD_TDA.ACCT_CLOSE_FWC_SOL_ID&#10;FROM&#9;dbo.UPD_TDA&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.FIN_UPD_TDA.ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.DEPOSIT_PERIOD_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.DEPOSIT_PERIOD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.OPEN_EFFECTIVE_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.MATURITY_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.DEPOSIT_AMOUNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.MATURITY_AMOUNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ADJUSTED_COMM_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.DEPOSIT_STATUS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ACCT_SEGMENT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.SAFE_CUSTODY_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.NOMINEE_PRINT_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.PRINTING_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.SPL_CATG_IND,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.XFER_IN_IND,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LAST_INT_PROVISION_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LAST_REPAYMENT_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CUMULATIVE_PRINCIPAL,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CUMULATIVE_INSTL_PAID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CUMULATIVE_REPAYMENT_PAID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CUMULATIVE_INT_PAID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CUMULATIVE_INT_CREDITED,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.INT_ACCRUAL_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.RELATED_ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.PENAL_PCNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.REPAYMENT_ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LOAN_ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.PENALTY_AMOUNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.PENALTY_RECOVERED,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.PENALTY_WAIVED,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AGENT_EMP_IND,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AGENT_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.MATURITY_NOTICE_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LCHG_USER_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LCHG_TIME,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.RCRE_USER_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.RCRE_TIME,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.TDS_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.INT_CR_RATE_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.NOSTRO_VALUE_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.OVERDUE_INT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CLS_VALUE_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AUTO_RENEWAL_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.PERD_MTHS_FOR_AUTO_RENEW,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.PERD_DAYS_FOR_AUTO_RENEW,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.MAX_AUTO_RENEWAL_ALLOWED,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AUTO_RENEWED_COUNTER,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CLOSE_ON_MATURITY_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AUTO_RENEWAL_SCHM_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AUTO_RENEWAL_INT_TBL_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AUTO_RENWL_GL_SUBHEAD_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.RENEWAL_CRNCY,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.RENEWAL_RATE_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.RENEWAL_RATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.TS_CNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.SOL_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ORIGINAL_DEPOSIT_AMOUNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.NOTICE_PERIOD_MNTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.NOTICE_PERIOD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.NOTICE_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ACCT_CLOSE_INTEREST_RATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.TRAN_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.TXOD_REGL_OVERDRAFT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ORIGINAL_MATURITY_AMOUNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.REN_SRL_NUM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.DEPOSIT_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LINK_OPER_ACCOUNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.OUTFLOW_MULTIPLE_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AVAIL_DEPOSIT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CUST_INST_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.TDS_TOTAL_FROM_SELF_ACCT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.INT_FLOW_FREQ_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.INT_FLOW_FREQ_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.TAM_CRNCY_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.MASTER_B2K_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ACCT_STATUS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ACCT_STATUS_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.FIXED_INSTALLMENT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.NRML_INSTALLMENT_PCNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.INSTALLMENT_BASIS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.MAX_MISS_CONTRIB_ALLOW,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AUTO_CLOSURE_OF_IRREGULAR_ACCT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.TOTAL_NO_OF_MISS_CONTRIB,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ACCT_IRREGULAR_STATUS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ACCT_IRREGULAR_STATUS_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CUMULATIVE_NRML_INSTL_PAID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CUMULATIVE_INITIAL_DEP_PAID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.CUMULATIVE_TOP_UP_PAID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AUTO_CLOSURE_OF_ZERO_BAL_MNTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.AUTO_CLOSURE_OF_ZERO_BAL_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.BANK_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.PENALTY_CHARGE_EVENT_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.NUM_OF_GRACE_DAYS_UTIL,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ABSOLUTE_PENAL_INT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LAST_BONUS_RUN_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LAST_CALC_BONUS_AMOUNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.BONUS_UPTO_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.NEXT_BONUS_RUN_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.NRML_INT_PAID_TIL_LST_BONUS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.BONUS_CYCLE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LAST_CALC_BONUS_PCNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ACCT_CLS_REASON_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LAST_LOCAL_CAL_UPDATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LOC_DEPOSIT_PERIOD_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.LOC_DEPOSIT_PERIOD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ACCT_CLOSE_FWC_NUM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_TDA.ACCT_CLOSE_FWC_SOL_ID&#13;&#10;FROM&#9;dbo.FIN_UPD_TDA&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1709,7 +1709,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_gRMTEMVxEeyYZd1eWTVB0g-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_cV43ABe2Ee2KiYB74uM_-Q-tMap_3-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -2269,7 +2269,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_bK-BgLvsEeyJGOOVk-YFpA"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="&quot;10.86.93.205&quot;"/>
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
@@ -2277,8 +2277,8 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4ulWkZAwPLiel71HhejH4WNRBrYds54789351n9vxJd8WA9BjoYtQJdWkw=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TD_MASTER&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:zJbhd6i93b4FlY/y+DUd2XSX9BYPUmAwLBbfLbXqCd+zHbBtN4ShmpCq1g=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_TD_ACCOUNT&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -3509,15 +3509,15 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AyQzQda3r2PdFFOrWE8grxx0Ji1nfdNCjToiRmlUeQ/OfofN7/yZyUYaPA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xy7fslzOjgKWsj0I82UQHQbOweKCSKNE9zld9PVuM0ORwj+CBomiq4mPTg=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RAtAMHjEeyGtfWT1EFyTg - FIN_LOANS"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;UPD_LOANS&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_UPD_LOANS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.UPD_LOANS.ACID,&#10;&#9;&#9;dbo.UPD_LOANS.ENTITY_CRE_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.DEL_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.REP_SHDL_NUM,&#10;&#9;&#9;dbo.UPD_LOANS.REP_SHDL_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.DIS_SHDL_NUM,&#10;&#9;&#9;dbo.UPD_LOANS.DIS_SHDL_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.DIS_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.OFLOW_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.LAST_ADJ_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.REV_LEVL_CODE,&#10;&#9;&#9;dbo.UPD_LOANS.REV_AUTH_CODE,&#10;&#9;&#9;dbo.UPD_LOANS.PRIORITY_LOAN_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.CRFILE_REF_ID,&#10;&#9;&#9;dbo.UPD_LOANS.LAST_AOD_AOS_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.AOD_AOS_TYPE,&#10;&#9;&#9;dbo.UPD_LOANS.OP_ACID,&#10;&#9;&#9;dbo.UPD_LOANS.DICGC_FEE_PCNT,&#10;&#9;&#9;dbo.UPD_LOANS.VALUATION_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.INT_ON_P_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.PI_ON_PDMD_OVDU_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.INT_ON_IDMD_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.PI_ON_IDMD_OVDU_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.DEFERRED_UPTO_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.CUM_NORM_INT_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.CUM_PEN_INT_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.CUM_ADDNL_INT_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.ACCT_STATE,&#10;&#9;&#9;dbo.UPD_LOANS.XFER_EFF_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.LIAB_AS_ON_XFER_EFF_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.LCHG_USER_ID,&#10;&#9;&#9;dbo.UPD_LOANS.LCHG_TIME,&#10;&#9;&#9;dbo.UPD_LOANS.RCRE_USER_ID,&#10;&#9;&#9;dbo.UPD_LOANS.RCRE_TIME,&#10;&#9;&#9;dbo.UPD_LOANS.REL_DEPOSIT_ACID,&#10;&#9;&#9;dbo.UPD_LOANS.INT_ROUTE_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.DMD_SATISFY_MTHD,&#10;&#9;&#9;dbo.UPD_LOANS.LIEN_ON_OPER_ACCT_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.REP_PERD_MTHS,&#10;&#9;&#9;dbo.UPD_LOANS.REP_PERD_DAYS,&#10;&#9;&#9;dbo.UPD_LOANS.PDMD_OVDU_PERD_MTHS,&#10;&#9;&#9;dbo.UPD_LOANS.PDMD_OVDU_PERD_DAYS,&#10;&#9;&#9;dbo.UPD_LOANS.PDMD_OVDU_EOM_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.IDMD_OVDU_PERD_MTHS,&#10;&#9;&#9;dbo.UPD_LOANS.IDMD_OVDU_PERD_DAYS,&#10;&#9;&#9;dbo.UPD_LOANS.IDMD_OVDU_EOM_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.DS_RATE_CODE,&#10;&#9;&#9;dbo.UPD_LOANS.REP_SHDL_STATE,&#10;&#9;&#9;dbo.UPD_LOANS.HEALTH_CODE,&#10;&#9;&#9;dbo.UPD_LOANS.TS_CNT,&#10;&#9;&#9;dbo.UPD_LOANS.APPLY_LATE_FEE_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.LATE_FEE_GRACE_PERD_MNTHS,&#10;&#9;&#9;dbo.UPD_LOANS.LATE_FEE_GRACE_PERD_DAYS,&#10;&#9;&#9;dbo.UPD_LOANS.REPHASEMENT_PRINCIPAL,&#10;&#9;&#9;dbo.UPD_LOANS.DEALER_CONTR_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.UPFRONT_INSTL_COLL,&#10;&#9;&#9;dbo.UPD_LOANS.NUM_ADVANCE_INSTLMNT,&#10;&#9;&#9;dbo.UPD_LOANS.SUM_PRINCIPAL_DMD_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.UPFRONT_INSTL_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.PAYOFF_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.BANK_IRR_RATE,&#10;&#9;&#9;dbo.UPD_LOANS.VALUE_OF_ASSET,&#10;&#9;&#9;dbo.UPD_LOANS.XFER_CYCLE_STR,&#10;&#9;&#9;dbo.UPD_LOANS.PAYOFF_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.DSA_BASE_RATE_COMM_PAID,&#10;&#9;&#9;dbo.UPD_LOANS.CALC_OVDU_INT_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.EI_PERD_START_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.EI_PERD_END_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.REPHASE_ACCEPT_NEW_PDCS,&#10;&#9;&#9;dbo.UPD_LOANS.EMPLOYER_ID,&#10;&#9;&#9;dbo.UPD_LOANS.INT_REST_FREQ,&#10;&#9;&#9;dbo.UPD_LOANS.INT_REST_BASIS,&#10;&#9;&#9;dbo.UPD_LOANS.SYS_CALC_BANK_IRR,&#10;&#9;&#9;dbo.UPD_LOANS.SYS_CALC_ACTUAL_IRR,&#10;&#9;&#9;dbo.UPD_LOANS.PRE_PROCESS_FEE,&#10;&#9;&#9;dbo.UPD_LOANS.FINAL_DISB_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.DEFERRED_INT_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.HLDY_PERD_INT_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.AUTO_RESHDL_AFTER_HLDY_PERD,&#10;&#9;&#9;dbo.UPD_LOANS.CHRG_ROUTE_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.INT_RATE_BASED_ON_SANCT_LIM,&#10;&#9;&#9;dbo.UPD_LOANS.NTNL_POOL_PARAM_TYPE,&#10;&#9;&#9;dbo.UPD_LOANS.OPT_IN_MNTH_YEAR,&#10;&#9;&#9;dbo.UPD_LOANS.NEXT_DEFMNT_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.DEFMNT_IND,&#10;&#9;&#9;dbo.UPD_LOANS.TOT_NUM_DEFMNTS,&#10;&#9;&#9;dbo.UPD_LOANS.NUM_DEFMNT_CURR_SHDL,&#10;&#9;&#9;dbo.UPD_LOANS.LAM_CRNCY_CODE,&#10;&#9;&#9;dbo.UPD_LOANS.PDC_LINKED_ACCT_IND,&#10;&#9;&#9;dbo.UPD_LOANS.EI_SCHM_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.CRYSTALLISATION_REQD,&#10;&#9;&#9;dbo.UPD_LOANS.CRYSTALLISATION_CRNCY,&#10;&#9;&#9;dbo.UPD_LOANS.INSTALLMENT_DATE_EXTD,&#10;&#9;&#9;dbo.UPD_LOANS.EXTD_DMD_OVDU_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.DRAW_DOWN_LEVEL_INT_RATE,&#10;&#9;&#9;dbo.UPD_LOANS.RESERVE_ACID,&#10;&#9;&#9;dbo.UPD_LOANS.COLL_INT_TILL_ROLLOVER,&#10;&#9;&#9;dbo.UPD_LOANS.COMNT_FEE_MTHDS,&#10;&#9;&#9;dbo.UPD_LOANS.SHIFT_INSTLMNT_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.LAST_PREPAYMENT_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.ACCT_STATUS_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.DEF_APPL_INT_RATE,&#10;&#9;&#9;dbo.UPD_LOANS.DEF_APPL_INT_RATE_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.CONTRACT_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.CRYSTALLISATION_ACCT_ID,&#10;&#9;&#9;dbo.UPD_LOANS.LAST_CRYSTALLISED_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.NO_OF_TIMES_CRYSTALLISED,&#10;&#9;&#9;dbo.UPD_LOANS.PI_BASED_ON_OUTSTANDING,&#10;&#9;&#9;dbo.UPD_LOANS.DELINQ_RESHDL_MTHD_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.PROBATION_PRD_MTHS,&#10;&#9;&#9;dbo.UPD_LOANS.PROBATION_PRD_DAYS,&#10;&#9;&#9;dbo.UPD_LOANS.DPD_BEFORE_RESHDL,&#10;&#9;&#9;dbo.UPD_LOANS.DELINQUENCY_RESHDL_STATUS,&#10;&#9;&#9;dbo.UPD_LOANS.AUTO_RESHDL_NOT_ALLOWED,&#10;&#9;&#9;dbo.UPD_LOANS.NON_STARTER_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.TOTAL_NUM_OF_SWITCHOVER,&#10;&#9;&#9;dbo.UPD_LOANS.LAST_SWITCHOVER_TIME,&#10;&#9;&#9;dbo.UPD_LOANS.SEC_STATUS_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.SEC_POOL_ID,&#10;&#9;&#9;dbo.UPD_LOANS.INT_WEF_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.RESHDL_OVERDUE_PRIN,&#10;&#9;&#9;dbo.UPD_LOANS.RESHDL_OVERDUE_INT,&#10;&#9;&#9;dbo.UPD_LOANS.LOAN_TYPE,&#10;&#9;&#9;dbo.UPD_LOANS.MAX_PENDING_DMD_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.PAYOFF_REASON_CODE,&#10;&#9;&#9;dbo.UPD_LOANS.INSTALL_INCOME_RATIO,&#10;&#9;&#9;dbo.UPD_LOANS.PRIN_DMD_OS,&#10;&#9;&#9;dbo.UPD_LOANS.INT_DMD_OS,&#10;&#9;&#9;dbo.UPD_LOANS.BCHG_DMD_OS,&#10;&#9;&#9;dbo.UPD_LOANS.OCHG_DMD_OS,&#10;&#9;&#9;dbo.UPD_LOANS.LINKED_ACCT_ID,&#10;&#9;&#9;dbo.UPD_LOANS.LAST_PRIN_DMD_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.FULL_PENAL_MTHD_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.PENAL_PROD_MTHD_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.PENAL_RATE_MTHD_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.EIR_EVENT_TYPE,&#10;&#9;&#9;dbo.UPD_LOANS.EIR_RATE,&#10;&#9;&#9;dbo.UPD_LOANS.PAST_DUE_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.CHRGE_OFF_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.MR_EVENT_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.DMD_RAISED_SYS_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.SBSDY_STATUS_IND,&#10;&#9;&#9;dbo.UPD_LOANS.DICGC_FEE_BORR_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.CDMD_OVDU_PERD_MTHS,&#10;&#9;&#9;dbo.UPD_LOANS.CDMD_OVDU_PERD_DAYS,&#10;&#9;&#9;dbo.UPD_LOANS.CDMD_OVDU_EOM_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.HLDY_PRD_FRM_FIRST_DISB_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.EI_METHOD,&#10;&#9;&#9;dbo.UPD_LOANS.EI_FORMULA_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.HLDY_PERD_INT_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.TOPUP_IND,&#10;&#9;&#9;dbo.UPD_LOANS.NRML_HLDY_PERD_MNTHS,&#10;&#9;&#9;dbo.UPD_LOANS.COLLECTION_OFFICER,&#10;&#9;&#9;dbo.UPD_LOANS.RSHDL_TENOR_EI_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.RSHDL_DISBT_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.RSHDL_RATE_CHNG_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.RSHDL_PREPAY_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.RSHDL_AMT_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.REPHASE_CAPITALIZE_INT,&#10;&#9;&#9;dbo.UPD_LOANS.REPHASE_CARRY_OVDU_DMDS,&#10;&#9;&#9;dbo.UPD_LOANS.ROLLOVER_ALLOWED,&#10;&#9;&#9;dbo.UPD_LOANS.CAP_EMI_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.EMICAP_DEFERRED_INT,&#10;&#9;&#9;dbo.UPD_LOANS.INCLUDE_MATU_DATE_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.INSTLMNT_GRACE_PERD_MNTHS,&#10;&#9;&#9;dbo.UPD_LOANS.CUM_CAPITALIZE_FEES,&#10;&#9;&#9;dbo.UPD_LOANS.INSTLMNT_GRACE_PERD_TERM_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.PENAL_INT_GRACE_PERD_MTHS,&#10;&#9;&#9;dbo.UPD_LOANS.PENAL_INT_GRACE_PERD_DAYS,&#10;&#9;&#9;dbo.UPD_LOANS.UPFRONT_INSTL_INT_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.RECALL_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.RECALL_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.BANK_ID,&#10;&#9;&#9;dbo.UPD_LOANS.RESP_ACCT_REF_NO,&#10;&#9;&#9;dbo.UPD_LOANS.ACCR_PENAL_DMD_OS,&#10;&#9;&#9;dbo.UPD_LOANS.ACCR_PENAL_INT_UNREALIZED_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.ACCR_PENAL_INT_REFUND_AMT,&#10;&#9;&#9;dbo.UPD_LOANS.LAST_ACH_RUN_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.INT_PEN_BREAKUP_REQD_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.MIN_OFLOW_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.ACCT_TYPE,&#10;&#9;&#9;dbo.UPD_LOANS.CCY_HOL_TREATMENT_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.PURCHASE_REF,&#10;&#9;&#9;dbo.UPD_LOANS.POOL_CODE,&#10;&#9;&#9;dbo.UPD_LOANS.APPLY_INT_ON_PYMT,&#10;&#9;&#9;dbo.UPD_LOANS.FIRST_DRDN_VAL_DATE_INT_RATE,&#10;&#9;&#9;dbo.UPD_LOANS.RESTRUCTURING_STATE,&#10;&#9;&#9;dbo.UPD_LOANS.MARKUP_INT_RATE_APPL_FLG,&#10;&#9;&#9;dbo.UPD_LOANS.PRIORITISING_MTD,&#10;&#9;&#9;dbo.UPD_LOANS.PRIORITY_NUM,&#10;&#9;&#9;dbo.UPD_LOANS.TRANCHE_ID,&#10;&#9;&#9;dbo.UPD_LOANS.SYN_ACCOUNT_TYPE,&#10;&#9;&#9;dbo.UPD_LOANS.SYN_AGENT_REF_NUM,&#10;&#9;&#9;dbo.UPD_LOANS.NEXT_REP_SHDL_NUM,&#10;&#9;&#9;dbo.UPD_LOANS.INT_RATE_REF_CRNCY_CODE,&#10;&#9;&#9;dbo.UPD_LOANS.PROJECT_CRNCY_CODE,&#10;&#9;&#9;dbo.UPD_LOANS.CRYSTALLISATION_TIME_STAMP,&#10;&#9;&#9;dbo.UPD_LOANS.REFIN_REF_NUM,&#10;&#9;&#9;dbo.UPD_LOANS.REFIN_END_DATE,&#10;&#9;&#9;dbo.UPD_LOANS.ROLLOVER_ALLOWED_FLG&#10;FROM&#9;dbo.UPD_LOANS&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.FIN_UPD_LOANS.ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.ENTITY_CRE_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DEL_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REP_SHDL_NUM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REP_SHDL_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DIS_SHDL_NUM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DIS_SHDL_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DIS_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.OFLOW_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LAST_ADJ_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REV_LEVL_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REV_AUTH_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PRIORITY_LOAN_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CRFILE_REF_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LAST_AOD_AOS_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.AOD_AOS_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.OP_ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DICGC_FEE_PCNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.VALUATION_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_ON_P_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PI_ON_PDMD_OVDU_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_ON_IDMD_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PI_ON_IDMD_OVDU_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DEFERRED_UPTO_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CUM_NORM_INT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CUM_PEN_INT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CUM_ADDNL_INT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.ACCT_STATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.XFER_EFF_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LIAB_AS_ON_XFER_EFF_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LCHG_USER_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LCHG_TIME,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RCRE_USER_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RCRE_TIME,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REL_DEPOSIT_ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_ROUTE_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DMD_SATISFY_MTHD,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LIEN_ON_OPER_ACCT_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REP_PERD_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REP_PERD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PDMD_OVDU_PERD_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PDMD_OVDU_PERD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PDMD_OVDU_EOM_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.IDMD_OVDU_PERD_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.IDMD_OVDU_PERD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.IDMD_OVDU_EOM_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DS_RATE_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REP_SHDL_STATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.HEALTH_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.TS_CNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.APPLY_LATE_FEE_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LATE_FEE_GRACE_PERD_MNTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LATE_FEE_GRACE_PERD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REPHASEMENT_PRINCIPAL,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DEALER_CONTR_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.UPFRONT_INSTL_COLL,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.NUM_ADVANCE_INSTLMNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.SUM_PRINCIPAL_DMD_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.UPFRONT_INSTL_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PAYOFF_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.BANK_IRR_RATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.VALUE_OF_ASSET,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.XFER_CYCLE_STR,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PAYOFF_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DSA_BASE_RATE_COMM_PAID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CALC_OVDU_INT_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EI_PERD_START_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EI_PERD_END_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REPHASE_ACCEPT_NEW_PDCS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EMPLOYER_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_REST_FREQ,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_REST_BASIS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.SYS_CALC_BANK_IRR,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.SYS_CALC_ACTUAL_IRR,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PRE_PROCESS_FEE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.FINAL_DISB_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DEFERRED_INT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.HLDY_PERD_INT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.AUTO_RESHDL_AFTER_HLDY_PERD,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CHRG_ROUTE_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_RATE_BASED_ON_SANCT_LIM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.NTNL_POOL_PARAM_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.OPT_IN_MNTH_YEAR,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.NEXT_DEFMNT_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DEFMNT_IND,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.TOT_NUM_DEFMNTS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.NUM_DEFMNT_CURR_SHDL,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LAM_CRNCY_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PDC_LINKED_ACCT_IND,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EI_SCHM_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CRYSTALLISATION_REQD,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CRYSTALLISATION_CRNCY,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INSTALLMENT_DATE_EXTD,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EXTD_DMD_OVDU_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DRAW_DOWN_LEVEL_INT_RATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RESERVE_ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.COLL_INT_TILL_ROLLOVER,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.COMNT_FEE_MTHDS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.SHIFT_INSTLMNT_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LAST_PREPAYMENT_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.ACCT_STATUS_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DEF_APPL_INT_RATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DEF_APPL_INT_RATE_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CONTRACT_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CRYSTALLISATION_ACCT_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LAST_CRYSTALLISED_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.NO_OF_TIMES_CRYSTALLISED,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PI_BASED_ON_OUTSTANDING,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DELINQ_RESHDL_MTHD_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PROBATION_PRD_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PROBATION_PRD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DPD_BEFORE_RESHDL,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DELINQUENCY_RESHDL_STATUS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.AUTO_RESHDL_NOT_ALLOWED,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.NON_STARTER_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.TOTAL_NUM_OF_SWITCHOVER,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LAST_SWITCHOVER_TIME,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.SEC_STATUS_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.SEC_POOL_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_WEF_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RESHDL_OVERDUE_PRIN,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RESHDL_OVERDUE_INT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LOAN_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.MAX_PENDING_DMD_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PAYOFF_REASON_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INSTALL_INCOME_RATIO,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PRIN_DMD_OS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_DMD_OS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.BCHG_DMD_OS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.OCHG_DMD_OS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LINKED_ACCT_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LAST_PRIN_DMD_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.FULL_PENAL_MTHD_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PENAL_PROD_MTHD_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PENAL_RATE_MTHD_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EIR_EVENT_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EIR_RATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PAST_DUE_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CHRGE_OFF_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.MR_EVENT_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DMD_RAISED_SYS_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.SBSDY_STATUS_IND,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.DICGC_FEE_BORR_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CDMD_OVDU_PERD_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CDMD_OVDU_PERD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CDMD_OVDU_EOM_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.HLDY_PRD_FRM_FIRST_DISB_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EI_METHOD,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EI_FORMULA_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.HLDY_PERD_INT_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.TOPUP_IND,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.NRML_HLDY_PERD_MNTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.COLLECTION_OFFICER,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RSHDL_TENOR_EI_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RSHDL_DISBT_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RSHDL_RATE_CHNG_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RSHDL_PREPAY_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RSHDL_AMT_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REPHASE_CAPITALIZE_INT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REPHASE_CARRY_OVDU_DMDS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.ROLLOVER_ALLOWED,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CAP_EMI_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.EMICAP_DEFERRED_INT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INCLUDE_MATU_DATE_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INSTLMNT_GRACE_PERD_MNTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CUM_CAPITALIZE_FEES,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INSTLMNT_GRACE_PERD_TERM_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PENAL_INT_GRACE_PERD_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PENAL_INT_GRACE_PERD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.UPFRONT_INSTL_INT_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RECALL_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RECALL_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.BANK_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RESP_ACCT_REF_NO,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.ACCR_PENAL_DMD_OS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.ACCR_PENAL_INT_UNREALIZED_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.ACCR_PENAL_INT_REFUND_AMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.LAST_ACH_RUN_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_PEN_BREAKUP_REQD_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.MIN_OFLOW_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.ACCT_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CCY_HOL_TREATMENT_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PURCHASE_REF,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.POOL_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.APPLY_INT_ON_PYMT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.FIRST_DRDN_VAL_DATE_INT_RATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.RESTRUCTURING_STATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.MARKUP_INT_RATE_APPL_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PRIORITISING_MTD,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PRIORITY_NUM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.TRANCHE_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.SYN_ACCOUNT_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.SYN_AGENT_REF_NUM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.NEXT_REP_SHDL_NUM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.INT_RATE_REF_CRNCY_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.PROJECT_CRNCY_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.CRYSTALLISATION_TIME_STAMP,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REFIN_REF_NUM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.REFIN_END_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_LOANS.ROLLOVER_ALLOWED_FLG&#13;&#10;FROM&#9;dbo.FIN_UPD_LOANS&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -4541,7 +4541,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_gRMTEMVxEeyYZd1eWTVB0g-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_cV43ABe2Ee2KiYB74uM_-Q-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -5322,7 +5322,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_bK-BgLvsEeyJGOOVk-YFpA"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="&quot;10.86.93.205&quot;"/>
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
@@ -5330,8 +5330,8 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:k8nhlGKieKqhovXMXSHH/1tDxYay03jyfydunkTMdi3LN0sCI2B95BnfuQ=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;LA_MASTER&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qUUjixevhYHLgfVoXfhLopxX03t6orpOdXX3VOim1wU6T/7JFAGndkMN+A=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_LOANS_ACCOUNT&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -6914,15 +6914,15 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BuiwDng7eA9pXdniizoZiur1d1Z2bGAxfTF8mEwmh24XGNqTgTUd1R9n6A=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BDiXDW626D3KP8ZmxGCj6WEllp/b8U9D0shNc8dyn/oHf0RAXY3cVH46+g=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RAtAMHjEeyGtfWT1EFyTg - FIN_CASA"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;UPD_CASA&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_UPD_CASA&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.UPD_CASA.ACID,&#10;&#9;&#9;dbo.UPD_CASA.ACCT_STATUS,&#10;&#9;&#9;dbo.UPD_CASA.LF_CHRG_PEND_LINES,&#10;&#9;&#9;dbo.UPD_CASA.SBCA_ACCT_TYPE,&#10;&#9;&#9;dbo.UPD_CASA.ACCT_INSTNT_CR_FACIL_FLG,&#10;&#9;&#9;dbo.UPD_CASA.LAST_LF_CALC_DATE,&#10;&#9;&#9;dbo.UPD_CASA.RCRE_USER_ID,&#10;&#9;&#9;dbo.UPD_CASA.RCRE_TIME,&#10;&#9;&#9;dbo.UPD_CASA.LCHG_USER_ID,&#10;&#9;&#9;dbo.UPD_CASA.LCHG_TIME,&#10;&#9;&#9;dbo.UPD_CASA.ACCT_STATUS_DATE,&#10;&#9;&#9;dbo.UPD_CASA.MAX_ALWD_ADVN_LIM,&#10;&#9;&#9;dbo.UPD_CASA.ACCT_CRFILE_REF_ID,&#10;&#9;&#9;dbo.UPD_CASA.LAST_AOD_AOS_DATE,&#10;&#9;&#9;dbo.UPD_CASA.HEALTH_CODE,&#10;&#9;&#9;dbo.UPD_CASA.TS_CNT,&#10;&#9;&#9;dbo.UPD_CASA.BANK_ID,&#10;&#9;&#9;dbo.UPD_CASA.NEXT_INACT_CHRG_CALC_DATE,&#10;&#9;&#9;dbo.UPD_CASA.NEXT_DORM_CHRG_CALC_DATE,&#10;&#9;&#9;dbo.UPD_CASA.ACCT_CLS_REASON_CODE,&#10;&#9;&#9;dbo.UPD_CASA.ACCT_MIN_BALANCE,&#10;&#9;&#9;dbo.UPD_CASA.ACCT_MIN_BAL_IND,&#10;&#9;&#9;dbo.UPD_CASA.PRODUCT_TYPE,&#10;&#9;&#9;dbo.UPD_CASA.NS_PERD_WD_MTHS,&#10;&#9;&#9;dbo.UPD_CASA.NS_PERD_WD_DAYS,&#10;&#9;&#9;dbo.UPD_CASA.DR_FREQ_START_DATE,&#10;&#9;&#9;dbo.UPD_CASA.NS_PERD_CLS_MTHS,&#10;&#9;&#9;dbo.UPD_CASA.NS_PERD_CLS_DAYS&#10;FROM&#9;dbo.UPD_CASA&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.FIN_UPD_CASA.ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.ACCT_STATUS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.LF_CHRG_PEND_LINES,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.SBCA_ACCT_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.ACCT_INSTNT_CR_FACIL_FLG,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.LAST_LF_CALC_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.RCRE_USER_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.RCRE_TIME,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.LCHG_USER_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.LCHG_TIME,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.ACCT_STATUS_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.MAX_ALWD_ADVN_LIM,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.ACCT_CRFILE_REF_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.LAST_AOD_AOS_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.HEALTH_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.TS_CNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.BANK_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.NEXT_INACT_CHRG_CALC_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.NEXT_DORM_CHRG_CALC_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.ACCT_CLS_REASON_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.ACCT_MIN_BALANCE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.ACCT_MIN_BAL_IND,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.PRODUCT_TYPE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.NS_PERD_WD_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.NS_PERD_WD_DAYS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.DR_FREQ_START_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.NS_PERD_CLS_MTHS,&#13;&#10;&#9;&#9;dbo.FIN_UPD_CASA.NS_PERD_CLS_DAYS&#13;&#10;FROM&#9;dbo.FIN_UPD_CASA&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -7086,7 +7086,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_gRMTEMVxEeyYZd1eWTVB0g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_cV43ABe2Ee2KiYB74uM_-Q-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -7207,7 +7207,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_bK-BgLvsEeyJGOOVk-YFpA"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="&quot;10.86.93.205&quot;"/>
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
@@ -7215,8 +7215,8 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:sO3UhjGRTCdjJZ0vh7N+oY+HrV/wPXP5CEtT+LAmomR7+de9tZVw2+GF8w=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CASA_MASTER&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:KxNE9rzzhMImbCyLGa3ohMmV0PH4wLNrgLf2q90L8jPXAnLdw4qf/qA9Nw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_CASA&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -7447,7 +7447,7 @@
   <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_3"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_bK-BgLvsEeyJGOOVk-YFpA"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
@@ -7457,13 +7457,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:S65R/4YidE/mRUhBPnEwdPUg7cLfBHl9eo5ENLpoHj4MWf9uUeZIBaVkVA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:KPAEopuT2ommV7E4/6UGiem7b+xjyYIDQM+Fzg55sbxjXpd4W2weezDPOg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMASTER.dbo.LA_MASTER&#13;&#10;WHERE ACID IN (SELECT ACID FROM RBSTAGE.dbo.UPD_LOANS)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBCEDWDV.dbo.FIN_LOANS_ACCOUNT&#13;&#10;WHERE ACID IN (SELECT ACID FROM RBSTAGE.dbo.FIN_UPD_LOANS)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -7479,7 +7479,7 @@
     <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
-    <elementParameter field="TEXT" name="LABEL" value="RBMASTER"/>
+    <elementParameter field="TEXT" name="LABEL" value="RBCEDW"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBRow_3"/>
     <metadata connector="REJECT" name="REJECT">
@@ -7490,7 +7490,7 @@
   <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_bK-BgLvsEeyJGOOVk-YFpA"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
@@ -7500,13 +7500,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nQds7RgKoWnLIMVZmK6+2tM/AkOW6HZ6vOCCbGbCSpNtuV37Nlae8Bx4Hw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MvYxTPXX5R1CiqVMD4SfC2fsXsGKOa76UHIqWO+myCvK3WArGXOy1SfuIQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMASTER.dbo.CASA_MASTER&#13;&#10;WHERE ACID IN (SELECT ACID FROM RBSTAGE.dbo.UPD_CASA)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBCEDWDV.dbo.FIN_CASA&#13;&#10;WHERE ACID IN (SELECT ACID FROM RBSTAGE.dbo.FIN_UPD_CASA)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -7522,7 +7522,7 @@
     <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
-    <elementParameter field="TEXT" name="LABEL" value="RBMASTER"/>
+    <elementParameter field="TEXT" name="LABEL" value="RBCEDW"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBRow_2"/>
     <metadata connector="REJECT" name="REJECT">
@@ -7548,13 +7548,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NaiVhjQhj93V1y3rWd+Vu9XoP/At8IJxHbyMz3R3AI+qFPn3SEfXkwBxug=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:tsOvebnJYvo+UfYlmCq2BsUwMFKNY5duoEdhSZ0qioyccY9DdrhIoVY0Xw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBCEDWDV.DBO.EOD_BALANCE&#13;&#10;WHERE CONCAT(ACID,EOD_DATE) IN&#13;&#10;(&#13;&#10;SELECT CONCAT(ACID,EOD_DATE)&#13;&#10;FROM RBSTAGE.DBO.UPD_EAB&#13;&#10;)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBCEDWDV.DBO.FIN_EOD_BALANCE&#13;&#10;WHERE CONCAT(ACID,EOD_DATE) IN&#13;&#10;(&#13;&#10;SELECT CONCAT(ACID,EOD_DATE)&#13;&#10;FROM RBSTAGE.DBO.FIN_UPD_EAB&#13;&#10;)&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -7591,15 +7591,15 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MxPaldqC4ade6plfoidbWzSMSQsxHMx/zbUClRV49OB2007Adyxj60bymw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VqrymgSNcyTtmqrZ/9pLsyk5X5HNHuO2FX1gZ129TiRhFpJ0Zhc33zgzzw=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RAtAMHjEeyGtfWT1EFyTg - FIN_EAB"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;UPD_EAB&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_UPD_EAB&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.UPD_EAB.ACID,&#10;&#9;&#9;dbo.UPD_EAB.EOD_DATE,&#10;&#9;&#9;dbo.UPD_EAB.TRAN_DATE_BAL,&#10;&#9;&#9;dbo.UPD_EAB.TRAN_DATE_TOT_TRAN,&#10;&#9;&#9;dbo.UPD_EAB.VALUE_DATE_BAL,&#10;&#9;&#9;dbo.UPD_EAB.VALUE_DATE_TOT_TRAN,&#10;&#9;&#9;dbo.UPD_EAB.END_EOD_DATE,&#10;&#9;&#9;dbo.UPD_EAB.LCHG_USER_ID,&#10;&#9;&#9;dbo.UPD_EAB.LCHG_TIME,&#10;&#9;&#9;dbo.UPD_EAB.RCRE_USER_ID,&#10;&#9;&#9;dbo.UPD_EAB.RCRE_TIME,&#10;&#9;&#9;dbo.UPD_EAB.TS_CNT,&#10;&#9;&#9;dbo.UPD_EAB.EAB_CRNCY_CODE,&#10;&#9;&#9;dbo.UPD_EAB.BANK_ID&#10;FROM&#9;dbo.UPD_EAB&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.FIN_UPD_EAB.ACID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.EOD_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.TRAN_DATE_BAL,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.TRAN_DATE_TOT_TRAN,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.VALUE_DATE_BAL,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.VALUE_DATE_TOT_TRAN,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.END_EOD_DATE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.LCHG_USER_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.LCHG_TIME,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.RCRE_USER_ID,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.RCRE_TIME,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.TS_CNT,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.EAB_CRNCY_CODE,&#13;&#10;&#9;&#9;dbo.FIN_UPD_EAB.BANK_ID&#13;&#10;FROM&#9;dbo.FIN_UPD_EAB&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -7693,7 +7693,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_gRMTEMVxEeyYZd1eWTVB0g-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_cV43ABe2Ee2KiYB74uM_-Q-tMap_5-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -7788,8 +7788,8 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:w5aLC7xoF5FeHDusXsf2peNfZnuutzue+pFT00sR7jHuC7HDujTyrsxcHw=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;EOD_BALANCE&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LqbgsRnByL4lRGBKGqgrZ2cqWQiYTLKyYWe3AlwstpkZCEAYMuTVDw/fCA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_EOD_BALANCE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -7973,7 +7973,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fMJ5uuOqRa2F7eKdyvMhJAtMaqYCMYdtVwQwjy7mfPMIHoo9YD5nPc4VBQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:V6nlH4CYEErZ7yuwyy1847M8aloc7XckOhHfwPmGbDxPWUdvpHlKEA5FLw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -8176,13 +8176,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_817ac6ea-d878-4b35-9b2b-d2bc129737fe"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>56Y6/vNGs4jIl6K2omRnkE4HlN4N/TuqphR2sHR6L+fjp7Soi0SKGAE4nfKPaOS7BMACXT8PZgBZ&#13;
-kvmGd2Jy+Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d3b2690a-509a-43de-be21-b31bb414a64c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/QoY8NmMsrJ6lR9CTAL1UdvNAiTfJgu7aBax4ZkiPOjYHPDvAjl3wKsGbrnmZehoeEEINwPm6BSs&#13;
-Cuo9PHKsBA==</DigestValue></Reference></SignedInfo><SignatureValue>ZSafwTn1Z2bx8xg+uj/Oay54tpX8rErGPILLt/x5qE61U05+sBrQCIwqtRQpjA1YpBu5G9g80hnY&#13;
-ncF1oWzRpeLR+x7OVKKGcV1QCdmkBS1YZWto53LODRrNl30qKXqd5pbvELdYD0VciMiztMsbe3q5&#13;
-uRPZFiJceVUx9cdk+7e+CUwG6C8Vrg9uv8uT+hS5Xh9f27qIGLUA1h1n0rB5dfveHWoe29scOAYz&#13;
-CM7sfhyOxrv3PN17EZRf/smqE8HvEzmnAkzFLLd1MFmJztLtOuMTrBfpAULJAfqKe32TD+0Jroyy&#13;
-bmnEuR7W/zY5wqUjg2M1e7NEA4qJLvicTaG3Gw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b9ac84d2-a2c9-4a20-875c-72b610036b84"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>idfIEkxpYLzjWoht/QxRQvprzt2oMRETrWtMxenYisg1HiquosQG6lZvqjLg+XgmD55Z7YtnEPbV&#13;
+mKgfLs7f8w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f1e0a6d8-876f-4778-af47-79ffa8fc825d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4y29/6fU7tFkbY/RbEJWyA1UWijlNtSgHDkV+xa8jy19xyOPFb/EsR2TUVxSCi9TP1zxYIXAVxlG&#13;
+MnQ5iaVpHA==</DigestValue></Reference></SignedInfo><SignatureValue>La3DCsQOoA5K7cooqF/7b27cwUCpH9dySUBB7jbuGge9Ac/Y8FYQnRmO3Etlc5wznlxT+ClfXhC6&#13;
+KsBgo3NUKyfu5kFacLdiwfdVY0BqcJZY4Fk7MUC0LzZ4ZaKI55Px3fF8b2h4e8uxgj9HZ+82rdKq&#13;
+8nWl4Mz7TssaqZxSqWFuEAZpOZXw414IzQ8n0RnF5BIk6nO2flxwaWd5c2fY87ZSuqhBclhgmF04&#13;
+wkVUMhnqusWyczyEjNdSWcNQw7Ed0a5a47zyA7r3fPsUElGHKd4aaAM5zYD+dvNMb6rfOvrhICQS&#13;
+YPTv2pqk3mOaBVwlLPFiiVzRu9j1H5/EEZ0jPA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -8204,4 +8204,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d3b2690a-509a-43de-be21-b31bb414a64c" Target="#_817ac6ea-d878-4b35-9b2b-d2bc129737fe"><Timestamp>2022-08-09 07:39:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f1e0a6d8-876f-4778-af47-79ffa8fc825d" Target="#_b9ac84d2-a2c9-4a20-875c-72b610036b84"><Timestamp>2022-08-12 10:19:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -16503,6 +16503,380 @@
         <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_wssTDcWKEey5fd-C11CRsQ"/>
       </feature>
     </ownedElement>
+    <ownedElement comment="Module Id = ACCT.The table contains label codes to group accounts" id="_-NQdUCgNEe2nC7orG8IVsg" label="ACCOUNT_LBL_CODE_TABLE" name="ACCOUNT_LBL_CODE_TABLE" tableType="TABLE" xmi:id="_-NZnQCgNEe2nC7orG8IVsg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="Module Id = ACCT.The table contains label codes to group accounts" xmi:id="_-NZnQSgNEe2nC7orG8IVsg"/>
+      <feature comment=" Account label code   " label="ACCT_LABEL_CODE" length="10" name="ACCT_LABEL_CODE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_-NZnQigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value=" Account label code   " xmi:id="_-NZnQygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnRCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnRSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="This indicates whether the record is verified or not. Y for verified records, N for unverified records" label="ENTITY_CRE_FLG" length="1" name="ENTITY_CRE_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_-NZnRigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="This indicates whether the record is verified or not. Y for verified records, N for unverified records" xmi:id="_-NZnRygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnSCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnSSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="This indicates whether the record has been deleted. Y for deleted records, N for not deleted records" label="DEL_FLG" length="1" name="DEL_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_-NZnSigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="This indicates whether the record has been deleted. Y for deleted records, N for not deleted records" xmi:id="_-NZnSygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnTCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnTSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Account label  Code description  " label="ACCT_LABEL_DESC" length="70" name="ACCT_LABEL_DESC" sourceType="VARCHAR2" talendType="id_String" xmi:id="_-NZnTigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Account label  Code description  " xmi:id="_-NZnTygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnUCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnUSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  System lebel flag  " label="SYS_LABEL_FLG" length="1" name="SYS_LABEL_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_-NZnUigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  System lebel flag  " xmi:id="_-NZnUygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnVCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnVSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Foreign Key :UPR.user_id. The user Id who last modified the record" label="LCHG_USER_ID" length="15" name="LCHG_USER_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_-NZnVigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Foreign Key :UPR.user_id. The user Id who last modified the record" xmi:id="_-NZnVygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnWCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnWSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Last change time of the record" label="LCHG_TIME" length="7" name="LCHG_TIME" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_-NZnWigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Last change time of the record" xmi:id="_-NZnWygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnXCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnXSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Foreign Key :UPR.user_id. User Id who created the record" label="RCRE_USER_ID" length="15" name="RCRE_USER_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_-NZnXigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Foreign Key :UPR.user_id. User Id who created the record" xmi:id="_-NZnXygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnYCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnYSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Time of creation of the record" label="RCRE_TIME" length="7" name="RCRE_TIME" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_-NZnYigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Time of creation of the record" xmi:id="_-NZnYygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnZCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnZSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Internal Column" label="TS_CNT" length="5" name="TS_CNT" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_-NZnZigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Internal Column" xmi:id="_-NZnZygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnaCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnaSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Unique identifier for a banking entity" label="BANK_ID" length="8" name="BANK_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_-NZnaigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Unique identifier for a banking entity" xmi:id="_-NZnaygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZnbCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZnbSgNEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="ALT1_ACCT_LABEL_DESC" length="70" name="ALT1_ACCT_LABEL_DESC" sourceType="VARCHAR2" talendType="id_String" xmi:id="_-NZnbigNEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_-NZnbygNEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_-NZncCgNEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_-NZncSgNEe2nC7orG8IVsg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement comment="Module Id = ACCT.This table contains deatils of  grouped A/cs under a label" id="_D9bFICgOEe2nC7orG8IVsg" label="ACCOUNT_LBL_RELTN_TBL" name="ACCOUNT_LBL_RELTN_TBL" tableType="TABLE" xmi:id="_D9bFISgOEe2nC7orG8IVsg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="Module Id = ACCT.This table contains deatils of  grouped A/cs under a label" xmi:id="_D9bFIigOEe2nC7orG8IVsg"/>
+      <feature comment="Foreign Key :ALC.acct_label_code.   Account label code  " label="ACCT_LABEL" length="10" name="ACCT_LABEL" sourceType="VARCHAR2" talendType="id_String" xmi:id="_D9bFIygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Foreign Key :ALC.acct_label_code.   Account label code  " xmi:id="_D9bFJCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFJSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFJigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Foreign Key :GAM.acid.  Acid of the account   " label="ACID" length="11" name="ACID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_D9bFJygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Foreign Key :GAM.acid.  Acid of the account   " xmi:id="_D9bFKCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFKSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFKigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="This indicates whether the record is verified or not. Y for verified records, N for unverified records" label="ENTITY_CRE_FLG" length="1" name="ENTITY_CRE_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_D9bFKygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="This indicates whether the record is verified or not. Y for verified records, N for unverified records" xmi:id="_D9bFLCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFLSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFLigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="This indicates whether the record has been deleted. Y for deleted records, N for not deleted records" label="DEL_FLG" length="1" name="DEL_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_D9bFLygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="This indicates whether the record has been deleted. Y for deleted records, N for not deleted records" xmi:id="_D9bFMCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFMSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFMigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Account level relation description  " label="ACCT_LABEL_RELTN_DESC" length="70" name="ACCT_LABEL_RELTN_DESC" sourceType="VARCHAR2" talendType="id_String" xmi:id="_D9bFMygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Account level relation description  " xmi:id="_D9bFNCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFNSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFNigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Foreign Key :UPR.user_id. The user Id who last modified the record" label="LCHG_USER_ID" length="15" name="LCHG_USER_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_D9bFNygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Foreign Key :UPR.user_id. The user Id who last modified the record" xmi:id="_D9bFOCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFOSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFOigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Last change time of the record" label="LCHG_TIME" length="7" name="LCHG_TIME" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_D9bFOygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Last change time of the record" xmi:id="_D9bFPCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFPSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFPigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Foreign Key :UPR.user_id. User Id who created the record" label="RCRE_USER_ID" length="15" name="RCRE_USER_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_D9bFPygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Foreign Key :UPR.user_id. User Id who created the record" xmi:id="_D9bFQCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFQSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFQigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Time of creation of the record" label="RCRE_TIME" length="7" name="RCRE_TIME" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_D9bFQygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Time of creation of the record" xmi:id="_D9bFRCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFRSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFRigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Internal Column" label="TS_CNT" length="5" name="TS_CNT" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_D9bFRygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Internal Column" xmi:id="_D9bFSCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFSSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFSigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Unique identifier for a banking entity" label="BANK_ID" length="8" name="BANK_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_D9bFSygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Unique identifier for a banking entity" xmi:id="_D9bFTCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_D9bFTSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_D9bFTigOEe2nC7orG8IVsg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement comment="Module Id = ACCT. Account Lien Maintenance Maintenance - placing a lien inserts a record into this table, and when the lien expires, the record is moved to the ALH table " id="_GWToECgOEe2nC7orG8IVsg" label="ACCOUNT_LIEN_TABLE" name="ACCOUNT_LIEN_TABLE" tableType="TABLE" xmi:id="_GWcyACgOEe2nC7orG8IVsg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="Module Id = ACCT. Account Lien Maintenance Maintenance - placing a lien inserts a record into this table, and when the lien expires, the record is moved to the ALH table " xmi:id="_GWcyASgOEe2nC7orG8IVsg"/>
+      <feature comment="Foreign Key :GAM.acid.   AcctId for which the lien details are updated  " label="ACID" length="11" name="ACID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyAigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Foreign Key :GAM.acid.   AcctId for which the lien details are updated  " xmi:id="_GWcyAygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyBCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyBSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment=" Event Type( Sanction Limit/Drawing Power Operation) - Static List   " label="B2K_TYPE" length="5" name="B2K_TYPE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyBigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value=" Event Type( Sanction Limit/Drawing Power Operation) - Static List   " xmi:id="_GWcyBygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyCCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyCSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Event Id  " label="B2K_ID" length="33" name="B2K_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyCigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Event Id  " xmi:id="_GWcyCygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyDCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyDSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment=" Entity Creation Flg - Value Always Y as there is no verification " label="ENTITY_CRE_FLG" length="1" name="ENTITY_CRE_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_GWcyDigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value=" Entity Creation Flg - Value Always Y as there is no verification " xmi:id="_GWcyDygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyECgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyESgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Record Deleted - Value Can be Y or N " label="DEL_FLG" length="1" name="DEL_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_GWcyEigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Record Deleted - Value Can be Y or N " xmi:id="_GWcyEygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyFCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyFSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Amount of lien on the Account  " label="LIEN_AMT" length="20" name="LIEN_AMT" precision="4" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_GWcyFigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Amount of lien on the Account  " xmi:id="_GWcyFygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyGCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecision="4" numericPrecisionRadix="10" xmi:id="_GWcyGSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment=" lien remarks   " label="LIEN_REMARKS" length="50" name="LIEN_REMARKS" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyGigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value=" lien remarks   " xmi:id="_GWcyGygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyHCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyHSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Last Modified by  " label="LCHG_USER_ID" length="15" name="LCHG_USER_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyHigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Last Modified by  " xmi:id="_GWcyHygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyICgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyISgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Last Modified On  " label="LCHG_TIME" length="7" name="LCHG_TIME" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_GWcyIigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Last Modified On  " xmi:id="_GWcyIygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyJCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyJSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Created by  " label="RCRE_USER_ID" length="15" name="RCRE_USER_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyJigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Created by  " xmi:id="_GWcyJygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyKCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyKSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Created On  " label="RCRE_TIME" length="7" name="RCRE_TIME" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_GWcyKigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Created On  " xmi:id="_GWcyKygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyLCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyLSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Foreign Key :ERDR.rct_ref_code.   Lien reason Code  " label="LIEN_REASON_CODE" length="5" name="LIEN_REASON_CODE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyLigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Foreign Key :ERDR.rct_ref_code.   Lien reason Code  " xmi:id="_GWcyLygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyMCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyMSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Lien Expiry Date  " label="LIEN_EXPIRY_DATE" length="7" name="LIEN_EXPIRY_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_GWcyMigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Lien Expiry Date  " xmi:id="_GWcyMygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyNCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyNSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  ts Count  " label="TS_CNT" length="5" name="TS_CNT" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_GWcyNigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  ts Count  " xmi:id="_GWcyNygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyOCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyOSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Foreign Key :ERDR.cnc_crncy_code.  The Currency Code of the Account.    " label="ALT_CRNCY_CODE" length="3" name="ALT_CRNCY_CODE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyOigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Foreign Key :ERDR.cnc_crncy_code.  The Currency Code of the Account.    " xmi:id="_GWcyOygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyPCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyPSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Unique identifier for a banking entity" label="BANK_ID" length="8" name="BANK_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyPigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Unique identifier for a banking entity" xmi:id="_GWcyPygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyQCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyQSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="LIEN_START_DATE" length="7" name="LIEN_START_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_GWcyQigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_GWcyQygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyRCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyRSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="REQUESTED_BY_DESC" length="80" name="REQUESTED_BY_DESC" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyRigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_GWcyRygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcySCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcySSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="REQUEST_DEPARTMENT" length="80" name="REQUEST_DEPARTMENT" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcySigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_GWcySygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyTCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyTSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="CONTACT_NUM" length="80" name="CONTACT_NUM" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyTigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_GWcyTygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyUCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyUSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="FUTURE_ULIEN_AMT" length="20" name="FUTURE_ULIEN_AMT" precision="4" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_GWcyUigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_GWcyUygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyVCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecision="4" numericPrecisionRadix="10" xmi:id="_GWcyVSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="SOL_ID" length="8" name="SOL_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyVigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_GWcyVygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyWCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyWSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="USER_ID" length="15" name="USER_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWcyWigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_GWcyWygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_GWcyXCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_GWcyXSgOEe2nC7orG8IVsg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement id="_bDsdICgOEe2nC7orG8IVsg" label="ACCT_PARTITION_TABLE" name="ACCT_PARTITION_TABLE" tableType="TABLE" xmi:id="_bDsdISgOEe2nC7orG8IVsg" xsi:type="relational:TdTable">
+      <feature label="TRAN_DATE" length="7" name="TRAN_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_bDsdIigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdIygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdJCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdJSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="TRAN_ID" length="9" name="TRAN_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bDsdJigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdJygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdKCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdKSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="PART_TRAN_SRL_NUM" length="4" name="PART_TRAN_SRL_NUM" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bDsdKigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdKygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdLCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdLSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="PSTD_FLG" length="1" name="PSTD_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_bDsdLigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdLygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdMCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdMSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="PARTITIONED_ACID" length="11" name="PARTITIONED_ACID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bDsdMigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdMygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdNCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdNSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="CUST_ID" length="9" name="CUST_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bDsdNigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdNygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdOCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdOSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="B2K_TYPE" length="5" name="B2K_TYPE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bDsdOigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdOygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdPCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdPSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="B2K_ID" length="12" name="B2K_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bDsdPigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdPygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdQCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdQSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="TRAN_AMT" length="20" name="TRAN_AMT" precision="4" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_bDsdQigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdQygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdRCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecision="4" numericPrecisionRadix="10" xmi:id="_bDsdRSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="SOL_ID" length="8" name="SOL_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bDsdRigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdRygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdSCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdSSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="TRAN_CRNCY_CODE" length="3" name="TRAN_CRNCY_CODE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bDsdSigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdSygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdTCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdTSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="PART_TRAN_TYPE" length="1" name="PART_TRAN_TYPE" sourceType="CHAR" talendType="id_String" xmi:id="_bDsdTigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdTygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdUCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdUSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="SUPERCEDED_AFTER_RENEWAL" length="1" name="SUPERCEDED_AFTER_RENEWAL" sourceType="CHAR" talendType="id_String" xmi:id="_bDsdUigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdUygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdVCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdVSgOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="BANK_ID" length="8" name="BANK_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bDsdVigOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bDsdVygOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bDsdWCgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bDsdWSgOEe2nC7orG8IVsg"/>
+      </feature>
+    </ownedElement>
+    <ownedElement comment="Module Id = ACOF.Table for storing the account placeholder information, the&#13;&#10;menu option APHM inserts/updates data in it." id="_bD_YECgOEe2nC7orG8IVsg" label="ACCT_PLACEHOLDER_TABLE" name="ACCT_PLACEHOLDER_TABLE" tableType="TABLE" xmi:id="_bD_YESgOEe2nC7orG8IVsg" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="Module Id = ACOF.Table for storing the account placeholder information, the&#10;menu option APHM inserts/updates data in it." xmi:id="_bD_YEigOEe2nC7orG8IVsg"/>
+      <feature comment="Name of the placeholder.This is maintained via the menu option APHM. A placeholder can be linked to an office account via the menu option ACMDB. For a given sol id and currency, there can be only one office account for a given placeholder. Thus a placeholder is a tag on an office account, and an office account may or may not have a placeholder tagged to it." label="BACID" length="16" name="BACID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bD_YEygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Name of the placeholder.This is maintained via the menu option APHM. A placeholder can be linked to an office account via the menu option ACMDB. For a given sol id and currency, there can be only one office account for a given placeholder. Thus a placeholder is a tag on an office account, and an office account may or may not have a placeholder tagged to it." xmi:id="_bD_YFCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YFSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YFigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Indicates whether the placeholder name is deleted or not, a deleted placeholder will need to be undeleted prior to use" label="DEL_FLG" length="1" name="DEL_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_bD_YFygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Indicates whether the placeholder name is deleted or not, a deleted placeholder will need to be undeleted prior to use" xmi:id="_bD_YGCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YGSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YGigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Description of the placeholder.The length cannot be more than 50 characters." label="BACID_DESC" length="50" name="BACID_DESC" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bD_YGygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Description of the placeholder.The length cannot be more than 50 characters." xmi:id="_bD_YHCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YHSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YHigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  User Id that has last modified the record  " label="LCHG_USER_ID" length="15" name="LCHG_USER_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bD_YHygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  User Id that has last modified the record  " xmi:id="_bD_YICgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YISgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YIigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  User Id that created the record  " label="RCRE_USER_ID" length="15" name="RCRE_USER_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bD_YIygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  User Id that created the record  " xmi:id="_bD_YJCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YJSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YJigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Time when the record was last changed  " label="LCHG_TIME" length="7" name="LCHG_TIME" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_bD_YJygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Time when the record was last changed  " xmi:id="_bD_YKCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YKSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YKigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Time when the record was created  " label="RCRE_TIME" length="7" name="RCRE_TIME" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_bD_YKygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Time when the record was created  " xmi:id="_bD_YLCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YLSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YLigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="The scheme type of the accounts which are going to be attached to this place holder. This is optional. In case for a given placeholder, the scheme type is not mentioned, it can be used with any scheme type ie with any office account. Otherwise, it can only be used with the office accounts belonging to that scheme type." label="SCHM_TYPE" length="3" name="SCHM_TYPE" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bD_YLygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="The scheme type of the accounts which are going to be attached to this place holder. This is optional. In case for a given placeholder, the scheme type is not mentioned, it can be used with any scheme type ie with any office account. Otherwise, it can only be used with the office accounts belonging to that scheme type." xmi:id="_bD_YMCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YMSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YMigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="  Database field to check timestamp  " label="TS_CNT" length="5" name="TS_CNT" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_bD_YMygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="  Database field to check timestamp  " xmi:id="_bD_YNCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YNSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YNigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Indicates the type of place holder. Example, C for cash type of place holder" label="PLACEHOLDER_TYPE" length="1" name="PLACEHOLDER_TYPE" sourceType="CHAR" talendType="id_String" xmi:id="_bD_YNygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Indicates the type of place holder. Example, C for cash type of place holder" xmi:id="_bD_YOCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YOSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YOigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature comment="Unique identifier for a banking entity" label="BANK_ID" length="8" name="BANK_ID" sourceType="VARCHAR2" talendType="id_String" xmi:id="_bD_YOygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Unique identifier for a banking entity" xmi:id="_bD_YPCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YPSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YPigOEe2nC7orG8IVsg"/>
+      </feature>
+      <feature label="ENTITY_CRE_FLG" length="1" name="ENTITY_CRE_FLG" sourceType="CHAR" talendType="id_String" xmi:id="_bD_YPygOEe2nC7orG8IVsg" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_bD_YQCgOEe2nC7orG8IVsg"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_bD_YQSgOEe2nC7orG8IVsg" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_bD_YQigOEe2nC7orG8IVsg"/>
+      </feature>
+    </ownedElement>
   </orgomg.cwm.resource.relational:Schema>
   <orgomg.cwm.resource.relational:Schema dataManager="_QxLaMLAaEeynYYW0sERf_g" name="TBAGEN" xmi:id="_MxhshLZFEeyLu5ltipv0mQ"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_QxLaMLAaEeynYYW0sERf_g" name="TBAUTIL" xmi:id="_MxhshbZFEeyLu5ltipv0mQ"/>
@@ -16523,13 +16897,13 @@
   <orgomg.cwm.resource.relational:Schema dataManager="_QxLaMLAaEeynYYW0sERf_g" name="WMSYS" xmi:id="_MxhslLZFEeyLu5ltipv0mQ"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_QxLaMLAaEeynYYW0sERf_g" name="XDB" xmi:id="_MxhslbZFEeyLu5ltipv0mQ"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_QxLaMLAaEeynYYW0sERf_g" name="XS$NULL" xmi:id="_MxhslrZFEeyLu5ltipv0mQ"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fab4fba6-6e52-4e15-a45b-c1f466f9bc6a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V+F7mM5ajgNA/ycY1QYYgGulcCqjeb4m++mA/ugqA50SErjg195rV2WiZ85+WUDKPCeoaaXUzmHi&#13;
-bvJEzA0OTQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4c73048a-19da-4fb9-9285-a8027d4af533"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2qfTsDkB4us7/anuz5gxYrMcRGZIXGe9bDLGdpWURPT//RhtUIGHDN08GoOvxktQ2EOThZdKo0fv&#13;
-jWBCKClMRw==</DigestValue></Reference></SignedInfo><SignatureValue>MKDCN8/ETmZvKD9hq4CMclbb8ZQdh2fIbj2Ob/8WvFHjU0ydVwqRzjzI7/zZ/gnLNdGjw/6a8C8X&#13;
-JvLTUY8ewMX5Svu/dA1aBeor7cyr60rTVQjS2b/oCp1sNZayXSazSLThfoZmF14aB+M+frNqwgwa&#13;
-PmLp6Y1/1vdLW8IiiPegma0oc7PaOrN+4lWPxWxPUrOh4v/BSb+xgZ3/eL4uXwQlWOVIAQahtpNV&#13;
-Zag8Mizw4j9MFKegGUceuqxpFSbAHfZtH9eazkIGYil4O1e/jkOlUTAMV232tdlPXYLf1yfb/aqr&#13;
-oLw9e0dBZkSRsMBQyUwCdzsQMzdfZGhnOjm4aA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d23a68c4-963b-457e-922b-e6112c18544b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>h4N2PW8r418HiaaI4gkgAUYudjI4pqXwhVkvIsnclJ3uulEfgEadw7VhfrvZS30ls9RDQi8BlW18&#13;
+guosK/00zQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c8dc0b25-2910-4186-8d3b-9501a1fe8a51"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bXMNvBGqLvI9toL0+4vR8JmSQIQXDO3fFDIPMWeUchKFblzHQ0dsDYXHmith0rHei8f3PjrXBLio&#13;
+ljMDOu7Uxg==</DigestValue></Reference></SignedInfo><SignatureValue>F0xrp92OXoBUa35IKVQUfjNSUDsoJrxdAJk8mC0DcJU0qPeGzwqcm50wiBC6aveFOYOqSDeLwivW&#13;
+XexYHW4xtqornTUw1lP5gKkIuLYY/6UYgVywKQRvR0QK5jS7yZomOZi/R+QIsSgPZyDPY5dWPuiX&#13;
+cKbMVZDogP9QSDbLlCPi3Gr4tL9nNEikcV4Ak+CeZZnoJuqHMdpHUtLduuKj5g7PvUvqpXJivq/V&#13;
+jo3MA1yQGCHxeQFJfdwrT3NmnTWVNkwAkWTq9zEdgfjXbU/DmM6U30oeNlGkI8MOR0kXsRTGERir&#13;
+WCRFXrkw+msPFc/jkturiZBrz7wrU1S+5wW7Yw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -16551,4 +16925,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4c73048a-19da-4fb9-9285-a8027d4af533" Target="#_fab4fba6-6e52-4e15-a45b-c1f466f9bc6a"><Timestamp>2022-08-30 02:01:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c8dc0b25-2910-4186-8d3b-9501a1fe8a51" Target="#_d23a68c4-963b-457e-922b-e6112c18544b"><Timestamp>2022-08-30 03:23:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

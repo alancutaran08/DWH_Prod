@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:OGbFK6/loYt5sPL1GjdEOY0MRcjzSqAqVEZbAYPl"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:hNb5LiRb8CQTl3sP2ewcV/jQKaTmym2xJHLsZl8n"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -84,7 +84,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:y97eZgy2v2pIXNSX/uDJCz3DPlsC5h+lhzB+RfPP"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:PRXgvMPePwJX9U1HYt6qhAyUt4wOKxbxee43k7dh"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -119,20 +119,21 @@
     <routinesParameter id="_ekSMcLAUEeynYYW0sERf_g" name="TalendStringUtil"/>
     <routinesParameter id="_ejuy0LAUEeynYYW0sERf_g" name="TalendString"/>
   </parameters>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//Calculate End Date&#10;if(TalendDate.isDate(context.RunDate, &quot;MMddyyyy&quot;)) {&#10;&#9;context.EndDate = TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getLastDayOfMonth(TalendDate.addDate(TalendDate.parseDate(&quot;MMddyyyy&quot;, context.RunDate), -1, &quot;MM&quot;)));&#10;} else {&#10;&#9;context.EndDate = TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getLastDayOfMonth(TalendDate.addDate(TalendDate.getCurrentDate(), -1, &quot;MM&quot;)));&#10;&#9;context.RunDate = TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getCurrentDate());&#10;}&#10;&#10;//Set the First day of the month&#10;context.MMStartDate = TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getFirstDayOfMonth(TalendDate.parseDate(&quot;MMddyyyy&quot;, context.EndDate)));&#10;System.out.println(&quot;MNTH: &quot;+context.MMStartDate);&#10;&#10;//Check if month is End of Quarter and set the first day of the quarter&#10;if ((TalendDate.getPartOfDate(&quot;MONTH&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.EndDate))+1)%3 == 0) {&#10;&#9;context.QTStartDate = TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getFirstDayOfMonth(TalendDate.addDate(TalendDate.parseDate(&quot;MMddyyyy&quot;, context.RunDate), -3, &quot;MM&quot;)));&#10;&#9;System.out.println(&quot;QRTR: &quot;+context.QTStartDate);&#10;}&#10;&#10;//Check if Date is End of Year and set the first day of the year&#10;if(TalendDate.getPartOfDate(&quot;YEAR&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.EndDate)) != TalendDate.getPartOfDate(&quot;YEAR&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.RunDate))) {&#10;&#9;context.YRStartDate = TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getFirstDayOfMonth(TalendDate.addDate(TalendDate.parseDate(&quot;MMddyyyy&quot;, context.RunDate), -1, &quot;yyyy&quot;)));&#10;&#9;System.out.println(&quot;YEAR: &quot;+context.YRStartDate);&#10;} &#10;&#10;System.out.println(&quot;EndDate: &quot;+context.EndDate);&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Set Date Values"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="TR_CalculateADB"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="FIN_TR_CalculateADB"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GITTEST:_lHJTIMYmEey5fd-C11CRsQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GITHUB_DEV:_xLniYCkSEe2nC7orG8IVsg"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
@@ -160,13 +161,13 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="TR_CalculateADB"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="FIN_TR_CalculateADB"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GITTEST:_lHJTIMYmEey5fd-C11CRsQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GITHUB_DEV:_xLniYCkSEe2nC7orG8IVsg"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
@@ -194,13 +195,13 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_2"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="TR_CalculateADB"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="FIN_TR_CalculateADB"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GITTEST:_lHJTIMYmEey5fd-C11CRsQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GITHUB_DEV:_xLniYCkSEe2nC7orG8IVsg"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
@@ -239,12 +240,6 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="TalendDate.getPartOfDate(&quot;YEAR&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.EndDate)) != TalendDate.getPartOfDate(&quot;YEAR&quot;, TalendDate.parseDate(&quot;MMddyyyy&quot;, context.RunDate))"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If3"/>
   </connection>
-  <note opaque="true" posX="32" posY="32" sizeHeight="193" sizeWidth="513" text="Jobname: TR_CalculateADB&#13;&#10;Developer: Michael Garcia&#13;&#10;Description: Calculates ADB for a specific period&#13;&#10;Frequency: Monthly Quarterly Annual YearToDate&#13;&#10;&#13;&#10;Pre-requisites: &#13;&#10;- All data of the previous month have been loaded into the database&#13;&#10;- RunDate - Current Date if blank">
-    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
-    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
-  </note>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -265,13 +260,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d40d09b2-3fdd-4bb4-a04b-6d6cc00970c5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HhHbsNp3R4wLoZ/6ENVi5np9GrG6NCdzo8GNtkwEmSaMi0FQpgnPm8sOWxRUhcuGisWM9audV8x6&#13;
-Qdeu16XtBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a052ce73-264b-4220-bf02-f42579cea678"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Lo7ebtazU9r56MY0YUqxJyGZGwcjQwOaIfNd/3JeVdBsOo2fDBkL94EdGXxeGN5sCy7PBaK4+pfs&#13;
-It+pMLvegA==</DigestValue></Reference></SignedInfo><SignatureValue>OuznCicd0m4UUeeu40XBTZAwo186gYu6kcmyi/NZcUfR3bKZrvW+OxlLkFOc7T+83Ggo2FDsLOfg&#13;
-SUtzjVvHhzXLk7C5FR+HbBEG9Oh8L85tzSFIOslcu1YAJJO+wNKhQOLzYP4kbXKCjVeElDpqlMcE&#13;
-evY3WVtz2a2rsBSZuDe9PgzqKKTwqFG4rAGcoSG04/eOqbWviE2RC31X02UsF5lGjBB6MR5XRRAO&#13;
-EYQaN8RcbnusoJxEGlnxPlqmoL/mnHaoV/fPNEPtUtvEUFGcZGG3WhMBXw955hBzoppI/Z6jVNBp&#13;
-lZtbL368RlbU8+oe84eSW/w6pSIBbbegjtcG3w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0eea7687-a094-4e80-8734-cddd93e53af8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Phcgs13rz0i6rOxcJ7tpFJlOX668HpNQERouutqpZuWraCerOXydBXlQ0tHDdHfXs4mR3TZOktfX&#13;
+aAx90O0Ytw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2bbed74e-41c6-4350-8112-e970eaff19bf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>i3tDks+al8JsfHu0MJXLX7uQSxZQkQJnUHA8iagDAGKkCx3ZFJ+gnsYu0tV6tHPY08N/7MSbLLi8&#13;
+gbXfMUnU6Q==</DigestValue></Reference></SignedInfo><SignatureValue>O8OIS5fET+uvBS90n2BtrsGgw05hEWiJf96wtHbjyZ0kxP2bwloRu4h+29HLV19T675PoviO8LqK&#13;
+TK5JGiVPFHkkxQVGVDIsI5BUGlUP47wOzl0L7uw30F+JifHknVjALIVeno3cyl5orSx8PY6+wK5+&#13;
+EtYQd2uecoQsMl5FQI/sb0i+lXUaj9RZ7GKBIScn87dgzwp0hrOrG94hT/uLOqFv64vSuMNNSv2V&#13;
+S8Pnt1X/vGZwN01dcVNSxL1WS4UBVUSmxYTluVYhcEX44wrDv/+7o3yr4qmhKGVRGVSqn5gNwHEB&#13;
+A8Hq/zeGkMh/8jU20xCS7pxCDWhTa3dOtb5wjw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -293,4 +288,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a052ce73-264b-4220-bf02-f42579cea678" Target="#_d40d09b2-3fdd-4bb4-a04b-6d6cc00970c5"><Timestamp>2022-08-31 10:05:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2bbed74e-41c6-4350-8112-e970eaff19bf" Target="#_0eea7687-a094-4e80-8734-cddd93e53af8"><Timestamp>2022-08-31 10:07:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

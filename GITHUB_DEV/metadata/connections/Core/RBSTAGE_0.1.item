@@ -20594,12 +20594,12 @@
         <initialValue language="COLUMN_DEF" xmi:id="_v_IwcDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="2" name="NUMERIC" numericPrecision="4" numericPrecisionRadix="10" xmi:id="_v_IwcTMaEe2ErstQFLNQDw"/>
       </feature>
-      <feature label="release_date" length="10" name="release_date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="DATETIME" talendType="id_Date" xmi:id="_v_IwcjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
+      <feature label="release_date" length="10" name="release_date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_v_IwcjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_v_IwczMaEe2ErstQFLNQDw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_v_IwdDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" xmi:id="_v_IwdTMaEe2ErstQFLNQDw"/>
       </feature>
-      <feature label="chg_time" length="19" name="chg_time" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="DATETIME" talendType="id_Date" xmi:id="_v_IwdjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
+      <feature label="chg_time" length="19" name="chg_time" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="DATETIME2" talendType="id_Date" xmi:id="_v_IwdjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_v_IwdzMaEe2ErstQFLNQDw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_v_IweDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="DATETIME2" xmi:id="_v_IweTMaEe2ErstQFLNQDw"/>
@@ -20614,10 +20614,10 @@
         <initialValue language="COLUMN_DEF" xmi:id="_v_IwgDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="1" name="CHAR" xmi:id="_v_IwgTMaEe2ErstQFLNQDw"/>
       </feature>
-      <feature label="cre_time" length="26" name="cre_time" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="DATETIME" talendType="id_Date" xmi:id="_v_IwgjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
+      <feature label="cre_time" length="19" name="cre_time" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="DATETIME2" talendType="id_Date" xmi:id="_v_IwgjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_v_IwgzMaEe2ErstQFLNQDw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_v_IwhDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
-        <sqlDataType javaDataType="12" name="DATETIMEOFFSET" xmi:id="_v_IwhTMaEe2ErstQFLNQDw"/>
+        <sqlDataType javaDataType="12" name="DATETIME2" xmi:id="_v_IwhTMaEe2ErstQFLNQDw"/>
       </feature>
       <feature label="cre_by" length="50" name="cre_by" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_v_IwhjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_v_IwhzMaEe2ErstQFLNQDw"/>
@@ -20633,6 +20633,11 @@
         <taggedValue tag="Comment" value="" xmi:id="_v_IwjzMaEe2ErstQFLNQDw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_v_IwkDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="2" name="NUMERIC" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_v_IwkTMaEe2ErstQFLNQDw"/>
+      </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATE" talendType="id_Date" xmi:id="_wUVVkDpOEe2NQ9cGGWoxUA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_wUVVkTpOEe2NQ9cGGWoxUA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_wUVVkjpOEe2NQ9cGGWoxUA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="3" xmi:id="_wUVVkzpOEe2NQ9cGGWoxUA"/>
       </feature>
     </ownedElement>
     <ownedElement id="_v_n4cDMaEe2ErstQFLNQDw" label="CAI_ACCEPTANCE_TBL" name="CAI_ACCEPTANCE_TBL" tableType="TABLE" xmi:id="_v_n4cTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
@@ -20846,6 +20851,9 @@
         <initialValue language="COLUMN_DEF" xmi:id="_v_n5GDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_v_n5GTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATE" talendType="id_Date" xmi:id="_7rVCsDpOEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_EAsyMDpPEe2NQ9cGGWoxUA"/>
+      </feature>
     </ownedElement>
     <ownedElement id="_wDnAkDMaEe2ErstQFLNQDw" label="CAI_ADDRESSES" name="CAI_ADDRESSES" tableType="TABLE" xmi:id="_wDnAkTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_wDnAkjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -21002,6 +21010,9 @@
         <taggedValue tag="Comment" value="" xmi:id="_wDnBCzMaEe2ErstQFLNQDw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_wDnBDDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" xmi:id="_wDnBDTMaEe2ErstQFLNQDw"/>
+      </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_vEpSMDpSEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_8N_uEDpSEe2NQ9cGGWoxUA"/>
       </feature>
     </ownedElement>
     <ownedElement id="_wHSmsDMaEe2ErstQFLNQDw" label="CAI_BI_BAPNIS_MATCHES" name="CAI_BI_BAPNIS_MATCHES" tableType="TABLE" xmi:id="_wHSmsTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
@@ -21402,6 +21413,9 @@
         <initialValue language="COLUMN_DEF" xmi:id="_wKgTODMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_wKgTOTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATE" talendType="id_Date" xmi:id="_E52yUDpQEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_-5bZkDpSEe2NQ9cGGWoxUA"/>
+      </feature>
     </ownedElement>
     <ownedElement id="_wNyQQDMaEe2ErstQFLNQDw" label="CAI_BI_CMAP_ACCS_REFTO_LAWYERS_MATCHES" name="CAI_BI_CMAP_ACCS_REFTO_LAWYERS_MATCHES" tableType="TABLE" xmi:id="_wNyQQTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_wNyQQjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -21503,6 +21517,9 @@
         <taggedValue tag="Comment" value="" xmi:id="_wNyQjzMaEe2ErstQFLNQDw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_wNyQkDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_wNyQkTMaEe2ErstQFLNQDw"/>
+      </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATE" talendType="id_Date" xmi:id="_d0nmwDpQEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_AqfHgDpTEe2NQ9cGGWoxUA"/>
       </feature>
     </ownedElement>
     <ownedElement id="_wRbaIDMaEe2ErstQFLNQDw" label="CAI_BI_CMAP_COURT_CASES_MATCHES" name="CAI_BI_CMAP_COURT_CASES_MATCHES" tableType="TABLE" xmi:id="_wRbaITMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
@@ -21626,6 +21643,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_wRbagDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_wRbagTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_CVvvcDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_wVrA8DMaEe2ErstQFLNQDw" label="CAI_BI_CMAP_RETURNED_CHECKS_MATCHES" name="CAI_BI_CMAP_RETURNED_CHECKS_MATCHES" tableType="TABLE" xmi:id="_wVrA8TMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_wVrA8jMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -21753,6 +21771,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_wVrBVDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_wVrBVTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_EtaKYDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_wZpiADMaEe2ErstQFLNQDw" label="CAI_BI_CMAP_TELECOMS_MATCHES" name="CAI_BI_CMAP_TELECOMS_MATCHES" tableType="TABLE" xmi:id="_wZpiATMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_wZpiAjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -21875,6 +21894,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_wZpiYDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_wZpiYTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_GJREYDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_wmuUsDMaEe2ErstQFLNQDw" label="CAI_BI_CUST_RESULT" name="CAI_BI_CUST_RESULT" tableType="TABLE" xmi:id="_wmuUsTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_wmuUsjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -22327,6 +22347,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_wmuWGDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_wmuWGTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_H7Ve8DpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_wpxosDMaEe2ErstQFLNQDw" label="CAI_BI_FINACLE_DEDUPE_PERSON_RESULT" name="CAI_BI_FINACLE_DEDUPE_PERSON_RESULT" tableType="TABLE" xmi:id="_wpxosTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_wpxosjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -22404,6 +22425,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_wpxo7DMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_wpxo7TMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_JTWawDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_wtUr8DMaEe2ErstQFLNQDw" label="CAI_BI_FINACLE_PASTDUE_ACCOUNTS_MATCHES" name="CAI_BI_FINACLE_PASTDUE_ACCOUNTS_MATCHES" tableType="TABLE" xmi:id="_wtUr8TMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_wtUr8jMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -22541,6 +22563,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_wtUsXDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_wtUsXTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_K89c4DpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_wwbDQDMaEe2ErstQFLNQDw" label="CAI_BMS_BLACKLIST_PERSON_MATCHES" name="CAI_BMS_BLACKLIST_PERSON_MATCHES" tableType="TABLE" xmi:id="_wwbDQTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_wwbDQjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -22703,6 +22726,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_wwbDwDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_wwbDwTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Mry9QDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_wzx5QDMaEe2ErstQFLNQDw" label="CAI_BOOKING_MAST_TBL" name="CAI_BOOKING_MAST_TBL" tableType="TABLE" xmi:id="_wzx5QTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_wzx5QjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -23040,6 +23064,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_wzx6TDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_wzx6TTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_OS1MgDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_w3hw0DMaEe2ErstQFLNQDw" label="CAI_CI_BVR" name="CAI_CI_BVR" tableType="TABLE" xmi:id="_w3hw0TMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_w3hw0jMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -23307,6 +23332,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_w3hxpDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_w3hxpTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_PtCgsDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_w7JskDMaEe2ErstQFLNQDw" label="CAI_CI_EVR" name="CAI_CI_EVR" tableType="TABLE" xmi:id="_w7JskTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_w7JskjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -23524,6 +23550,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_w7JtPDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_w7JtPTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_QwED8DpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_w-NnoDMaEe2ErstQFLNQDw" label="CAI_CI_MASTER" name="CAI_CI_MASTER" tableType="TABLE" xmi:id="_w-NnoTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_w-NnojMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -23606,6 +23633,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_w-Nn4DMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_w-Nn4TMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_SARuoDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xBV0IDMaEe2ErstQFLNQDw" label="CAI_CI_OFFUS_LOANS" name="CAI_CI_OFFUS_LOANS" tableType="TABLE" xmi:id="_xBV0ITMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xBV0IjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -23698,6 +23726,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xBV0aDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_xBV0aTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_TWTtcDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xSQlADMaEe2ErstQFLNQDw" label="CAI_CI_PDRN" name="CAI_CI_PDRN" tableType="TABLE" xmi:id="_xSQlATMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xSQlAjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -23915,6 +23944,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xSQlrDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_xSQlrTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_UwX3sDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xVMkQDMaEe2ErstQFLNQDw" label="CAI_CUST_BSP_CODES_TBL" name="CAI_CUST_BSP_CODES_TBL" tableType="TABLE" xmi:id="_xVMkQTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xVMkQjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24012,6 +24042,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xVMkjDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_xVMkjTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_WNQscDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xYZCMDMaEe2ErstQFLNQDw" label="CAI_CUST_CONTACTS" name="CAI_CUST_CONTACTS" tableType="TABLE" xmi:id="_xYZCMTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xYZCMjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24069,6 +24100,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xYZCXDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" xmi:id="_xYZCXTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_XWaF0DpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xbbvIDMaEe2ErstQFLNQDw" label="CAI_CUST_EXTRAS" name="CAI_CUST_EXTRAS" tableType="TABLE" xmi:id="_xbbvITMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xbbvIjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24126,6 +24158,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xbbvTDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_xbbvTTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_YhL24DpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xfXM4DMaEe2ErstQFLNQDw" label="CAI_CUST_FINANCIAL_INFO" name="CAI_CUST_FINANCIAL_INFO" tableType="TABLE" xmi:id="_xfXM4TMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xfXM4jMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24243,6 +24276,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xfXNPDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_xfXNPTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_Z1diMDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xieyUDMaEe2ErstQFLNQDw" label="CAI_CUST_ID_DOCUMENTS" name="CAI_CUST_ID_DOCUMENTS" tableType="TABLE" xmi:id="_xieyUTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xieyUjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24325,6 +24359,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xieykDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_xieykTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_buRd8DpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xmUJcDMaEe2ErstQFLNQDw" label="CAI_CUST_PERSONAL_INFO" name="CAI_CUST_PERSONAL_INFO" tableType="TABLE" xmi:id="_xmUJcTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xmUJcjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24447,6 +24482,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xmUJ0DMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_xmUJ0TMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_dVhIkDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xqqd8DMaEe2ErstQFLNQDw" label="CAI_CUST_PERSONAL_REFS" name="CAI_CUST_PERSONAL_REFS" tableType="TABLE" xmi:id="_xqqd8TMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xqqd8jMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24544,6 +24580,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xqqePDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_xqqePTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_e4CEMDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_xtg9oDMaEe2ErstQFLNQDw" label="CAI_DISBURSEMENT_MAST_TBL" name="CAI_DISBURSEMENT_MAST_TBL" tableType="TABLE" xmi:id="_xtg9oTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_xtg9ojMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24636,6 +24673,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_xtg96DMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_xtg96TMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_gH_3QDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_x6H2QDMaEe2ErstQFLNQDw" label="CAI_EVAL_DEPOSIT_EXPOSURES" name="CAI_EVAL_DEPOSIT_EXPOSURES" tableType="TABLE" xmi:id="_x6H2QTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_x6H2QjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24743,6 +24781,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_x6H2lDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_x6H2lTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_hYZvMDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_x9xnMDMaEe2ErstQFLNQDw" label="CAI_EVAL_LAON_DETAILS_PL" name="CAI_EVAL_LAON_DETAILS_PL" tableType="TABLE" xmi:id="_x9xnMTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_x9xnMjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -24985,6 +25024,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_x9xn8DMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="2" name="NUMERIC" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_x9xn8TMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_igO58DpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_yBx9cDMaEe2ErstQFLNQDw" label="CAI_EVAL_LOAN_DETAILS_MC" name="CAI_EVAL_LOAN_DETAILS_MC" tableType="TABLE" xmi:id="_yBx9cTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_yBx9cjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -25212,6 +25252,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_yBx-JDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="2" name="NUMERIC" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_yBx-JTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_j3uRUDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_yFIMYDMaEe2ErstQFLNQDw" label="CAI_EVAL_LOAN_EXPOSURES" name="CAI_EVAL_LOAN_EXPOSURES" tableType="TABLE" xmi:id="_yFIzcDMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_yFIzcTMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -25364,6 +25405,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_yFIz5zMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="2" name="NUMERIC" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_yFIz6DMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_lev5gDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_yJXMIDMaEe2ErstQFLNQDw" label="CAI_EVAL_MONTHLY_INCOMES" name="CAI_EVAL_MONTHLY_INCOMES" tableType="TABLE" xmi:id="_yJXMITMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_yJXMIjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -25451,6 +25493,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_yJXMZDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_yJXMZTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_nRsd0DpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_yM9SsDMaEe2ErstQFLNQDw" label="CAI_EVAL_MOTHLY_PAYABLES" name="CAI_EVAL_MOTHLY_PAYABLES" tableType="TABLE" xmi:id="_yM9SsTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_yM9SsjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -25527,6 +25570,9 @@
         <taggedValue tag="Comment" value="" xmi:id="_yM9S6zMaEe2ErstQFLNQDw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_yM9S7DMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_yM9S7TMaEe2ErstQFLNQDw"/>
+      </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_ovdcUDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_lAFyIDpUEe2NQ9cGGWoxUA"/>
       </feature>
     </ownedElement>
     <ownedElement id="_ya2kwDMaEe2ErstQFLNQDw" label="CAI_EVAL_OTHER_LOAN_APPLICATIONS" name="CAI_EVAL_OTHER_LOAN_APPLICATIONS" tableType="TABLE" xmi:id="_ya2kwTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
@@ -25625,6 +25671,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_ya2lDDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="93" name="DATETIME" numericPrecision="3" xmi:id="_ya2lDTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_qUjx4DpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_yeMzsDMaEe2ErstQFLNQDw" label="CAI_EVAL_REPORT_MASTER" name="CAI_EVAL_REPORT_MASTER" tableType="TABLE" xmi:id="_yeMzsTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_yeMzsjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -25717,6 +25764,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_yeMz-DMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_yeMz-TMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_rneLQDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_yhc8ADMaEe2ErstQFLNQDw" label="CAI_LOAN_APPLICATIONS" name="CAI_LOAN_APPLICATIONS" tableType="TABLE" xmi:id="_yhc8ATMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_yhc8AjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -25984,6 +26032,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_yhc81DMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_yhc81TMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_s_cDwDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_ylV9gDMaEe2ErstQFLNQDw" label="CAI_MC_LOAN_APPLICATIONS" name="CAI_MC_LOAN_APPLICATIONS" tableType="TABLE" xmi:id="_ylV9gTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_ylV9gjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -26166,6 +26215,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_ylV-EDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="2" name="NUMERIC" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_ylV-ETMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_ubbgoDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_yoq-UDMaEe2ErstQFLNQDw" label="CAI_PL_LOAN_APPLICATION" name="CAI_PL_LOAN_APPLICATION" tableType="TABLE" xmi:id="_yoq-UTMaEe2ErstQFLNQDw" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_yoq-UjMaEe2ErstQFLNQDw" xsi:type="relational:TdColumn">
@@ -26248,6 +26298,7 @@
         <initialValue language="COLUMN_DEF" xmi:id="_yoq-kDMaEe2ErstQFLNQDw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_yoq-kTMaEe2ErstQFLNQDw"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_vg9lUDpTEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
     <ownedElement id="_8uj38Df2Ee2v3fPtKr6Olg" label="CAI_BI_BAPNFIS_MATCHES" name="CAI_BI_BAPNFIS_MATCHES" tableType="TABLE" xmi:id="_8uto8Df2Ee2v3fPtKr6Olg" xsi:type="relational:TdTable">
       <feature label="id" length="19" name="id" nullable="false" sourceType="BIGINT" talendType="id_Long" xmi:id="_8uto8Tf2Ee2v3fPtKr6Olg" xsi:type="relational:TdColumn">
@@ -26495,15 +26546,18 @@
         <initialValue language="COLUMN_DEF" xmi:id="_8utpszf2Ee2v3fPtKr6Olg" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_8utptDf2Ee2v3fPtKr6Olg"/>
       </feature>
+      <feature label="EDW_LOAD_DATE" length="10" name="EDW_LOAD_DATE" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATE" talendType="id_Date" xmi:id="_X2PZQDpPEe2NQ9cGGWoxUA" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_8jW6EDpSEe2NQ9cGGWoxUA"/>
+      </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9af193f0-de4a-43e5-8242-a2c05487c2d8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZFUAPiPZNhmwc1olnaUrEbdxWrV8RWgSqr0LZJarCWxgV6TgZbb4ravGW7yHxedtsFFibIGbwRNu&#13;
-r2SE7oDWpw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_999b5fa5-48e4-4324-ba12-92d0ac10ade1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vXAVy5A3TO6pxiz8pIY3Xo1fcqDsZcGATvSxPlR6qWhH7KXv0GN2WIIpFTO/kH5i5A8POGRSjix6&#13;
-8Y1VubkdaA==</DigestValue></Reference></SignedInfo><SignatureValue>ZL0nPzB3BUQzQ3kDshN450JwlozVj/klPQAaff/9s39x4Xn2wWzK4kEgTod+MccKmBe8w5HiWS/u&#13;
-dI0QlCA+bHoPWVZIHOsl5OVCJ6kihgWDOvebuUGPV8Mve9JFl83pLfh7RF489DpMnFh1q9PK2o6Y&#13;
-apgk4E975ZRWXEGA31L9VPswRBh0cul/2UoEnp7TRuq4zn/mRljKqDOe0nQgICGZuZDAwVsiBRzu&#13;
-mZUBIPfhh6o+pnhoMUeDjW3DhQrrXnYOFGvo3LgQvmnghim9ik4hckT1rD3b0Mwrs4xg3LuxBS+T&#13;
-61Jmtn/5z7aGmrFl2XcSg031Tpgi6eck1g1PxA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f826d673-536c-4e40-a0c5-0aa4ec8b4b67"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xNDJeCC+TmQxNR+R3dNpku1bR9x2qZpp91SChkKKPxgZlFSIV2zi7gty47JNf4yy/OyaFxtSst+Z&#13;
+gPlzaJwKHA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a9201439-1e15-4445-8642-b8f9387805d0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TYtsBiWbn7pJTPn6B6jx4vxXalgxSTkuzFdMzL89WnAAoiRefkVr5zbGkee2Xj+gTs7ZwFcD7Qvk&#13;
+xZn7yMGCPg==</DigestValue></Reference></SignedInfo><SignatureValue>KX5UveD3Ee9z+mV1SHNU9OT1d0kr/mObBcqyIYmAi3XiL2Y8egmbXQEi4Wu7Kprcl1cv++aRI6Dn&#13;
+DBBLJ+oFrMViz3OlS6yHOU+eqaeN0EiBFojM2mY45LrPOSm8uUVVbbdNP07vKIUt+FZH28ekrN/K&#13;
+cprLpv3c5MHoc7jGfRZEgT2HWUIPjgBSPXY6/Mk+ZKWJHHZS2lCrjlmPCSgj0MeZpObQyDRw+LKS&#13;
+SLAOzcCOWYZ236Cl0T+0OhF9XU6j7lH/oXJ+1C9GNCF1tSWKSxbyYkGW4NgVtV11p7VmdhdisOLy&#13;
+sYDZaarP0iNR/26Ks8HhZmgYP27LsbQHHlWyRw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -26525,4 +26579,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_999b5fa5-48e4-4324-ba12-92d0ac10ade1" Target="#_9af193f0-de4a-43e5-8242-a2c05487c2d8"><Timestamp>2022-09-19 08:12:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a9201439-1e15-4445-8642-b8f9387805d0" Target="#_f826d673-536c-4e40-a0c5-0aa4ec8b4b67"><Timestamp>2022-09-22 08:27:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

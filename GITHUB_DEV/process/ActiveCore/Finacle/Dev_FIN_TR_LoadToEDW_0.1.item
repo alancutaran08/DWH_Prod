@@ -46,7 +46,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:E2pe7o6jqrF9mAmvWzK4pDkdHDfAWj8xRVt6NWA0"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:PL+ZJYUc1Vc3rjiIhGNXydHLhMoKlxQYMmkKN/d3"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -81,7 +81,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Urfts6RMuVW/2Mgqg4/xSf21EKV2Dksblm1A+G1U"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FSif699p+myw+txnCGOJdTol2GYdeQ/SeVNbviQV"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -132,7 +132,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oSf4OiEqD1xhXRggsw9gymex47f31VibWQDJeUfXDtd7zvo/Y9EA6Shwtg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XnwK0VEpxHgqzm9V8gIWokUGPbiY9JjpiJlLFu26KJ3rUycb+zmW7xENJA=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -160,7 +160,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8u0Ef85dinWsZXvlaPg14QmTCS+kTACUZcvDn9a37jJ6o+q1zW79tbI6VA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XAdN7FaiRxNL0/duZgJXb0he3a3sm4N3OOwNnZf2BQHPAa9Ik/aE/VTi6A=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RAtAMHjEeyGtfWT1EFyTg - FIN_SERVICE_OUTLET_TABLE"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_SERVICE_OUTLET_TABLE&quot;"/>
@@ -428,6 +428,8 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="TREA_FREE_TEXT1"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TREA_FREE_TEXT2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EDW_LOAD_DATE"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
@@ -810,6 +812,7 @@
       <column comment="" key="false" length="50" name="TREA_FREE_TEXT2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="10" name="EDW_LOAD_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="448">
@@ -1551,6 +1554,7 @@
         <mapperTableEntries name="MRS_NAME" nullable="true" type="id_String"/>
         <mapperTableEntries name="TREA_FREE_TEXT1" nullable="true" type="id_String"/>
         <mapperTableEntries name="TREA_FREE_TEXT2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EDW_LOAD_DATE" nullable="true" type="id_Date"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1567,7 +1571,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HFReC+/S1ESQ+QdJOfMSw43+3apgBZndGqz+lHyhct5DQlgbKeKsE+eiRA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:zd4gIQw9CpPt90l9thjsLjaWOcH9+IvyYYn7r2R+DzoZ4V2poU5gDlZOuw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_SERVICE_OUTLET_TABLE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2997,7 +3001,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:KhzMc+D6EC7pVfOzGB7E4ZBbvILEOwEolVGViXvq5ZjLbFfRaYdHxaMOMw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:D/Fd40bS0cQvth3GN5a85pMU/HPIcncJ8e3NNqgNQN4HfoS/VPTdB0QEsg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_GEN_SCHM_PARM_TABLE&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -5402,7 +5406,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GBXYnH6h6jGPviyZyST+ZIC3ILEeJsZduLKVlPecjZls7n0gvtsG7WwiEQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:D3w45ECqVVwFmUeSBs7i3DfnS4behe/IbVaNyjfcTA+2eAu+bqOsnJOhvA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_GEN_SCHM_PARM_TABLE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -7965,7 +7969,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ETAdIHlN75/hJoeyiXI2JgT64w8KLvNwA9vQ4+VkyALRamf8y+LZWlCX5Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5sX9i5zPi4KH0U6sZ5BkQlftP7zAKN8J26aZ28qg3HmlbV7AA6oU8mreMQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_SBCA_MAST_TABLE&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -8382,7 +8386,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xD7nsT/9OJZbh7pB775vgmR6FkpfQBZdrcOUgffLTadnh2z7RgQLkPIiKA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iKHThd3Yy5VIaXxwA1YsIryFhEJLgnXl10cWYCdw65L8FvnMfnF6GzSyRg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_SBCA_MAST_TABLE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -8745,7 +8749,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3fKYdZR41hdjeMtgJKs4S4ypbAS2AMcacpjFC3nGt6VSN7Z4ETdhQDZs4Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Cgka6hgVBPd6JsGx2a2rCmTvqOIqKvpmp+IcIbVw7a1LY9IJzG+CYO5FUA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_LA_ACCT_MAST_TABLE&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -11370,7 +11374,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:oAPoosL3XCGXMr1xB5DrpW14tkDYbrFN64Jh65dL0n2ZiCj5tA0REqfyBw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bwrYcnfLKtCtdbo4AP/THSvWXdDJ99A087i2C2LS9m672wZLw8+ka63WLA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_LA_ACCT_MAST_TABLE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -13625,7 +13629,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:E9mLO7+gL41W14ohO4dj7uakrItJIMSN+g66mQpTuZ01dB9UGnpRUmxtIQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NGZWzMf8PbtBheD/hXXL9V8dzKQJ36S2t3iLDnc4/y0xapVlpqFIf2bhmA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_TD_ACCT_MASTER_TABLE&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -15192,7 +15196,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:u66Bpih5CqpybEGqi4Dmyq8AZLl+WpjkuklKuVMSPU9RUJAbPgNZTHKkGA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:G8aHkYwuCqePIY5hYWTsoODU/yaVJdEJWmyjz2AquJHz/60FHUUJXtdDiA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_TD_ACCT_MASTER_TABLE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -16431,7 +16435,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:u84b4wDc4KOqyNsTwIEbTHmkG1RalndCnNUiOuvr05iD8r+hiKwWkeEzBw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IqWg0m8R8bdskLUAQ4qiNg7i5k9nhMrUFqb9892WFqUqogpG2mIEwT8GMg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_ACCOUNTS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -21404,7 +21408,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:A5OGAzCN0M1NfZSg4FXJ7Rw0GtZC2Jd4+kQjhoy4Z8O58aUPz4yc8JlhRw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8IegkQSRqJ9ZTXcx8s+hm4RyoVDVBdh6CM5YCLquadf5ivpH902SC1OMaw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_ACCOUNTS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -26585,7 +26589,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MFtXqOwl+373hWgB58OZVaYWMO58H8zQJtW+8YX0qN53cGzaqejF+VPFBQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QgHFHi6gqnNTsIsFrXt2hlaBUXPabLYtgAizIGqIu0LSHUN41Z6WVZBIVA=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RAtAMHjEeyGtfWT1EFyTg - FIN_GENERAL_ACCT_MAST_TABLE"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_GENERAL_ACCT_MAST_TABLE&quot;"/>
@@ -28436,7 +28440,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Staging&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8eh3kWUDnTx6KcKKqEGIKr08m85cx5Us8qM3RiDb92smi/cu5kRTNTP12Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xY1bB3UUTFAMPWgfeniVdb8XMSQm/iZkF5hlRAoebZtxzOVURhrtdWYLYw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -28483,7 +28487,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2a2xxeBmcfMb+CqvxCK+i5e4tOLMUt9qOtHeTZYWTg7JrOyPuiT6sIvphw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xRFbOmf8e/DuiygFM1iw0l9cjppUu2wbJ3lf/84qO6Tawk9m/K5gXDRSsw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_GENERAL_ACCT_MAST_TABLE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -30351,7 +30355,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:C9gIvWdHde77PA8fJGQsRBejj9rfha6GfTTSFsVeOhCxQJ2YzV4bVzfFbA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wSW5QJeutkquqcDbTXTGFcstugC4S8pCsSbnNtUQ8OgP5l4lhD3bPZQd6Q=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -30379,7 +30383,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TjUgDynw7v4Hd8ZtQVsCFPgoyNSn03WCrQ6JWlm/I+5NeVW5d6RnUR1V1g=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DRiV9tCf1ylLUtGyV7aaGgnxJ96taMxVwPJbbhMncEV5Z8JtzQpgnCZKiA=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7RAtAMHjEeyGtfWT1EFyTg - FIN_EOD_ACCT_BAL_TABLE"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_EOD_ACCT_BAL_TABLE&quot;"/>
@@ -30425,6 +30429,8 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="EAB_CRNCY_CODE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="BANK_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EDW_LOAD_DATE"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
@@ -30474,6 +30480,7 @@
       <column comment="" key="false" length="8" name="BANK_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="10" name="EDW_LOAD_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="704">
@@ -30620,6 +30627,7 @@
         <mapperTableEntries name="TS_CNT" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries name="EAB_CRNCY_CODE" nullable="true" type="id_String"/>
         <mapperTableEntries name="BANK_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EDW_LOAD_DATE" nullable="true" type="id_Date"/>
       </inputTables>
     </nodeData>
   </node>
@@ -30636,7 +30644,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WjB9UkWtnoiqRMf4/EupLpd9LF4wH6oAFRoyum+Wfrrz7USf6YBY7TpYEQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nYnu1SEqYwBiSBTb9t2Q/uM2seySHqBzt6tNbqcuNDoDKK0p09ivuIinBg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_EOD_ACCT_BAL_TABLE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -30845,7 +30853,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8401aqDW7sT5upPM1xmLIjlYkqEbUynEyn08L0ioALZIJzzTxPYj26PMzw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:6npThnp2hXhkq8PWvOj4PSFYb7Vs9ejLH2ysfItksvkopvUzzfIL4jIaQA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_ENTITY_INTEREST_TABLE&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -32998,7 +33006,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AhenSgFwusI2EG+3rFbaCk9LLBIPmDEb7LZ0mOoe/Qq2N/aNoOfT6rKZhQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EnZIuqPdm3QXEuPRIkWkhPDgWH7VT/pFalnXgzqc2w8HwEOgNozYImwriw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_ENTITY_INTEREST_TABLE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -34692,7 +34700,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1HmlMKUuT+N06f/5FEK+eoL8jPjAZ1w9MwzyFY8bc9gvRjl+n4drqEMSIA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:R+7T7wIyNvnYgfU3x0RG9X4ncMq0ponRItynQOkkxg0qSaswL+OXi6fbYg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_RATELIST_HIST_TABLE&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -34997,7 +35005,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WQHLL7YI6BMn/cl8c2ciKpkn9bxQoAxuFy45CTkxxbf4R+W0t1zcE8UUYA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:y+2tt4681eNHrPyBT7nVr78u+6feIyGXwTW+ZjO2l7dgZeboAr+YM7bbJQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_RATELIST_HIST_TABLE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -35261,7 +35269,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IsShCHQExuKWDiVK0dopaRkvH6JnZ1MJUuqdMUXkOglOlCBpmkm4fZUSWA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1ZwnH4fqhv4WCQ4qvcb6P1bOOspXlXT3slxqAFhs77nUJ72ZZqqh6n9Ysg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_DEMOGRAPHIC&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -37734,7 +37742,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMASTER&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;usr_msgarcia&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:6npH9OkOo9kCzE+vSfYP6RnsKcYVhQU8A2FFV9xUy/ql83jt9huPhihcsw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:kMOg9kQsGi3g3vJS+ux53EYC1PZnIzbbAvFZfml9qsAKFmkWxhBgBiGGLg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_DEMOGRAPHIC&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -40605,13 +40613,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5d6e16ca-f7eb-4d89-8369-73072d3bedfc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8RlppFOLNWvqRENEwDSKFdJ+jTd3skxCt0epy9+zA5oWNkmVdhoMddnZBHMxyUaqdoACDaEXTRAQ&#13;
-+zTolgyg1w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c26cd9d1-4f64-481b-bf9d-3e477b9ac9ae"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JmZ5oCEBFYIzx5nQUXsMywqI7A8bIIA8dbbBCTWACi0aVtze27iwDnWj3uLvoyFyQkZG2q3RgEay&#13;
-alWPsKMyPg==</DigestValue></Reference></SignedInfo><SignatureValue>fUyuCgH0pRZ8OmjNE3yDlBtBAqeE1eSoxmD6342I+b+WD6khQj2JfrF+YXDanWVujKmByrikiBnj&#13;
-oWgmQMZEoHK8xxargWxsGYEWJpnn++4gUJt2mOCwEabdowokEqXH7onsgG1Qn25uefun4xX0Ewo1&#13;
-a5zaT+HobeqC8OWlkW6h9el1yuIk7y/LfA/n3dOPfiVrCMqIz85e91qdq9Rc/8BeknBWnQ8cIT2H&#13;
-u5MKYFp5wty7GbIU7J59UR7m8gsaE4sCpeunPQmdMg17UCh2FdnVybKs1t2acXF72VVpMTBNBPmX&#13;
-+T2cA2GllkhvqVdRpNfJj20He5PWvRqEmLOScA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6ff63f5b-12ed-456d-9de7-939993766db4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xr2ITsHbZ4RX9fnckt+Xil+L1CK4st1EYy2n0HJ7tptgZ0CF04+4jSTpFa4sq+V3Hh21gTN0tzZr&#13;
+4Qt+0cVq4A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_07f675a9-e69c-46bc-a2f1-a51dc77e05b3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rU/THCUISMDvUyffCbgRoWTgy2nRYGwIM0es9hHo3C3SdVUe0hl9NfB6G865D5eSbJeM9FoJb4h9&#13;
+/GB/3MYdrQ==</DigestValue></Reference></SignedInfo><SignatureValue>oc/+0FA/1jAUbMf5fl86UCWY7xXDPxLTC24qDkC1VujZPg3UTklgu3r8OpgdA0SDdiK++St1k8uE&#13;
+gbGoJyMAAcD3WMIXBujg6RJzPTVN3TVhmjxw/vRAW5zacVNA3o+ZZf9JU49n1PIzt/r1EkzdSkYo&#13;
+TdetIsV2gEfAfov4yVrCPkmQpmlSBtoxJ6QYOUb+8ERZKvb6d0EJ1O0KtSHmwtEf9t+3dLqzTkI1&#13;
+ov5bJ+Mgy5LnBzvucy/3Gp0Kqlpe4clHuXUhuuyjQz+PQHG9f1a88uzO3Fa21SIz3EMaWpkCwPlP&#13;
+2sjcg99b3PQx0aDnJAFdvrsUELdWGhlMgx2MFA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -40633,4 +40641,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c26cd9d1-4f64-481b-bf9d-3e477b9ac9ae" Target="#_5d6e16ca-f7eb-4d89-8369-73072d3bedfc"><Timestamp>2022-09-20 03:40:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_07f675a9-e69c-46bc-a2f1-a51dc77e05b3" Target="#_6ff63f5b-12ed-456d-9de7-939993766db4"><Timestamp>2022-09-22 09:51:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

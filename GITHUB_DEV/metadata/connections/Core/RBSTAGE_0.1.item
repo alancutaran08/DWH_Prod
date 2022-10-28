@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
-  <TalendMetadata:DatabaseConnection AdditionalParams="" DatabaseType="Microsoft SQL Server" DatasourceName="" DbmsId="id_MSSQL" DriverClass="net.sourceforge.jtds.jdbc.Driver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:hI5Zf0pgOVw9DwUW+D5mrTQmiI2AO+fSErX/fdo7F6RaxWLQk6sdVgI=" Port="1433" ProductId="SQL_SERVER" SID="RBSTAGE" SQLMode="false" ServerName="10.86.93.205" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:jtds:sqlserver://10.86.93.205:1433/RBSTAGE;" UiSchema="dbo" Username="etldevacc" dataPackage="_hHuJKsO4EeyqnqHcS_GEqw" dbVersionString="JTDS" id="_7RAtAMHjEeyGtfWT1EFyTg" label="RBSTAGE" name="RBSTAGE" xmi:id="_NpAYAMHkEeyGtfWT1EFyTg">
+  <TalendMetadata:DatabaseConnection AdditionalParams="" DatabaseType="Microsoft SQL Server" DatasourceName="" DbmsId="id_MSSQL" DriverClass="net.sourceforge.jtds.jdbc.Driver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:hI5Zf0pgOVw9DwUW+D5mrTQmiI2AO+fSErX/fdo7F6RaxWLQk6sdVgI=" Port="1433" ProductId="SQL_SERVER" SID="RBSTAGE" SQLMode="false" ServerName="10.86.93.205" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:jtds:sqlserver://10.86.93.205:1433/RBSTAGE;" UiSchema="dbo" Username="etldevacc" dataPackage="_hHuJKsO4EeyqnqHcS_GEqw" dbVersionString="JTDS" id="_7RAtAMHjEeyGtfWT1EFyTg" label="RBSTAGE" name="RBSTAGE" supportNLS="false" xmi:id="_NpAYAMHkEeyGtfWT1EFyTg">
     <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_NpAYAcHkEeyGtfWT1EFyTg"/>
     <taggedValue tag="package filter" value="" xmi:id="_NrH34MHkEeyGtfWT1EFyTg"/>
     <taggedValue tag="Status" value="" xmi:id="_NrIe8MHkEeyGtfWT1EFyTg"/>
@@ -15,7 +15,7 @@
     <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_EVHqsMO5EeyqnqHcS_GEqw"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog dataManager="_NpAYAMHkEeyGtfWT1EFyTg" name="RBSTAGE" xmi:id="_hHuJKsO4EeyqnqHcS_GEqw">
-    <ownedElement id="_nowDgMPREeyqnqHcS_GEqw" label="ACCOUNT" name="ACCOUNT" tableType="TABLE" xmi:id="_nowDgcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nowDgMPREeyqnqHcS_GEqw" label="ACCOUNT" name="ACCOUNT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nowDgcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACCOUNT_ID" length="255" name="ACCOUNT_ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_nowDgsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nowDg8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nowDhMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -72,7 +72,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nowDrcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_no5NcMPREeyqnqHcS_GEqw" label="FIN_ASSETCLASS" name="FIN_ASSETCLASS" tableType="TABLE" xmi:id="_no5NccPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_no5NcMPREeyqnqHcS_GEqw" label="FIN_ASSETCLASS" name="FIN_ASSETCLASS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_no5NccPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="B2K_TYPE" length="5" name="B2K_TYPE" sourceType="VARCHAR" talendType="id_String" xmi:id="_no5NcsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_no5Nc8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_no5NdMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -184,7 +184,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_no5NycPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_npS2EMPREeyqnqHcS_GEqw" label="FIN_ACMH" name="FIN_ACMH" tableType="TABLE" xmi:id="_npS2EcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_npS2EMPREeyqnqHcS_GEqw" label="FIN_ACMH" name="FIN_ACMH" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_npS2EcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_npS2EsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_npS2E8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_npS2FMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -256,7 +256,7 @@
         <sqlDataType javaDataType="3" name="DECIMAL" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_npS2ScPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nplxAMPREeyqnqHcS_GEqw" label="DEPOSITS2" name="DEPOSITS2" tableType="TABLE" xmi:id="_nplxAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nplxAMPREeyqnqHcS_GEqw" label="DEPOSITS2" name="DEPOSITS2" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nplxAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="_ACCTNO" length="50" name="﻿ACCTNO" sourceType="VARCHAR" talendType="id_String" xmi:id="_nplxAsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nplxA8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nplxBMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -338,7 +338,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nplxQcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_npviAMPREeyqnqHcS_GEqw" label="CLIENT_LOGIN_INFO" name="CLIENT_LOGIN_INFO" tableType="TABLE" xmi:id="_npviAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_npviAMPREeyqnqHcS_GEqw" label="CLIENT_LOGIN_INFO" name="CLIENT_LOGIN_INFO" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_npviAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CLIENT_LOGIN_INFO_ID" length="255" name="CLIENT_LOGIN_INFO_ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_np4r8MPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_np4r8cPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_np4r8sPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -550,7 +550,7 @@
         <sqlDataType javaDataType="-7" name="BIT" nullable="columnNullable" xmi:id="_np4sl8PREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_np4smMPREeyqnqHcS_GEqw" label="BIC" name="BIC" tableType="TABLE" xmi:id="_np4smcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_np4smMPREeyqnqHcS_GEqw" label="BIC" name="BIC" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_np4smcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="_BIC" length="50" name="﻿BIC" sourceType="VARCHAR" talendType="id_String" xmi:id="_np4smsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_np4sm8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_np4snMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -562,14 +562,14 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_np4socPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_np4sosPREeyqnqHcS_GEqw" label="BENEBANK" name="BENEBANK" tableType="TABLE" xmi:id="_np4so8PREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_np4sosPREeyqnqHcS_GEqw" label="BENEBANK" name="BENEBANK" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_np4so8PREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="BILLER_BENEFICIARY_BANK" length="100" name="BILLER BENEFICIARY BANK" sourceType="VARCHAR" talendType="id_String" xmi:id="_np4spMPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_np4spcPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_np4spsPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_np4sp8PREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nqCc8MPREeyqnqHcS_GEqw" label="AUDIT_LOG" name="AUDIT_LOG" tableType="TABLE" xmi:id="_nqCc8cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nqCc8MPREeyqnqHcS_GEqw" label="AUDIT_LOG" name="AUDIT_LOG" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nqCc8cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ID" length="255" name="ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_nqCc8sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nqCc88PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nqCc9MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -701,7 +701,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nqLnF8PREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nqVX4MPREeyqnqHcS_GEqw" label="ACCOUNTSTEST" name="ACCOUNTSTEST" tableType="TABLE" xmi:id="_nqVX4cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nqVX4MPREeyqnqHcS_GEqw" label="ACCOUNTSTEST" name="ACCOUNTSTEST" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nqVX4cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature key="true" label="ACCOUNTID" length="50" name="ACCOUNTID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_nqVX4sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nqVX48PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nqVX5MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -968,7 +968,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nqVYtcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nqfI4MPREeyqnqHcS_GEqw" label="FIN_AST" name="FIN_AST" tableType="TABLE" xmi:id="_nqfI4cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nqfI4MPREeyqnqHcS_GEqw" label="FIN_AST" name="FIN_AST" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nqfI4cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nqfI4sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nqfI48PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nqfI5MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -1195,7 +1195,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nqfJlcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nqwOoMPREeyqnqHcS_GEqw" label="FIN_CASA" name="FIN_CASA" tableType="TABLE" xmi:id="_nqwOocPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nqwOoMPREeyqnqHcS_GEqw" label="FIN_CASA" name="FIN_CASA" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nqwOocPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nqwOosPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nqwOo8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nqwOpMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -1337,7 +1337,7 @@
         <sqlDataType javaDataType="3" name="DECIMAL" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_nqwPEcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nq9C8MPREeyqnqHcS_GEqw" label="FIN_CLIENTS" name="FIN_CLIENTS" tableType="TABLE" xmi:id="_nq9C8cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nq9C8MPREeyqnqHcS_GEqw" label="FIN_CLIENTS" name="FIN_CLIENTS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nq9C8cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACCOUNTID" length="38" name="ACCOUNTID" nullable="false" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_nq9C8sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nq9C88PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nq9C9MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -1604,7 +1604,7 @@
         <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" xmi:id="_nq9DxcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nro_cMPREeyqnqHcS_GEqw" label="FIN_EAB" name="FIN_EAB" tableType="TABLE" xmi:id="_nro_ccPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nro_cMPREeyqnqHcS_GEqw" label="FIN_EAB" name="FIN_EAB" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nro_ccPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nro_csPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nro_c8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nro_dMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -1676,7 +1676,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nro_qcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nsHgkMPREeyqnqHcS_GEqw" label="FIN_EIT" name="FIN_EIT" tableType="TABLE" xmi:id="_nsRRkMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nsHgkMPREeyqnqHcS_GEqw" label="FIN_EIT" name="FIN_EIT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nsRRkMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ENTITY_ID" length="12" name="ENTITY_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nsRRkcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nsRRksPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nsRRk8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -2423,7 +2423,7 @@
         <sqlDataType javaDataType="3" name="DECIMAL" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_nsRT5MPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nshJMMPREeyqnqHcS_GEqw" label="FIN_FXRATE" name="FIN_FXRATE" tableType="TABLE" xmi:id="_nshJMcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nshJMMPREeyqnqHcS_GEqw" label="FIN_FXRATE" name="FIN_FXRATE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nshJMcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="RTLIST_DATE" length="10" name="RTLIST_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_nshJMsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nshJM8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nshJNMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -2520,7 +2520,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nshJfcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_ntxGYMPREeyqnqHcS_GEqw" label="FIN_GCT" name="FIN_GCT" tableType="TABLE" xmi:id="_nt6QUMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_ntxGYMPREeyqnqHcS_GEqw" label="FIN_GCT" name="FIN_GCT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nt6QUMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="SOL_GROUP_ID" length="2" name="SOL_GROUP_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nt6QUcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nt6QUsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nt6QU8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -4197,7 +4197,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nt6VjMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nuKvAMPREeyqnqHcS_GEqw" label="FIN_GLSUBHEAD" name="FIN_GLSUBHEAD" tableType="TABLE" xmi:id="_nuKvAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nuKvAMPREeyqnqHcS_GEqw" label="FIN_GLSUBHEAD" name="FIN_GLSUBHEAD" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nuKvAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="SOL_ID" length="8" name="SOL_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nuKvAsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nuKvA8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nuKvBMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -4289,7 +4289,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_nuKvScPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nuYKYMPREeyqnqHcS_GEqw" label="FIN_IDT" name="FIN_IDT" tableType="TABLE" xmi:id="_nuYKYcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nuYKYMPREeyqnqHcS_GEqw" label="FIN_IDT" name="FIN_IDT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nuYKYcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ENTITY_ID" length="12" name="ENTITY_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nuYKYsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nuYKY8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nuYKZMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -4516,7 +4516,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_nuYLFcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nvI_YMPREeyqnqHcS_GEqw" label="FIN_LOANS" name="FIN_LOANS" tableType="TABLE" xmi:id="_nvSwYMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nvI_YMPREeyqnqHcS_GEqw" label="FIN_LOANS" name="FIN_LOANS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nvSwYMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nvSwYcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nvSwYsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nvSwY8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -5518,7 +5518,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_nvSzgMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nvjPEMPREeyqnqHcS_GEqw" label="FIN_SCHMCODE" name="FIN_SCHMCODE" tableType="TABLE" xmi:id="_nvkdMMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nvjPEMPREeyqnqHcS_GEqw" label="FIN_SCHMCODE" name="FIN_SCHMCODE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nvkdMMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="SCHM_CODE" length="5" name="SCHM_CODE" sourceType="VARCHAR" talendType="id_String" xmi:id="_nvkdMcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nvkdMsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nvkdM8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -5630,7 +5630,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nvkdiMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nvwDYMPREeyqnqHcS_GEqw" label="FIN_SOL" name="FIN_SOL" tableType="TABLE" xmi:id="_nvwDYcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nvwDYMPREeyqnqHcS_GEqw" label="FIN_SOL" name="FIN_SOL" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nvwDYcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="SOL_ID" length="8" name="SOL_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nvwDYsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nvwDY8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nvwDZMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -5857,7 +5857,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nvwEFcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nwH20MPREeyqnqHcS_GEqw" label="FIN_TDA" name="FIN_TDA" tableType="TABLE" xmi:id="_nwRn0MPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nwH20MPREeyqnqHcS_GEqw" label="FIN_TDA" name="FIN_TDA" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nwRn0MPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nwRn0cPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nwRn0sPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nwRn08PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -6394,7 +6394,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nwRpfMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nwoNIMPREeyqnqHcS_GEqw" label="FIN_TRANS" name="FIN_TRANS" tableType="TABLE" xmi:id="_nwoNIcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nwoNIMPREeyqnqHcS_GEqw" label="FIN_TRANS" name="FIN_TRANS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nwoNIcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="TRAN_DATE" length="10" name="TRAN_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_nwoNIsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nwoNI8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nwoNJMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -6831,7 +6831,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nwoOfcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nw89QMPREeyqnqHcS_GEqw" label="FINCURACT" name="FINCURACT" tableType="TABLE" xmi:id="_nw89QcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nw89QMPREeyqnqHcS_GEqw" label="FINCURACT" name="FINCURACT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nw89QcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CLOSED" length="50" name="CLOSED" sourceType="VARCHAR" talendType="id_String" xmi:id="_nw89QsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nw89Q8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nw89RMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -7003,7 +7003,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nw89ycPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nxK_sMPREeyqnqHcS_GEqw" label="FINSAVACT" name="FINSAVACT" tableType="TABLE" xmi:id="_nxK_scPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nxK_sMPREeyqnqHcS_GEqw" label="FINSAVACT" name="FINSAVACT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nxK_scPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CLOSED" length="50" name="CLOSED" sourceType="VARCHAR" talendType="id_String" xmi:id="_nxK_ssPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nxK_s8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nxK_tMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -7175,7 +7175,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nxLAOcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nxV-0MPREeyqnqHcS_GEqw" label="FINSCCHCODE" name="FINSCCHCODE" tableType="TABLE" xmi:id="_nxWl4MPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nxV-0MPREeyqnqHcS_GEqw" label="FINSCCHCODE" name="FINSCCHCODE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nxWl4MPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="_SCHM_CODE" length="50" name="﻿SCHM_CODE" sourceType="VARCHAR" talendType="id_String" xmi:id="_nxWl4cPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nxWl4sPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nxWl48PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -7197,7 +7197,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nxWl8MPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nxZCIMPREeyqnqHcS_GEqw" label="FINTDPACT" name="FINTDPACT" tableType="TABLE" xmi:id="_nxZCIcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nxZCIMPREeyqnqHcS_GEqw" label="FINTDPACT" name="FINTDPACT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nxZCIcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACCT_NO" length="50" name="ACCT_NO" sourceType="VARCHAR" talendType="id_String" xmi:id="_nxZCIsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nxZCI8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nxZCJMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -7279,7 +7279,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nxZCYcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nxqH4MPREeyqnqHcS_GEqw" label="FINTREAS" name="FINTREAS" tableType="TABLE" xmi:id="_nxqu8MPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nxqH4MPREeyqnqHcS_GEqw" label="FINTREAS" name="FINTREAS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nxqu8MPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="DEAL_DATE" length="50" name="DEAL_DATE" sourceType="VARCHAR" talendType="id_String" xmi:id="_nxqu8cPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nxqu8sPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nxqu88PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -7346,7 +7346,7 @@
         <sqlDataType javaDataType="8" name="FLOAT" nullable="columnNullable" numericPrecisionRadix="2" xmi:id="_nxqvJMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nx3jQMPREeyqnqHcS_GEqw" label="FUND_TRANSFER_OTHER_BANK" name="FUND_TRANSFER_OTHER_BANK" tableType="TABLE" xmi:id="_nyBUQMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nx3jQMPREeyqnqHcS_GEqw" label="FUND_TRANSFER_OTHER_BANK" name="FUND_TRANSFER_OTHER_BANK" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nyBUQMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ID" length="50" name="ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_nyBUQcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nyBUQsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nyBUQ8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -7658,7 +7658,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nyBVOMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nyhDgMPREeyqnqHcS_GEqw" label="GAM" name="GAM" tableType="TABLE" xmi:id="_nyq0gMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nyhDgMPREeyqnqHcS_GEqw" label="GAM" name="GAM" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nyq0gMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nyq0gcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nyq0gsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nyq0g8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -8485,7 +8485,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nyq3FMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_nzOOIMPREeyqnqHcS_GEqw" label="GAM2" name="GAM2" tableType="TABLE" xmi:id="_nzX_IMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_nzOOIMPREeyqnqHcS_GEqw" label="GAM2" name="GAM2" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_nzX_IMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_nzX_IcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_nzX_IsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_nzX_I8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -9312,7 +9312,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_nzYBtMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n0FJwMPREeyqnqHcS_GEqw" label="GAMTEST" name="GAMTEST" tableType="TABLE" xmi:id="_n0FJwcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n0FJwMPREeyqnqHcS_GEqw" label="GAMTEST" name="GAMTEST" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n0FJwcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n0FJwsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n0FJw8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n0FJxMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -10139,7 +10139,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n0FMVcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n0XdoMPREeyqnqHcS_GEqw" label="INWARDINSTAPAY" name="INWARDINSTAPAY" tableType="TABLE" xmi:id="_n0XdocPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n0XdoMPREeyqnqHcS_GEqw" label="INWARDINSTAPAY" name="INWARDINSTAPAY" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n0XdocPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="_TRAN_DATE" length="50" name="﻿TRAN_DATE" sourceType="VARCHAR" talendType="id_String" xmi:id="_n0XdosPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n0Xdo8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n0XdpMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -10356,7 +10356,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n0XeTcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n0nVQMPREeyqnqHcS_GEqw" label="INWARDPESONET" name="INWARDPESONET" tableType="TABLE" xmi:id="_n0nVQcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n0nVQMPREeyqnqHcS_GEqw" label="INWARDPESONET" name="INWARDPESONET" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n0nVQcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="MSGID" length="50" name="MSGID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n0nVQsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n0nVQ8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n0nVRMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -10498,7 +10498,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n0nVscPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n00JkMPREeyqnqHcS_GEqw" label="MOBILENUMBER" name="MOBILENUMBER" tableType="TABLE" xmi:id="_n00JkcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n00JkMPREeyqnqHcS_GEqw" label="MOBILENUMBER" name="MOBILENUMBER" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n00JkcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="_PHONEEMAILID" length="50" name="﻿PHONEEMAILID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n00JksPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n00Jk8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n00JlMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -10660,7 +10660,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n00KEcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n1CMAMPREeyqnqHcS_GEqw" label="PESONET" name="PESONET" tableType="TABLE" xmi:id="_n1CMAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n1CMAMPREeyqnqHcS_GEqw" label="PESONET" name="PESONET" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n1CMAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="SOURCE" length="50" name="SOURCE" sourceType="VARCHAR" talendType="id_String" xmi:id="_n1CMAsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n1CMA8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n1CMBMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -10792,7 +10792,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n1CMacPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n1ZYYMPREeyqnqHcS_GEqw" label="POBAUDITLOG" name="POBAUDITLOG" tableType="TABLE" xmi:id="_n1Z_cMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n1ZYYMPREeyqnqHcS_GEqw" label="POBAUDITLOG" name="POBAUDITLOG" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n1Z_cMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACTION" length="100" name="ACTION" sourceType="VARCHAR" talendType="id_String" xmi:id="_n1Z_ccPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n1Z_csPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n1Z_c8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -10824,7 +10824,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n1Z_iMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n1dCwMPREeyqnqHcS_GEqw" label="POSCUSTAC" name="POSCUSTAC" tableType="TABLE" xmi:id="_n1dCwcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n1dCwMPREeyqnqHcS_GEqw" label="POSCUSTAC" name="POSCUSTAC" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n1dCwcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CIF" length="30" name="CIF" sourceType="VARCHAR" talendType="id_String" xmi:id="_n1dCwsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n1dCw8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n1dCxMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -10851,7 +10851,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n1dC1cPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n1oo8MPREeyqnqHcS_GEqw" label="POSTERMINALS" name="POSTERMINALS" tableType="TABLE" xmi:id="_n1pQAMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n1oo8MPREeyqnqHcS_GEqw" label="POSTERMINALS" name="POSTERMINALS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n1pQAMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="TERMINAL_ID" length="50" name="TERMINAL_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n1pQAcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n1pQAsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n1pQA8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -10873,7 +10873,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n1pQEMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n1s6YMPREeyqnqHcS_GEqw" label="POSTRANS" name="POSTRANS" tableType="TABLE" xmi:id="_n1s6YcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n1s6YMPREeyqnqHcS_GEqw" label="POSTRANS" name="POSTRANS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n1s6YcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="TRAN_DATE" length="23" name="TRAN_DATE" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_n1s6YsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n1s6Y8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n1s6ZMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -10975,7 +10975,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n1s6scPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n1_OQMPREeyqnqHcS_GEqw" label="POSTRANS2" name="POSTRANS2" tableType="TABLE" xmi:id="_n1_OQcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n1_OQMPREeyqnqHcS_GEqw" label="POSTRANS2" name="POSTRANS2" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n1_OQcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="TRAN_DATE" length="23" name="TRAN_DATE" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_n1_OQsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n1_OQ8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n1_ORMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11102,7 +11102,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n1_OpcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n2GjAMPREeyqnqHcS_GEqw" label="POSTRANTYPE" name="POSTRANTYPE" tableType="TABLE" xmi:id="_n2HKEMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n2GjAMPREeyqnqHcS_GEqw" label="POSTRANTYPE" name="POSTRANTYPE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n2HKEMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="_TRAN_TYPE" length="50" name="﻿TRAN_TYPE" sourceType="VARCHAR" talendType="id_String" xmi:id="_n2HKEcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n2HKEsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n2HKE8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11114,7 +11114,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n2HKGMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n2VMgMPREeyqnqHcS_GEqw" label="QR_TRANSFER" name="QR_TRANSFER" tableType="TABLE" xmi:id="_n2VMgcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n2VMgMPREeyqnqHcS_GEqw" label="QR_TRANSFER" name="QR_TRANSFER" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n2VMgcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ID" length="255" name="ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_n2VMgsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n2VMg8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n2VMhMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11266,7 +11266,7 @@
         <sqlDataType javaDataType="12" name="DATETIME2" nullable="columnNullable" xmi:id="_n2VM-cPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n2iA0MPREeyqnqHcS_GEqw" label="RBTRANS" name="RBTRANS" tableType="TABLE" xmi:id="_n2iA0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n2iA0MPREeyqnqHcS_GEqw" label="RBTRANS" name="RBTRANS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n2iA0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="F1" length="53" name="F1" sourceType="FLOAT" talendType="id_Double" xmi:id="_n2iA0sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n2iA08PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n2iA1MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11478,7 +11478,7 @@
         <sqlDataType javaDataType="12" name="NVARCHAR" nullable="columnNullable" xmi:id="_n2iBecPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n2yfgMPREeyqnqHcS_GEqw" label="RDX_RDXTXNS2" name="RDX_RDXTXNS2" tableType="TABLE" xmi:id="_n2yfgcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n2yfgMPREeyqnqHcS_GEqw" label="RDX_RDXTXNS2" name="RDX_RDXTXNS2" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n2yfgcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="REFERENCENUMBER" length="50" name="REFERENCENUMBER" sourceType="NVARCHAR" talendType="id_String" xmi:id="_n2yfgsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n2yfg8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n2yfhMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11550,7 +11550,7 @@
         <sqlDataType javaDataType="12" name="DATETIME2" xmi:id="_n2yfucPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n28QgMPREeyqnqHcS_GEqw" label="RDXACCOUNT" name="RDXACCOUNT" tableType="TABLE" xmi:id="_n28QgcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n28QgMPREeyqnqHcS_GEqw" label="RDXACCOUNT" name="RDXACCOUNT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n28QgcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CIF" length="255" name="CIF" sourceType="NVARCHAR" talendType="id_String" xmi:id="_n28QgsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n28Qg8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n28QhMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11582,7 +11582,7 @@
         <sqlDataType javaDataType="12" name="NVARCHAR" nullable="columnNullable" xmi:id="_n28QmcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n2_T0MPREeyqnqHcS_GEqw" label="RDXACCOUNTS" name="RDXACCOUNTS" tableType="TABLE" xmi:id="_n2_T0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n2_T0MPREeyqnqHcS_GEqw" label="RDXACCOUNTS" name="RDXACCOUNTS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n2_T0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CIF" length="50" name="CIF" sourceType="VARCHAR" talendType="id_String" xmi:id="_n2_T0sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n2_T08PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n2_T1MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11609,7 +11609,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n2_T5cPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n3MIIMPREeyqnqHcS_GEqw" label="RDXBILLERFEES" name="RDXBILLERFEES" tableType="TABLE" xmi:id="_n3MIIcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n3MIIMPREeyqnqHcS_GEqw" label="RDXBILLERFEES" name="RDXBILLERFEES" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n3MIIcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="BILLERNAME" length="255" name="BILLERNAME" sourceType="NVARCHAR" talendType="id_String" xmi:id="_n3MIIsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n3MII8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n3MIJMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11636,7 +11636,7 @@
         <sqlDataType javaDataType="12" name="NVARCHAR" nullable="columnNullable" xmi:id="_n3MINcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n3PygMPREeyqnqHcS_GEqw" label="RDXBPDATA" name="RDXBPDATA" tableType="TABLE" xmi:id="_n3PygcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n3PygMPREeyqnqHcS_GEqw" label="RDXBPDATA" name="RDXBPDATA" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n3PygcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="BILLERBENEFICIARYBANK" length="255" name="BILLERBENEFICIARYBANK" sourceType="NVARCHAR" talendType="id_String" xmi:id="_n3PygsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n3Pyg8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n3PyhMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11663,7 +11663,7 @@
         <sqlDataType javaDataType="8" name="FLOAT" nullable="columnNullable" numericPrecisionRadix="2" xmi:id="_n3PylcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n3bYsMPREeyqnqHcS_GEqw" label="RDXENROLLED" name="RDXENROLLED" tableType="TABLE" xmi:id="_n3b_wMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n3bYsMPREeyqnqHcS_GEqw" label="RDXENROLLED" name="RDXENROLLED" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n3b_wMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CREATED_DATE" length="50" name="CREATED_DATE" sourceType="VARCHAR" talendType="id_String" xmi:id="_n3b_wcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n3b_wsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n3b_w8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11690,7 +11690,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n3b_1MPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n3secMPREeyqnqHcS_GEqw" label="RDXENROLLEDUSERSX" name="RDXENROLLEDUSERSX" tableType="TABLE" xmi:id="_n3tFgMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n3secMPREeyqnqHcS_GEqw" label="RDXENROLLEDUSERSX" name="RDXENROLLEDUSERSX" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n3tFgMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CREATED_DATE" length="50" name="CREATED_DATE" sourceType="VARCHAR" talendType="id_String" xmi:id="_n3tFgcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n3tFgsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n3tFg8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11742,7 +11742,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n3tFqMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n3wI0MPREeyqnqHcS_GEqw" label="RDXLOGIN" name="RDXLOGIN" tableType="TABLE" xmi:id="_n3wI0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n3wI0MPREeyqnqHcS_GEqw" label="RDXLOGIN" name="RDXLOGIN" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n3wI0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="_TRANS_REF_NUMBER" length="50" name="﻿TRANS_REF_NUMBER" sourceType="VARCHAR" talendType="id_String" xmi:id="_n3wI0sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n3wI08PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n3wI1MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11774,7 +11774,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n3wI6cPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n4AAcMPREeyqnqHcS_GEqw" label="RDXQUICKBAL" name="RDXQUICKBAL" tableType="TABLE" xmi:id="_n4AAccPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n4AAcMPREeyqnqHcS_GEqw" label="RDXQUICKBAL" name="RDXQUICKBAL" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n4AAccPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="TRANS_REF_NUMBER" length="50" name="TRANS_REF_NUMBER" sourceType="VARCHAR" talendType="id_String" xmi:id="_n4AAcsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n4AAc8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n4AAdMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11806,7 +11806,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n4AAicPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n4LmoMPREeyqnqHcS_GEqw" label="RDXQUICKBAL2" name="RDXQUICKBAL2" tableType="TABLE" xmi:id="_n4MNsMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n4LmoMPREeyqnqHcS_GEqw" label="RDXQUICKBAL2" name="RDXQUICKBAL2" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n4MNsMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="TRANS_REF_NUMBER" length="50" name="TRANS_REF_NUMBER" sourceType="VARCHAR" talendType="id_String" xmi:id="_n4MNscPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n4MNssPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n4MNs8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11838,7 +11838,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n4MNyMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n4PRAMPREeyqnqHcS_GEqw" label="RDXTRANS" name="RDXTRANS" tableType="TABLE" xmi:id="_n4PRAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n4PRAMPREeyqnqHcS_GEqw" label="RDXTRANS" name="RDXTRANS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n4PRAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CIF" length="50" name="CIF" sourceType="VARCHAR" talendType="id_String" xmi:id="_n4PRAsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n4PRA8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n4PRBMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11885,7 +11885,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n4PRJcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n4csYMPREeyqnqHcS_GEqw" label="RDXTRANS2" name="RDXTRANS2" tableType="TABLE" xmi:id="_n4dTcMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n4csYMPREeyqnqHcS_GEqw" label="RDXTRANS2" name="RDXTRANS2" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n4dTcMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CIF" length="50" name="CIF" sourceType="VARCHAR" talendType="id_String" xmi:id="_n4dTccPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n4dTcsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n4dTc8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11947,7 +11947,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n4dToMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n4r88MPREeyqnqHcS_GEqw" label="RDXUSER" name="RDXUSER" tableType="TABLE" xmi:id="_n4r88cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n4r88MPREeyqnqHcS_GEqw" label="RDXUSER" name="RDXUSER" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n4r88cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CIF" length="50" name="CIF" sourceType="VARCHAR" talendType="id_String" xmi:id="_n4r88sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n4r888PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n4r89MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -11959,7 +11959,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n4r8-cPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n45_YMPREeyqnqHcS_GEqw" label="STG_ADDRESS" name="STG_ADDRESS" tableType="TABLE" xmi:id="_n45_YcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n45_YMPREeyqnqHcS_GEqw" label="STG_ADDRESS" name="STG_ADDRESS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n45_YcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ADDRESSID" length="50" name="ADDRESSID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n45_YsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n45_Y8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n45_ZMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -12086,7 +12086,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n45_xcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n5Io4MPREeyqnqHcS_GEqw" label="STG_AST" name="STG_AST" tableType="TABLE" xmi:id="_n5Io4cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n5Io4MPREeyqnqHcS_GEqw" label="STG_AST" name="STG_AST" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n5Io4cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n5Io4sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n5Io48PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n5Io5MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -12313,7 +12313,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n5IplcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n5cx8MPREeyqnqHcS_GEqw" label="STG_BANKCODE" name="STG_BANKCODE" tableType="TABLE" xmi:id="_n5cx8cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n5cx8MPREeyqnqHcS_GEqw" label="STG_BANKCODE" name="STG_BANKCODE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n5cx8cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="BANK_CODE" length="50" name="BANK_CODE" sourceType="VARCHAR" talendType="id_String" xmi:id="_n5cx8sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n5cx88PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n5cx9MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -12445,7 +12445,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n5cyWcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n5rbcMPREeyqnqHcS_GEqw" label="STG_BIC" name="STG_BIC" tableType="TABLE" xmi:id="_n5sCgMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n5rbcMPREeyqnqHcS_GEqw" label="STG_BIC" name="STG_BIC" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n5sCgMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="BIC" length="50" name="BIC" sourceType="VARCHAR" talendType="id_String" xmi:id="_n5sCgcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n5sCgsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n5sCg8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -12477,7 +12477,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n5sCmMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n53osMPREeyqnqHcS_GEqw" label="STG_CORPORATE" name="STG_CORPORATE" tableType="TABLE" xmi:id="_n53oscPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n53osMPREeyqnqHcS_GEqw" label="STG_CORPORATE" name="STG_CORPORATE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n53oscPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CORP_ID" length="50" name="CORP_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n53ossPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n53os8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n53otMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -12709,7 +12709,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n53pacPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n6LKsMPREeyqnqHcS_GEqw" label="STG_DEMOGRAPHIC" name="STG_DEMOGRAPHIC" tableType="TABLE" xmi:id="_n6LKscPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n6LKsMPREeyqnqHcS_GEqw" label="STG_DEMOGRAPHIC" name="STG_DEMOGRAPHIC" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n6LKscPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="DEMOGRAPHICID" length="50" name="DEMOGRAPHICID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n6LKssPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n6LKs8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n6LKtMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -12771,7 +12771,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n6LK4cPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n6XX8MPREeyqnqHcS_GEqw" label="STG_EAB" name="STG_EAB" tableType="TABLE" xmi:id="_n6XX8cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n6XX8MPREeyqnqHcS_GEqw" label="STG_EAB" name="STG_EAB" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n6XX8cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n6XX8sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n6XX88PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n6XX9MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -12843,7 +12843,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n6XYKcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n6laYMPREeyqnqHcS_GEqw" label="STG_EAB2021" name="STG_EAB2021" tableType="TABLE" xmi:id="_n6laYcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n6laYMPREeyqnqHcS_GEqw" label="STG_EAB2021" name="STG_EAB2021" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n6laYcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n6laYsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n6laY8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n6laZMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -12915,7 +12915,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n6lamcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n6zc0MPREeyqnqHcS_GEqw" label="STG_EABTEST" name="STG_EABTEST" tableType="TABLE" xmi:id="_n6zc0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n6zc0MPREeyqnqHcS_GEqw" label="STG_EABTEST" name="STG_EABTEST" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n6zc0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n6zc0sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n6zc08PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n6zc1MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -12987,7 +12987,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n6zdCcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n7c9EMPREeyqnqHcS_GEqw" label="STG_EIT" name="STG_EIT" tableType="TABLE" xmi:id="_n7c9EcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n7c9EMPREeyqnqHcS_GEqw" label="STG_EIT" name="STG_EIT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n7c9EcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ENTITY_ID" length="50" name="ENTITY_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n7c9EsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n7c9E8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n7c9FMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -13734,7 +13734,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n7c_ZcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n8LV0MPREeyqnqHcS_GEqw" label="STG_GAM" name="STG_GAM" tableType="TABLE" xmi:id="_n8LV0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n8LV0MPREeyqnqHcS_GEqw" label="STG_GAM" name="STG_GAM" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n8LV0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n8LV0sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n8LV08PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n8LV1MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -14561,7 +14561,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n8VJU8PREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n8sTMMPREeyqnqHcS_GEqw" label="STG_HTD" name="STG_HTD" tableType="TABLE" xmi:id="_n8sTMcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n8sTMMPREeyqnqHcS_GEqw" label="STG_HTD" name="STG_HTD" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n8sTMcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="TRAN_DATE" length="50" name="TRAN_DATE" sourceType="VARCHAR" talendType="id_String" xmi:id="_n8sTMsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n8sTM8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n8sTNMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -14993,7 +14993,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n81d_MPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n9KNQMPREeyqnqHcS_GEqw" label="STG_HTD_ATM" name="STG_HTD_ATM" tableType="TABLE" xmi:id="_n9T-QMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n9KNQMPREeyqnqHcS_GEqw" label="STG_HTD_ATM" name="STG_HTD_ATM" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n9T-QMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="TRAN_DATE" length="50" name="TRAN_DATE" sourceType="VARCHAR" talendType="id_String" xmi:id="_n9T-QcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n9T-QsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n9T-Q8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -15425,7 +15425,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n9T_mMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n9ouYMPREeyqnqHcS_GEqw" label="STG_HTD_RDX" name="STG_HTD_RDX" tableType="TABLE" xmi:id="_n9yfYMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n9ouYMPREeyqnqHcS_GEqw" label="STG_HTD_RDX" name="STG_HTD_RDX" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n9yfYMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="TRAN_DATE" length="50" name="TRAN_DATE" sourceType="VARCHAR" talendType="id_String" xmi:id="_n9yfYcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n9yfYsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n9yfY8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -15857,7 +15857,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n9yguMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n9-FkMPREeyqnqHcS_GEqw" label="STG_IDT" name="STG_IDT" tableType="TABLE" xmi:id="_n-H2kMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n9-FkMPREeyqnqHcS_GEqw" label="STG_IDT" name="STG_IDT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n-H2kMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ENTITY_ID" length="50" name="ENTITY_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n-H2kcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n-H2ksPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n-H2k8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -16084,7 +16084,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n-H3RMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n-55sMPREeyqnqHcS_GEqw" label="STG_LAM" name="STG_LAM" tableType="TABLE" xmi:id="_n_DDoMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n-55sMPREeyqnqHcS_GEqw" label="STG_LAM" name="STG_LAM" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n_DDoMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n_DDocPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n_DDosPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n_DDo8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -17086,7 +17086,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n_DGwMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n_QfAMPREeyqnqHcS_GEqw" label="STG_SMT" name="STG_SMT" tableType="TABLE" xmi:id="_n_QfAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n_QfAMPREeyqnqHcS_GEqw" label="STG_SMT" name="STG_SMT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n_QfAcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n_QfAsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n_QfA8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n_QfBMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -17228,7 +17228,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n_QfccPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_n_zRkMPREeyqnqHcS_GEqw" label="STG_SOL" name="STG_SOL" tableType="TABLE" xmi:id="_n_9CkMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_n_zRkMPREeyqnqHcS_GEqw" label="STG_SOL" name="STG_SOL" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_n_9CkMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="SOL_ID" length="50" name="SOL_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_n_9CkcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_n_9CksPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_n_9Ck8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -17855,7 +17855,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_n_9EhMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oAcx0MPREeyqnqHcS_GEqw" label="STG_TAM" name="STG_TAM" tableType="TABLE" xmi:id="_oAcx0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_oAcx0MPREeyqnqHcS_GEqw" label="STG_TAM" name="STG_TAM" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_oAcx0cPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="ACID" length="50" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_oAcx0sPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oAcx08PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oAcx1MPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -18392,7 +18392,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_oAczfcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oAspcMPREeyqnqHcS_GEqw" label="TBL_FUNDTRANSFER" name="TBL_FUNDTRANSFER" tableType="TABLE" xmi:id="_oAspccPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_oAspcMPREeyqnqHcS_GEqw" label="TBL_FUNDTRANSFER" name="TBL_FUNDTRANSFER" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_oAspccPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="FUND_TRANSFER_ID" length="255" name="FUND_TRANSFER_ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_oAspcsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oAspc8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oAspdMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -18524,7 +18524,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_oAsp2cPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oA6r4MPREeyqnqHcS_GEqw" label="TREASURY" name="TREASURY" tableType="TABLE" xmi:id="_oA7S8MPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_oA6r4MPREeyqnqHcS_GEqw" label="TREASURY" name="TREASURY" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_oA7S8MPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="_SSATYPE" length="50" name="﻿SSATYPE" sourceType="VARCHAR" talendType="id_String" xmi:id="_oA7S8cPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oA7S8sPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oA7S88PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -18591,7 +18591,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_oA76J8PREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oBHgMMPREeyqnqHcS_GEqw" label="TRSPESONET" name="TRSPESONET" tableType="TABLE" xmi:id="_oBHgMcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_oBHgMMPREeyqnqHcS_GEqw" label="TRSPESONET" name="TRSPESONET" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_oBHgMcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="_SEQ" length="50" name="﻿SEQ" sourceType="VARCHAR" talendType="id_String" xmi:id="_oBHgMsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oBHgM8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oBHgNMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -18718,7 +18718,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_oBHglcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oBON4MPREeyqnqHcS_GEqw" label="FXRATES" name="FXRATES" tableType="VIEW" xmi:id="_oBO08MPREeyqnqHcS_GEqw" xsi:type="relational:TdView">
+    <ownedElement id="_oBON4MPREeyqnqHcS_GEqw" label="FXRATES" name="FXRATES" properties="deleted&#10;&#10;true&#10;&#10;" tableType="VIEW" xmi:id="_oBO08MPREeyqnqHcS_GEqw" xsi:type="relational:TdView">
       <feature label="RTLIST_DATE" length="10" name="RTLIST_DATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_oBO08cPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oBO08sPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oBO088PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -18740,7 +18740,7 @@
         <sqlDataType javaDataType="3" name="DECIMAL" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_oBO1AMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oBukMMPREeyqnqHcS_GEqw" label="BIC2" name="BIC2" tableType="TABLE" xmi:id="_oBukMcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_oBukMMPREeyqnqHcS_GEqw" label="BIC2" name="BIC2" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_oBukMcPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="BIC" length="11" name="BIC" sourceType="VARCHAR" talendType="id_String" xmi:id="_oBukMsPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oBukM8PREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oBukNMPREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -18757,7 +18757,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_oBukPcPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oB8moMPREeyqnqHcS_GEqw" label="BILLS_PAYMENT_HDR" name="BILLS_PAYMENT_HDR" tableType="TABLE" xmi:id="_oCGXoMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_oB8moMPREeyqnqHcS_GEqw" label="BILLS_PAYMENT_HDR" name="BILLS_PAYMENT_HDR" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_oCGXoMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="BILLSPAYMENT_HDR_ID" length="255" name="BILLSPAYMENT_HDR_ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_oCGXocPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oCGXosPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oCGXo8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -19019,7 +19019,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_oCGYcMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oCL3MMPREeyqnqHcS_GEqw" label="BRANCHTRANCORPORATE" name="BRANCHTRANCORPORATE" tableType="TABLE" xmi:id="_oCMeQMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_oCL3MMPREeyqnqHcS_GEqw" label="BRANCHTRANCORPORATE" name="BRANCHTRANCORPORATE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_oCMeQMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="SOL_ID" length="255" name="SOL ID" sourceType="NVARCHAR" talendType="id_String" xmi:id="_oCMeQcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oCMeQsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oCMeQ8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -19056,7 +19056,7 @@
         <sqlDataType javaDataType="8" name="FLOAT" nullable="columnNullable" numericPrecisionRadix="2" xmi:id="_oCMeXMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oCSk4MPREeyqnqHcS_GEqw" label="BRANCHTRANRETAIL" name="BRANCHTRANRETAIL" tableType="TABLE" xmi:id="_oCTzAMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_oCSk4MPREeyqnqHcS_GEqw" label="BRANCHTRANRETAIL" name="BRANCHTRANRETAIL" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_oCTzAMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="SOL_ID" length="255" name="SOL ID" sourceType="NVARCHAR" talendType="id_String" xmi:id="_oCTzAcPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oCTzAsPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oCTzA8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -19118,7 +19118,7 @@
         <sqlDataType javaDataType="8" name="FLOAT" nullable="columnNullable" numericPrecisionRadix="2" xmi:id="_oCTzMMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_oCh1cMPREeyqnqHcS_GEqw" label="CLIENT" name="CLIENT" tableType="TABLE" xmi:id="_oCkRsMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
+    <ownedElement id="_oCh1cMPREeyqnqHcS_GEqw" label="CLIENT" name="CLIENT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_oCkRsMPREeyqnqHcS_GEqw" xsi:type="relational:TdTable">
       <feature label="CLIENT_ID" length="255" name="CLIENT_ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_oCkRscPREeyqnqHcS_GEqw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_oCkRssPREeyqnqHcS_GEqw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_oCkRs8PREeyqnqHcS_GEqw" xsi:type="relational:TdExpression"/>
@@ -19380,7 +19380,7 @@
         <sqlDataType javaDataType="-7" name="BIT" nullable="columnNullable" xmi:id="_oCkSgMPREeyqnqHcS_GEqw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_QLliAMXgEey5fd-C11CRsQ" label="FIN_ICT" name="FIN_ICT" tableType="TABLE" xmi:id="_QLliAcXgEey5fd-C11CRsQ" xsi:type="relational:TdTable">
+    <ownedElement id="_QLliAMXgEey5fd-C11CRsQ" label="FIN_ICT" name="FIN_ICT" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_QLliAcXgEey5fd-C11CRsQ" xsi:type="relational:TdTable">
       <feature label="ENTITY_ID" length="12" name="ENTITY_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_QLliAsXgEey5fd-C11CRsQ" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_QLliA8XgEey5fd-C11CRsQ"/>
         <initialValue language="COLUMN_DEF" xmi:id="_QLliBMXgEey5fd-C11CRsQ" xsi:type="relational:TdExpression"/>
@@ -19677,7 +19677,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_QLli7cXgEey5fd-C11CRsQ"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_hGQYEDJ4Ee2Oac5HxPmySw" label="FIN_ACCOUNTS" name="FIN_ACCOUNTS" tableType="TABLE" xmi:id="_hGjTADJ4Ee2Oac5HxPmySw" xsi:type="relational:TdTable">
+    <ownedElement id="_hGQYEDJ4Ee2Oac5HxPmySw" label="FIN_ACCOUNTS" name="FIN_ACCOUNTS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_hGjTADJ4Ee2Oac5HxPmySw" xsi:type="relational:TdTable">
       <feature label="ACCOUNTID" length="38" name="ACCOUNTID" nullable="false" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_hGjTATJ4Ee2Oac5HxPmySw" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_hGjTAjJ4Ee2Oac5HxPmySw"/>
         <initialValue language="COLUMN_DEF" xmi:id="_hGjTAzJ4Ee2Oac5HxPmySw" xsi:type="relational:TdExpression"/>
@@ -22009,7 +22009,7 @@
         <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="3" xmi:id="_hGjaSDJ4Ee2Oac5HxPmySw"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_voymkDP7Ee2fqqNcGC6n9Q" label="FIN_ADDRESS" name="FIN_ADDRESS" tableType="TABLE" xmi:id="_vo8XkDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_voymkDP7Ee2fqqNcGC6n9Q" label="FIN_ADDRESS" name="FIN_ADDRESS" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_vo8XkDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ADDRESSID" length="38" name="ADDRESSID" nullable="false" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_vo8XkTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_vo8XkjP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_vo8XkzP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -22656,7 +22656,7 @@
         <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="3" xmi:id="_vo8ZlDP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_wjwaADP7Ee2fqqNcGC6n9Q" label="FIN_ACCT_MODIFIED_HIST_TABLE" name="FIN_ACCT_MODIFIED_HIST_TABLE" tableType="TABLE" xmi:id="_wjwaATP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_wjwaADP7Ee2fqqNcGC6n9Q" label="FIN_ACCT_MODIFIED_HIST_TABLE" name="FIN_ACCT_MODIFIED_HIST_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_wjwaATP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_wjwaAjP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_wjwaAzP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_wjwaBDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -22728,7 +22728,7 @@
         <sqlDataType javaDataType="3" name="DECIMAL" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_wjwaOTP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_4UqxkDP7Ee2fqqNcGC6n9Q" label="FIN_ASST_CLASS_DETAIL_TBL" name="FIN_ASST_CLASS_DETAIL_TBL" tableType="TABLE" xmi:id="_4UqxkTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_4UqxkDP7Ee2fqqNcGC6n9Q" label="FIN_ASST_CLASS_DETAIL_TBL" name="FIN_ASST_CLASS_DETAIL_TBL" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_4UqxkTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="B2K_TYPE" length="5" name="B2K_TYPE" sourceType="VARCHAR" talendType="id_String" xmi:id="_4UqxkjP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_4UqxkzP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_4UqxlDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -22840,7 +22840,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_4Uqx6TP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_5IpMMDP7Ee2fqqNcGC6n9Q" label="FIN_CORPORATE" name="FIN_CORPORATE" tableType="TABLE" xmi:id="_5IyWIDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_5IpMMDP7Ee2fqqNcGC6n9Q" label="FIN_CORPORATE" name="FIN_CORPORATE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_5IyWIDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="CORP_ID" length="38" name="CORP_ID" nullable="false" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_5IyWITP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_5IyWIjP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_5IyWIzP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -24582,7 +24582,7 @@
         <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="3" xmi:id="_5IybkDP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_5ovokDP7Ee2fqqNcGC6n9Q" label="FIN_DEMOGRAPHIC" name="FIN_DEMOGRAPHIC" tableType="TABLE" xmi:id="_5ovokTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_5ovokDP7Ee2fqqNcGC6n9Q" label="FIN_DEMOGRAPHIC" name="FIN_DEMOGRAPHIC" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_5ovokTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="DEMOGRAPHICID" length="38" name="DEMOGRAPHICID" nullable="false" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_5ovokjP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_5ovokzP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_5ovolDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -25789,7 +25789,7 @@
         <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="3" xmi:id="_5ovsVTP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_6bmo4DP7Ee2fqqNcGC6n9Q" label="FIN_ENTITY_INTEREST_TABLE" name="FIN_ENTITY_INTEREST_TABLE" tableType="TABLE" xmi:id="_6bsvgDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_6bmo4DP7Ee2fqqNcGC6n9Q" label="FIN_ENTITY_INTEREST_TABLE" name="FIN_ENTITY_INTEREST_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_6bsvgDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ENTITY_ID" length="12" name="ENTITY_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_6bsvgTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_6bsvgjP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_6bsvgzP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -26536,7 +26536,7 @@
         <sqlDataType javaDataType="3" name="DECIMAL" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_6bsx1DP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_7AI5UDP7Ee2fqqNcGC6n9Q" label="FIN_EOD_ACCT_BAL_TABLE" name="FIN_EOD_ACCT_BAL_TABLE" tableType="TABLE" xmi:id="_7AJgYDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_7AI5UDP7Ee2fqqNcGC6n9Q" label="FIN_EOD_ACCT_BAL_TABLE" name="FIN_EOD_ACCT_BAL_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_7AJgYDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_7AJgYTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_7AJgYjP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_7AJgYzP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -26608,7 +26608,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_7AJgmDP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_7wk3wDP7Ee2fqqNcGC6n9Q" label="FIN_GEN_SCHM_PARM_TABLE" name="FIN_GEN_SCHM_PARM_TABLE" tableType="TABLE" xmi:id="_7wsMgDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_7wk3wDP7Ee2fqqNcGC6n9Q" label="FIN_GEN_SCHM_PARM_TABLE" name="FIN_GEN_SCHM_PARM_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_7wsMgDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="SCHM_CODE" length="5" name="SCHM_CODE" sourceType="VARCHAR" talendType="id_String" xmi:id="_7wsMgTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_7wsMgjP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_7wsMgzP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -27750,7 +27750,7 @@
         <sqlDataType javaDataType="3" name="DECIMAL" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_7wsQEDP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_8gcOcDP7Ee2fqqNcGC6n9Q" label="FIN_GENERAL_ACCT_MAST_TABLE" name="FIN_GENERAL_ACCT_MAST_TABLE" tableType="TABLE" xmi:id="_8gstIDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_8gcOcDP7Ee2fqqNcGC6n9Q" label="FIN_GENERAL_ACCT_MAST_TABLE" name="FIN_GENERAL_ACCT_MAST_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_8gstIDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_8gstITP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_8gstIjP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_8gstIzP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -28577,7 +28577,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_8gt7jzP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_9LdhYDP7Ee2fqqNcGC6n9Q" label="FIN_GL_SUB_HEAD_TABLE" name="FIN_GL_SUB_HEAD_TABLE" tableType="TABLE" xmi:id="_9LdhYTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_9LdhYDP7Ee2fqqNcGC6n9Q" label="FIN_GL_SUB_HEAD_TABLE" name="FIN_GL_SUB_HEAD_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_9LdhYTP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="SOL_ID" length="8" name="SOL_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_9LdhYjP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_9LdhYzP7Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_9LdhZDP7Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -28724,7 +28724,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_9Ldh1TP7Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_G8NpwDP8Ee2fqqNcGC6n9Q" label="FIN_INT_TBL_CODE_TABLE" name="FIN_INT_TBL_CODE_TABLE" tableType="TABLE" xmi:id="_G8XawDP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_G8NpwDP8Ee2fqqNcGC6n9Q" label="FIN_INT_TBL_CODE_TABLE" name="FIN_INT_TBL_CODE_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_G8XawDP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ENTITY_ID" length="12" name="ENTITY_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_G8XawTP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_G8XawjP8Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_G8XawzP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -29021,7 +29021,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_G8XbrDP8Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_HmxpsDP8Ee2fqqNcGC6n9Q" label="FIN_INTEREST_DETAILS_TABLE" name="FIN_INTEREST_DETAILS_TABLE" tableType="TABLE" xmi:id="_HmxpsTP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_HmxpsDP8Ee2fqqNcGC6n9Q" label="FIN_INTEREST_DETAILS_TABLE" name="FIN_INTEREST_DETAILS_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_HmxpsTP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ENTITY_ID" length="12" name="ENTITY_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_HmxpsjP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_HmxpszP8Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_HmxptDP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -29248,7 +29248,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_HmxqZTP8Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_IOIkoDP8Ee2fqqNcGC6n9Q" label="FIN_LA_ACCT_MAST_TABLE" name="FIN_LA_ACCT_MAST_TABLE" tableType="TABLE" xmi:id="_IOIkoTP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_IOIkoDP8Ee2fqqNcGC6n9Q" label="FIN_LA_ACCT_MAST_TABLE" name="FIN_LA_ACCT_MAST_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_IOIkoTP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_IOIkojP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_IOIkozP8Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_IOIkpDP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -30250,7 +30250,7 @@
         <sqlDataType javaDataType="1" name="CHAR" nullable="columnNullable" xmi:id="_IORwgTP8Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_JAiR8DP8Ee2fqqNcGC6n9Q" label="FIN_RATELIST_TABLE" name="FIN_RATELIST_TABLE" tableType="TABLE" xmi:id="_JAiR8TP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_JAiR8DP8Ee2fqqNcGC6n9Q" label="FIN_RATELIST_TABLE" name="FIN_RATELIST_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_JAiR8TP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="FXD_CRNCY_CODE" length="3" name="FXD_CRNCY_CODE" sourceType="VARCHAR" talendType="id_String" xmi:id="_JAiR8jP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_JAiR8zP8Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_JAiR9DP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -30372,7 +30372,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_JAiSUTP8Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_JmvWUDP8Ee2fqqNcGC6n9Q" label="FIN_SBCA_MAST_TABLE" name="FIN_SBCA_MAST_TABLE" tableType="TABLE" xmi:id="_JmvWUTP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_JmvWUDP8Ee2fqqNcGC6n9Q" label="FIN_SBCA_MAST_TABLE" name="FIN_SBCA_MAST_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_JmvWUTP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_JmvWUjP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_JmvWUzP8Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_JmvWVDP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -30514,7 +30514,7 @@
         <sqlDataType javaDataType="3" name="DECIMAL" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_JmvWwTP8Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_KPFvwDP8Ee2fqqNcGC6n9Q" label="FIN_SERVICE_OUTLET_TABLE" name="FIN_SERVICE_OUTLET_TABLE" tableType="TABLE" xmi:id="_KPPgwDP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_KPFvwDP8Ee2fqqNcGC6n9Q" label="FIN_SERVICE_OUTLET_TABLE" name="FIN_SERVICE_OUTLET_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_KPPgwDP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="SOL_ID" length="8" name="SOL_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_KPPgwTP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_KPPgwjP8Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_KPPgwzP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -31141,7 +31141,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_KPZS1DP8Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_LVk2sDP8Ee2fqqNcGC6n9Q" label="FIN_TD_ACCT_MASTER_TABLE" name="FIN_TD_ACCT_MASTER_TABLE" tableType="TABLE" xmi:id="_LVunsDP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_LVk2sDP8Ee2fqqNcGC6n9Q" label="FIN_TD_ACCT_MASTER_TABLE" name="FIN_TD_ACCT_MASTER_TABLE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_LVunsDP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdTable">
       <feature label="ACID" length="11" name="ACID" sourceType="VARCHAR" talendType="id_String" xmi:id="_LVunsTP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_LVunsjP8Ee2fqqNcGC6n9Q"/>
         <initialValue language="COLUMN_DEF" xmi:id="_LVunszP8Ee2fqqNcGC6n9Q" xsi:type="relational:TdExpression"/>
@@ -31678,7 +31678,7 @@
         <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_LVupXDP8Ee2fqqNcGC6n9Q"/>
       </feature>
     </ownedElement>
-    <ownedElement id="_01IsUDfwEe2Vdu8KRNoOuA" label="SYSTEMDATE" name="SYSTEMDATE" tableType="TABLE" xmi:id="_01IsUTfwEe2Vdu8KRNoOuA" xsi:type="relational:TdTable">
+    <ownedElement id="_01IsUDfwEe2Vdu8KRNoOuA" label="SYSTEMDATE" name="SYSTEMDATE" properties="deleted&#10;&#10;true&#10;&#10;" tableType="TABLE" xmi:id="_01IsUTfwEe2Vdu8KRNoOuA" xsi:type="relational:TdTable">
       <feature label="ID" length="1" name="ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_01IsUjfwEe2Vdu8KRNoOuA" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_01IsUzfwEe2Vdu8KRNoOuA"/>
         <initialValue language="COLUMN_DEF" xmi:id="_01IsVDfwEe2Vdu8KRNoOuA" xsi:type="relational:TdExpression"/>
@@ -31761,13 +31761,13 @@
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_588f763a-a49d-41a1-8293-ae0ab84da588"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>b66CsKLpBduwsBqYQqNBImh3W+rEPQjYuYUVUDm7qZLabum75v3C25M3ZVM5ycaO8VxyZgcr2375&#13;
-u+dn1zCy/w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4069c334-6268-496a-9be6-29946cb020b9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KHE23RAR4CQeZcZs+aZid+GPkERt7HPhMGOekmtRVQB+ZmF5IeZKUxhm72nleNhQ5sdKHd6wgXCh&#13;
-EwEBUDlMBg==</DigestValue></Reference></SignedInfo><SignatureValue>cXU1Yq6XLah6Gv+AJxuG+FSNVyTcagBvx74noewpWTh9L0jgUjejL+2TyfHgQPSxNi40XzKqxSuP&#13;
-t+VXswYrJ0lFAt5fy1M7Pgj+1oAyQO1GLq1hPovMNmjkjwtKMM2lIC8in9ly+GpeKJygIVkAg4K2&#13;
-far9vfuDJlviCpcEDzLuzclLy5EUWHtp0VtMxExcf3ZArnoihrpw1f4Cy03VdU7kWqmr7AfVO4WN&#13;
-iX417NfyDdvXEcNN5L+jIzA5eCyXMvE5/7KUTqVR296eqy3rtI6fuAL/zM/PeKRecM4nB4MfWRC/&#13;
-iIxhyafEmjeSqt9StcLjO8+Aca+jSqEU1CJXQA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dbd777e9-271f-440f-bba5-d235ab5df3dd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RTHekIdYiCOOOajPZrIxyBdHs129p9DkmqR4u5dl3QD2cz798jPRT4zMqYXYLgmR+cSfh3jtuxsT&#13;
+qbAGPM1eVQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1d25f13f-dd65-4cdd-a32f-7b35b2684839"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wbY4YN+BL1pzrFInOuXQ0eEKjfUw475/AwpNdu/dSq6AjpZjsHY52SUGywU7nDrY7bc6dC4kmm+a&#13;
+hMpvc23fHw==</DigestValue></Reference></SignedInfo><SignatureValue>ZKKsQ+QM0ubFB2LgytshVLCEwmkw/H0NPf8Y3WL16+4FetCSjuF2DfOhXzwCLg2GPzC7o2xVjSus&#13;
+sP0yw1hdDw5JdG+nM1zIMf2xAxLA9yui3+8mhbVEb/JPEerldLjLu/ZWHHvpgje6TG8HPW/tGdWB&#13;
+p6+0ot2buV2TCWPMevslvqDZ1PmFabx2LBKcK7ZVgwdDeQHIqFxx+5vQRPRkAAK9VIiBpvEs3QCl&#13;
+rt7TJgU1neAtdW7OnsUd7E4atSdQQ4w4RFQea5kesRkmUO+5/mic/e0OQcjcSWDrIc6WwBwv//v1&#13;
+KXCVnhp2hU7egOQV2/QjxmWHWwM2+c+fl1MlTQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -31789,4 +31789,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4069c334-6268-496a-9be6-29946cb020b9" Target="#_588f763a-a49d-41a1-8293-ae0ab84da588"><Timestamp>2022-09-19 07:59:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1d25f13f-dd65-4cdd-a32f-7b35b2684839" Target="#_dbd777e9-271f-440f-bba5-d235ab5df3dd"><Timestamp>2022-10-28 08:25:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

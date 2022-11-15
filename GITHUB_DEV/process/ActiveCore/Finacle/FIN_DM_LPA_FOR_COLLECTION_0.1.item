@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:FOnQf8CV44T34CLFGsdpspWLMUrgUyNfJbCJmZx/"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:OHh8oJ63h7NqEpShcycZqeuHllv6BK+LCbllQfbU"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:u5I8jvq9E9ymsBc93TG3zFeBt064r9GYl4va5HYT"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:jh6BlmSD3MTzByAZTmdfzr0ks1aYqD7Rn66tex/d"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -135,7 +135,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1W11ZrNuc6NWjCj1MDqHr2FjKy0hzh+wDFSj4v9oN0stgGNlLZ9j0l7ipA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:y8SIyqkGLkPwdGgWWG2nffx5QJVnhSoA5Y9hE9fmfRaiYONK4hwrzYKElQ=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -161,7 +161,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FLb/aApqJAgXYFmsaxNBMBNIeBEMIUHHsiD3+TlLu0+9CUhvDfsbfZ8RZA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Omkje2egu80LayOUUpwbNqfb/S70LyrIhozu8sLNIzoHlEuT8b6H9vg8Nw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -189,13 +189,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:f0wM6Kgfkgfv0NJUsGWjlR83RsLmWTpU+k9Fy+imN18cBV/+2h5RFmgmSA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:i/4WL2H+b2JHu2tVVmY8mwyj/5MjIUyfBcBMI/sTHhGiXazP4FSKPEHdkg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#13;&#10;&#9;gam.acid,&#13;&#10;&#9;gam.SCHM_CODE schm_code,&#13;&#10;    schm_type loan_type,&#13;&#10;    concat(gam.gl_sub_head_code,' ',gl_sub_head_desc)  gl_acct,&#13;&#10;&#9;foracid acctno,&#13;&#10;    acct_name,&#13;&#10;&#9;tran_date_bal * -1  CUR_BAL,&#13;&#10;&#9;sanct_lim loan_amount,&#13;&#10;    acct_opn_date release_date,&#13;&#10;    --DECODE(gam.SCHM_CODE,'PLSEC',(SELECT NEXT_DMD_DATE FROM tbaadm.LRS WHERE ACID = gam.ACID AND FLOW_ID = 'INDEM'),lam.EI_PERD_END_DATE) matDate,&#13;&#10;&#9;CASE&#13;&#10;&#9;&#9;WHEN gam.SCHM_CODE = 'PLSEC'&#13;&#10;&#9;&#9;&#9;THEN (SELECT NEXT_DMD_DATE FROM FIN_LA_REP_SHDL_TABLE WHERE ACID = gam.ACID AND FLOW_ID = 'INDEM')&#13;&#10;&#9;&#9;&#9;ELSE lam.EI_PERD_END_DATE&#13;&#10;&#9;END matDate,&#13;&#10;    dpd_cntr days_pd,&#13;&#10;&#9;concat(ACD.MAIN_CLASSIFICATION_USER,' ',(SELECT REF_DESC FROM FIN_REFERENCE_CODE_TABLE WHERE REF_CODE = ACD.MAIN_CLASSIFICATION_USER AND REF_REC_TYPE = 'BG')) STATUS,&#13;&#10;    --decode(FN_GET_INT_RATE(gam.acid,to_date(pInDate,'mm/dd/yyyy')),0,FN_GET_INT_RATE2(gam.acid),FN_GET_INT_RATE(gam.acid,to_date(pInDate,'mm/dd/yyyy'))) INTRATE&#13;&#10;    --NVL(FN_GET_ARREAR_AMT(gam.ACID),0) ARREARS&#13;&#10;    /*CASE &#13;&#10;&#9;&#9;when product_group in ('CL','HL') &#13;&#10;&#9;&#9;&#9;THEN (SELECT FLOW_AMT FROM FIN_LA_REP_SHDL_TABLE WHERE ACID = gam.ACID and to_date(pInDate,'mm/dd/yyyy') between  flow_start_date and next_dmd_date) &#13;&#10;&#9;&#9;&#9;ELSE (SELECT SUM(FLOW_AMT) FROM FIN_LA_REP_SHDL_TABLE WHERE ACID(+) = GAM.ACID) &#13;&#10;    END MONTHLY_AMORT,*/&#13;&#10;    --fc_pymt_dtls(GAM.ACID,'DATE') LAST_TRAN_DATE&#13;&#10;    --fc_pymt_dtls(GAM.ACID,'AMT') TOT_ADJ_AMT &#13;&#10;    LAM.REP_PERD_MTHS LOANTERM,&#13;&#10;    CAST(CUST_DOB as date) BDAY, &#13;&#10;    --(FN_GET_PAID_PRINCIPAL(GAM.ACID,pInDate)  +  FN_GET_PAID_INTEREST(GAM.ACID,pInDate)  +  FN_GET_PAID_PENAL(GAM.ACID,pInDate)  ) TOTAL_PAYMENT&#13;&#10;    --NVL(FN_GET_PAID_PRINCIPAL(GAM.ACID,pInDate),0) PRINCIPAL_PAID&#13;&#10;    --NVL(FN_GET_PAID_INTEREST(GAM.ACID,pInDate),0) INTEREST_PAID&#13;&#10;    GAM.CIF_ID,&#13;&#10;    EMP_NAME MANAGER_ID,&#13;&#10;    misc.employerid,&#13;&#10;    misc.strtext4,&#13;&#10;    CONCAT(LAM.DMD_SATISFY_MTHD,'-',&#13;&#10;&#9;&#9;(CASE &#13;&#10;&#9;&#9;&#9;WHEN LAM.DMD_SATISFY_MTHD = 'E' THEN 'Recover up to Effective amount'&#13;&#10;            WHEN LAM.DMD_SATISFY_MTHD = 'B' THEN 'Bill to the Employer'&#13;&#10;            WHEN LAM.DMD_SATISFY_MTHD = 'D' THEN 'Electronics Clearing'&#13;&#10;            WHEN LAM.DMD_SATISFY_MTHD = 'N' THEN 'No Batch Recovery'&#13;&#10;            WHEN LAM.DMD_SATISFY_MTHD = 'P' THEN 'Post Dated Chq' &#13;&#10;&#9;&#9;&#9;ELSE NULL &#13;&#10;&#9;&#9;END)) REPAYMENT_METHOD,&#13;&#10;    GAC.FREE_TEXT_15,&#13;&#10;    sdr.free_text&#13;&#10;from FIN_GENERAL_ACCT_MAST_TABLE GAM&#13;&#10;left join FIN_EOD_ACCT_BAL_TABLE eab&#13;&#10;    on gam.acid = eab.acid  and &quot;+context.Extractdate+&quot; between eod_date and end_eod_date&#13;&#10;&#9;--on gam.acid = eab.acid&#13;&#10;left join FIN_MISCELLANEOUSINFO misc&#13;&#10;   on gam.cif_id = misc.orgkey and type = 'CURRENT_EMPLOYMENT' and (misc.employerid is not null or strtext4 is not null) &#13;&#10;left join FIN_LA_ACCT_MAST_TABLE LAM&#13;&#10;    on gam.acid = lam.acid&#13;&#10;left join FIN_GL_SUB_HEAD_TABLE GSH&#13;&#10;    on gam.gl_sub_head_code = gsh.gl_sub_head_code and gam.sol_id = gsh.sol_id and gam.acct_crncy_code = gsh.crncy_code&#13;&#10;left join FIN_ASST_CLASS_DETAIL_TBL ACD&#13;&#10;    on gam.acid = acd.b2k_id and acd.b2k_type = 'ACCNT' and acd.bank_id = '01'&#13;&#10;left join FIN_GEN_ACCT_CLASS_TABLE GAC &#13;&#10;    on gam.acid = gac.acid and gac.bank_id = '01'&#13;&#10;left join FIN_ACCOUNT &#13;&#10;    on gam.cif_id = FIN_ACCOUNT.orgkey &#13;&#10;left join FIN_SECU_DETAIL_RGTR_TABLE SDR &#13;&#10;    on gam.acid = sdr.acid&#13;&#10; left join FIN_USER_PROFILE_TABLE upr&#13;&#10; on gam.ACCT_MGR_USER_ID = upr.user_id&#13;&#10; left join FIN_GEN_EMP_TABLE get&#13;&#10; on upr.user_emp_id = get.EMP_id&#13;&#10;WHERE gam.schm_type IN ('LAA','CLA')&#13;&#10;AND   gam.acct_crncy_code = 'PHP'&#13;&#10;AND   tran_date_bal &lt;&gt; 0&#13;&#10;AND   gam.del_flg = 'N'&#13;&#10;AND   gam.acct_opn_date &lt;=  &quot;+context.Extractdate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT&#13;&#10;A.ACID&#13;&#10;,CONCAT(GAM.SCHM_CODE,' ',SCHM_DESC)&#13;&#10;,GAM.SCHM_TYPE &#13;&#10;,CONCAT(GAM.GL_SUB_HEAD_CODE,' ',GL_SUB_HEAD_DESC)  &#13;&#10;,cast(GAM.FORACID as varchar(20)) &#13;&#10;,ACCT_NAME&#13;&#10;,TRAN_DATE_BAL * -1  &#13;&#10;,SANCT_LIM &#13;&#10;,ACCT_OPN_DATE &#13;&#10;,CASE WHEN GAM.SCHM_CODE = 'PLSEC' THEN (SELECT NEXT_DMD_DATE FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND FLOW_ID = 'INDEM')&#13;&#10;&#9;ELSE LAM.EI_PERD_END_DATE END&#13;&#10;,DPD_CNTR&#13;&#10;,CONCAT(ACD.MAIN_CLASSIFICATION_USER,' ',(SELECT REF_DESC FROM FIN_REFERENCE_CODE_TABLE RCT WHERE REF_CODE = ACD.MAIN_CLASSIFICATION_USER AND REF_REC_TYPE = 'BG')) &#13;&#10;,(SELECT SUM(FLOW_AMT) FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND CURRENT_INT_REC_FLG = 'Y')  &#13;&#10;,LAM.REP_PERD_MTHS &#13;&#10;,CAST(CUST_DOB as varchar(10)) &#13;&#10;,GAM.CIF_ID&#13;&#10;,ACCT_MGR_USER_ID&#13;&#10;,MISC.EMPLOYERID&#13;&#10;,MISC.STRTEXT4&#13;&#10;,CONCAT(LAM.DMD_SATISFY_MTHD,' - ',(CASE WHEN LAM.DMD_SATISFY_MTHD = 'E' THEN 'Recover up to Effective amount'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'B' THEN 'Bill to the Employer'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'D' THEN 'Electronics Clearing'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'N' THEN 'No Batch Recovery'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'P' THEN 'Post Dated Chq' ELSE NULL END))&#13;&#10;,GAC.FREE_TEXT_15&#13;&#10;,GAM.CHRG_LEVEL_CODE&#13;&#10;,CASE WHEN LAM.CHRGE_OFF_FLG = 'Y' then 1 else (TRAN_DATE_BAL * -1) end&#13;&#10;,CASE WHEN FIN_ACCOUNT.CUST_HLTH = 'A' THEN 'LOW RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'B' THEN 'LOW RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'C' THEN 'NORMAL RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'D' THEN 'NORMAL RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'E' THEN 'HIGH RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'F' THEN 'HIGH RISK - PEP' END,&#13;&#10;(select distinct PROPERTY_BUILDER_NAME from FIN_COLTRL_IPROP_DT_TABLE cid where acid = gam.acid)&#13;&#10;,gac.FREE_CODE_10&#13;&#10;,gac.free_TEXT_14&#13;&#10;FROM FIN_GENERAL_ACCT_MAST_TABLE GAM&#13;&#10;LEFT JOIN FIN_EOD_ACCT_BAL_TABLE EAB&#13;&#10;ON GAM.ACID = EAB.ACID  AND &quot;+context.Extractdate+&quot; BETWEEN EOD_DATE AND END_EOD_DATE&#13;&#10;LEFT JOIN FIN_MISCELLANEOUSINFO MISC&#13;&#10;ON GAM.CIF_ID = MISC.ORGKEY AND TYPE = 'CURRENT_EMPLOYMENT' AND (MISC.EMPLOYERID IS NOT NULL OR STRTEXT4 IS NOT NULL) &#13;&#10;LEFT JOIN  FIN_GEN_SCHM_PARM_TABLE GSP&#13;&#10;ON GAM.SCHM_CODE = GSP.SCHM_CODE&#13;&#10;LEFT JOIN FIN_LA_ACCT_MAST_TABLE LAM&#13;&#10;ON GAM.ACID = LAM.ACID&#13;&#10;LEFT JOIN FIN_GL_SUB_HEAD_TABLE GSH&#13;&#10;ON GAM.GL_SUB_HEAD_CODE = GSH.GL_SUB_HEAD_CODE AND GAM.SOL_ID = GSH.SOL_ID AND GAM.ACCT_CRNCY_CODE = GSH.CRNCY_CODE&#13;&#10;LEFT JOIN FIN_ASST_CLASS_DETAIL_TBL ACD&#13;&#10;ON GAM.ACID = ACD.B2K_ID AND ACD.B2K_TYPE = 'ACCNT' AND ACD.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_GEN_ACCT_CLASS_TABLE GAC &#13;&#10;ON GAM.ACID = GAC.ACID AND GAC.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_ACCOUNT &#13;&#10;ON GAM.CIF_ID = FIN_ACCOUNT.ORGKEY  &#13;&#10;WHERE GAM.SCHM_TYPE IN ('LAA', 'CLA')&#13;&#10;AND GAM.ACCT_CRNCY_CODE = 'PHP'&#13;&#10;AND TRAN_DATE_BAL &lt;&gt; 0&#13;&#10;AND GAM.DEL_FLG = 'N'&#13;&#10;AND GAM.ACCT_OPN_DATE &lt;= &quot;+context.Extractdate&#13;&#10;&#13;&#10;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -226,7 +226,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MATDATE"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DAYS_PD"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORIG_DPD"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -236,7 +236,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CIF_ID"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MANAGER_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_MGR_USER_ID"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EMPLOYERID"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -246,7 +246,17 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FREE_TEXT_15"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FREE_TEXT"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHRG_LEVEL_CODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHRGOFF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RISK_CLASS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEVELOPER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FREE_CODE_10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="free_TEXT_14"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
@@ -264,17 +274,22 @@
       <column comment="" defaultValue="" key="false" length="20" name="LOAN_AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="RELEASE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MATDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="DAYS_PD" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORIG_DPD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="STATUS" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOANTERM" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BDAY" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="CIF_ID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="MANAGER_ID" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ACCT_MGR_USER_ID" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="EMPLOYERID" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="STRTEXT4" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="REPAYMENT_METHOD" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="FREE_TEXT_15" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="300" name="FREE_TEXT" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CHRG_LEVEL_CODE" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CHRGOFF" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="RISK_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="DEVELOPER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="FREE_CODE_10" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="300" name="free_TEXT_14" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="320">
@@ -282,7 +297,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_ka8_8GHAEe2tLrFvkczAWQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_AbPy8GTXEe2Q57bV_6by5g-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -293,7 +308,6 @@
     <elementParameter field="TEXT" name="LABEL" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="200" name="ACID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="SCHM_CODE" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_TYPE" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="GL_ACCT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -303,25 +317,29 @@
       <column comment="" defaultValue="" key="false" length="20" name="LOAN_AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="RELEASE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MATDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="DAYS_PD" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORIG_DPD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="STATUS" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOANTERM" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BDAY" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="CIF_ID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="MANAGER_ID" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ACCT_MGR_USER_ID" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="EMPLOYERID" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="STRTEXT4" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="REPAYMENT_METHOD" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="FREE_TEXT_15" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="300" name="FREE_TEXT_1" nullable="true" originalDbColumnName="FREE_TEXT" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CHRG_LEVEL_CODE" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CHRGOFF" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="RISK_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="DEVELOPER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="FREE_CODE_10" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="300" name="free_TEXT_14" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.ACID " name="ACID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.SCHM_CODE " name="SCHM_CODE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.LOAN_TYPE " name="LOAN_TYPE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.GL_ACCT " name="GL_ACCT" nullable="true" type="id_String"/>
@@ -331,18 +349,23 @@
         <mapperTableEntries expression="row1.LOAN_AMOUNT " name="LOAN_AMOUNT" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="row1.RELEASE_DATE " name="RELEASE_DATE" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.MATDATE " name="MATDATE" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row1.DAYS_PD " name="DAYS_PD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ORIG_DPD " name="ORIG_DPD" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.STATUS " name="STATUS" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Relational.ISNULL(row2.INTRATE) ||row2.INTRATE == 0?row3.INTRATE:row2.INTRATE " name="INTRATE" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="row1.LOANTERM " name="LOANTERM" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.BDAY " name="BDAY" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.CIF_ID " name="CIF_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.MANAGER_ID " name="MANAGER_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ACCT_MGR_USER_ID " name="ACCT_MGR_USER_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.EMPLOYERID " name="EMPLOYERID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.STRTEXT4 " name="STRTEXT4" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.REPAYMENT_METHOD " name="REPAYMENT_METHOD" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.FREE_TEXT_15 " name="FREE_TEXT_15" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.FREE_TEXT " name="FREE_TEXT_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CHRG_LEVEL_CODE " name="CHRG_LEVEL_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CHRGOFF " name="CHRGOFF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.RISK_CLASS " name="RISK_CLASS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DEVELOPER " name="DEVELOPER" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.FREE_CODE_10 " name="FREE_CODE_10" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.free_TEXT_14 " name="free_TEXT_14" nullable="true" type="id_String"/>
         <mapperTableEntries expression="context.EDWLoadDate" name="EDW_LOAD_DATE" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
@@ -356,17 +379,22 @@
         <mapperTableEntries name="LOAN_AMOUNT" nullable="true" type="id_Double"/>
         <mapperTableEntries name="RELEASE_DATE" nullable="true" type="id_Date"/>
         <mapperTableEntries name="MATDATE" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="DAYS_PD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ORIG_DPD" nullable="true" type="id_String"/>
         <mapperTableEntries name="STATUS" nullable="true" type="id_String"/>
         <mapperTableEntries name="LOANTERM" nullable="true" type="id_String"/>
         <mapperTableEntries name="BDAY" nullable="true" type="id_Date"/>
         <mapperTableEntries name="CIF_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MANAGER_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ACCT_MGR_USER_ID" nullable="true" type="id_String"/>
         <mapperTableEntries name="EMPLOYERID" nullable="true" type="id_String"/>
         <mapperTableEntries name="STRTEXT4" nullable="true" type="id_String"/>
         <mapperTableEntries name="REPAYMENT_METHOD" nullable="true" type="id_String"/>
         <mapperTableEntries name="FREE_TEXT_15" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FREE_TEXT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CHRG_LEVEL_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CHRGOFF" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RISK_CLASS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DEVELOPER" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FREE_CODE_10" nullable="true" type="id_String"/>
+        <mapperTableEntries name="free_TEXT_14" nullable="true" type="id_String"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.ACID " name="ENTITY_ID" nullable="true" type="id_String"/>
@@ -391,7 +419,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:6qNIh+YIu3IjX+jzaEP2F9VQtwXpZGB5FL8pQe4KNFpFYX1PHR2Zcoyzyw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AKrDNsZfsNRdHVoZSlpv+MrQJUIPI09FCtcu2/NZN/xgDefQr3Wx2pE8jw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -435,7 +463,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:yPBNBncFLSxisAFn1tkqChcxX/9s7c9SBvwE70ACvW2G/1ScM9XP87NVKQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YjAvWzRSXPTsEypvC5gUAS2BEnF3CtQdAoPUZBmR2CM7Ac1N4O7nW47SMg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -479,14 +507,14 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vWXmNkn6tfpcZAgjIeSpE0MM2we+Vti2r6jJgsXBzqrwY1XikBw0REzwug=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:oI3LOBCpN3Z1rxBbK9In5MgqHOtekVpj4kouGqBQdJ75pXABlJFnCiEfaA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_DM_LPA_FOR_COLLECTION&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
-    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="ACID"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="SCHM_CODE"/>
     <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
     <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -504,11 +532,6 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACID"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SCHM_CODE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -554,7 +577,7 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DAYS_PD"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORIG_DPD"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -584,7 +607,7 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MANAGER_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_MGR_USER_ID"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -609,7 +632,32 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FREE_TEXT_1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHRG_LEVEL_CODE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHRGOFF"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RISK_CLASS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEVELOPER"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FREE_CODE_10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="free_TEXT_14"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -630,7 +678,6 @@
     <elementParameter field="TEXT" name="LABEL" value="FIN_DM_LPA_FOR_COLLECTION"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="false" length="200" name="ACID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="SCHM_CODE" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_TYPE" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="GL_ACCT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -640,22 +687,26 @@
       <column comment="" defaultValue="" key="false" length="20" name="LOAN_AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="RELEASE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MATDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="DAYS_PD" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORIG_DPD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="STATUS" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOANTERM" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BDAY" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="CIF_ID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="MANAGER_ID" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ACCT_MGR_USER_ID" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="EMPLOYERID" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="STRTEXT4" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="REPAYMENT_METHOD" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="FREE_TEXT_15" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="300" name="FREE_TEXT_1" nullable="true" originalDbColumnName="FREE_TEXT" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CHRG_LEVEL_CODE" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CHRGOFF" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="RISK_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="DEVELOPER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="FREE_CODE_10" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="300" name="free_TEXT_14" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="200" name="ACID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="SCHM_CODE" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_TYPE" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="GL_ACCT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -665,19 +716,24 @@
       <column comment="" defaultValue="" key="false" length="20" name="LOAN_AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="RELEASE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MATDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="DAYS_PD" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORIG_DPD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="STATUS" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOANTERM" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BDAY" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="CIF_ID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="MANAGER_ID" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ACCT_MGR_USER_ID" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="EMPLOYERID" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="STRTEXT4" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="REPAYMENT_METHOD" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="FREE_TEXT_15" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="300" name="FREE_TEXT_1" nullable="true" originalDbColumnName="FREE_TEXT" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CHRG_LEVEL_CODE" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CHRGOFF" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="RISK_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="DEVELOPER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="FREE_CODE_10" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="300" name="free_TEXT_14" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -693,7 +749,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hFKwfyc+nO5HBQHUKA13xyVSoKlacmlJP0lsXDhW"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ftP9RMRj1kNRTf4pYg98Uds4/zmn03LTj3VK005R"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -742,7 +798,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:njlu9abtV6LA4hZedp5jBMnHmWUAN/miOPb1f/gr"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:egNzebvyZ9vhd6We6Tr888ws0UWe+R6BvUNW9oAZ"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -801,7 +857,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="BDAY"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FREE_TEXT"/>
+      <elementValue elementRef="TRACE_COLUMN" value="free_TEXT_14"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="FREE_TEXT_15"/>
@@ -849,6 +905,27 @@
       <elementValue elementRef="TRACE_COLUMN" value="LOANTERM"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEVELOPER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHRGOFF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RISK_CLASS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORIG_DPD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCT_MGR_USER_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHRG_LEVEL_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FREE_CODE_10"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
@@ -859,6 +936,30 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="INTRATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="free_TEXT_14"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEVELOPER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHRGOFF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RISK_CLASS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORIG_DPD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCT_MGR_USER_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHRG_LEVEL_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FREE_CODE_10"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -915,13 +1016,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_545ca223-fec2-4b32-a54c-41f832f34d29"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aNXu4qcFPVT4fgF/Ns+0+RTUpDPowznYZ5uUCeWZ8oniNUBKLUO/WxcK1gaBYeLVgAbacBCDZsow&#13;
-QDxIzGSkeQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_eb1e8cce-cb3e-499f-985c-535db13d51cb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>23DOO7o6e5hr4XAKhwLkc98s+CCr4EtFsLMM/MniFkkt78r6CkkkP8pSF87j69kv76zVYam/aluf&#13;
-ImHlSsNVdw==</DigestValue></Reference></SignedInfo><SignatureValue>iT6+XjaLXgo86jY4RC+FjmNTZGH9nvcFbUrH2pGSUnZSKG6636DIEYbajJX/2N+PwTtimxaTXVaJ&#13;
-/SsVfP1CzhHN25MsrSvX8YdORGfcTsp/0IkTJE11kNVAKiemDjRXispUS3NYPW1bDHKL5cZJCGTQ&#13;
-yYPn7owPFffvhhD/23iiuNjD2/hTGh7w58JRvQpXvgQPaZ3noI43hLCCwehIlDzVdW5Lq/j3m1ke&#13;
-uXK57uN9U2WXnlrN9NTPxlV9TV28/ANbxAfvHKPrmGyiJIsYCeM3sTV9y3FEpkOJ8wEOdhBFjSLF&#13;
-hgRXAMK81dp80TZxJ0ZqOfcXWrERim2SW2KcEQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5229dae6-af44-405b-9ae5-8a102cc9e363"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>J3UDxLeKyL7W/W830wawlWLZFOaMlK33fgwjeBWQQG45F0BAdJZEQU1AhF5P+8lT6H96dBE6+Q35&#13;
+Wz1eDemGaw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fb9c9e8a-6777-45cb-b9be-2fea228ea806"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g6ujXGFITwGnRL+NP+S+Dr7oWHIQ3MRFfvOvJfTogx8lHZVV9Xah4cZHDdjQcaxI4HgVfBGXLB5+&#13;
+6+wEOV9aoA==</DigestValue></Reference></SignedInfo><SignatureValue>AgdvbmbBX7Sv/KdtbsRSAYDDgYxhfwbT8tjiujuROswZh9VsUyiB8sXXXCjKiQmHkCMXMiLZlmBC&#13;
+uwFDOaYIHol3GuKyw84scuWFtlshr+0NnKFBnsKsFCuDw5UgyNTGG5+pyhyr+a2xaJYpxO5iit0s&#13;
+Nwo4OTN5MtVwLSzI5oTNChSiK8fxN7bxxSwuN+O6mm1GqH9zOM9ONRK1tJtn6fz8w6K6wbN0e3r8&#13;
+Uy36vHR1cn7Ra+kwZp3YleXDsUQGdRYUnz1exLwXO6I2OYoEI/jmSGoEajAz/RfJz9jHmyfSrCM3&#13;
+ZnYOXrC/dN9RlziiFwRMZcGuYHeGXTk/g2GyjA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -943,4 +1044,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_eb1e8cce-cb3e-499f-985c-535db13d51cb" Target="#_545ca223-fec2-4b32-a54c-41f832f34d29"><Timestamp>2022-11-14 09:00:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fb9c9e8a-6777-45cb-b9be-2fea228ea806" Target="#_5229dae6-af44-405b-9ae5-8a102cc9e363"><Timestamp>2022-11-15 11:35:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

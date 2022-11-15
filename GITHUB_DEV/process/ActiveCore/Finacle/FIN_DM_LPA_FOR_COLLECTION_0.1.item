@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:OHh8oJ63h7NqEpShcycZqeuHllv6BK+LCbllQfbU"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:pQNSuRsgavjasx14eMmQEFwCTFy9maYqDO8nkRjk"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:jh6BlmSD3MTzByAZTmdfzr0ks1aYqD7Rn66tex/d"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:h7ygve4nm62Ootan6Blz5DqWi/QHOuUEvADTSSQj"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -135,7 +135,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:y8SIyqkGLkPwdGgWWG2nffx5QJVnhSoA5Y9hE9fmfRaiYONK4hwrzYKElQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:k0xmtWZElMhKcPz1ecwJRhM2UPZOCvVzH9DEczqvo5UgFgaDbqpjzfGtxA=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -161,7 +161,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Omkje2egu80LayOUUpwbNqfb/S70LyrIhozu8sLNIzoHlEuT8b6H9vg8Nw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RR2MFkKSV1nTsCoH/cU0oIWTUfNlnwofNi1l8uaJ52Qa97Rj+SLesDcFmg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -189,13 +189,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:i/4WL2H+b2JHu2tVVmY8mwyj/5MjIUyfBcBMI/sTHhGiXazP4FSKPEHdkg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:j/IJkzycWFBp3ch7+H3japnCiixwjIVgsCKNZKxdz2w8JfPFxaAcoC5ppQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT&#13;&#10;A.ACID&#13;&#10;,CONCAT(GAM.SCHM_CODE,' ',SCHM_DESC)&#13;&#10;,GAM.SCHM_TYPE &#13;&#10;,CONCAT(GAM.GL_SUB_HEAD_CODE,' ',GL_SUB_HEAD_DESC)  &#13;&#10;,cast(GAM.FORACID as varchar(20)) &#13;&#10;,ACCT_NAME&#13;&#10;,TRAN_DATE_BAL * -1  &#13;&#10;,SANCT_LIM &#13;&#10;,ACCT_OPN_DATE &#13;&#10;,CASE WHEN GAM.SCHM_CODE = 'PLSEC' THEN (SELECT NEXT_DMD_DATE FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND FLOW_ID = 'INDEM')&#13;&#10;&#9;ELSE LAM.EI_PERD_END_DATE END&#13;&#10;,DPD_CNTR&#13;&#10;,CONCAT(ACD.MAIN_CLASSIFICATION_USER,' ',(SELECT REF_DESC FROM FIN_REFERENCE_CODE_TABLE RCT WHERE REF_CODE = ACD.MAIN_CLASSIFICATION_USER AND REF_REC_TYPE = 'BG')) &#13;&#10;,(SELECT SUM(FLOW_AMT) FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND CURRENT_INT_REC_FLG = 'Y')  &#13;&#10;,LAM.REP_PERD_MTHS &#13;&#10;,CAST(CUST_DOB as varchar(10)) &#13;&#10;,GAM.CIF_ID&#13;&#10;,ACCT_MGR_USER_ID&#13;&#10;,MISC.EMPLOYERID&#13;&#10;,MISC.STRTEXT4&#13;&#10;,CONCAT(LAM.DMD_SATISFY_MTHD,' - ',(CASE WHEN LAM.DMD_SATISFY_MTHD = 'E' THEN 'Recover up to Effective amount'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'B' THEN 'Bill to the Employer'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'D' THEN 'Electronics Clearing'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'N' THEN 'No Batch Recovery'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'P' THEN 'Post Dated Chq' ELSE NULL END))&#13;&#10;,GAC.FREE_TEXT_15&#13;&#10;,GAM.CHRG_LEVEL_CODE&#13;&#10;,CASE WHEN LAM.CHRGE_OFF_FLG = 'Y' then 1 else (TRAN_DATE_BAL * -1) end&#13;&#10;,CASE WHEN FIN_ACCOUNT.CUST_HLTH = 'A' THEN 'LOW RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'B' THEN 'LOW RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'C' THEN 'NORMAL RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'D' THEN 'NORMAL RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'E' THEN 'HIGH RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'F' THEN 'HIGH RISK - PEP' END,&#13;&#10;(select distinct PROPERTY_BUILDER_NAME from FIN_COLTRL_IPROP_DT_TABLE cid where acid = gam.acid)&#13;&#10;,gac.FREE_CODE_10&#13;&#10;,gac.free_TEXT_14&#13;&#10;FROM FIN_GENERAL_ACCT_MAST_TABLE GAM&#13;&#10;LEFT JOIN FIN_EOD_ACCT_BAL_TABLE EAB&#13;&#10;ON GAM.ACID = EAB.ACID  AND &quot;+context.Extractdate+&quot; BETWEEN EOD_DATE AND END_EOD_DATE&#13;&#10;LEFT JOIN FIN_MISCELLANEOUSINFO MISC&#13;&#10;ON GAM.CIF_ID = MISC.ORGKEY AND TYPE = 'CURRENT_EMPLOYMENT' AND (MISC.EMPLOYERID IS NOT NULL OR STRTEXT4 IS NOT NULL) &#13;&#10;LEFT JOIN  FIN_GEN_SCHM_PARM_TABLE GSP&#13;&#10;ON GAM.SCHM_CODE = GSP.SCHM_CODE&#13;&#10;LEFT JOIN FIN_LA_ACCT_MAST_TABLE LAM&#13;&#10;ON GAM.ACID = LAM.ACID&#13;&#10;LEFT JOIN FIN_GL_SUB_HEAD_TABLE GSH&#13;&#10;ON GAM.GL_SUB_HEAD_CODE = GSH.GL_SUB_HEAD_CODE AND GAM.SOL_ID = GSH.SOL_ID AND GAM.ACCT_CRNCY_CODE = GSH.CRNCY_CODE&#13;&#10;LEFT JOIN FIN_ASST_CLASS_DETAIL_TBL ACD&#13;&#10;ON GAM.ACID = ACD.B2K_ID AND ACD.B2K_TYPE = 'ACCNT' AND ACD.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_GEN_ACCT_CLASS_TABLE GAC &#13;&#10;ON GAM.ACID = GAC.ACID AND GAC.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_ACCOUNT &#13;&#10;ON GAM.CIF_ID = FIN_ACCOUNT.ORGKEY  &#13;&#10;WHERE GAM.SCHM_TYPE IN ('LAA', 'CLA')&#13;&#10;AND GAM.ACCT_CRNCY_CODE = 'PHP'&#13;&#10;AND TRAN_DATE_BAL &lt;&gt; 0&#13;&#10;AND GAM.DEL_FLG = 'N'&#13;&#10;AND GAM.ACCT_OPN_DATE &lt;= &quot;+context.Extractdate&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT&#13;&#10;GAM.ACID&#13;&#10;,CONCAT(GAM.SCHM_CODE,' ',SCHM_DESC)&#13;&#10;,GAM.SCHM_TYPE &#13;&#10;,CONCAT(GAM.GL_SUB_HEAD_CODE,' ',GL_SUB_HEAD_DESC)  &#13;&#10;,cast(GAM.FORACID as varchar(20)) &#13;&#10;,ACCT_NAME&#13;&#10;,TRAN_DATE_BAL * -1  &#13;&#10;,SANCT_LIM &#13;&#10;,ACCT_OPN_DATE &#13;&#10;,CASE WHEN GAM.SCHM_CODE = 'PLSEC' THEN (SELECT NEXT_DMD_DATE FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND FLOW_ID = 'INDEM')&#13;&#10;&#9;ELSE LAM.EI_PERD_END_DATE END&#13;&#10;,DPD_CNTR&#13;&#10;,CONCAT(ACD.MAIN_CLASSIFICATION_USER,' ',(SELECT REF_DESC FROM FIN_REFERENCE_CODE_TABLE RCT WHERE REF_CODE = ACD.MAIN_CLASSIFICATION_USER AND REF_REC_TYPE = 'BG')) &#13;&#10;,(SELECT SUM(FLOW_AMT) FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND CURRENT_INT_REC_FLG = 'Y')  &#13;&#10;,LAM.REP_PERD_MTHS &#13;&#10;,CAST(CUST_DOB as varchar(10)) &#13;&#10;,GAM.CIF_ID&#13;&#10;,ACCT_MGR_USER_ID&#13;&#10;,MISC.EMPLOYERID&#13;&#10;,MISC.STRTEXT4&#13;&#10;,CONCAT(LAM.DMD_SATISFY_MTHD,' - ',(CASE WHEN LAM.DMD_SATISFY_MTHD = 'E' THEN 'Recover up to Effective amount'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'B' THEN 'Bill to the Employer'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'D' THEN 'Electronics Clearing'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'N' THEN 'No Batch Recovery'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'P' THEN 'Post Dated Chq' ELSE NULL END))&#13;&#10;,GAC.FREE_TEXT_15&#13;&#10;,GAM.CHRG_LEVEL_CODE&#13;&#10;,CASE WHEN LAM.CHRGE_OFF_FLG = 'Y' then 1 else (TRAN_DATE_BAL * -1) end&#13;&#10;,CASE WHEN FIN_ACCOUNT.CUST_HLTH = 'A' THEN 'LOW RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'B' THEN 'LOW RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'C' THEN 'NORMAL RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'D' THEN 'NORMAL RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'E' THEN 'HIGH RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'F' THEN 'HIGH RISK - PEP' END,&#13;&#10;(select distinct PROPERTY_BUILDER_NAME from FIN_COLTRL_IPROP_DT_TABLE cid where acid = gam.acid)&#13;&#10;,gac.FREE_CODE_10&#13;&#10;,gac.free_TEXT_14&#13;&#10;FROM FIN_GENERAL_ACCT_MAST_TABLE GAM&#13;&#10;LEFT JOIN FIN_EOD_ACCT_BAL_TABLE EAB&#13;&#10;ON GAM.ACID = EAB.ACID  AND &quot;+context.Extractdate+&quot; BETWEEN EOD_DATE AND END_EOD_DATE&#13;&#10;LEFT JOIN FIN_MISCELLANEOUSINFO MISC&#13;&#10;ON GAM.CIF_ID = MISC.ORGKEY AND TYPE = 'CURRENT_EMPLOYMENT' AND (MISC.EMPLOYERID IS NOT NULL OR STRTEXT4 IS NOT NULL) &#13;&#10;LEFT JOIN  FIN_GEN_SCHM_PARM_TABLE GSP&#13;&#10;ON GAM.SCHM_CODE = GSP.SCHM_CODE&#13;&#10;LEFT JOIN FIN_LA_ACCT_MAST_TABLE LAM&#13;&#10;ON GAM.ACID = LAM.ACID&#13;&#10;LEFT JOIN FIN_GL_SUB_HEAD_TABLE GSH&#13;&#10;ON GAM.GL_SUB_HEAD_CODE = GSH.GL_SUB_HEAD_CODE AND GAM.SOL_ID = GSH.SOL_ID AND GAM.ACCT_CRNCY_CODE = GSH.CRNCY_CODE&#13;&#10;LEFT JOIN FIN_ASST_CLASS_DETAIL_TBL ACD&#13;&#10;ON GAM.ACID = ACD.B2K_ID AND ACD.B2K_TYPE = 'ACCNT' AND ACD.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_GEN_ACCT_CLASS_TABLE GAC &#13;&#10;ON GAM.ACID = GAC.ACID AND GAC.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_ACCOUNT &#13;&#10;ON GAM.CIF_ID = FIN_ACCOUNT.ORGKEY  &#13;&#10;WHERE GAM.SCHM_TYPE IN ('LAA', 'CLA')&#13;&#10;AND GAM.ACCT_CRNCY_CODE = 'PHP'&#13;&#10;AND TRAN_DATE_BAL &lt;&gt; 0&#13;&#10;AND GAM.DEL_FLG = 'N'&#13;&#10;AND GAM.ACCT_OPN_DATE &lt;= &quot;+context.Extractdate&#13;&#10;&#13;&#10;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -317,7 +317,7 @@
       <column comment="" defaultValue="" key="false" length="20" name="LOAN_AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="RELEASE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MATDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORIG_DPD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ORIG_DPD" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="STATUS" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOANTERM" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -337,7 +337,7 @@
       <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.SCHM_CODE " name="SCHM_CODE" nullable="true" type="id_String"/>
@@ -419,7 +419,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AKrDNsZfsNRdHVoZSlpv+MrQJUIPI09FCtcu2/NZN/xgDefQr3Wx2pE8jw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SLTal4w26q+95IjWsFsD/rKZbh5IdWE39kDwhlM3fPiogl4MX9ESfJi2IA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -463,7 +463,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YjAvWzRSXPTsEypvC5gUAS2BEnF3CtQdAoPUZBmR2CM7Ac1N4O7nW47SMg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BjkFHW8jDmNb1ojOXUdd/cHmxMAwhWwCJd138jqqP4ZJ0ALnRqtg6Nzdkg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -507,9 +507,9 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:oI3LOBCpN3Z1rxBbK9In5MgqHOtekVpj4kouGqBQdJ75pXABlJFnCiEfaA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3uJrwOu23nFq6ik7E2TDsBfKrEZKWMddcriz8mZEfdkf/hq3qH6GMXGZUw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_DM_LPA_FOR_COLLECTION&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
@@ -687,9 +687,9 @@
       <column comment="" defaultValue="" key="false" length="20" name="LOAN_AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="RELEASE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MATDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORIG_DPD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ORIG_DPD" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="STATUS" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOANTERM" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BDAY" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="CIF_ID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -704,7 +704,7 @@
       <column comment="" key="false" length="200" name="DEVELOPER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="FREE_CODE_10" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="free_TEXT_14" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="200" name="SCHM_CODE" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -716,9 +716,9 @@
       <column comment="" defaultValue="" key="false" length="20" name="LOAN_AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="RELEASE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MATDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORIG_DPD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="ORIG_DPD" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="STATUS" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="INTRATE" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOANTERM" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BDAY" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="CIF_ID" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -733,7 +733,7 @@
       <column comment="" key="false" length="200" name="DEVELOPER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="FREE_CODE_10" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="300" name="free_TEXT_14" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -749,7 +749,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ftP9RMRj1kNRTf4pYg98Uds4/zmn03LTj3VK005R"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wVuyix6JFI8D9YJF7f2FaCAmw3667uO3dLE/2Hau"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -798,7 +798,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:egNzebvyZ9vhd6We6Tr888ws0UWe+R6BvUNW9oAZ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YUWs1c/L5YZdTqgpTCrqDm2Hq3v1Qyq14IhpyqCb"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1016,13 +1016,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5229dae6-af44-405b-9ae5-8a102cc9e363"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>J3UDxLeKyL7W/W830wawlWLZFOaMlK33fgwjeBWQQG45F0BAdJZEQU1AhF5P+8lT6H96dBE6+Q35&#13;
-Wz1eDemGaw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fb9c9e8a-6777-45cb-b9be-2fea228ea806"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g6ujXGFITwGnRL+NP+S+Dr7oWHIQ3MRFfvOvJfTogx8lHZVV9Xah4cZHDdjQcaxI4HgVfBGXLB5+&#13;
-6+wEOV9aoA==</DigestValue></Reference></SignedInfo><SignatureValue>AgdvbmbBX7Sv/KdtbsRSAYDDgYxhfwbT8tjiujuROswZh9VsUyiB8sXXXCjKiQmHkCMXMiLZlmBC&#13;
-uwFDOaYIHol3GuKyw84scuWFtlshr+0NnKFBnsKsFCuDw5UgyNTGG5+pyhyr+a2xaJYpxO5iit0s&#13;
-Nwo4OTN5MtVwLSzI5oTNChSiK8fxN7bxxSwuN+O6mm1GqH9zOM9ONRK1tJtn6fz8w6K6wbN0e3r8&#13;
-Uy36vHR1cn7Ra+kwZp3YleXDsUQGdRYUnz1exLwXO6I2OYoEI/jmSGoEajAz/RfJz9jHmyfSrCM3&#13;
-ZnYOXrC/dN9RlziiFwRMZcGuYHeGXTk/g2GyjA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a61ddb8b-a67b-4833-b8af-d44aa6832a15"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JfIBbvssugKZ+6e49mHOVs2Mo56kzSbOg1c6tY9AQodeZLHrGQ5GTeCMKAi6481m6j4bwq+tB11k&#13;
+7YD1oQ5DFg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_096d4985-7b26-44d8-89a6-8baccf19c16c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hPaYQEnmfEnzsl0rhTl76RWQggFVPOVjMnfcmbkC+GPPXSG1ZXB7YRY+wpNZbrPpZ0BSfv5GLcga&#13;
+rzcm3ItxCw==</DigestValue></Reference></SignedInfo><SignatureValue>kmjWL+WsE68pb0+okvPEGFamoxi5vDgAf4T3seb2GA3RRz0mVykp9dCqBheTCHT/O1CUtItCr5ES&#13;
+B+KEOA2IIsWSA/L5jiiZ6WEmRiLSjyMMDorf3UFMu32IBQqnOvYCwdnqNl2V4IzQWoSDmEMwGrk+&#13;
+AcCZScQ8hCQrn3gJH5GBUgBgbIi3XIs189z/y0VDV4zRGVlQlFMZ4qjZjKWMaV0WHHWHrAC9bWKZ&#13;
+IxIMf/gZgy2UzoRzx2zKJsN8wn+nnIFaO1Z9MlVzQ1W1jvN77VEsR+fF0XnH7zpM13x6HGuzvLCB&#13;
+n7gtPjrCleLWRDz/ISIbYGuRkK2w1d2ftyLUOg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1044,4 +1044,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fb9c9e8a-6777-45cb-b9be-2fea228ea806" Target="#_5229dae6-af44-405b-9ae5-8a102cc9e363"><Timestamp>2022-11-15 11:35:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_096d4985-7b26-44d8-89a6-8baccf19c16c" Target="#_a61ddb8b-a67b-4833-b8af-d44aa6832a15"><Timestamp>2022-11-15 12:07:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

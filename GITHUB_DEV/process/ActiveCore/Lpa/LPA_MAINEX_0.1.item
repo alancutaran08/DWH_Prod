@@ -4,10 +4,12 @@
     <contextParameter comment="" internalId="_XIE54UiAEe24md1vNbyyjQ" name="FileName" prompt="FileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Key.txt"/>
     <contextParameter comment="" internalId="_p_yXsE7LEe2ryIrbXoQ0Qg" name="EDWDeleteDate" prompt="EDWDeleteDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_ghJl0FBGEe2CetlwhjUyMA" name="EDWLoadDate" prompt="EDWLoadDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_UPAtQGlJEe2XT-bZtC7Sfg" name="ReportMonth" prompt="ReportMonth?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_UPAtQWlJEe2XT-bZtC7Sfg" name="ReportYear" prompt="ReportYear?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms512M&quot;,&quot;-Xmx2048M&quot;]}"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms2048M&quot;,&quot;-Xmx8192M&quot;]}"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="288"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="96"/>
@@ -50,7 +52,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:qTyp2pReuB5FY3LpjJrUG5cKfOtdIpc3DG04aVji"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:GxXlksNevog5HgN5lnikMn+kZUteTfOj9vCn8vfM"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +87,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nGvlp6h7oGJxatYlmXU3Wk/a32FQbBfAPdwFDOpA"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:q0VG23viSDiCo0o5msxV3PrV8TDNgWLpNvQ7jvvE"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -133,7 +135,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rMXFpyj5tGrGREj/LCfj16WuCaldnHGVXBhMfvdIZ4ZvigaFa2XZp1xH4w=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wPLEW+lREmxL7axKWsbUgVwoOX8K+X0j9ZlHLVJmK+ebBtV8aCXcZAIU5g=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - LPA_AIR_ECQ_EGP"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_AIR_ECQ_EGP&quot;"/>
@@ -141,7 +143,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_AIR_ECQ_EGP.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.GL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.AIR_AMT,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.REPORT_YEAR&#10;FROM&#9;dbo.LPA_AIR_ECQ_EGP&#13;&#10;WHERE LPA_ReportDate=&quot;+context.EDWLoadDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_AIR_ECQ_EGP.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.GL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.AIR_AMT,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_AIR_ECQ_EGP.REPORT_YEAR&#10;FROM&#9;dbo.LPA_AIR_ECQ_EGP&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -374,7 +376,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XVGk28S9b1XzjRoG23ua6JvYmBpFl4pIUE2ta8SqP7degbFGv7GQAGz8nw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ydh4/vHmXj5YfnVVfkZ6KRXue3V/mxNRucT5WC1jLhwyFxOIwlXvqtx0mQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_AIR_ECQ_EGP&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -531,7 +533,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:A2lNTDYtKrieaKVuZn0cWbHi7nBUz/k7NKdRIksIo7Hi3BNOKXpsksYdoQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:25yc238Adx1rk2a/WGfF+eVg3RNeg7t04AdIMrz8R1GjXHhRogJtUExDyQ=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - LPA_BILLS_PURCHASED"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_BILLS_PURCHASED&quot;"/>
@@ -539,7 +541,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_BILLS_PURCHASED.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.Amount,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.Branch,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.FRP_11A_TAGGING,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.SECTOR_CODE_11D,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.SUB_SECTOR_CODE_TCROS,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.Tagging,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.REPORT_YEAR&#10;FROM&#9;dbo.LPA_BILLS_PURCHASED&#13;&#10;WHERE LPA_ReportDate=&quot;+context.EDWLoadDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_BILLS_PURCHASED.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.Amount,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.Branch,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.FRP_11A_TAGGING,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.SECTOR_CODE_11D,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.SUB_SECTOR_CODE_TCROS,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.Tagging,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_BILLS_PURCHASED.REPORT_YEAR&#10;FROM&#9;dbo.LPA_BILLS_PURCHASED&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -796,7 +798,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/R9uLQ24lWYnTHNdpf2MUK85VXhTC2cjoQzTo7nt0fNL+IU3ugsEHosuaA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TajOAZ25+6nU6peHxNS4wUNB70rZGAQ3XVhO3NelhG6E3syxHu0hkyGgvw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_BILLS_PURCHASED&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -972,7 +974,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:D7lfq4RdMNAUqWIEtjOx1k3oW2AzU2tXbeoE8+dCtnfcoZopgamXTEmB2w=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EgVPls7fzDoPLroptaY68kextnwWJSMHob+N38zwWsf1lay20Wv+dQhhVw=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - LPA_CREDIT_CARDS"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_CREDIT_CARDS&quot;"/>
@@ -980,7 +982,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_CREDIT_CARDS.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.LOGO,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.OPENING_DATE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.CREDIT_LIMIT,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.UID_ODC,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.STATUS,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.Restructured_YN,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.DPD,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.REMARKS,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.SECURED_UNSECURED,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.REPORT_YEAR&#10;FROM&#9;dbo.LPA_CREDIT_CARDS&#13;&#10;WHERE LPA_ReportDate=&quot;+context.EDWLoadDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_CREDIT_CARDS.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.LOGO,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.OPENING_DATE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.CREDIT_LIMIT,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.UID_ODC,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.STATUS,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.Restructured_YN,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.DPD,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.REMARKS,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.SECURED_UNSECURED,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_CREDIT_CARDS.REPORT_YEAR&#10;FROM&#9;dbo.LPA_CREDIT_CARDS&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1381,7 +1383,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:my3b0kCTwWCjAgdGzAnv7C1dR3cU8jSRzVI43c+29ijlKPdOSs4aFHQK7g=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:P8E6LzDMwokKBDVojurq/tBfRmzeFk1TAQ5c58e0uzvDB56c9ps+qVXc+Q=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_CREDIT_CARDS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1656,7 +1658,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1FYCyNM3Qv05bMiD/nKCXIX8TQ4rrGZ7QJcodwdUl8t0ANF00i+DiWfUEw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:obcEfPqww8g8LYxS14CdrGAeY2hJJLidX3y2PwHeYJYslxCwDFnK51hfAw=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - LPA_FCDU"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_FCDU&quot;"/>
@@ -1664,7 +1666,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_FCDU.CIF_NUM,&#10;&#9;&#9;dbo.LPA_FCDU.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_FCDU.ACCT_NUMBER_1,&#10;&#9;&#9;dbo.LPA_FCDU.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_FCDU.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_FCDU.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_FCDU.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_FCDU.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_FCDU.OUTSTANDING_BALANCE_USD,&#10;&#9;&#9;dbo.LPA_FCDU.OUTSTANDING_BALANCE_PHP,&#10;&#9;&#9;dbo.LPA_FCDU.Collateral_Value,&#10;&#9;&#9;dbo.LPA_FCDU.SECURED,&#10;&#9;&#9;dbo.LPA_FCDU.UNSECURED,&#10;&#9;&#9;dbo.LPA_FCDU.APPRAISAL_VALUE,&#10;&#9;&#9;dbo.LPA_FCDU.APPRAISAL_DATE,&#10;&#9;&#9;dbo.LPA_FCDU.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_FCDU.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_FCDU.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_FCDU.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_FCDU.AIR_AMT,&#10;&#9;&#9;dbo.LPA_FCDU.ECL_AIR,&#10;&#9;&#9;dbo.LPA_FCDU.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_FCDU.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.SOL_ID,&#10;&#9;&#9;dbo.LPA_FCDU.SCHEME_CODE_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_FCDU.STATUS,&#10;&#9;&#9;dbo.LPA_FCDU.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_FCDU.SIZE,&#10;&#9;&#9;dbo.LPA_FCDU.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.ORIG_TERM_DAYS,&#10;&#9;&#9;dbo.LPA_FCDU.PURPOSE,&#10;&#9;&#9;dbo.LPA_FCDU.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_FCDU.RELATIONSHIP_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_FCDU.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_FCDU.SECTOR,&#10;&#9;&#9;dbo.LPA_FCDU.SECTOR_DESCRIPTION_BSP,&#10;&#9;&#9;dbo.LPA_FCDU.SUBSECTOR,&#10;&#9;&#9;dbo.LPA_FCDU.SUBSECTOR_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.AGRI_AGRA,&#10;&#9;&#9;dbo.LPA_FCDU.AGRI_AGRA_PERCENT,&#10;&#9;&#9;dbo.LPA_FCDU.AGRI_AGRA_AMOUNT,&#10;&#9;&#9;dbo.LPA_FCDU.ADDRESS,&#10;&#9;&#9;dbo.LPA_FCDU.CITY,&#10;&#9;&#9;dbo.LPA_FCDU.TERM,&#10;&#9;&#9;dbo.LPA_FCDU.SHORT,&#10;&#9;&#9;dbo.LPA_FCDU.MEDIUM,&#10;&#9;&#9;dbo.LPA_FCDU.LONG,&#10;&#9;&#9;dbo.LPA_FCDU.ORIGINAL_MATURITY,&#10;&#9;&#9;dbo.LPA_FCDU.TAGGING,&#10;&#9;&#9;dbo.LPA_FCDU.\&quot;CURRENT\&quot;,&#10;&#9;&#9;dbo.LPA_FCDU.PAST_DUE_PERFORMING,&#10;&#9;&#9;dbo.LPA_FCDU.LESSTHANOREQUAL_1_YEAR,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_1_YEAR_BUT_LESSTHANOREQUAL_2_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_2_YEARS_BUT_LESSTHANOREQUAL_3_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_3_YEARS_BUT_LESSTHANOREQUAL_4_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_4_YEARS_BUT_LESSTHANOREQUAL_5_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_5_YEARS_BUT_LESSTHANOREQUAL_6_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_6_YEARS_BUT_LESSTHANOREQUAL_7_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_7_YEARS_BUT_LESSTHANOREQUAL_8_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_8_YEARS_BUT_LESSTHANOREQUAL_9_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_9_YEARS_BUT_LESSTHANOREQUAL_10_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERTHAN_10_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.Aging_of_Non_Performing_Loans_NPLs,&#10;&#9;&#9;dbo.LPA_FCDU.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_FCDU.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_FCDU.REPORT_YEAR&#10;FROM&#9;dbo.LPA_FCDU&#13;&#10;WHERE LPA_ReportDate=&quot;+context.EDWLoadDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_FCDU.CIF_NUM,&#10;&#9;&#9;dbo.LPA_FCDU.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_FCDU.ACCT_NUMBER_1,&#10;&#9;&#9;dbo.LPA_FCDU.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_FCDU.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_FCDU.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_FCDU.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_FCDU.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_FCDU.OUTSTANDING_BALANCE_USD,&#10;&#9;&#9;dbo.LPA_FCDU.OUTSTANDING_BALANCE_PHP,&#10;&#9;&#9;dbo.LPA_FCDU.Collateral_Value,&#10;&#9;&#9;dbo.LPA_FCDU.SECURED,&#10;&#9;&#9;dbo.LPA_FCDU.UNSECURED,&#10;&#9;&#9;dbo.LPA_FCDU.APPRAISAL_VALUE,&#10;&#9;&#9;dbo.LPA_FCDU.APPRAISAL_DATE,&#10;&#9;&#9;dbo.LPA_FCDU.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_FCDU.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_FCDU.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_FCDU.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_FCDU.AIR_AMT,&#10;&#9;&#9;dbo.LPA_FCDU.ECL_AIR,&#10;&#9;&#9;dbo.LPA_FCDU.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_FCDU.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.SOL_ID,&#10;&#9;&#9;dbo.LPA_FCDU.SCHEME_CODE_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_FCDU.STATUS,&#10;&#9;&#9;dbo.LPA_FCDU.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_FCDU.SIZE,&#10;&#9;&#9;dbo.LPA_FCDU.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.ORIG_TERM_DAYS,&#10;&#9;&#9;dbo.LPA_FCDU.PURPOSE,&#10;&#9;&#9;dbo.LPA_FCDU.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_FCDU.RELATIONSHIP_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_FCDU.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_FCDU.SECTOR,&#10;&#9;&#9;dbo.LPA_FCDU.SECTOR_DESCRIPTION_BSP,&#10;&#9;&#9;dbo.LPA_FCDU.SUBSECTOR,&#10;&#9;&#9;dbo.LPA_FCDU.SUBSECTOR_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_FCDU.AGRI_AGRA,&#10;&#9;&#9;dbo.LPA_FCDU.AGRI_AGRA_PERCENT,&#10;&#9;&#9;dbo.LPA_FCDU.AGRI_AGRA_AMOUNT,&#10;&#9;&#9;dbo.LPA_FCDU.ADDRESS,&#10;&#9;&#9;dbo.LPA_FCDU.CITY,&#10;&#9;&#9;dbo.LPA_FCDU.TERM,&#10;&#9;&#9;dbo.LPA_FCDU.SHORT,&#10;&#9;&#9;dbo.LPA_FCDU.MEDIUM,&#10;&#9;&#9;dbo.LPA_FCDU.LONG,&#10;&#9;&#9;dbo.LPA_FCDU.ORIGINAL_MATURITY,&#10;&#9;&#9;dbo.LPA_FCDU.TAGGING,&#10;&#9;&#9;dbo.LPA_FCDU.\&quot;CURRENT\&quot;,&#10;&#9;&#9;dbo.LPA_FCDU.PAST_DUE_PERFORMING,&#10;&#9;&#9;dbo.LPA_FCDU.LESSTHANOREQUAL_1_YEAR,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_1_YEAR_BUT_LESSTHANOREQUAL_2_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_2_YEARS_BUT_LESSTHANOREQUAL_3_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_3_YEARS_BUT_LESSTHANOREQUAL_4_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_4_YEARS_BUT_LESSTHANOREQUAL_5_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_5_YEARS_BUT_LESSTHANOREQUAL_6_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_6_YEARS_BUT_LESSTHANOREQUAL_7_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_7_YEARS_BUT_LESSTHANOREQUAL_8_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_8_YEARS_BUT_LESSTHANOREQUAL_9_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERHAN_9_YEARS_BUT_LESSTHANOREQUAL_10_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.GREATERTHAN_10_YEARS,&#10;&#9;&#9;dbo.LPA_FCDU.Aging_of_Non_Performing_Loans_NPLs,&#10;&#9;&#9;dbo.LPA_FCDU.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_FCDU.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_FCDU.REPORT_YEAR&#10;FROM&#9;dbo.LPA_FCDU&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -2849,7 +2851,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ZvnCm1lLhKz0qh2PglyiIiY8qS7TVZQI3kJ1gP3QED+zk9LFL8HYiJFarw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GeET7f6u1GzxCbjtl07f77a4gelhTWsX6TUaMmXYfqXVmUayGLzQFE/27w=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_FCDU&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -3663,7 +3665,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:KPRuMmLOstVU0nd3XLvkOWCpSqsHIircmAY2o0PQStpGbhmPqpeOdv+Ohg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:jTc1FmkZvDWZkp4cN361Hbf97imG6kboebOEAmmJEzq/XQt1g4xeTxMcaA=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - LPA_MICROFINANCE"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_MICROFINANCE&quot;"/>
@@ -3671,7 +3673,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_MICROFINANCE.SOL_ID,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Branch,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Loan_No,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Booking_Date,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Maturity_Date,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Term,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Interest_Rate,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Principal,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Outstanding_Balance,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.DPD,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Status,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Economic_Activity,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.GL_Code,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.GL_Description,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.REPORT_YEAR&#10;FROM&#9;dbo.LPA_MICROFINANCE&#13;&#10;WHERE LPA_ReportDate=&quot;+context.EDWLoadDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_MICROFINANCE.SOL_ID,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Branch,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Loan_No,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Booking_Date,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Maturity_Date,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Term,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Interest_Rate,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Principal,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Outstanding_Balance,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.DPD,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Status,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.Economic_Activity,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.GL_Code,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.GL_Description,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_MICROFINANCE.REPORT_YEAR&#10;FROM&#9;dbo.LPA_MICROFINANCE&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -4104,7 +4106,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WsyXbZpUo5Ax0AZ//tJIecVfrUcmijA3Hk6SCXMW/ZVJuu5msDYCTzVugg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:klxWRc4PjhBLu7X+zdwfYtzrhMr5rWnl288LdknCUQz2OMY+vAeDhPr2CA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_MICROFINANCE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -4401,7 +4403,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LXAZ2ljQ0mUDt6XMCStMioxp0qTHK0RmtW1afeFiDjfTOdBNsXTqNIHYtQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cmHFD9g7try+XVi9rYisgAwhSjlcT4wUnW+jaQxSGEpQJImGxn8sTmdfVw=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - LPA_PESO"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_PESO&quot;"/>
@@ -4409,7 +4411,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_PESO.CIF_NUM,&#10;&#9;&#9;dbo.LPA_PESO.DEVELOPER,&#10;&#9;&#9;dbo.LPA_PESO.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_PESO.ACCT_NUMBER_1,&#10;&#9;&#9;dbo.LPA_PESO.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_PESO.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_PESO.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_PESO.MODIFIED_MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_PESO.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_PESO.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_PESO.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_PESO.UID,&#10;&#9;&#9;dbo.LPA_PESO.DC,&#10;&#9;&#9;dbo.LPA_PESO.DISCOUNT,&#10;&#9;&#9;dbo.LPA_PESO.NET_OB,&#10;&#9;&#9;dbo.LPA_PESO.LOAN_VALUE_PERCENT,&#10;&#9;&#9;dbo.LPA_PESO.COLLATERAL_VALUE,&#10;&#9;&#9;dbo.LPA_PESO.SECURED,&#10;&#9;&#9;dbo.LPA_PESO.UNSECURED,&#10;&#9;&#9;dbo.LPA_PESO.APPRAISAL_VALUE,&#10;&#9;&#9;dbo.LPA_PESO.APPRAISAL_DATE,&#10;&#9;&#9;dbo.LPA_PESO.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_PESO.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_PESO.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_PESO.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_PESO.AIR_AMT,&#10;&#9;&#9;dbo.LPA_PESO.ECL_AIR,&#10;&#9;&#9;dbo.LPA_PESO.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_PESO.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.SCHEME_CODE_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_PESO.STATUS,&#10;&#9;&#9;dbo.LPA_PESO.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_PESO.SIZE,&#10;&#9;&#9;dbo.LPA_PESO.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.ORIG_TERM_DAYS,&#10;&#9;&#9;dbo.LPA_PESO.PURPOSE,&#10;&#9;&#9;dbo.LPA_PESO.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_PESO.RELATIONSHIP_CODE,&#10;&#9;&#9;dbo.LPA_PESO.RELATIONSHIP_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_PESO.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_PESO.SECTOR,&#10;&#9;&#9;dbo.LPA_PESO.SECTOR_DESCRIPTION_BSP,&#10;&#9;&#9;dbo.LPA_PESO.SUBSECTOR,&#10;&#9;&#9;dbo.LPA_PESO.SUBSECTOR_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.AGRI_AGRA,&#10;&#9;&#9;dbo.LPA_PESO.AGRI_AGRA_PERCENT,&#10;&#9;&#9;dbo.LPA_PESO.AGRI_AGRA_AMOUNT,&#10;&#9;&#9;dbo.LPA_PESO.MSME,&#10;&#9;&#9;dbo.LPA_PESO.FRP_11A_TAGGING,&#10;&#9;&#9;dbo.LPA_PESO.FRP_11A_ACCOUNT_CODE,&#10;&#9;&#9;dbo.LPA_PESO.FRP_11A_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.FIXED_FLOATING,&#10;&#9;&#9;dbo.LPA_PESO.TERM,&#10;&#9;&#9;dbo.LPA_PESO.SHORT,&#10;&#9;&#9;dbo.LPA_PESO.MEDIUM,&#10;&#9;&#9;dbo.LPA_PESO.LONG,&#10;&#9;&#9;dbo.LPA_PESO.TAGGING,&#10;&#9;&#9;dbo.LPA_PESO.\&quot;CURRENT\&quot;,&#10;&#9;&#9;dbo.LPA_PESO.PAST_DUE_PERFORMING,&#10;&#9;&#9;dbo.LPA_PESO.ITL,&#10;&#9;&#9;dbo.LPA_PESO.LESSTHANOREQUAL_1YEAR,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_1_YEAR_BUT_LESSTHANOREQUAL_2_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_2_YEARS_BUT_LESSTHANOREQUAL_3_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_3_YEARS_BUT_LESSTHANOREQUAL_4_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_4_YEARS_BUT_LESSTHANOREQUAL_5_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_5_YEARS_BUT_LESSTHANOREQUAL_6_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_6_YEARS_BUT_LESSTHANOREQUAL_7_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_7_YEARS_BUT_LESSTHANOREQUAL_8_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_8_YEARS_BUT_LESSTHANOREQUAL_9_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_9_YEARS_BUT_LESSTHANOREQUAL_10_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.ORIGINAL_MATURITY,&#10;&#9;&#9;dbo.LPA_PESO.REMAINING_MATURITY_WORDS,&#10;&#9;&#9;dbo.LPA_PESO.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_PESO.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_PESO.REPORT_YEAR&#10;FROM&#9;dbo.LPA_PESO&#13;&#10;WHERE LPA_ReportDate=&quot;+context.EDWLoadDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_PESO.CIF_NUM,&#10;&#9;&#9;dbo.LPA_PESO.DEVELOPER,&#10;&#9;&#9;dbo.LPA_PESO.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_PESO.ACCT_NUMBER_1,&#10;&#9;&#9;dbo.LPA_PESO.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_PESO.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_PESO.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_PESO.MODIFIED_MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_PESO.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_PESO.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_PESO.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_PESO.UID,&#10;&#9;&#9;dbo.LPA_PESO.DC,&#10;&#9;&#9;dbo.LPA_PESO.DISCOUNT,&#10;&#9;&#9;dbo.LPA_PESO.NET_OB,&#10;&#9;&#9;dbo.LPA_PESO.LOAN_VALUE_PERCENT,&#10;&#9;&#9;dbo.LPA_PESO.COLLATERAL_VALUE,&#10;&#9;&#9;dbo.LPA_PESO.SECURED,&#10;&#9;&#9;dbo.LPA_PESO.UNSECURED,&#10;&#9;&#9;dbo.LPA_PESO.APPRAISAL_VALUE,&#10;&#9;&#9;dbo.LPA_PESO.APPRAISAL_DATE,&#10;&#9;&#9;dbo.LPA_PESO.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_PESO.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_PESO.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_PESO.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_PESO.AIR_AMT,&#10;&#9;&#9;dbo.LPA_PESO.ECL_AIR,&#10;&#9;&#9;dbo.LPA_PESO.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_PESO.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.SCHEME_CODE_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_PESO.STATUS,&#10;&#9;&#9;dbo.LPA_PESO.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_PESO.SIZE,&#10;&#9;&#9;dbo.LPA_PESO.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.ORIG_TERM_DAYS,&#10;&#9;&#9;dbo.LPA_PESO.PURPOSE,&#10;&#9;&#9;dbo.LPA_PESO.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_PESO.RELATIONSHIP_CODE,&#10;&#9;&#9;dbo.LPA_PESO.RELATIONSHIP_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_PESO.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_PESO.SECTOR,&#10;&#9;&#9;dbo.LPA_PESO.SECTOR_DESCRIPTION_BSP,&#10;&#9;&#9;dbo.LPA_PESO.SUBSECTOR,&#10;&#9;&#9;dbo.LPA_PESO.SUBSECTOR_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.AGRI_AGRA,&#10;&#9;&#9;dbo.LPA_PESO.AGRI_AGRA_PERCENT,&#10;&#9;&#9;dbo.LPA_PESO.AGRI_AGRA_AMOUNT,&#10;&#9;&#9;dbo.LPA_PESO.MSME,&#10;&#9;&#9;dbo.LPA_PESO.FRP_11A_TAGGING,&#10;&#9;&#9;dbo.LPA_PESO.FRP_11A_ACCOUNT_CODE,&#10;&#9;&#9;dbo.LPA_PESO.FRP_11A_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_PESO.FIXED_FLOATING,&#10;&#9;&#9;dbo.LPA_PESO.TERM,&#10;&#9;&#9;dbo.LPA_PESO.SHORT,&#10;&#9;&#9;dbo.LPA_PESO.MEDIUM,&#10;&#9;&#9;dbo.LPA_PESO.LONG,&#10;&#9;&#9;dbo.LPA_PESO.TAGGING,&#10;&#9;&#9;dbo.LPA_PESO.\&quot;CURRENT\&quot;,&#10;&#9;&#9;dbo.LPA_PESO.PAST_DUE_PERFORMING,&#10;&#9;&#9;dbo.LPA_PESO.ITL,&#10;&#9;&#9;dbo.LPA_PESO.LESSTHANOREQUAL_1YEAR,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_1_YEAR_BUT_LESSTHANOREQUAL_2_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_2_YEARS_BUT_LESSTHANOREQUAL_3_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_3_YEARS_BUT_LESSTHANOREQUAL_4_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_4_YEARS_BUT_LESSTHANOREQUAL_5_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_5_YEARS_BUT_LESSTHANOREQUAL_6_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_6_YEARS_BUT_LESSTHANOREQUAL_7_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_7_YEARS_BUT_LESSTHANOREQUAL_8_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_8_YEARS_BUT_LESSTHANOREQUAL_9_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.GREATERTHAN_9_YEARS_BUT_LESSTHANOREQUAL_10_YEARS,&#10;&#9;&#9;dbo.LPA_PESO.ORIGINAL_MATURITY,&#10;&#9;&#9;dbo.LPA_PESO.REMAINING_MATURITY_WORDS,&#10;&#9;&#9;dbo.LPA_PESO.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_PESO.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_PESO.REPORT_YEAR&#10;FROM&#9;dbo.LPA_PESO&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -5738,7 +5740,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:npmNPbxptaz+IpZcrrlphuuKeqlja6uLvgMKDiciSaMO1KqRxRQOBeW1vA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:A4rLrZ7iZxHh5cBnots8TBF88mB0mga7ucDMeVBWoGIcvhmQZ4aiR6TkJQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_PESO&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -6651,7 +6653,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SVLvpYcVRpSwk+YdSNAvGKJStOV2d14WVvL/+uzIPMz0wRNIatThJvWqQA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4niuQxtFPR4Zw2iMOoi8YA57QgD5jdIvDpPkkW4H+JgaI4Q1Y9hNByIfLA=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - LPA_REGULAR"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_REGULAR&quot;"/>
@@ -6659,7 +6661,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_REGULAR.CIF_NUM,&#10;&#9;&#9;dbo.LPA_REGULAR.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_REGULAR.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_REGULAR.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_REGULAR.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_REGULAR.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_REGULAR.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_REGULAR.OUTSTANDING_BALANCE_USD,&#10;&#9;&#9;dbo.LPA_REGULAR.OUTSTANDING_BALANCE_PHP,&#10;&#9;&#9;dbo.LPA_REGULAR.Collateral_Value,&#10;&#9;&#9;dbo.LPA_REGULAR.SECURED,&#10;&#9;&#9;dbo.LPA_REGULAR.UNSECURED,&#10;&#9;&#9;dbo.LPA_REGULAR.APPRAISAL_VALUE,&#10;&#9;&#9;dbo.LPA_REGULAR.APPRAISAL_DATE,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_USD,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_REGULAR.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_REGULAR.AIR_AMT,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_AIR,&#10;&#9;&#9;dbo.LPA_REGULAR.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_REGULAR.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.SOL_ID,&#10;&#9;&#9;dbo.LPA_REGULAR.SCHEME_CODE_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_REGULAR.STATUS,&#10;&#9;&#9;dbo.LPA_REGULAR.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_REGULAR.SIZE,&#10;&#9;&#9;dbo.LPA_REGULAR.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.ORIG_TERM_DAYS,&#10;&#9;&#9;dbo.LPA_REGULAR.PURPOSE,&#10;&#9;&#9;dbo.LPA_REGULAR.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_REGULAR.RELATIONSHIP_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_REGULAR.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_REGULAR.SECTOR,&#10;&#9;&#9;dbo.LPA_REGULAR.SECTOR_DESCRIPTION_BSP,&#10;&#9;&#9;dbo.LPA_REGULAR.SUBSECTOR,&#10;&#9;&#9;dbo.LPA_REGULAR.SUBSECTOR_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.AGRI_AGRA,&#10;&#9;&#9;dbo.LPA_REGULAR.AGRI_AGRA_PERCENT,&#10;&#9;&#9;dbo.LPA_REGULAR.AGRI_AGRA_AMOUNT,&#10;&#9;&#9;dbo.LPA_REGULAR.ADDRESS,&#10;&#9;&#9;dbo.LPA_REGULAR.CITY,&#10;&#9;&#9;dbo.LPA_REGULAR.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_REGULAR.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_REGULAR.REPORT_YEAR&#10;FROM&#9;dbo.LPA_REGULAR&#13;&#10;WHERE LPA_ReportDate=&quot;+context.EDWLoadDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_REGULAR.CIF_NUM,&#10;&#9;&#9;dbo.LPA_REGULAR.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_REGULAR.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_REGULAR.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_REGULAR.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_REGULAR.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_REGULAR.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_REGULAR.OUTSTANDING_BALANCE_USD,&#10;&#9;&#9;dbo.LPA_REGULAR.OUTSTANDING_BALANCE_PHP,&#10;&#9;&#9;dbo.LPA_REGULAR.Collateral_Value,&#10;&#9;&#9;dbo.LPA_REGULAR.SECURED,&#10;&#9;&#9;dbo.LPA_REGULAR.UNSECURED,&#10;&#9;&#9;dbo.LPA_REGULAR.APPRAISAL_VALUE,&#10;&#9;&#9;dbo.LPA_REGULAR.APPRAISAL_DATE,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_USD,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_REGULAR.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_REGULAR.AIR_AMT,&#10;&#9;&#9;dbo.LPA_REGULAR.ECL_AIR,&#10;&#9;&#9;dbo.LPA_REGULAR.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_REGULAR.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.SOL_ID,&#10;&#9;&#9;dbo.LPA_REGULAR.SCHEME_CODE_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_REGULAR.STATUS,&#10;&#9;&#9;dbo.LPA_REGULAR.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_REGULAR.SIZE,&#10;&#9;&#9;dbo.LPA_REGULAR.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.ORIG_TERM_DAYS,&#10;&#9;&#9;dbo.LPA_REGULAR.PURPOSE,&#10;&#9;&#9;dbo.LPA_REGULAR.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_REGULAR.RELATIONSHIP_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_REGULAR.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_REGULAR.SECTOR,&#10;&#9;&#9;dbo.LPA_REGULAR.SECTOR_DESCRIPTION_BSP,&#10;&#9;&#9;dbo.LPA_REGULAR.SUBSECTOR,&#10;&#9;&#9;dbo.LPA_REGULAR.SUBSECTOR_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_REGULAR.AGRI_AGRA,&#10;&#9;&#9;dbo.LPA_REGULAR.AGRI_AGRA_PERCENT,&#10;&#9;&#9;dbo.LPA_REGULAR.AGRI_AGRA_AMOUNT,&#10;&#9;&#9;dbo.LPA_REGULAR.ADDRESS,&#10;&#9;&#9;dbo.LPA_REGULAR.CITY,&#10;&#9;&#9;dbo.LPA_REGULAR.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_REGULAR.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_REGULAR.REPORT_YEAR&#10;FROM&#9;dbo.LPA_REGULAR&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -7524,7 +7526,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XJMMDlfDxy63YdNGzHoIYSDuMxBgmHAlhWxszcurYqr5fOku8CJhFZsP9g=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2wZ2rCCgc50rgDCuHiQWljm2punSDe1DGBuePZwMMiNjo2t9sWj/E2+Bkw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_REGULAR&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -8118,7 +8120,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EBPd0TEw3F6OyYUs6py+Yt59nclzooAQ3kTMMt5j6EzszvEkoAUs9i9qzw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:oiu+skiYz+CbkHUQI5Gr7z8BpKls1izGx0A+GEvEW62wpDYJvk8bb+Rv1g=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - LPA_ROPA"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_ROPA&quot;"/>
@@ -8126,7 +8128,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_ROPA.CIF_NUM,&#10;&#9;&#9;dbo.LPA_ROPA.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_ROPA.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_ROPA.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_ROPA.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_ROPA.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_ROPA.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_ROPA.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_ROPA.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_ROPA.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_ROPA.SOL_ID,&#10;&#9;&#9;dbo.LPA_ROPA.LOAN_TYPE,&#10;&#9;&#9;dbo.LPA_ROPA.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_ROPA.STATUS,&#10;&#9;&#9;dbo.LPA_ROPA.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_ROPA.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_ROPA.SIZE,&#10;&#9;&#9;dbo.LPA_ROPA.MSME,&#10;&#9;&#9;dbo.LPA_ROPA.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_ROPA.PURPOSE,&#10;&#9;&#9;dbo.LPA_ROPA.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_ROPA.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_ROPA.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_ROPA.TERM,&#10;&#9;&#9;dbo.LPA_ROPA.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_ROPA.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_ROPA.REPORT_YEAR&#10;FROM&#9;dbo.LPA_ROPA&#13;&#10;WHERE LPA_ReportDate=&quot;+context.EDWLoadDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_ROPA.CIF_NUM,&#10;&#9;&#9;dbo.LPA_ROPA.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_ROPA.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_ROPA.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_ROPA.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_ROPA.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_ROPA.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_ROPA.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_ROPA.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_ROPA.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_ROPA.SOL_ID,&#10;&#9;&#9;dbo.LPA_ROPA.LOAN_TYPE,&#10;&#9;&#9;dbo.LPA_ROPA.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_ROPA.STATUS,&#10;&#9;&#9;dbo.LPA_ROPA.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_ROPA.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_ROPA.SIZE,&#10;&#9;&#9;dbo.LPA_ROPA.MSME,&#10;&#9;&#9;dbo.LPA_ROPA.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_ROPA.PURPOSE,&#10;&#9;&#9;dbo.LPA_ROPA.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_ROPA.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_ROPA.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_ROPA.TERM,&#10;&#9;&#9;dbo.LPA_ROPA.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_ROPA.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_ROPA.REPORT_YEAR&#10;FROM&#9;dbo.LPA_ROPA&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -8639,7 +8641,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:sgrlOQkAp5VKmaxmCbbqnhQ4nWlARTYdkWYdOPZN4X7w+ICUc+FZuMZ4Nw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9IkR5lEJAzzJr2eCsWBUIuSWjoBVLQMGyZa5YFhgoMeqHMpEvqa/K0f7ZQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_ROPA&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -8991,7 +8993,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:F9PMN186KoR/kqkAGo37qXbuPQplK/OOr0kkeYiThytTVlqNy4riDr5Bag=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2EUocezjcwI5y+uoKPOxBZMomHgqzqCcxZNJDcM7YZHsAil0+CMnpYsDAQ=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - LPA_SCR"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_SCR&quot;"/>
@@ -8999,7 +9001,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_SCR.CIF_NUM,&#10;&#9;&#9;dbo.LPA_SCR.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_SCR.ACCT_NUMBER_1,&#10;&#9;&#9;dbo.LPA_SCR.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_SCR.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_SCR.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_SCR.MODIFIED_MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_SCR.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_SCR.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_SCR.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_SCR.UID,&#10;&#9;&#9;dbo.LPA_SCR.DC,&#10;&#9;&#9;dbo.LPA_SCR.DISCOUNT,&#10;&#9;&#9;dbo.LPA_SCR.Net_OB,&#10;&#9;&#9;dbo.LPA_SCR.LOAN_VALUE_PERCENT,&#10;&#9;&#9;dbo.LPA_SCR.COLLATERAL_VALUE,&#10;&#9;&#9;dbo.LPA_SCR.SECURED,&#10;&#9;&#9;dbo.LPA_SCR.UNSECURED,&#10;&#9;&#9;dbo.LPA_SCR.APPRAISAL_VALUE,&#10;&#9;&#9;dbo.LPA_SCR.APPRAISAL_DATE,&#10;&#9;&#9;dbo.LPA_SCR.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_SCR.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_SCR.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_SCR.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_SCR.AIR_AMT,&#10;&#9;&#9;dbo.LPA_SCR.ECL_AIR,&#10;&#9;&#9;dbo.LPA_SCR.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_SCR.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.SCHEME_CODE_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_SCR.STATUS,&#10;&#9;&#9;dbo.LPA_SCR.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_SCR.SIZE,&#10;&#9;&#9;dbo.LPA_SCR.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.ORIG_TERM_DAYS,&#10;&#9;&#9;dbo.LPA_SCR.PURPOSE,&#10;&#9;&#9;dbo.LPA_SCR.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_SCR.RELATIONSHIP_CODE,&#10;&#9;&#9;dbo.LPA_SCR.RELATIONSHIP_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_SCR.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_SCR.SECTOR,&#10;&#9;&#9;dbo.LPA_SCR.SECTOR_DESCRIPTION_BSP,&#10;&#9;&#9;dbo.LPA_SCR.SUBSECTOR,&#10;&#9;&#9;dbo.LPA_SCR.SUBSECTOR_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.AGRI_AGRA,&#10;&#9;&#9;dbo.LPA_SCR.AGRI_AGRA_PERCENT,&#10;&#9;&#9;dbo.LPA_SCR.AGRI_AGRA_AMOUNT,&#10;&#9;&#9;dbo.LPA_SCR.MSME,&#10;&#9;&#9;dbo.LPA_SCR.FIXED_FLOATING,&#10;&#9;&#9;dbo.LPA_SCR.TERM,&#10;&#9;&#9;dbo.LPA_SCR.SHORT,&#10;&#9;&#9;dbo.LPA_SCR.MEDIUM,&#10;&#9;&#9;dbo.LPA_SCR.LONG,&#10;&#9;&#9;dbo.LPA_SCR.TAGGING,&#10;&#9;&#9;dbo.LPA_SCR.\&quot;CURRENT\&quot;,&#10;&#9;&#9;dbo.LPA_SCR.PAST_DUE_PERFORMING,&#10;&#9;&#9;dbo.LPA_SCR.ITL,&#10;&#9;&#9;dbo.LPA_SCR.LESSTHANOREQUAL_1_YEAR,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_1_YEAR_BUT_LESSTHANOREQUAL_2_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_2_YEARS_BUT_LESSTHANOREQUAL_3_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_3_YEARS_BUT_LESSTHANOREQUAL_4_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_4_YEARS_BUT_LESSTHANOREQUAL_5_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_5_YEARS_BUT_LESSTHANOREQUAL_6_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_6_YEARS_BUT_LESSTHANOREQUAL_7_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_7_YEARS_BUT_LESSTHANOREQUAL_8_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_8_YEARS_BUT_LESSTHANOREQUAL_9_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_9_YEARS_BUT_LESSTHANOREQUAL_10_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.ORIGINAL_MATURITY,&#10;&#9;&#9;dbo.LPA_SCR.REMAINING_MATURITY_WORDS,&#10;&#9;&#9;dbo.LPA_SCR.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_SCR.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_SCR.REPORT_YEAR&#10;FROM&#9;dbo.LPA_SCR&#13;&#10;WHERE LPA_ReportDate=&quot;+context.EDWLoadDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.LPA_SCR.CIF_NUM,&#10;&#9;&#9;dbo.LPA_SCR.ACCT_NUMBER,&#10;&#9;&#9;dbo.LPA_SCR.ACCT_NUMBER_1,&#10;&#9;&#9;dbo.LPA_SCR.ACCT_NAME,&#10;&#9;&#9;dbo.LPA_SCR.RELEASE_DATE,&#10;&#9;&#9;dbo.LPA_SCR.MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_SCR.MODIFIED_MATURITY_DATE,&#10;&#9;&#9;dbo.LPA_SCR.INTEREST_RATE,&#10;&#9;&#9;dbo.LPA_SCR.ORIG_LOAN_AMT,&#10;&#9;&#9;dbo.LPA_SCR.OUTSTANDING_BALANCE,&#10;&#9;&#9;dbo.LPA_SCR.UID,&#10;&#9;&#9;dbo.LPA_SCR.DC,&#10;&#9;&#9;dbo.LPA_SCR.DISCOUNT,&#10;&#9;&#9;dbo.LPA_SCR.Net_OB,&#10;&#9;&#9;dbo.LPA_SCR.LOAN_VALUE_PERCENT,&#10;&#9;&#9;dbo.LPA_SCR.COLLATERAL_VALUE,&#10;&#9;&#9;dbo.LPA_SCR.SECURED,&#10;&#9;&#9;dbo.LPA_SCR.UNSECURED,&#10;&#9;&#9;dbo.LPA_SCR.APPRAISAL_VALUE,&#10;&#9;&#9;dbo.LPA_SCR.APPRAISAL_DATE,&#10;&#9;&#9;dbo.LPA_SCR.ECL_STAGE_1,&#10;&#9;&#9;dbo.LPA_SCR.ECL_STAGE_2_3,&#10;&#9;&#9;dbo.LPA_SCR.ECL_STAGE,&#10;&#9;&#9;dbo.LPA_SCR.PROBABILITY_OF_DEFAULT_PD,&#10;&#9;&#9;dbo.LPA_SCR.AIR_AMT,&#10;&#9;&#9;dbo.LPA_SCR.ECL_AIR,&#10;&#9;&#9;dbo.LPA_SCR.GROUP_CODE,&#10;&#9;&#9;dbo.LPA_SCR.LOAN_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.SCHEME_CODE_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.SCHEME_CODE,&#10;&#9;&#9;dbo.LPA_SCR.STATUS,&#10;&#9;&#9;dbo.LPA_SCR.BORROWER_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.SECURITY_CATEGORY,&#10;&#9;&#9;dbo.LPA_SCR.SIZE,&#10;&#9;&#9;dbo.LPA_SCR.REGIONAL_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.ORIG_TERM_DAYS,&#10;&#9;&#9;dbo.LPA_SCR.PURPOSE,&#10;&#9;&#9;dbo.LPA_SCR.SPECIFIC_PURPOSE,&#10;&#9;&#9;dbo.LPA_SCR.RELATIONSHIP_CODE,&#10;&#9;&#9;dbo.LPA_SCR.RELATIONSHIP_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.MODIFIED_MONTHS_PD,&#10;&#9;&#9;dbo.LPA_SCR.MODIFIED_DAYS_PD,&#10;&#9;&#9;dbo.LPA_SCR.SECTOR,&#10;&#9;&#9;dbo.LPA_SCR.SECTOR_DESCRIPTION_BSP,&#10;&#9;&#9;dbo.LPA_SCR.SUBSECTOR,&#10;&#9;&#9;dbo.LPA_SCR.SUBSECTOR_DESCRIPTION,&#10;&#9;&#9;dbo.LPA_SCR.AGRI_AGRA,&#10;&#9;&#9;dbo.LPA_SCR.AGRI_AGRA_PERCENT,&#10;&#9;&#9;dbo.LPA_SCR.AGRI_AGRA_AMOUNT,&#10;&#9;&#9;dbo.LPA_SCR.MSME,&#10;&#9;&#9;dbo.LPA_SCR.FIXED_FLOATING,&#10;&#9;&#9;dbo.LPA_SCR.TERM,&#10;&#9;&#9;dbo.LPA_SCR.SHORT,&#10;&#9;&#9;dbo.LPA_SCR.MEDIUM,&#10;&#9;&#9;dbo.LPA_SCR.LONG,&#10;&#9;&#9;dbo.LPA_SCR.TAGGING,&#10;&#9;&#9;dbo.LPA_SCR.\&quot;CURRENT\&quot;,&#10;&#9;&#9;dbo.LPA_SCR.PAST_DUE_PERFORMING,&#10;&#9;&#9;dbo.LPA_SCR.ITL,&#10;&#9;&#9;dbo.LPA_SCR.LESSTHANOREQUAL_1_YEAR,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_1_YEAR_BUT_LESSTHANOREQUAL_2_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_2_YEARS_BUT_LESSTHANOREQUAL_3_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_3_YEARS_BUT_LESSTHANOREQUAL_4_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_4_YEARS_BUT_LESSTHANOREQUAL_5_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_5_YEARS_BUT_LESSTHANOREQUAL_6_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_6_YEARS_BUT_LESSTHANOREQUAL_7_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_7_YEARS_BUT_LESSTHANOREQUAL_8_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_8_YEARS_BUT_LESSTHANOREQUAL_9_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.GREATERHAN_9_YEARS_BUT_LESSTHANOREQUAL_10_YEARS,&#10;&#9;&#9;dbo.LPA_SCR.ORIGINAL_MATURITY,&#10;&#9;&#9;dbo.LPA_SCR.REMAINING_MATURITY_WORDS,&#10;&#9;&#9;dbo.LPA_SCR.LPA_ReportDate,&#10;&#9;&#9;dbo.LPA_SCR.REPORT_MONTH,&#10;&#9;&#9;dbo.LPA_SCR.REPORT_YEAR&#10;FROM&#9;dbo.LPA_SCR&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -10264,7 +10266,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vtSamtS3MLPlMa6BGa+SIM1Ez4sMLG7XHv7rBrr/ulYNEKdBtr9wQE9bvg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:M4EFZctbKm4UpnHc/lVgk2e7J/0oxsorluhMNVTjn25Rx1lCB6fFftmdtQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;LPA_SCR&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -11131,7 +11133,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XNzmbeQ2gCclRKq2UedNDm3Mbk+FdJwLZJDw7/vaIVVci+RXPjnCk3tJjQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PUEqxo7zDQbDw1x+RzSCZCmitiJPoOaiJ9PD4mey4BNDfjzc4DITqow+7w=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -11161,7 +11163,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ci1ZRouV2tYOr9I9f+EOVZXUhWjTaIv9/xGR9WLEmikH8sbEd92vpyNvww=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gc4zVVbCUu+9yG6q7AsnkcUJAp4rLY/wB0LrIHwWJUlfMLKWd34P0zVXZg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -11187,13 +11189,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:37LNzc6ufCzKNdpzVUdcgQ/VgnxYnVNt+qRlMx/N"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Ya8hRxPhKd/eiaOWCeA3bO6rqcV5d5XrieKmeEqB"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_AIR_ECQ_EGP&#13;&#10;WHERE LPA_ReportDate =&quot;+context.EDWDeleteDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_AIR_ECQ_EGP&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11228,13 +11230,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:mGmspsP3VIE6+sNdfjHwooHs9yqm899FwwDNX1qA"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:CJ3IwrwSIo2bYGD9VjlEuiWkgnSasjTIBGWaiiTW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_BILLS_PURCHASED&#13;&#10;WHERE LPA_ReportDate =&quot;+context.EDWDeleteDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_BILLS_PURCHASED&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11269,13 +11271,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:k+b4bGahYfUPgrhBSl3By/ljCEqvsOoW+huqxMjL"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1CouW5Gd7qL4kTl5EQZcKGkcs13PtPbja5hmrdoo"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_CREDIT_CARDS&#13;&#10;WHERE LPA_ReportDate =&quot;+context.EDWDeleteDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_CREDIT_CARDS&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11310,13 +11312,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nZQ4Df7fdzlzry/fDfmHa3NQGyEFY2fy/B1DzHjR"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:RFEAfTGZECEYrDIflK4hnWcFAv8nmpYRp6f+EkKb"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_FCDU&#13;&#10;WHERE LPA_ReportDate =&quot;+context.EDWDeleteDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_FCDU&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11351,13 +11353,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:K3btIXADC1kSqalPUTX1RmVY7Io47TNHXcleONjp"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2lHVUvVGBEoTKsG8cUPfC53xA2gk6TJMAr3b2Q9X"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_MICROFINANCE&#13;&#10;WHERE LPA_ReportDate =&quot;+context.EDWDeleteDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_MICROFINANCE&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11392,13 +11394,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+2y8pb2nzXAJDpo6UHE3YRF6B1qbclo62uw+MhOS"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:F0f1j+typsBcFb2T7YvLPkOtvcrW/9+j4sH6w5rx"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_PESO&#13;&#10;WHERE LPA_ReportDate =&quot;+context.EDWDeleteDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_PESO&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11433,13 +11435,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Caw0kzwqx0QeTl+soiiD6Cz1uzVy/YhUMVxjp9zf"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:K7c6T3E5ASJhxduSlI9Ir2UjLJswak/Tb5pVsIDS"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_REGULAR&#13;&#10;WHERE LPA_ReportDate =&quot;+context.EDWDeleteDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_REGULAR&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11474,13 +11476,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uJg1cYNTo9jSjfgRApeXiwk0MZf2RITpYk3UdETH"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0jlBB9MQdKBabo84JWO8h0q3UlNZXP2h+vfzD72P"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_ROPA&#13;&#10;WHERE LPA_ReportDate =&quot;+context.EDWDeleteDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_ROPA&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11515,13 +11517,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:N9fwhLrUhJPsfA6o9auLIlGK4GML5VwRsThGGTVu"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hRdlKWEPkrkF9iWF3nHTHvW9tbYW/RLpnFBoGmYm"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_SCR&#13;&#10;WHERE LPA_ReportDate =&quot;+context.EDWDeleteDate"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DELETE FROM RBMAINEX.DBO.LPA_SCR&#13;&#10;WHERE REPORT_MONTH ='&quot;+context.ReportMonth+&quot;'&#13;&#10;AND REPORT_YEAR='&quot;+context.ReportYear+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11556,13 +11558,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+cuGbFU9/9H4BFOr0tr0jv3GPq34ScW0a8EO4v0C"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LnuByL2XnB2GeAQDkWVFTn6wm1zbDI6A442FZLoM"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DATE_STRING,DATE_STRING FROM RBSTAGE.DBO.SYSTEMDATE&#13;&#10;WHERE DATE_DESCRIPTION = 'EDW LOAD DATE'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DATE_STRING FROM RBSTAGE.DBO.SYSTEMDATE&#13;&#10;WHERE DATE_DESCRIPTION = 'EDW LOAD DATE'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -11573,8 +11575,6 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="EDWDELETEDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EDWLOADDATE"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
@@ -11583,18 +11583,16 @@
     <elementParameter field="TEXT" name="LABEL" value="GET DELETE DATE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_2">
-      <column comment="" key="false" length="-1" name="EDWDELETEDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EDWLOADDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="context.EDWDeleteDate = &quot;CAST('&quot;+input_row.EDWDELETEDATE+&quot;' AS DATE)&quot;;&#10;&#10;context.EDWLoadDate = &quot;CAST('&quot;+input_row.EDWLOADDATE+&quot;' AS DATE)&quot;;&#10;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.EDWDeleteDate = &quot;CAST('&quot;+input_row.EDWLOADDATE+&quot;' AS DATE)&quot;;&#10;&#10;context.EDWLoadDate = &quot;CAST('&quot;+input_row.EDWLOADDATE+&quot;' AS DATE)&quot;;&#10;&#10;//Scripts used to define the Month year&#10;globalMap.put(&quot;Month&quot;, StringHandling.UPCASE(TalendDate.formatDate(&quot;MMMM&quot;, TalendDate.addDate(TalendDate.getCurrentDate(), -3, &quot;MM&quot;))));&#10;globalMap.put(&quot;Year&quot;, StringHandling.UPCASE(TalendDate.formatDate(&quot;yyyy&quot;, TalendDate.addDate(TalendDate.getCurrentDate(), -3, &quot;MM&quot;))));&#10;&#10;context.ReportMonth = (String)globalMap.get(&quot;Month&quot;);&#10;context.ReportYear = (String)globalMap.get(&quot;Year&quot;);&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="SET DELETE DATE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
-      <column comment="" key="false" length="-1" name="EDWDELETEDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EDWLOADDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -11688,7 +11686,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Sl4+y40LqfHULN+PX8ERmAkpOAr38y4l0+iu5J13"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lCdtcDe/dMy2QLmo7MX+ejkEAYmzsCD3gzgMFyOe"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;AUDIT_LOG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -11890,7 +11888,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LV05C0LRkiioBApxhrcTXt3Qo/I8QV2TG5gbw5BD"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vLXHttMiodVSyzEl+8jadzsabQQB4RWSTxfOolu6"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;AUDIT_LOG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -12441,13 +12439,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f6b5472f-f2b4-4360-9f75-c575bd58dbe7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>P2u85/ZVbScV+TvqvQ0BWjga5AIdzzU7P+c0nGR00G4qaZx3BoxJRSEZiuNyK+7peJ34S+57CEOV&#13;
-2aMoaudU9w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0a28c219-1f43-44b1-bb9e-63ed6c08aa31"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6/q1+8BVxqf10ZO+JImJPwgrO5/SFWdXZXK2E/P1y5ZTyy7i+RL4boNub0zhdcOnvebSihr52/BW&#13;
-Zvat6YTCOA==</DigestValue></Reference></SignedInfo><SignatureValue>KzkxOoSSMMgIIIDe4+CuO5IfZ96m1t9vbc/bDICK9SsP4pRzgQudK7KCYjBd/iCiEUoe4DYSnf77&#13;
-JMwPvfgAhYCsZOeR29vZv788t0P1JU8XA0qUkaF83yADod6bCVGPq85aQ+vvW0ffWq1EJfrR+ySR&#13;
-YXkmm942ZY0tT04RO9rIGv/SArlXz9l4bDoYSg3ickLcdJOoqKilZu1Ft1TSNIDuKYwpO/3umNVm&#13;
-gg1mmk3LO8n3BpbjlDdQL46CfBtlWaKVswPVpLVQ/Kd51Fo9iYd8hYEh2Sp5LREIzyRJitlCfcTo&#13;
-1djg+TBd2EAFk5tsyYnP5pulB8ralTqIb+oL0g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_69d6e08f-7a6c-4e68-b4b4-5e962dd548b8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t0qV0mbMS9ZcI+6WyMFJnjautO7qhgBht4wcOZwJmKGt55SVhhNSszveTWKp0cEB8NIb95GeClPp&#13;
+WkVgNLpenA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c107ef23-1c0a-4897-ae82-b10d7fbbd6ce"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3BjDqN8RsrUWGbUZL1rsSUBibJKPlDvEhLJdHzroHv53TPXXY7lvfJNecU4HMHTqmEKQ5e5oc/Kh&#13;
+fFhV1gsjMA==</DigestValue></Reference></SignedInfo><SignatureValue>Z3COMiRK2/oJKzDt6nvtg2D25zLYOXSMAF6ISc1mh6Gzq3V5qZ9KUNKG/8Jx6KKO/VY/8wBIO5+I&#13;
+EQk3mw+KT6v6++Ez+MyL77YCWjv3zxMj4jWeUsIFMVl5IplX4ayu3X70cu9vLbCNtekZXAM/wQfs&#13;
+/BslfHDU5eRnrji6Sccoi6J+TasDf3kDpLo/TwABMxrLUISGcLcqrgpWKIo4xH7AsNI8kcnIt/sj&#13;
+PNZT7m7RxCbjSzDND3ODz/6pg16ZaLg2EzUT2L7FASYxZB4C/wUGbQCOWyxd5J/57cEVCSzgIcTy&#13;
+Wg8252k7+JseMcqpXoS8z5bGIAXPXc7MUGCCMw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -12469,4 +12467,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0a28c219-1f43-44b1-bb9e-63ed6c08aa31" Target="#_f6b5472f-f2b4-4360-9f75-c575bd58dbe7"><Timestamp>2022-11-14 06:54:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c107ef23-1c0a-4897-ae82-b10d7fbbd6ce" Target="#_69d6e08f-7a6c-4e68-b4b4-5e962dd548b8"><Timestamp>2022-11-21 03:26:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

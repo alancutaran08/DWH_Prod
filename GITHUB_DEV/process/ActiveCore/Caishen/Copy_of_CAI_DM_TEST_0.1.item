@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:UlgwmvclGrefQT1Z65xFtbiBWtluR6jmzoh3dzzT"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vfkNJC1KhnKrJPzSQS1/BCkYWOHZBvE48ToakzN6"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -84,7 +84,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Ohzg9LAenyYy4OBrJ8W3gtinVR/RYMe76TDr05U6"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LXK30aWnvn7mipMUq3/gtcZehf+xv0j1n+5+bZkR"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -132,13 +132,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;caishen_prd&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;caishen_dw_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+yE+aLqtzstpQHlBFuGjckKDLX39kHtyp30DKDe36GO24Af/fKBbtg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uayS5WsXHSwsZmnyt1zXWyw4LGourpJzA95XJFYwk56GVTofYDLEtw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;acceptance_collateral_mc&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  &#13;&#10;&#9;   count(1) as Records_Count&#13;&#10;&#9; , sum(mca.loan_amount) as Amount&#9; &#13;&#10;&#9; , mca.[vehicle_maker] as Collateral_Vehicle_Maker&#13;&#10;&#9; , 'Motorcycle Loan' as Product_Class&#13;&#10;from [dbo].[loan_applications] la&#13;&#10;inner join [dbo].[mc_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#13;&#10;where la.del_flg='N' and la.product_class='MC'  &#13;&#10;group by mca.[vehicle_maker]&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  &#9;&#9;&#13;&#10;&#9;   count(1) as Records_Count&#9;&#13;&#10;&#9;  &#9;&#13;&#10;&#9; , sum(mca.loan_amount) as Amount&#9; &#13;&#10;&#9; , mca.[vehicle_maker] as Collateral_Vehicle_Maker&#9;&#13;&#10;&#9;  ,la.cust_info_uuid as la_cust_info_uuid&#9;&#13;&#10;&#9; ,la.loan_application_uuid as la_loan_application_uuid&#9;&#13;&#10;&#9; ,mca.chg_time as mca_chg_time&#9;&#13;&#10;&#9; ,la.chg_time as la_chg_time&#9;&#13;&#10;&#9; ,la.cre_time as la_cre_time&#9;&#13;&#10;&#9;&#9;&#13;&#10;&#9;&#9;&#13;&#10;&#9; , 'Motorcycle Loan' as Loan_Status_Stage&#9;&#13;&#10;from [dbo].[loan_applications] la&#9;&#9;&#13;&#10;inner join [dbo].[mc_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#9;&#9;&#13;&#10;where la.del_flg='N' and la.product_class='MC'  &#9;&#9;&#13;&#10;group by mca.[vehicle_maker] ,la.loan_application_uuid,mca.chg_time,la.chg_time,la.cust_info_uuid,la.cre_time&#9;&#9;&#13;&#10;&quot;&#13;&#10;&#9;&#9;&#13;&#10;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -155,7 +155,17 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="COLLATERAL_VEHICLE_MAKER"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CLASS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cust_info_uuid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_loan_application_uuid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mca_chg_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_chg_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cre_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Loan_Status_Stage"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
@@ -166,15 +176,20 @@
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="COLLATERAL_VEHICLE_MAKER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="la_cust_info_uuid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="la_loan_application_uuid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mca_chg_time" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="la_chg_time" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="la_cre_time" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Status_Stage" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_lgJ8MGQrEe2Q57bV_6by5g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_1gLCkGbxEe2I9s5zhmOt_w-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -183,28 +198,43 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out1">
+    <metadata connector="FLOW" label="sample1" name="sample1">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="COLLATERAL_VEHICLE_MAKER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Status_Stage" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EDW_Load_Date" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="out1" sizeState="INTERMEDIATE">
+      <outputTables name="sample1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.RECORDS_COUNT " name="RECORDS_COUNT" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row1.AMOUNT " name="AMOUNT" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="row1.COLLATERAL_VEHICLE_MAKER " name="COLLATERAL_VEHICLE_MAKER" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.PRODUCT_CLASS " name="PRODUCT_CLASS" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="context.EDWLoadDate" name="EDW_LOAD_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.la_cust_info_uuid " name="la_cust_info_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.la_loan_application_uuid " name="la_loan_application_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.mca_chg_time " name="mca_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.la_chg_time " name="la_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.la_cre_time " name="la_cre_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.Loan_Status_Stage " name="Loan_Status_Stage" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="context.EDWLoadDate" name="EDW_Load_Date" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="RECORDS_COUNT" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="AMOUNT" nullable="true" type="id_Double"/>
         <mapperTableEntries name="COLLATERAL_VEHICLE_MAKER" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRODUCT_CLASS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="la_cust_info_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="la_loan_application_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="mca_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="la_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="la_cre_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Loan_Status_Stage" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -219,8 +249,8 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SSIhzackqBq7a8EElcrpxxHQX/IyM0E+cvZ5S685OPaVgZXTSRTL317rNg=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CAI_SUMMARYBYCOLLATERALFORMC_TEST&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:B4WTgecRRm0LAnWR48sGOg8Q8QqU2+nyZIzWwtDpNpJdVzUkZsq7PiDc0A=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CAI_SUMMARYBYCOLLATERALFORMC_TEST_UPDATE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -259,12 +289,37 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CLASS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cust_info_uuid"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EDW_LOAD_DATE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_loan_application_uuid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mca_chg_time"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_chg_time"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cre_time"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Loan_Status_Stage"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EDW_Load_Date"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -279,19 +334,29 @@
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
     <elementParameter field="TEXT" name="LABEL" value="CAI_SUMMARYBYCOLLATERALFORMC_TEST"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBOutput_1">
+    <metadata connector="FLOW" label="sample1" name="tDBOutput_1">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="COLLATERAL_VEHICLE_MAKER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Status_Stage" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EDW_Load_Date" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" name="REJECT">
+    <metadata connector="REJECT" label="sample1" name="REJECT">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="COLLATERAL_VEHICLE_MAKER" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Status_Stage" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EDW_Load_Date" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -311,7 +376,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;caishen_prd&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;caishen_dw_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:X9zwtMVaTC+f5yOdSdK7n/4rAepiOMNoJIdSCRbkFjXvFhT4BmyXnQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iYUudN6oeVhpscZ7abzBP2ala26ft7q5b7ATUAKQkhGXQxpEzc+5Jw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -337,7 +402,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/brEAqgO5b0MXvtbjC8FIYrCJol7j9XeAK1MX7+byrpAfl3H5qbyie5eQw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vrIo/ts/rAGiGcFthXwEkywVpA9cUtIMFD7etcpm2X8plnAqWNCIvfo4RQ=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -363,7 +428,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/L9cxtRfeTVHghcwtoKTR1ahrknW+PREHu8LJ/nN"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YY99PplkXcMyrs0KXEINtrcrN3w4BiXQ4tJ/BSdJ"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -411,7 +476,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gb9dxVDN2fIJ/jqturwxEmLtbuELOFJHF+tuaIU8"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2w+RT8nf2ZkiQhuBsPRTY4iWLTBkOtdwYy8/D1kC"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -465,13 +530,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;caishen_prd&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;caishen_dw_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:UeLPpWuQh/B6iQkykeMDhr1vj6SVOkNN9XbV8DN4VpUNcoM0QZ+nXA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ZE4lwOkMU9SBShT1wvOorx78dzFSaGdP1G91I1PyMuR5YW2L+C6Wjg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Summary-Per-Stage&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  &#13;&#10;&#9;   count(1) as Records_Count&#13;&#10;&#9; , sum(mca.loan_amount) as Amount&#9; &#13;&#10;&#9; , la.loan_status as Loan_Application_Status&#13;&#10;&#9; , 'Motorcycle Loan' as Product_Class&#13;&#10;from [dbo].[loan_applications] la&#13;&#10;inner join [dbo].[mc_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#13;&#10;where la.del_flg='N' and la.product_class='MC'  &#13;&#10;group by la.loan_status&#13;&#10;union all &#13;&#10;select  &#13;&#10;&#9;   count(1) as Records_Count&#13;&#10;&#9; , sum(mca.loan_amount) as Amount&#9; &#13;&#10;&#9; , la.loan_status as Loan_Application_Status&#13;&#10;&#9; , 'Personal Loan' as Product_Class&#13;&#10;from [dbo].[loan_applications] la&#13;&#10;inner join [dbo].[pl_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#13;&#10;where la.del_flg='N' and la.product_class='PL'  &#13;&#10;group by la.loan_status&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  &#9;&#9;&#13;&#10;&#9;   count(1) as Records_Count&#9;&#13;&#10;&#9; , sum(mca.loan_amount) as Amount&#9; &#13;&#10;&#9; , la.loan_status as Loan_Type&#9;&#13;&#10;&#9; , la.cust_info_uuid as la_cust_info_uuid&#9;&#13;&#10;&#9; ,la.loan_application_uuid as la_loan_application_uuid&#9;&#13;&#10;&#9; ,mca.chg_time as mca_chg_time&#9;&#13;&#10;&#9; ,la.chg_time as la_chg_time&#9;&#13;&#10;&#9; ,la.cre_time as la_cre_time&#9;&#13;&#10;&#9; , 'Motorcycle Loan' as Loan_Status_Stage&#9;&#13;&#10;from [dbo].[loan_applications] la&#9;&#9;&#13;&#10;inner join [dbo].[mc_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#9;&#9;&#13;&#10;where la.del_flg='N' and la.product_class='MC'  &#9;&#9;&#13;&#10;group by la.loan_status,la.loan_application_uuid,la.id,mca.chg_time,la.chg_time,la.cre_time ,la.cust_info_uuid&#9;&#9;&#13;&#10;union all &#9;&#9;&#13;&#10;select  &#9;&#9;&#13;&#10;&#9;  count(1) as Records_Count&#9;&#13;&#10;&#9; , sum(mca.loan_amount) as Amount&#9; &#13;&#10;&#9; , la.loan_status as Loan_Type&#9;&#13;&#10;&#9; , la.cust_info_uuid as la_cust_info_uuid&#9;&#13;&#10;&#9; ,la.loan_application_uuid as la_loan_application_uuid&#9;&#13;&#10;&#9; ,mca.chg_time as mca_chg_time&#9;&#13;&#10;&#9; ,la.chg_time as la_chg_time&#9;&#13;&#10;&#9; ,la.cre_time as la_cre_time&#9;&#13;&#10;&#9; , 'Personal Loan' as Product_Class&#9;&#13;&#10;from [dbo].[loan_applications] la&#9;&#9;&#13;&#10;inner join [dbo].[pl_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#9;&#9;&#13;&#10;where la.del_flg='N' and la.product_class='PL'  &#9;&#9;&#13;&#10;group by la.loan_status,la.id,la.loan_application_uuid,mca.chg_time,la.cre_time,la.chg_time,la.cust_info_uuid  ;&#9;&#9;&#13;&#10;&quot;&#13;&#10;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -486,9 +551,19 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AMOUNT"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOAN_APPLICATION_STATUS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Loan_Type"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CLASS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cust_info_uuid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_loan_application_uuid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mca_chg_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_chg_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cre_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Loan_Status_Stage"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
@@ -498,16 +573,21 @@
     <metadata connector="FLOW" label="acceptance_collateral_mc" name="tDBInput_3">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="LOAN_APPLICATION_STATUS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Type" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Status_Stage" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="384">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_lgJ8MGQrEe2Q57bV_6by5g-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_1gLCkGbxEe2I9s5zhmOt_w-tMap_3-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -516,28 +596,43 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="copyOfout1">
+    <metadata connector="FLOW" label="sample2" name="sample2">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="LOAN_APPLICATION_STATUS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Type" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Status_Stage" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EDW_Load_Date" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="copyOfout1" sizeState="INTERMEDIATE">
+      <outputTables name="sample2" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.RECORDS_COUNT " name="RECORDS_COUNT" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.AMOUNT " name="AMOUNT" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row2.LOAN_APPLICATION_STATUS " name="LOAN_APPLICATION_STATUS" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.PRODUCT_CLASS " name="PRODUCT_CLASS" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="context.EDWLoadDate" name="EDW_LOAD_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Loan_Type " name="Loan_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.la_cust_info_uuid " name="la_cust_info_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.la_loan_application_uuid " name="la_loan_application_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.mca_chg_time " name="mca_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.la_chg_time " name="la_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.la_cre_time " name="la_cre_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Loan_Status_Stage " name="Loan_Status_Stage" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="context.EDWLoadDate" name="EDW_Load_Date" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="RECORDS_COUNT" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="AMOUNT" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="LOAN_APPLICATION_STATUS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRODUCT_CLASS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Loan_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="la_cust_info_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="la_loan_application_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="mca_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="la_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="la_cre_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Loan_Status_Stage" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -552,8 +647,8 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:g+TVpyxCHp5STFW1rA9qdquTyU7heA0Ui7NQSn6sneTSsu4PgXPl6UJguQ=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CAI_SUMMARYPERSTAGE_TEST&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fXu9UhwYDtoFB0uAU9KBwp3xhdnJndL9q41AyTvcQtFUzwvbXKYX1TxjFA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CAI_SUMMARYPERSTAGE_TEST_UPDATE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -587,17 +682,42 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOAN_APPLICATION_STATUS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Loan_Type"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CLASS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cust_info_uuid"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EDW_LOAD_DATE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_loan_application_uuid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mca_chg_time"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_chg_time"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cre_time"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Loan_Status_Stage"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EDW_Load_Date"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -612,19 +732,29 @@
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
     <elementParameter field="TEXT" name="LABEL" value="CAI_SUMMARYPERSTAGE_TEST"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBOutput_2">
+    <metadata connector="FLOW" label="sample2" name="tDBOutput_2">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="LOAN_APPLICATION_STATUS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Type" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Status_Stage" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EDW_Load_Date" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" name="REJECT">
+    <metadata connector="REJECT" label="sample2" name="REJECT">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="LOAN_APPLICATION_STATUS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Type" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="Loan_Status_Stage" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EDW_Load_Date" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -642,13 +772,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;caishen_prd&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;caishen_dw_app&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Yds7Bar8to6LLzbOz36T0aSib7gizwuXNEjLd+wNahsKs4dOWZtyxA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8QV86y6liAvuQffhqavG4BXM5Eo+19HSHu9hHKEjmxiC4SZY2MYXJA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Summary-Per-Application_Type&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  &#13;&#10;          count(1) as Records_Count&#13;&#10;       , sum(mca.loan_amount) as Amount &#13;&#10;        , la.loan_status as Loan_Status&#13;&#10;       , la.loan_type as Loan_Type&#13;&#10;       , 'Motorcycle Loan' as Product_Class&#13;&#10;from [dbo].[loan_applications] la&#13;&#10;inner join [dbo].[mc_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#13;&#10;where la.del_flg='N' and la.product_class='MC'  &#13;&#10;group by la.loan_type, la.loan_status&#13;&#10;union all &#13;&#10;select  &#13;&#10;          count(1) as Records_Count&#13;&#10;       , sum(mca.loan_amount) as Amount &#13;&#10;        , la.loan_status as Loan_Status&#13;&#10;       , la.loan_type as Loan_Type&#13;&#10;       , 'Personal Loan' as Product_Class&#13;&#10;from [dbo].[loan_applications] la&#13;&#10;inner join [dbo].[pl_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#13;&#10;where la.del_flg='N' and la.product_class='PL'  &#13;&#10;group by la.loan_type, la.loan_status&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  &#9;&#9;&#13;&#10;          count(1) as Records_Count&#9;&#9;&#13;&#10;       , sum(mca.loan_amount) as Amount &#9;&#9;&#13;&#10;        , la.loan_status as Loan_Status&#9;&#9;&#13;&#10;       , la.loan_type as Loan_Type&#9;&#9;&#13;&#10;&#9;   ,la.cust_info_uuid as la_cust_info_uuid&#9;&#13;&#10;&#9;   ,la.loan_application_uuid as la_loan_application_uuid&#9;&#13;&#10;&#9;   ,mca.chg_time as mca_chg_time&#9;&#13;&#10;&#9;   ,la.chg_time as la_chg_time&#9;&#13;&#10;&#9;   ,la.cre_time as la_cre_time&#9;&#13;&#10;&#9;&#9;&#13;&#10;&#9;&#9;&#13;&#10;       , 'Motorcycle Loan' as Product_Class&#9;&#9;&#13;&#10;from [dbo].[loan_applications] la&#9;&#9;&#13;&#10;inner join [dbo].[mc_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#9;&#9;&#13;&#10;where la.del_flg='N' and la.product_class='MC'  &#9;&#9;&#13;&#10;group by la.loan_type, la.loan_status,la.loan_application_uuid,mca.chg_time,la.cre_time,la.chg_time,la.cust_info_uuid&#9;&#9;&#13;&#10;union all &#9;&#9;&#13;&#10;select  &#9;&#9;&#13;&#10;          count(1) as Records_Count&#9;&#9;&#13;&#10;       , sum(mca.loan_amount) as Amount &#9;&#9;&#13;&#10;        , la.loan_status as Loan_Status&#9;&#9;&#13;&#10;       , la.loan_type as Loan_Type&#9;&#9;&#13;&#10;&#9;   ,la.cust_info_uuid as la_cust_info_uuid&#9;&#13;&#10;&#9;   ,la.loan_application_uuid as la_loan_application_uuid&#9;&#13;&#10;&#9;   ,mca.chg_time as mca_chg_time&#9;&#13;&#10;&#9;   ,la.chg_time as la_chg_time &#9;&#13;&#10;&#9;   ,la.cre_time as la_cre_time&#9;&#13;&#10;       , 'Personal Loan' as Product_Class&#9;&#9;&#13;&#10;from [dbo].[loan_applications] la&#9;&#9;&#13;&#10;inner join [dbo].[pl_loan_applications] mca on la.loan_application_uuid=mca.uuid and mca.del_flg='N'&#9;&#9; &#13;&#10;where la.del_flg='N' and la.product_class='PL'  &#9;&#9;&#13;&#10;group by la.loan_type, la.loan_status,la.loan_application_uuid,mca.chg_time,la.cre_time,la.chg_time,la.cust_info_uuid ;&#9;&#13;&#10;&quot;&#9;&#13;&#10;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -667,6 +797,16 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LOAN_TYPE"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cust_info_uuid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_loan_application_uuid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mca_chg_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_chg_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cre_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CLASS"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
@@ -679,15 +819,20 @@
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_STATUS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_TYPE" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="512">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_lgJ8MGQrEe2Q57bV_6by5g-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_1gLCkGbxEe2I9s5zhmOt_w-tMap_4-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -696,30 +841,45 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="copyOfcopyOfout1">
+    <metadata connector="FLOW" label="sample3" name="sample3">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="200" name="LOAN_STATUS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="LOAN_STATUS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_TYPE" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EDW_Load_Date" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="copyOfcopyOfout1" sizeState="INTERMEDIATE">
+      <outputTables name="sample3" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row5.RECORDS_COUNT " name="RECORDS_COUNT" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row5.AMOUNT " name="AMOUNT" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="row5.LOAN_STATUS " name="LOAN_STATUS" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row5.LOAN_TYPE " name="LOAN_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.la_cust_info_uuid " name="la_cust_info_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.la_loan_application_uuid " name="la_loan_application_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.mca_chg_time " name="mca_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row5.la_chg_time " name="la_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row5.la_cre_time " name="la_cre_time" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row5.PRODUCT_CLASS " name="PRODUCT_CLASS" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="context.EDWLoadDate" name="EDW_LOAD_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="context.EDWLoadDate" name="EDW_Load_Date" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
         <mapperTableEntries name="RECORDS_COUNT" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="AMOUNT" nullable="true" type="id_Double"/>
         <mapperTableEntries name="LOAN_STATUS" nullable="true" type="id_String"/>
         <mapperTableEntries name="LOAN_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="la_cust_info_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="la_loan_application_uuid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="mca_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="la_chg_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="la_cre_time" nullable="true" type="id_Date"/>
         <mapperTableEntries name="PRODUCT_CLASS" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
@@ -735,8 +895,8 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBSTAGE&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3LjY2sDINmSdpmCAqhVZUFj2yOPFOkZ+/MSIekzrUBkXdE0dcEvt+frWSQ=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CAI_SUMMARYPERAPPLICATIONTYPE_TEST&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qacRawt2kAiGausJGUtIaHVqbcnhyfa51s7ZynxE1i5S97RFtSI/auS6mQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CAI_SUMMARYPERAPPLICATIONTYPE_TEST_UPDATE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -780,12 +940,37 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cust_info_uuid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_loan_application_uuid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mca_chg_time"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_chg_time"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="la_cre_time"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CLASS"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EDW_LOAD_DATE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EDW_Load_Date"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -800,60 +985,59 @@
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
     <elementParameter field="TEXT" name="LABEL" value="CAI_SUMMARYPERSTATUS_TEST"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBOutput_3">
+    <metadata connector="FLOW" label="sample3" name="tDBOutput_3">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_STATUS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_TYPE" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EDW_Load_Date" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" name="REJECT">
+    <metadata connector="REJECT" label="sample3" name="REJECT">
       <column comment="" key="false" length="20" name="RECORDS_COUNT" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="AMOUNT" nullable="true" originalLength="20" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_STATUS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LOAN_TYPE" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_cust_info_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="la_loan_application_uuid" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="mca_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_chg_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="la_cre_time" nullable="true" originalLength="20" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PRODUCT_CLASS" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EDW_LOAD_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EDW_Load_Date" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="RECORDS_COUNT"/>
+      <elementValue elementRef="TRACE_COLUMN" value="mca_chg_time"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Loan_Type"/>
+      <elementValue elementRef="TRACE_COLUMN" value="la_cust_info_uuid"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="AMOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN" value="la_chg_time"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_CLASS"/>
+      <elementValue elementRef="TRACE_COLUMN" value="la_loan_application_uuid"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOAN_TYPE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOAN_STATUS"/>
+      <elementValue elementRef="TRACE_COLUMN" value="la_cre_time"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="EDW_LOAD_DATE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOAN_STATUS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="sample1" lineStyle="0" metaname="sample1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sample1"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
@@ -885,80 +1069,21 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="RECORDS_COUNT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Loan_Type"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="AMOUNT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_CLASS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOAN_APPLICATION_STATUS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOAN_STATUS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="FLOW" label="copyOfout1" lineStyle="0" metaname="copyOfout1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="EDW_LOAD_DATE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOAN_STATUS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_CLASS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="sample2" lineStyle="0" metaname="sample2" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tDBOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfout1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sample2"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_3">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="RECORDS_COUNT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Loan_Type"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="AMOUNT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_CLASS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOAN_TYPE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOAN_STATUS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
-  <connection connectorName="FLOW" label="copyOfcopyOfout1" lineStyle="0" metaname="copyOfcopyOfout1" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tDBOutput_3">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="EDW_LOAD_DATE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOAN_STATUS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="sample3" lineStyle="0" metaname="sample3" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tDBOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfcopyOfout1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sample3"/>
   </connection>
   <note opaque="false" posX="352" posY="96" sizeHeight="64" sizeWidth="193" text="table=default&gt;query"/>
   <subjob>
@@ -1002,13 +1127,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_799248ec-be7f-42c1-8fe1-25ac4c9faafc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rmOo/bDTT50VN3ZugLpI7ULZ9U1o/f0jdD0SIL2b3lwmkTwpPS1yWlxOdsad8GIN9jiFWoGuubHy&#13;
-SUG31wX9xg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4fa54f41-3880-4841-9244-5d01c4aac16b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3A4jYSHyFEaheWI45plCZwxA2++BBBu4KmfNqsRJ8D4KpDoZAH6QCIh9afB5LgPTRnMnEIK0zgFU&#13;
-q6VkFQNtUQ==</DigestValue></Reference></SignedInfo><SignatureValue>J64wdgdiWaOMNBQXdSDFBZhErfl0Q0b0FobGa3LLGV7+wDBjUyZKMySLmreAvWuVefSWSvUFaQ7u&#13;
-Y9h+de5TgBA2dqX4H/rjQWavB9XBd2QiQBDJHnS0nruwOEYM0unmNgSOqPTwrFN0XwYEQLuD4YX+&#13;
-HWKmsQpm0EA5Gfy5ULjE3l1WyTtEwzmtWMRBf4GEMGu4BFIGFsKNtbK3s/eq0psplFe8ywlYSetw&#13;
-/hkqrePbfNwFcPrTlRdK6yfHQ7yET1B8DSEzsPrCVha6N+35723TOeDJ3zLeYCjAtr8arOYN4eKc&#13;
-x0YjtUoTMBwHD8EUXQr8zJCoYuqTdSQFHGTLrA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_030774ab-7a59-47d9-bb60-1cc24e246e13"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Js8Oe++jEJAaJGUoTXurVkuXwCUQfOXq9Sx0GFrYBb3KnpEoiyQwkOqU5wjg1JMoKr5XvcQiMRHk&#13;
+bNTdmcxEpg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3ab3a44e-94d0-4407-9b06-c140f5e6e435"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RevlCesoO4y1MNf4KIWlWwo2EVN1X9m+3OqyRi5BSWFNOWXFDoEvyZyZH/Pb47rJU45/3ZCs7LGt&#13;
+Y3tIookjLw==</DigestValue></Reference></SignedInfo><SignatureValue>lEME965u/nrE9FFReuioZq31Ae52tLhb/NQfPw+SVDCInSibmsOz5TYy9tA52kKUoFGZgxt6wmGU&#13;
+66DLXYWZVDX01UdqCPSKAdtSwpgHtxeqlJp4D44hANA/kOMWL0epYsRX42YIrQXyi+5PuCEdVf2d&#13;
+N0PMS71EbtLdcBcDHYRsiqHaPAb1/rvQ2Ke7/Qmsu4a58QSaxj6FvcBhEFcNxzXPPJoE2RC/3gxK&#13;
+rhZbMWZ/WH7rGN6DWWLJHRWglb3CZ2pmO3ZWB4Q9XAjRA+SUpjr1mHYDp5RhDpwk4ku89drrOHo3&#13;
+EiqglV3Av9tiMppa7dWlQcOrU+WCvd/nn1i8lA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1030,4 +1155,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4fa54f41-3880-4841-9244-5d01c4aac16b" Target="#_799248ec-be7f-42c1-8fe1-25ac4c9faafc"><Timestamp>2022-11-22 09:54:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3ab3a44e-94d0-4407-9b06-c140f5e6e435" Target="#_030774ab-7a59-47d9-bb60-1cc24e246e13"><Timestamp>2022-11-22 09:54:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -10,7 +10,7 @@
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="32"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="43"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
@@ -51,7 +51,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:b/IezPaQlWGT8hFFwsNrvSwZ/qSxsRnmZ+qRp/Cm"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Le26Rs83J7nC3lRJY+sjKCDohnEdFRFI2uVk2FcD"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -86,7 +86,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MRcTnONVprIN0dJD1EWzDIzii8zH9z0O9ASj0xqF"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:oXmtaOizX6x/semMRT7SGpZ8k52KQD6e6UB/z1xI"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -135,7 +135,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:79CyEAzLlxS/D0wWH7eJR+kB60LhtflUCsoQ8OuLiQrjCs2dLLK3/NBf9w=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VoYKpE9SFJqVvS4jKfjqzST9FuI8zBVyS2jC3+rwRdOuoSbpXT7JlagvLw=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - RDX_SQL_ENROLLED_USERS_VW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_SQL_ENROLLED_USERS_VW&quot;"/>
@@ -304,7 +304,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uqJmoq9Ys0XBvwCRmQzc0padRB6pD4ualPR+l1tSt8u23wdeeUSxWFuPbQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1OwBxP2Bth8NjSfVn579QwA2vXSztqq8+40Wv4TxfsvKB/dpahwIxwTERQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_DM_SQL_ENROLLED_USERS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -469,14 +469,16 @@
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;10.86.93.205&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Core"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IGmr+e1kaf08rkKnwKsknnj8dQ9h3YaKHsVcbhfMvfyMhUUqSxdEEN6jAw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nc2lcfzjE0hyfrL7gib28lqGyWEglSOgsmOeQNsAT8zX0ZkCWDu7V5rVlg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -493,14 +495,16 @@
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_MGBM0OY3Eeynpf3p37NLiA"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;10.86.93.205&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Mainex"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2oUneSB/vfiZ9CGdQtUHe/QX9w3PFtzu2NjSxJaWB7fwtm3PdPtJQbNH0w=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:e4LNE+9ZGXg6Fmlh6i6KX7+4t1ZOyN2nCnYJVyAeckVkB4QYlz3xD5JYlw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -526,7 +530,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:sjKYp29dBBKRu5mC1ruAJdckHpBkY4sb6lghuM6n"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:aAmEX6lC85HNnc6yfQvRRCyvb8DhOFYm5qsiH06l"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -579,7 +583,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uCg04BRcwQpwqTsQNiezVqOyyFt6LwrfGUUdFwXp"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ZqQJwWbC4gjP7SlZDH2aBUu9kaFRAQy2kul8Uzl9"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -609,7 +613,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.ExtractDate = &quot;CAST('&quot;+input_row.EXTRACTDATE+&quot;' AS DATE)&quot;;&#10;&#10;context.EDWDeleteDate = &quot;CAST('&quot;+input_row.EXTRACTDATE+&quot;' AS DATE)&quot;;&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.ExtractDate = &quot;CAST('&quot;+input_row.EXTRACTDATE+&quot;' AS DATE)&quot;;&#10;&#10;context.EDWDeleteDate = &quot;CAST('&quot;+input_row.EXTRACTDATE+&quot;' AS DATE)&quot;;&#10;&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="SET EXTRACT DATE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -629,7 +633,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DUKSaw5ZqwfRmW2SQ/AxXjWZG34YOonWDODgzwlx"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TLxy9bP/pzzB65+EemSEXQzgkcJo6shH5nmrwvtB"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -673,7 +677,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TJVDpBX/x0BhFoww8CugfEKzJXbIx+YhkZZo7gfMkTbIVH6Kva5glLTkHg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qUiPcdvr/zax7D1OTcAz+fa/k2ud4DYyBsWlHjWZRF0Tw/7PBpaA4D5XhQ=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - RDX_SQL_QUICK_BALANCE_VW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_SQL_QUICK_BALANCE_VW&quot;"/>
@@ -802,7 +806,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9YPignCfgoKrQCAtfp25SeQs0hfZXA/cu6UFRDJki0zfQaZcIva6LYoj4Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:UTFmyMISJvILatqeH/Rp4tlQ8S6YXZFxCKQsR21MrseKl054un+iJ2lFyA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_DM_SQL_QUICK_BALANCE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -930,7 +934,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:yJ1FvBRayea9ljvJcRdaj9txq220ypIQvd2VisUVuk0LfH7mknfbj3qgVw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gYfhhG8riOczsM2bKfgnttIGL110wXfzAcrcW5zbfJpxTk5I5GLA+mum/Q=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - RDX_SQL_USERS_LOGINS_VW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_SQL_USERS_LOGINS_VW&quot;"/>
@@ -1023,7 +1027,7 @@
       <column comment="" key="false" length="10" name="EDW_LOAD_DATE" nullable="true" originalLength="10" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="user_logins" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row3.trans_ref_number " name="trans_ref_number" nullable="true" type="id_String"/>
@@ -1057,7 +1061,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:X3gbxHrGsjL3JDpQHwrCkuVUjsK1aW/xrdIZlrXyk6URmoJ5JC7PPgoGKg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:INA+KBX9kBg2DjmU3/AO72nb2wsmDjnT4Ax1PhD8wSi6Kjg/np5PvsxArA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_DM_SQL_USERS_LOGINS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1184,7 +1188,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wYC0LE9E4SiOKAIP+mz8Fr+yIThW3UiaWBJGzpWT"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+R1F+e544J3cCJX+5RAxFpAO4dxQ+pO/Ip47TOTa"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1225,7 +1229,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4qA8MVvLyKBYly1iT5ff5aW9s9osv0m78+JVqWpP"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0PzNRcKqMmLBkcXnhxA9V15h74qC/io+YYTWG7RE"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1268,7 +1272,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:CfmRRiz2I/ATOtuPQm5KY0G6JPvMmREKMNFNIxfQAJQkAS1BHj6kVQ/6XQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NH3lmMscJeir5qhQqBgj7UKrITLOKc4LiZIoB/Bc+H7avdpb+usBj8znyg=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - RDX_SQL_ACTIVE_BILLERS_VW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_SQL_ACTIVE_BILLERS_VW&quot;"/>
@@ -1337,7 +1341,7 @@
       <column comment="" key="false" length="10" name="EDW_LOAD_DATE" nullable="true" originalLength="10" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="active_billers" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row4.product_name " name="product_name" nullable="true" type="id_String"/>
@@ -1365,7 +1369,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rAMtPP0nQ/mBdIK+2qzgU6MkmrNezA4WA9lIvyRtwEoeuNWshaxyKqPfxQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rY2LtatKF3yAcvW+Uxd0zGrYtQli/vK5XMWG99jt1gkWRosfl0DQIa5+fQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_DM_SQL_ACTIVE_BILLERS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1460,7 +1464,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FGkmf0uBvVMJTa3Yq0iJdqyTQW3J49M7tS454hzvBPct4Sj4Lwpx/Qz2qA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:i11Se2Ulg/Me/+5JzthsEOzebNcOAiSFnH0ECn2Sc4BDH73rWRMqSptI5Q=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - RDX_SQL_ENROLLED_USERS_SCHEME_CODE_VW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_SQL_ENROLLED_USERS_SCHEME_CODE_VW&quot;"/>
@@ -1545,7 +1549,7 @@
       <column comment="" key="false" length="10" name="EDW_LOAD_DATE" nullable="true" originalLength="10" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="enrolled_users_scheme_code" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row5.cif " name="cif" nullable="true" type="id_String"/>
@@ -1577,7 +1581,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:L1I22uDByVH+6LGD4KDPtbuFxzRoJ2uBVFMAxvpm9IEedTeIdHbjGNMzCQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QxW+abQMpmOukSlm+pcYYSqp+C03MNrDuDzVaK2og0oMi0XPlS30RZNTHA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_DM_SQL_ENROLLED_USERS_SCHEME_CODE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1692,7 +1696,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VNuMwTNdjWva3gNskrwthURPIyRU4NcIyGZQ99Fh"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/w7LdABbx5i5OBNu6O0kzKO7SM7sq8deDhoOIfx7"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1733,7 +1737,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:az8oFrCSlpUL5BV/+nfQ79qaUVAsuLNq1m/Wrj3u"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:v/Ib8Ch/HYcaRT8naXtTjC02LETNuMoBk/DhS9SR"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1776,7 +1780,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ea7f12JSSGPuk1/zm8oB5vK+ctNJxSGwUyOETbEC/JlSrUXZWS8+OEShrg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YEEr+GbbsOqNCEJnhet2gC2xIx5a9h4Ze3GhmxykvSmMYvu6ntEXH84Dsw=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - RDX_SQL_TRANSACTIONS_W_CHANNEL_AND_SERVICE_FEE_VW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_SQL_TRANSACTIONS_W_CHANNEL_AND_SERVICE_FEE_VW&quot;"/>
@@ -1925,7 +1929,7 @@
       <column comment="" key="false" length="10" name="EDW_LOAD_DATE" nullable="true" originalLength="10" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="channel_service_fee" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row6.cif " name="cif" nullable="true" type="id_String"/>
@@ -1973,7 +1977,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NN4Ko2N7FlfczvdYaBBzf/3Hf6nY9YJIXGqKLgh8gQ2KYmo1Dt40qbGhRg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:b9TC9Se4txYQKp9Api4KRQi0NnNFQmwklwMIxsymqr398Yqs9ny9Ep1zoA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_DM_SQL_TRANSACTIONS_W_CHANNEL_AND_SERVICE_FEE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2179,7 +2183,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fKlZHolGlc3agbH/mx/hGpY1UAO2mhoSSRQQjQ8Fwxqtp6RZiDuX+n7ETQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:6Crl96cX0DYq1n1EozZnE5NTBXrcKPCygLAkFgzwZbti/YrbiA4waaP1Zg=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Q0NZgNQzEeuVEOxKgO6d2g - RDX_SQL_TRANSACTIONS_W_CHANNEL_VW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_SQL_TRANSACTIONS_W_CHANNEL_VW&quot;"/>
@@ -2368,7 +2372,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ElJPJplrsucE059LA2VrYnLhxLYQBbYMULgHKvBdGYmb7AGBcGQ822JPNA=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hELe3EXEdb4vbCWqcevvaaSEV8PiNfsDi3DYIgppilOqQ3p5VWg8vudKqw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RDX_DM_SQL_TRANSACTIONS_W_CHANNEL&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2560,7 +2564,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LuPxPEQkPbfMV63hLmE+MOLKR/kEa2ysJTxQcDvO"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3AKXrLWsLWjROfnKA7kgvclzuinYd7ZASfoQAA2s"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2602,7 +2606,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7B/mdz9sYvSpRguCoidHPTKDy3oRzmhQGUiWeWUX"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bBG/zsybMyQNIwQXL5AHFN61UbUKuAJSbUxzrvGG"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2669,6 +2673,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tJavaRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="EDWLOADDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
   </connection>
@@ -2904,13 +2913,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0afb5202-1a50-4019-b8ea-08eacb830787"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2o1JYdP5WniHK4IweEZ3hDjPieT+9So3FoQvPLrIDcvl0x6fvWzMDRsViYw042cRXUaHr/de7iuG&#13;
-gA6E8VDTxw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2c72f38a-afc2-4ed4-8fdc-9dd0da37574a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>20+xyv65HhITOKHltGZLtDQDGwzmiHE4MgHMTZ32/jbS8oXg6gUYDUZos5wnJ1GMGCwIfohsN7p2&#13;
-5ogh4eDCCg==</DigestValue></Reference></SignedInfo><SignatureValue>kLhjVjkKaVStXvT5t6hVWuRDqcoJVhV8ZdK/xzg82uoKtO+/sMOFuldc5vQyExGJ7woEJccgwY+3&#13;
-vzVPFAPdH6kXLCYkR31A4gLexHF2sZAQGDsnZnanFm9VWSt1GyKfA28tBndPr3TJnDQTU8WGuC7u&#13;
-FAJqP7rTzdd+xQ9mF7HM10nclZ6VgWLc4H1WARTycHp3Ge1vdx9r3UPgROp2tjH5FU6SiSVSG3mT&#13;
-cKLCQjdanwQWT/mK5DLFZ6KuX1BGGmOWSePfBOjn0GMdLFvaas8bErkpQeJu/c7NB87CewubeNQz&#13;
-pnmX7/V5UqgPhyFEeE+QxDD9yxDDxDhWPEWf7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_81745c33-741d-4191-9f01-8cd49c46b9c3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1YbGH92XMMFnEJ0oGzBEoUVMt8RmCtU5mJ+Bx7oB8zBqPAJbfPCovRuqSyRLJ1tQPw61gA/A/c8a&#13;
+ayuSDk0qAQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_99392acd-40fc-4368-9508-a269d5009d9d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6eF2ur5tN3a8Un+geI7/1qt1hj/IW2g+ThXaoOBdhAfZKW4qf4LDuC52sG4Weem4MU1DGi6p8bAg&#13;
+TNKF5IApHA==</DigestValue></Reference></SignedInfo><SignatureValue>hzY+8TYnKdC2jk4KAM4CggWNvbYkeK11k5t4wAjD7cJ454pT4PbqIHpoNSJ66pycrmvVEliFy/Y0&#13;
+XDWdWxppcuAG1Fo/JXnV7Psc9w3RtBD0O+toM/WnOqdfesNUaqpezrwFPOhXf+zNnw+uTUX5uHd+&#13;
+7xrz2V7o0sDH77f3pol2tKKhf3KH/yoiE3lfAVx7MU0O/QXzKN7W47xlTQIw+0IJw/mhvGJE6YG9&#13;
++gKd0v+c/4AisizVTixlqsPLd/ukvlVkT7nSL3z9No/DoseAKApDQf7DeHcthdvdWj/agPQSsRiI&#13;
+7L43N5pHf+qk4UEsBaDrHz9mNqb6n1qX5w+AZw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2932,4 +2941,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2c72f38a-afc2-4ed4-8fdc-9dd0da37574a" Target="#_0afb5202-1a50-4019-b8ea-08eacb830787"><Timestamp>2022-11-16 06:50:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_99392acd-40fc-4368-9508-a269d5009d9d" Target="#_81745c33-741d-4191-9f01-8cd49c46b9c3"><Timestamp>2022-11-22 06:49:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

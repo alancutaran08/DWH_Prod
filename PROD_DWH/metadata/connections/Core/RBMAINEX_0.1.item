@@ -1,0 +1,1738 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DatabaseConnection AdditionalParams="" DatabaseType="Microsoft SQL Server" DatasourceName="" DbmsId="id_MSSQL" DriverClass="net.sourceforge.jtds.jdbc.Driver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:Jiq7Is3WaGJ5tKPxGDASMsw0ndMc+55BVzdwJY3KgV/NOUCu/f5oUEzQogumJw==" Port="1433" ProductId="SQL_SERVER" SID="RBMAINEX" SQLMode="false" ServerName="10.200.70.26" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:jtds:sqlserver://10.200.70.26:1433/RBMAINEX;" UiSchema="dbo" Username="etl_prod_app" dataPackage="_tPDp4B4UEe2pRe15deTEHw" dbVersionString="JTDS" id="_MGBM0OY3Eeynpf3p37NLiA" label="RBMAINEX" name="RBMAINEX" supportNLS="false" xmi:id="_N-H98OY3Eeynpf3p37NLiA">
+    <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_Wr6zwdQzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="package filter" value="" xmi:id="_Ww1wANQzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="Status" value="" xmi:id="_WxIq8NQzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="Version" value="0.1" xmi:id="_WxIq8dQzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="Purpose" value="" xmi:id="_WxIq8tQzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="Description" value="" xmi:id="_WxIq89QzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="Author" value="" xmi:id="_WxIq9NQzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="otherParameter" xmi:id="_WxIq9dQzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="DB ProductName" value="Microsoft SQL Server" xmi:id="_Wy6zoNQzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="DB ProductVersion" value="13.00.4001" xmi:id="_Wy6zodQzEeuVEOxKgO6d2g"/>
+    <taggedValue tag="DB IdentifierQuoteString" value="&quot;" xmi:id="_Wy6zotQzEeuVEOxKgO6d2g"/>
+    <parameters key="CONN_PARA_KEY_USERNAME" value="etl_prod_app" xmi:id="_Wr6zwtQzEeuVEOxKgO6d2g"/>
+    <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_5cwHULbxEey7CpQC8QE42w"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_N-H98OY3Eeynpf3p37NLiA" name="RBMAINEX" xmi:id="_tPDp4B4UEe2pRe15deTEHw">
+    <ownedElement name="dbo" xmi:id="_tPDp4R4UEe2pRe15deTEHw" xsi:type="orgomg.cwm.resource.relational:Schema">
+      <ownedElement id="_hvQm8C9FEe2bhPDHDhYMWg" label="FIN_ACCOUNTS" name="FIN_ACCOUNTS" tableType="TABLE" xmi:id="_hvQm8S9FEe2bhPDHDhYMWg" xsi:type="relational:TdTable">
+        <feature label="ACCOUNTID" length="38" name="ACCOUNTID" nullable="false" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_scHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_scXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BANK_ID" length="8" name="BANK_ID" nullable="false" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_scnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sc3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="IDTYPER1" length="50" name="IDTYPER1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sdHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sdXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="IDTYPER2" length="50" name="IDTYPER2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sdnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sd3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="IDTYPER3" length="50" name="IDTYPER3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_seHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_seXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="IDTYPER4" length="50" name="IDTYPER4" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_senCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_se3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="IDTYPER5" length="50" name="IDTYPER5" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sfHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sfXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTRODUCERNAME_ALT1" length="80" name="INTRODUCERNAME_ALT1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sfnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sf3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_LAST_NAME_ALT1" length="80" name="CUST_LAST_NAME_ALT1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sgHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sgXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_FIRST_NAME_ALT1" length="80" name="CUST_FIRST_NAME_ALT1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sgnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sg3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_MIDDLE_NAME_ALT1" length="80" name="CUST_MIDDLE_NAME_ALT1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_shHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_shXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD6_ALT1" length="50" name="STRFIELD6_ALT1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_shnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sh3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SHORT_NAME_ALT1" length="10" name="SHORT_NAME_ALT1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_siHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_siXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NAME_ALT1" length="80" name="NAME_ALT1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sinCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_si3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREATEDBYSYSTEMID" length="50" name="CREATEDBYSYSTEMID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sjHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sjXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MODIFIEDBYSYSTEMID" length="50" name="MODIFIEDBYSYSTEMID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sjnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sj3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CORP_ID" length="38" name="CORP_ID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_skHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_skXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PRIMARYPERSONID" length="38" name="PRIMARYPERSONID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_sknCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_sk3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ORGKEY" length="50" name="ORGKEY" nullable="false" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_slHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_slXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OTUOLDCIFID" length="50" name="OTUOLDCIFID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_slnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sl3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ORGNAME" length="50" name="ORGNAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_smHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_smXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ORGTYPE" length="25" name="ORGTYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_smnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sm3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RATING" length="20" name="RATING" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_snHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_snXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ACCOUNTTYPE" length="50" name="ACCOUNTTYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_snnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sn3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_FIRST_NAME" length="80" name="CUST_FIRST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_soHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_soXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_MIDDLE_NAME" length="80" name="CUST_MIDDLE_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sonCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_so3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_LAST_NAME" length="100" name="CUST_LAST_NAME" nullable="false" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_spHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_spXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SALUTATION" length="50" name="SALUTATION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_spnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sp3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="GENDER" length="10" name="GENDER" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sqHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sqXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BIRTH_DAY" length="38" name="BIRTH_DAY" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_sqnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_sq3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BIRTH_MONTH" length="50" name="BIRTH_MONTH" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_srHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_srXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BIRTH_YEAR" length="38" name="BIRTH_YEAR" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_srnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_sr3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_DOB" length="23" name="CUST_DOB" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_ssHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ssXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_TYPE" length="50" name="CUST_TYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ssnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ss3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="EDUCATION" length="50" name="EDUCATION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_stHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_stXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OCCUPATION" length="50" name="OCCUPATION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_stnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_st3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PERSONTYPE" length="50" name="PERSONTYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_suHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_suXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_LANGUAGE" length="50" name="CUST_LANGUAGE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sunCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_su3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_STAFF_STATUS" length="50" name="CUST_STAFF_STATUS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_svHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_svXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PHONE" length="25" name="PHONE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_svnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sv3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="EXTENSION" length="10" name="EXTENSION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_swHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_swXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FAX" length="25" name="FAX" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_swnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sw3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FAX_HOME" length="50" name="FAX_HOME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sxHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sxXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PHONE_HOME" length="25" name="PHONE_HOME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sxnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sx3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PHONE_HOME2" length="50" name="PHONE_HOME2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_syHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_syXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PHONE_CELL" length="25" name="PHONE_CELL" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_synCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sy3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="EMAIL_HOME" length="50" name="EMAIL_HOME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_szHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_szXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="EMAIL_PALM" length="50" name="EMAIL_PALM" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_sznCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_sz3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="EMAIL" length="50" name="EMAIL" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s0HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s0XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CITY" length="50" name="CITY" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s0nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s03CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREFERREDCHANNELID" length="38" name="PREFERREDCHANNELID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_s1HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_s1XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PAN" length="25" name="PAN" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s1nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s13CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PASSPORTNO" length="25" name="PASSPORTNO" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s2HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s2XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="LICENSENO" length="25" name="LICENSENO" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s2nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s23CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUSTOMERRELATIONSHIPNO" length="50" name="CUSTOMERRELATIONSHIPNO" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s3HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s3XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIPOPENINGDATE" length="23" name="RELATIONSHIPOPENINGDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_s3nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s33CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIPVALUE" length="38" name="RELATIONSHIPVALUE" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_s4HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_s4XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CATEGORY" length="50" name="CATEGORY" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s4nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s43CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NUMBEROFPRODUCTS" length="38" name="NUMBEROFPRODUCTS" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_s5HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_s5XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIPMGRID" length="38" name="RELATIONSHIPMGRID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_s5nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_s53CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIPCREATEDBYID" length="38" name="RELATIONSHIPCREATEDBYID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_s6HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_s6XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FUTUREPROCESS" length="10" name="FUTUREPROCESS" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_s6nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_s63CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTWFID" length="10" name="INTWFID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_s7HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_s7XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="URL" length="50" name="URL" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s7nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s73CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STATUS" length="50" name="STATUS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s8HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s8XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INDUSTRY" length="50" name="INDUSTRY" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s8nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s83CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PARENTORG" length="50" name="PARENTORG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s9HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s9XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="COMPETITOR" length="100" name="COMPETITOR" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s9nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s93CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SICCODE" length="50" name="SICCODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s-HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s-XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="REGION" length="50" name="REGION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s-nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s-3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CIN" length="50" name="CIN" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s_HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s_XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MANAGER" length="100" name="MANAGER" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_s_nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_s_3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DESIGNATION" length="50" name="DESIGNATION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tAHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tAXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ASSISTANT" length="100" name="ASSISTANT" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tAnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tA3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTERNALSCORE" length="25" name="INTERNALSCORE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tBHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tBXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREDITBUREAUSCOREVALIDITY" length="23" name="CREDITBUREAUSCOREVALIDITY" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_tBnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tB3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREDITBUREAUSCORE" length="20" name="CREDITBUREAUSCORE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tCHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tCXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREDITBUREAUREQUESTDATE" length="23" name="CREDITBUREAUREQUESTDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_tCnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tC3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREDITBUREAUDESCRIPTION" length="100" name="CREDITBUREAUDESCRIPTION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tDHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tDXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MAIDENNAMEOFMOTHER" length="50" name="MAIDENNAMEOFMOTHER" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tDnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tD3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ANNUALREVENUE" length="20" name="ANNUALREVENUE" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tEHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tEXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="REVENUEUNITS" length="20" name="REVENUEUNITS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tEnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tE3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TICKERSYMBOL" length="50" name="TICKERSYMBOL" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tFHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tFXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AUTOAPPROVAL" length="5" name="AUTOAPPROVAL" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tFnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tF3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FREEZEPRODUCTSALE" length="5" name="FREEZEPRODUCTSALE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tGHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tGXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIPFIELD1" length="100" name="RELATIONSHIPFIELD1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tGnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tG3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIPFIELD2" length="100" name="RELATIONSHIPFIELD2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tHHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tHXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIPFIELD3" length="100" name="RELATIONSHIPFIELD3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tHnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tH3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DELINQUENCYFLG" length="100" name="DELINQUENCYFLG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tIHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tIXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUSTOMERNREFLG" length="1" name="CUSTOMERNREFLG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tInCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tI3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUSTOMERMINOR" length="1" name="CUSTOMERMINOR" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tJHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tJXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="COMBINEDSTATEMENTFLG" length="1" name="COMBINEDSTATEMENTFLG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tJnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tJ3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUSTOMERTRADE" length="50" name="CUSTOMERTRADE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tKHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tKXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="UNIQUEID" length="100" name="UNIQUEID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tKnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tK3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="UNIQUEIDTYPE" length="50" name="UNIQUEIDTYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tLHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tLXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STAFFEMPLOYEEID" length="50" name="STAFFEMPLOYEEID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tLnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tL3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PLACEOFBIRTH" length="50" name="PLACEOFBIRTH" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tMHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tMXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="COUNTRYOFBIRTH" length="50" name="COUNTRYOFBIRTH" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tMnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tM3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PROOFOFAGEFLAG" length="1" name="PROOFOFAGEFLAG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tNHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tNXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PROOFOFAGEDOCUMENT" length="50" name="PROOFOFAGEDOCUMENT" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tNnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tN3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STAFFFLAG" length="25" name="STAFFFLAG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tOHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tOXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NAMESUFFIX" length="25" name="NAMESUFFIX" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tOnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tO3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MAIDENNAME" length="50" name="MAIDENNAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tPHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tPXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUSTOMERPROFITABILITY" length="20" name="CUSTOMERPROFITABILITY" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tPnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tP3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="HOUSEHOLDID" length="50" name="HOUSEHOLDID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tQHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tQXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="HOUSEHOLDNAME" length="50" name="HOUSEHOLDNAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tQnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tQ3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="HSHLDUFLAG" length="1" name="HSHLDUFLAG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tRHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tRXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CURRENTCREXPOSURE" length="20" name="CURRENTCREXPOSURE" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tRnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tR3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TOTALCREXPOSURE" length="20" name="TOTALCREXPOSURE" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tSHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tSXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="POTENTIALCRLINE" length="20" name="POTENTIALCRLINE" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tSnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tS3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AVAILABLECRLIMIT" length="20" name="AVAILABLECRLIMIT" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tTHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tTXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREDITSCOREREQUESTEDFLAG" length="1" name="CREDITSCOREREQUESTEDFLAG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tTnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tT3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREDITHISTORYREQUESTEDFLAG" length="1" name="CREDITHISTORYREQUESTEDFLAG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tUHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tUXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SPOUSEID" length="50" name="SPOUSEID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tUnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tU3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SSN" length="25" name="SSN" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tVHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tVXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="GROUPID" length="50" name="GROUPID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tVnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tV3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FLG1" length="10" name="FLG1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tWHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tWXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FLG2" length="10" name="FLG2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tWnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tW3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FLG3" length="10" name="FLG3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tXHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tXXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ALERT1" length="10" name="ALERT1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tXnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tX3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ALERT2" length="10" name="ALERT2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tYHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tYXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ALERT3" length="10" name="ALERT3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tYnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tY3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIPOFFER1" length="50" name="RELATIONSHIPOFFER1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tZHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tZXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIPOFFER2" length="50" name="RELATIONSHIPOFFER2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tZnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tZ3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DTDATE1" length="23" name="DTDATE1" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_taHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_taXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DTDATE2" length="23" name="DTDATE2" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_tanCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ta3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DTDATE3" length="23" name="DTDATE3" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_tbHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tbXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DTDATE4" length="23" name="DTDATE4" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_tbnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tb3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DTDATE5" length="23" name="DTDATE5" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_tcHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tcXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DTDATE6" length="23" name="DTDATE6" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_tcnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tc3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DTDATE7" length="23" name="DTDATE7" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_tdHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tdXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DTDATE8" length="23" name="DTDATE8" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_tdnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_td3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DTDATE9" length="23" name="DTDATE9" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_teHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_teXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT1" length="20" name="AMOUNT1" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tenCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_te3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT2" length="20" name="AMOUNT2" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tfHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tfXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT3" length="20" name="AMOUNT3" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tfnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tf3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT4" length="20" name="AMOUNT4" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tgHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tgXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT5" length="20" name="AMOUNT5" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tgnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tg3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD1" length="100" name="STRFIELD1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_thHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_thXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD2" length="100" name="STRFIELD2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_thnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_th3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD3" length="100" name="STRFIELD3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tiHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tiXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD4" length="100" name="STRFIELD4" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tinCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ti3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD5" length="100" name="STRFIELD5" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tjHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tjXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD6" length="50" name="STRFIELD6" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tjnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tj3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD7" length="50" name="STRFIELD7" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tkHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tkXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD8" length="50" name="STRFIELD8" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tknCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tk3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD9" length="50" name="STRFIELD9" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tlHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tlXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD10" length="50" name="STRFIELD10" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tlnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tl3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD11" length="50" name="STRFIELD11" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tmHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tmXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD12" length="50" name="STRFIELD12" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tmnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tm3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD13" length="50" name="STRFIELD13" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tnHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tnXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD14" length="50" name="STRFIELD14" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tnnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tn3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD15" length="50" name="STRFIELD15" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_toHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_toXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="USERFLAG1" length="1" name="USERFLAG1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tonCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_to3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="USERFLAG2" length="1" name="USERFLAG2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tpHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tpXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="USERFLAG3" length="1" name="USERFLAG3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tpnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tp3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="USERFLAG4" length="1" name="USERFLAG4" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tqHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tqXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD1" length="80" name="MLUSERFIELD1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tqnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tq3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD2" length="80" name="MLUSERFIELD2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_trHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_trXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD3" length="80" name="MLUSERFIELD3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_trnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tr3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD4" length="200" name="MLUSERFIELD4" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tsHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tsXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD5" length="200" name="MLUSERFIELD5" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tsnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ts3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD6" length="200" name="MLUSERFIELD6" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ttHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ttXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD7" length="100" name="MLUSERFIELD7" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ttnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tt3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD8" length="100" name="MLUSERFIELD8" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tuHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tuXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD9" length="100" name="MLUSERFIELD9" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tunCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tu3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD10" length="100" name="MLUSERFIELD10" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tvHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tvXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MLUSERFIELD11" length="100" name="MLUSERFIELD11" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tvnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tv3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DATEOFBECOMINGNRE" length="23" name="DATEOFBECOMINGNRE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_twHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_twXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BODATECREATED" length="23" name="BODATECREATED" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_twnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tw3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BOCREATEDBY" length="38" name="BOCREATEDBY" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_txHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="((2))" xmi:id="_dg_txXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BODATEMODIFIED" length="23" name="BODATEMODIFIED" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_txnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tx3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BOMODIFIEDBY" length="38" name="BOMODIFIEDBY" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tyHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_tyXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREATEDUSERID" length="38" name="CREATEDUSERID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tynCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="((2))" xmi:id="_dg_ty3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OWNEDUSERID" length="38" name="OWNEDUSERID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_tzHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="((2))" xmi:id="_dg_tzXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NOTES" length="4000" name="NOTES" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_tznCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_tz3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="EXTENSIONID" length="38" name="EXTENSIONID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t0HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t0XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CONCURDETECT_X" length="38" name="CONCURDETECT_X" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t1HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t1XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BOACLID" length="38" name="BOACLID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t1nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t13CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SECURITYILHINT" length="38" name="SECURITYILHINT" nullable="false" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t2HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t2XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SECURITYIUHINT" length="38" name="SECURITYIUHINT" nullable="false" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t2nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t23CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SECURITYGLHINT" length="38" name="SECURITYGLHINT" nullable="false" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t3HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t3XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SECURITYGUHINT" length="38" name="SECURITYGUHINT" nullable="false" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t3nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t33CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PRIORITYCODE" length="50" name="PRIORITYCODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t4HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t4XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREATED_FROM" length="1" name="CREATED_FROM" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t4nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t43CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CONSTITUTION_CODE" length="200" name="CONSTITUTION_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t5HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t5XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD18" length="50" name="STRFIELD18" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t5nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t53CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD16" length="50" name="STRFIELD16" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t6HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t6XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD17" length="50" name="STRFIELD17" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t6nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t63CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD19" length="50" name="STRFIELD19" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t7HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t7XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD20" length="50" name="STRFIELD20" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t7nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t73CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD21" length="50" name="STRFIELD21" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t8HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t8XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRFIELD22" length="50" name="STRFIELD22" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_t8nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_t83CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT6" length="20" name="AMOUNT6" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t9HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t9XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT7" length="20" name="AMOUNT7" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t9nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t93CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT8" length="20" name="AMOUNT8" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t-HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t-XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT9" length="20" name="AMOUNT9" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t-nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t-3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT10" length="20" name="AMOUNT10" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t_HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t_XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT11" length="20" name="AMOUNT11" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_t_nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_t_3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="AMOUNT12" length="20" name="AMOUNT12" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uAHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uAXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTFIELD1" length="38" name="INTFIELD1" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uAnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uA3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTFIELD2" length="38" name="INTFIELD2" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uBHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uBXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTFIELD3" length="38" name="INTFIELD3" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uBnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uB3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTFIELD4" length="38" name="INTFIELD4" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uCHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uCXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTFIELD5" length="38" name="INTFIELD5" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uCnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uC3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUSTCLASS" length="5" name="CUSTCLASS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uDHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uDXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SHORT_NAME" length="10" name="SHORT_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uDnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uD3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NICK_NAME" length="10" name="NICK_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uEHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uEXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MOTHER_NAME" length="20" name="MOTHER_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uEnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uE3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FATHER_HUSBAND_NAME" length="20" name="FATHER_HUSBAND_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uFHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uFXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREVIOUS_NAME" length="20" name="PREVIOUS_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uFnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uF3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PRIMARY_SERVICE_CENTRE" length="5" name="PRIMARY_SERVICE_CENTRE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uGHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uGXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="LEAD_SOURCE" length="50" name="LEAD_SOURCE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uGnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uG3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIP_TYPE" length="5" name="RELATIONSHIP_TYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uHHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uHXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RELATIONSHIP_LEVEL" length="5" name="RELATIONSHIP_LEVEL" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uHnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uH3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RM_GROUP_ID" length="5" name="RM_GROUP_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uIHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uIXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DSA_ID" length="12" name="DSA_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uInCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uI3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CARD_HOLDER" length="1" name="CARD_HOLDER" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uJHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uJXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PHOTOGRAPH_ID" length="10" name="PHOTOGRAPH_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uJnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uJ3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SECURE_ID" length="10" name="SECURE_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uKHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uKXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BLACKLISTED" length="1" name="BLACKLISTED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uKnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uK3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NEGATED" length="1" name="NEGATED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uLHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uLXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SUSPENDED" length="1" name="SUSPENDED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uLnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uL3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DELIQUENCYPERIOD" length="38" name="DELIQUENCYPERIOD" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uMHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uMXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADDNAME1" length="50" name="ADDNAME1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uMnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uM3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADDNAME2" length="50" name="ADDNAME2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uNHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uNXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADDNAME3" length="50" name="ADDNAME3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uNnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uN3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADDNAME4" length="50" name="ADDNAME4" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uOHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uOXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADDNAME5" length="50" name="ADDNAME5" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uOnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uO3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREFERREDNAME" length="50" name="PREFERREDNAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uPHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uPXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OLDENTITYCREATEDON" length="23" name="OLDENTITYCREATEDON" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_uPnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uP3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OLDENTITYTYPE" length="50" name="OLDENTITYTYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uQHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uQXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OLDENTITYID" length="20" name="OLDENTITYID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uQnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uQ3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RECORDSTATUS" length="50" name="RECORDSTATUS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uRHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uRXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ASSIGNEDTO" length="38" name="ASSIGNEDTO" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uRnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uR3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PROCESSID" length="38" name="PROCESSID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uSHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uSXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CURRENTSTEP" length="38" name="CURRENTSTEP" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_uSnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_uS3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PROCESSSTATUS" length="50" name="PROCESSSTATUS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uTHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uTXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DOCUMENT_RECEIVED" length="1" name="DOCUMENT_RECEIVED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uTnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uT3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SUSPEND_NOTES" length="500" name="SUSPEND_NOTES" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uUHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uUXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SUSPEND_REASON" length="250" name="SUSPEND_REASON" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uUnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uU3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BLACKLIST_NOTES" length="500" name="BLACKLIST_NOTES" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uVHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uVXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BLACKLIST_REASON" length="250" name="BLACKLIST_REASON" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uVnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uV3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NEGATED_NOTES" length="500" name="NEGATED_NOTES" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uWHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uWXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NEGATED_REASON" length="250" name="NEGATED_REASON" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uWnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uW3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SEGMENTATION_CLASS" length="100" name="SEGMENTATION_CLASS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uXHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uXXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NAME" length="100" name="NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uXnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uX3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RATINGDATE" length="23" name="RATINGDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_uYHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uYXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MANAGEROPINION" length="240" name="MANAGEROPINION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uYnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uY3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTRODUCERID" length="50" name="INTRODUCERID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uZHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uZXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTRODUCERSALUTATION" length="100" name="INTRODUCERSALUTATION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uZnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uZ3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTRODUCERNAME" length="80" name="INTRODUCERNAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uaHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uaXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTRODUCERSTATUSCODE" length="100" name="INTRODUCERSTATUSCODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uanCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ua3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTROD_STATUS" length="50" name="INTROD_STATUS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ubHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ubXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUSTSTATUSCHGDATE" length="23" name="CUSTSTATUSCHGDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_ubnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ub3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PURGEFLAG" length="1" name="PURGEFLAG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ucHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ucXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PURGEREMARKS" length="240" name="PURGEREMARKS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ucnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uc3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TFPARTYFLAG" length="1" name="TFPARTYFLAG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_udHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_udXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NATIVELANGNAME" length="80" name="NATIVELANGNAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_udnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ud3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NATIVELANGTITLE" length="50" name="NATIVELANGTITLE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ueHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ueXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NATIVELANGCODE" length="10" name="NATIVELANGCODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uenCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ue3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MINORATTAINMAJORDATE" length="23" name="MINORATTAINMAJORDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_ufHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ufXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NREBECOMINGORDDATE" length="23" name="NREBECOMINGORDDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_ufnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uf3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DEFAULTADDRESSTYPE" length="50" name="DEFAULTADDRESSTYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ugHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ugXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREFERREDEMAILTYPE" length="50" name="PREFERREDEMAILTYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ugnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ug3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREFERREDPHONE" length="25" name="PREFERREDPHONE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uhHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uhXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CURRSTEPDUEDATE" length="23" name="CURRSTEPDUEDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_uhnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uh3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STARTDATE" length="23" name="STARTDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_uiHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uiXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STAGENAME" length="80" name="STAGENAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uinCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ui3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ASSIGNEDTOGROUP" length="80" name="ASSIGNEDTOGROUP" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ujHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ujXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD1_FIRST_NAME" length="80" name="ADD1_FIRST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ujnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uj3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD1_MIDDLE_NAME" length="80" name="ADD1_MIDDLE_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ukHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ukXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD1_LAST_NAME" length="80" name="ADD1_LAST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uknCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uk3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD2_FIRST_NAME" length="80" name="ADD2_FIRST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ulHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ulXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD2_MIDDLE_NAME" length="80" name="ADD2_MIDDLE_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_ulnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ul3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD2_LAST_NAME" length="80" name="ADD2_LAST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_umHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_umXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD3_FIRST_NAME" length="80" name="ADD3_FIRST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_umnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_um3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD3_MIDDLE_NAME" length="80" name="ADD3_MIDDLE_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_unHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_unXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD3_LAST_NAME" length="80" name="ADD3_LAST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_unnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_un3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD4_FIRST_NAME" length="80" name="ADD4_FIRST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uoHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uoXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD4_MIDDLE_NAME" length="80" name="ADD4_MIDDLE_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uonCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uo3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD4_LAST_NAME" length="80" name="ADD4_LAST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_upHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_upXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD5_FIRST_NAME" length="80" name="ADD5_FIRST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_upnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_up3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD5_MIDDLE_NAME" length="80" name="ADD5_MIDDLE_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uqHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uqXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADD5_LAST_NAME" length="80" name="ADD5_LAST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uqnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uq3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DUAL_FIRST_NAME" length="80" name="DUAL_FIRST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_urHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_urXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DUAL_MIDDLE_NAME" length="80" name="DUAL_MIDDLE_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_urnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ur3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DUAL_LAST_NAME" length="80" name="DUAL_LAST_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_usHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_usXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_COMMU_CODE" length="5" name="CUST_COMMU_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_usnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_us3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_COMMUNITY" length="50" name="CUST_COMMUNITY" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_utHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_utXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CORE_INTROD_CUST_ID" length="9" name="CORE_INTROD_CUST_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_utnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ut3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTROD_SALUTATION_CODE" length="5" name="INTROD_SALUTATION_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uuHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uuXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_HLTH_CODE" length="5" name="CUST_HLTH_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uunCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uu3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_HLTH" length="200" name="CUST_HLTH" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uvHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uvXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TDS_TBL_CODE" length="5" name="TDS_TBL_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uvnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uv3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TDS_TBL" length="50" name="TDS_TBL" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uwHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uwXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TDS_CUST_ID" length="9" name="TDS_CUST_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uwnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uw3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NAT_ID_CARD_NUM" length="16" name="NAT_ID_CARD_NUM" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uxHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uxXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PSPRT_ISSUE_DATE" length="23" name="PSPRT_ISSUE_DATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_uxnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ux3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PSPRT_DET" length="25" name="PSPRT_DET" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uyHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uyXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PSPRT_EXP_DATE" length="23" name="PSPRT_EXP_DATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_uynCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uy3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_PREF_TILL_DATE" length="23" name="CUST_PREF_TILL_DATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_uzHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uzXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CRNCY_CODE" length="3" name="CRNCY_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_uznCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_uz3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PRIMARY_SOL_ID" length="8" name="PRIMARY_SOL_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u0HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u0XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OFFLINE_CUM_DEBIT_LIMIT" length="25" name="OFFLINE_CUM_DEBIT_LIMIT" originalLength="-1" precision="4" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_u0nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_u03CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREF_CODE" length="15" name="PREF_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u1HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u1XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTROD_STATUS_CODE" length="5" name="INTROD_STATUS_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u1nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u13CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NATIVELANGTITLE_CODE" length="5" name="NATIVELANGTITLE_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u2HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u2XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CORE_CUST_ID" length="9" name="CORE_CUST_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u2nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u23CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ENTITY_CRE_FLAG" length="1" name="ENTITY_CRE_FLAG" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u3HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u3XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SALUTATION_CODE" length="5" name="SALUTATION_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u3nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u33CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="GROUPID_CODE" length="5" name="GROUPID_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u4HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u4XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OCCUPATION_CODE" length="5" name="OCCUPATION_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u4nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u43CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SECTOR_CODE" length="5" name="SECTOR_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u5HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u5XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SECTOR" length="50" name="SECTOR" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u5nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u53CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SUBSECTOR_CODE" length="5" name="SUBSECTOR_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u6HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u6XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SUBSECTOR" length="50" name="SUBSECTOR" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u6nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u63CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RATING_CODE" length="5" name="RATING_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u7HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u7XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_TYPE_CODE" length="5" name="CUST_TYPE_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u7nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u73CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STATUS_CODE" length="5" name="STATUS_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u8HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u8XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CONSTITUTION_REF_CODE" length="5" name="CONSTITUTION_REF_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u8nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u83CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUSTCREATIONMODE" length="1" name="CUSTCREATIONMODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u9HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u9XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MINOR_GUARD_CODE" length="1" name="MINOR_GUARD_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u9nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u93CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MINOR_GUARD_NAME" length="40" name="MINOR_GUARD_NAME" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u-HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u-XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MINOR_GUARD_NAME_ALT1" length="40" name="MINOR_GUARD_NAME_ALT1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u-nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u-3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ONETIME_OLDCUSTID" length="50" name="ONETIME_OLDCUSTID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_u_HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u_XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INCREMENTALDATE" length="23" name="INCREMENTALDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_u_nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_u_3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PROCESSGROUPID" length="38" name="PROCESSGROUPID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vAHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vAXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ASSIGNEDBYUSERID" length="38" name="ASSIGNEDBYUSERID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vAnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vA3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TRANSFERREDBYUSERID" length="38" name="TRANSFERREDBYUSERID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vBHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vBXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREVSTEPENDDATE" length="23" name="PREVSTEPENDDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vBnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vB3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FIRST_PRODUCT_PROCESSOR" length="50" name="FIRST_PRODUCT_PROCESSOR" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vCHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vCXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTERFACE_REFERENCE_ID" length="50" name="INTERFACE_REFERENCE_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vCnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vC3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_HEALTH_REF_CODE" length="5" name="CUST_HEALTH_REF_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vDHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vDXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TDS_CIFID" length="50" name="TDS_CIFID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vDnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vD3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CORPREPCOUNT" length="38" name="CORPREPCOUNT" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vEHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vEXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ISCORPREP" length="1" name="ISCORPREP" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vEnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="'N'" xmi:id="_dg_vE3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_FIRST_NAME_NATIVE" length="80" name="CUST_FIRST_NAME_NATIVE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vFHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vFXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_MIDDLE_NAME_NATIVE" length="80" name="CUST_MIDDLE_NAME_NATIVE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vFnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vF3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_LAST_NAME_NATIVE" length="80" name="CUST_LAST_NAME_NATIVE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vGHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vGXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SHORT_NAME_NATIVE" length="10" name="SHORT_NAME_NATIVE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vGnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vG3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_FIRST_NAME_NATIVE1" length="80" name="CUST_FIRST_NAME_NATIVE1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vHHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vHXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_MIDDLE_NAME_NATIVE1" length="80" name="CUST_MIDDLE_NAME_NATIVE1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vHnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vH3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_LAST_NAME_NATIVE1" length="80" name="CUST_LAST_NAME_NATIVE1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vIHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vIXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SHORT_NAME_NATIVE1" length="10" name="SHORT_NAME_NATIVE1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vInCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vI3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SECONDARYRM_ID" length="50" name="SECONDARYRM_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vJHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vJXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ISEBANKINGENABLED" length="1" name="ISEBANKINGENABLED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vJnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vJ3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ISSMSBANKINGENABLED" length="1" name="ISSMSBANKINGENABLED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vKHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vKXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TERTIARYRM_ID" length="50" name="TERTIARYRM_ID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vKnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vK3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SUBSEGMENT" length="50" name="SUBSEGMENT" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vLHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vLXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ISWAPBANKINGENABLED" length="1" name="ISWAPBANKINGENABLED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vLnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vL3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ALREADYCREATEDINEBANKING" length="1" name="ALREADYCREATEDINEBANKING" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vMHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vMXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREF_CODE_RCODE" length="5" name="PREF_CODE_RCODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vMnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vM3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUST_SWIFT_CODE_DESC" length="50" name="CUST_SWIFT_CODE_DESC" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vNHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vNXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SMSBANKINGMOBILENUMBER" length="50" name="SMSBANKINGMOBILENUMBER" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vNnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vN3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="IS_SWIFT_CODE_OF_BANK" length="1" name="IS_SWIFT_CODE_OF_BANK" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vOHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vOXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NATIVELANGCODE_CODE" length="5" name="NATIVELANGCODE_CODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vOnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vO3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ACCESSOWNERGROUP" length="38" name="ACCESSOWNERGROUP" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vPHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vPXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ACCESSOWNERSEGMENT" length="50" name="ACCESSOWNERSEGMENT" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vPnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vP3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ACCESSOWNERBC" length="38" name="ACCESSOWNERBC" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vQHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vQXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ACCESSOWNERAGENT" length="38" name="ACCESSOWNERAGENT" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vQnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vQ3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ACCESSASSIGNEEAGENT" length="38" name="ACCESSASSIGNEEAGENT" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vRHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vRXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TABVALIDATOR" length="500" name="TABVALIDATOR" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vRnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vR3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="LASTEDITEDPAGE" length="50" name="LASTEDITEDPAGE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vSHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vSXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CHARGELEVELCODE" length="50" name="CHARGELEVELCODE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vSnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vS3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SEGUPDATEDATE" length="23" name="SEGUPDATEDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vTHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vTXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTUSERFIELD1" length="38" name="INTUSERFIELD1" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vTnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vT3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTUSERFIELD2" length="38" name="INTUSERFIELD2" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vUHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vUXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTUSERFIELD3" length="38" name="INTUSERFIELD3" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vUnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vU3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTUSERFIELD4" length="38" name="INTUSERFIELD4" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vVHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vVXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="INTUSERFIELD5" length="38" name="INTUSERFIELD5" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vVnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vV3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD1" length="100" name="STRUSERFIELD1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vWHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vWXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD2" length="100" name="STRUSERFIELD2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vWnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vW3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD3" length="100" name="STRUSERFIELD3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vXHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vXXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD4" length="100" name="STRUSERFIELD4" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vXnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vX3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD5" length="100" name="STRUSERFIELD5" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vYHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vYXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD6" length="100" name="STRUSERFIELD6" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vYnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vY3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD7" length="100" name="STRUSERFIELD7" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vZHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vZXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD8" length="100" name="STRUSERFIELD8" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vZnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vZ3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD9" length="100" name="STRUSERFIELD9" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vaHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vaXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD10" length="100" name="STRUSERFIELD10" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vanCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_va3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD11" length="100" name="STRUSERFIELD11" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vbHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vbXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD12" length="100" name="STRUSERFIELD12" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vbnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vb3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD13" length="100" name="STRUSERFIELD13" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vcHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vcXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD14" length="100" name="STRUSERFIELD14" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vcnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vc3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD15" length="100" name="STRUSERFIELD15" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vdHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vdXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD16" length="100" name="STRUSERFIELD16" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vdnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vd3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD17" length="100" name="STRUSERFIELD17" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_veHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_veXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD18" length="100" name="STRUSERFIELD18" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_venCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_ve3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD19" length="100" name="STRUSERFIELD19" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vfHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vfXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD20" length="100" name="STRUSERFIELD20" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vfnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vf3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD21" length="100" name="STRUSERFIELD21" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vgHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vgXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD22" length="100" name="STRUSERFIELD22" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vgnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vg3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD23" length="100" name="STRUSERFIELD23" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vhHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vhXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD24" length="100" name="STRUSERFIELD24" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vhnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vh3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD25" length="100" name="STRUSERFIELD25" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_viHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_viXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD26" length="100" name="STRUSERFIELD26" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vinCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vi3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD27" length="100" name="STRUSERFIELD27" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vjHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vjXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD28" length="100" name="STRUSERFIELD28" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vjnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vj3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD29" length="100" name="STRUSERFIELD29" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vkHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vkXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STRUSERFIELD30" length="100" name="STRUSERFIELD30" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vknCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vk3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DATEUSERFIELD1" length="23" name="DATEUSERFIELD1" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vlHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vlXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DATEUSERFIELD2" length="23" name="DATEUSERFIELD2" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vlnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vl3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DATEUSERFIELD3" length="23" name="DATEUSERFIELD3" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vmHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vmXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DATEUSERFIELD4" length="23" name="DATEUSERFIELD4" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vmnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vm3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DATEUSERFIELD5" length="23" name="DATEUSERFIELD5" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vnHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vnXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CONVERTED_DATE" length="23" name="CONVERTED_DATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vnnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vn3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="LASTOPERPERFORMED" length="50" name="LASTOPERPERFORMED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_voHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_voXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ISDUMMY" length="1" name="ISDUMMY" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vonCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="'N'" xmi:id="_dg_vo3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ISTAMPERED" length="1" name="ISTAMPERED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vpHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vpXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CHECKSUM" length="100" name="CHECKSUM" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vpnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vp3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ASSIGNEDLOCATIONID" length="38" name="ASSIGNEDLOCATIONID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vqHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vqXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OWNEDLOCATIONID" length="38" name="OWNEDLOCATIONID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vqnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vq3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ISROUTED" length="1" name="ISROUTED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vrHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vrXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ESC_DUE_TIME" length="23" name="ESC_DUE_TIME" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vrnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vr3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ESC_LEVEL" length="38" name="ESC_LEVEL" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vsHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vsXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CREATEDLOCATIONID" length="38" name="CREATEDLOCATIONID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vsnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vs3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="EDITEDLOCATIONID" length="38" name="EDITEDLOCATIONID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vtHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vtXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NOCURSTEPASSIGN" length="38" name="NOCURSTEPASSIGN" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vtnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vt3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ROUTEDTIME" length="23" name="ROUTEDTIME" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vuHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vuXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PROCESCDUETIME" length="23" name="PROCESCDUETIME" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_vunCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vu3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STOPESCALATION" length="1" name="STOPESCALATION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vvHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="'N'" xmi:id="_dg_vvXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FIRSTGRASSIGNOWNID" length="38" name="FIRSTGRASSIGNOWNID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vvnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vv3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FIRSTBCASSIGNOWNID" length="38" name="FIRSTBCASSIGNOWNID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vwHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vwXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="FIRSTUSERASSIGNOWNID" length="38" name="FIRSTUSERASSIGNOWNID" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vwnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vw3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CURRNUMPOSESC" length="38" name="CURRNUMPOSESC" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vxHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vxXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CURRNUMNEGESC" length="38" name="CURRNUMNEGESC" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vxnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vx3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NUMOFPOSESC" length="38" name="NUMOFPOSESC" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vyHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vyXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="NUMOFNEGESC" length="38" name="NUMOFNEGESC" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vynCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vy3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PROCESCLEVEL" length="38" name="PROCESCLEVEL" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_vzHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_vzXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="MANUALROUTING" length="1" name="MANUALROUTING" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_vznCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_vz3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="SLALEVEL" length="50" name="SLALEVEL" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v0HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v0XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ROUTERULENUM" length="38" name="ROUTERULENUM" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_v0nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_v03CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ESCRULENUM" length="38" name="ESCRULENUM" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_v1HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_v1XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ESCALATIONATTR1" length="50" name="ESCALATIONATTR1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v1nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v13CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ESCALATIONATTR2" length="50" name="ESCALATIONATTR2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v2HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v2XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ESCALATIONATTR3" length="50" name="ESCALATIONATTR3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v2nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v23CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="OWNERGROUP" length="38" name="OWNERGROUP" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_v3HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_v3XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ROUTERULEFORGROUP" length="38" name="ROUTERULEFORGROUP" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_v3nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_v33CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ROUTERULEFORBC" length="38" name="ROUTERULEFORBC" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_v4HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_v4XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ROUTERULEFORUSER" length="38" name="ROUTERULEFORUSER" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_v4nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_v43CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TATDURATION" length="50" name="TATDURATION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v5HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v5XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STOPPROCESCALATION" length="1" name="STOPPROCESCALATION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v5nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="'N'" xmi:id="_dg_v53CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="DUEDATE" length="23" name="DUEDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_v6HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v6XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="BACKENDID" length="50" name="BACKENDID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v6nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v63CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="LASTSUBMITTEDDATE" length="23" name="LASTSUBMITTEDDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_v7HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v7XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RISK_PROFILE_SCORE" length="38" name="RISK_PROFILE_SCORE" originalLength="-1" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_dg_v7nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="" xmi:id="_dg_v73CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="RISK_PROFILE_EXPIRY_DATE" length="23" name="RISK_PROFILE_EXPIRY_DATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_v8HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v8XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ISMCEDITED" length="1" name="ISMCEDITED" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v8nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v83CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREFERREDPHONETYPE" length="50" name="PREFERREDPHONETYPE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v9HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v9XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREFERREDEMAIL" length="50" name="PREFERREDEMAIL" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v9nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v93CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ZAKAT_DEDUCTION" length="1" name="ZAKAT_DEDUCTION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v-HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v-XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ISLAMIC_BANKING_CUSTOMER" length="1" name="ISLAMIC_BANKING_CUSTOMER" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v-nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v-3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ASSET_CLASSIFICATION" length="1" name="ASSET_CLASSIFICATION" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v_HCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v_XCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="CUSTOMER_LEVEL_PROVISIONING" length="1" name="CUSTOMER_LEVEL_PROVISIONING" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_v_nCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_v_3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="PREFERREDCALENDAR" length="50" name="PREFERREDCALENDAR" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_wAHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_wAXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="GCIFID" length="50" name="GCIFID" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_wAnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_wA3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ENROLLMENTSTATUS" length="50" name="ENROLLMENTSTATUS" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_wBHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_wBXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADDRESS_LINE1" length="200" name="ADDRESS_LINE1" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_wBnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_wB3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADDRESS_LINE2" length="200" name="ADDRESS_LINE2" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_wCHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_wCXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ADDRESS_LINE3" length="200" name="ADDRESS_LINE3" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_wCnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_wC3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="STATE" length="200" name="STATE" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_wDHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_wDXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="COUNTRY" length="100" name="COUNTRY" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_wDnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_wD3CQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="ZIP" length="100" name="ZIP" originalLength="-1" sourceType="VARCHAR" talendType="id_String" xmi:id="_dg_wEHCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue xmi:id="_dg_wEXCQEe2vocJ6-hTDEw"/>
+        </feature>
+        <feature label="TMDATE" length="23" name="TMDATE" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" talendType="id_Date" xmi:id="_dg_wEnCQEe2vocJ6-hTDEw" xsi:type="TalendMetadata:MetadataColumn">
+          <initialValue body="'sysdate'" xmi:id="_dg_wE3CQEe2vocJ6-hTDEw"/>
+        </feature>
+      </ownedElement>
+      <ownedElement id="_hvvIEC9FEe2bhPDHDhYMWg" label="FIN_CLIENTS" name="FIN_CLIENTS" tableType="TABLE" xmi:id="_hvvIES9FEe2bhPDHDhYMWg" xsi:type="relational:TdTable">
+        <feature label="ACCOUNTID" length="38" name="ACCOUNTID" nullable="false" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_hvvIEi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIEy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIFC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="3" name="DECIMAL" numericPrecisionRadix="10" xmi:id="_hvvIFS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CREATEDBYSYSTEMID" length="50" name="CREATEDBYSYSTEMID" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIFi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIFy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIGC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIGS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CIF_ID" length="50" name="CIF_ID" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIGi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIGy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIHC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" xmi:id="_hvvIHS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ORGTYPE" length="25" name="ORGTYPE" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIHi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIHy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIIC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIIS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CUST_FIRST_NAME" length="200" name="CUST_FIRST_NAME" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIIi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIIy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIJC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIJS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CUST_LAST_NAME" length="200" name="CUST_LAST_NAME" nullable="false" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIJi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIJy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIKC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" xmi:id="_hvvIKS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CUST_MIDDLE_NAME" length="200" name="CUST_MIDDLE_NAME" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIKi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIKy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvILC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvILS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="SALUTATION" length="50" name="SALUTATION" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvILi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvILy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIMC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIMS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="GENDER" length="10" name="GENDER" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIMi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIMy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvINC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvINS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="BIRTH_DAY" length="60" name="BIRTH_DAY" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvINi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvINy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIOC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIOS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="BIRTH_MONTH" length="60" name="BIRTH_MONTH" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIOi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIOy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIPC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIPS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="BIRTH_YEAR" length="60" name="BIRTH_YEAR" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIPi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIPy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIQC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIQS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CUST_DOB" length="70" name="CUST_DOB" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIQi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIQy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIRC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIRS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CUST_TYPE" length="50" name="CUST_TYPE" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIRi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIRy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvISC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvISS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="OCCUPATION" length="100" name="OCCUPATION" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvISi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvISy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvITC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvITS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="RELATIONSHIPOPENINGDATE" length="10" name="RELATIONSHIPOPENINGDATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_hvvITi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvITy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIUC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" xmi:id="_hvvIUS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="RELATIONSHIPMGRID" length="38" name="RELATIONSHIPMGRID" sourceType="DECIMAL" talendType="id_BigDecimal" xmi:id="_hvvIUi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIUy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIVC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="3" name="DECIMAL" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_hvvIVS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="REGION" length="50" name="REGION" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIVi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIVy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIWC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIWS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="MANAGER" length="100" name="MANAGER" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIWi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIWy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIXC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIXS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CUSTOMERMINOR" length="1" name="CUSTOMERMINOR" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIXi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIXy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIYC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIYS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="STAFFFLAG" length="25" name="STAFFFLAG" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIYi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIYy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIZC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIZS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="GROUPID" length="50" name="GROUPID" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIZi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIZy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIaC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIaS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="STRFIELD22" length="50" name="STRFIELD22" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIai9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIay9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIbC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIbS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="BLACKLISTED" length="1" name="BLACKLISTED" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIbi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIby9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIcC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIcS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="NEGATED" length="1" name="NEGATED" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIci9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIcy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIdC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIdS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="SUSPENDED" length="1" name="SUSPENDED" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIdi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIdy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIeC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIeS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="PREFERREDNAME" length="200" name="PREFERREDNAME" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIei9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIey9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIfC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIfS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="RECORDSTATUS" length="50" name="RECORDSTATUS" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIfi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIfy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIgC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIgS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="SEGMENTATION_CLASS" length="100" name="SEGMENTATION_CLASS" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIgi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIgy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIhC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIhS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="NAME" length="200" name="NAME" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIhi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIhy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIiC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIiS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="DEFAULTADDRESSTYPE" length="50" name="DEFAULTADDRESSTYPE" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIii9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIiy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIjC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIjS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="STARTDATE" length="10" name="STARTDATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_hvvIji9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIjy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIkC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" xmi:id="_hvvIkS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="STAGENAME" length="80" name="STAGENAME" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIki9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIky9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIlC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIlS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ASSIGNEDTOGROUP" length="80" name="ASSIGNEDTOGROUP" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIli9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIly9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvImC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvImS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="PRIMARY_SOL_ID" length="8" name="PRIMARY_SOL_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvImi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvImy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvInC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvInS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CORE_CUST_ID" length="9" name="CORE_CUST_ID" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIni9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIny9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIoC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIoS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="SECTOR" length="50" name="SECTOR" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIoi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIoy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIpC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIpS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ISCORPREP" length="1" name="ISCORPREP" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIpi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIpy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIqC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIqS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="SUBSEGMENT" length="50" name="SUBSEGMENT" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIqi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIqy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIrC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIrS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ACCESSOWNERSEGMENT" length="50" name="ACCESSOWNERSEGMENT" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIri9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIry9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIsC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIsS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ISDUMMY" length="1" name="ISDUMMY" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIsi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIsy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvItC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvItS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ISTAMPERED" length="1" name="ISTAMPERED" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIti9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIty9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIuC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIuS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ADDRESS_LINE1" length="300" name="ADDRESS_LINE1" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIui9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIuy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIvC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIvS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ADDRESS_LINE2" length="300" name="ADDRESS_LINE2" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIvi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIvy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIwC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIwS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ADDRESS_LINE3" length="300" name="ADDRESS_LINE3" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIwi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIwy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIxC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIxS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CITY" length="70" name="CITY" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIxi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIxy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIyC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIyS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="STATE" length="70" name="STATE" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIyi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIyy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvIzC9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvIzS9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="COUNTRY" length="70" name="COUNTRY" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvIzi9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvIzy9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI0C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI0S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ZIP" length="70" name="ZIP" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvI0i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI0y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI1C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI1S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="MARITAL_STATUS" length="70" name="MARITAL_STATUS" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvI1i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI1y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI2C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI2S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="EMPLOYMENT_STATUS" length="70" name="EMPLOYMENT_STATUS" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvI2i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI2y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI3C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI3S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="ANNUAL_SALARY_INCOME" length="100" name="ANNUAL_SALARY_INCOME" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvI3i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI3y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI4C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI4S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="TOTALHOUSEHOLDINCM" length="100" name="TOTALHOUSEHOLDINCM" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvI4i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI4y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI5C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI5S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="EMPLOYERSNAME" length="150" name="EMPLOYERSNAME" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvI5i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI5y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI6C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI6S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="SOURCEOFINCOME" length="150" name="SOURCEOFINCOME" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvI6i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI6y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI7C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI7S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="EMPLOYERID" length="100" name="EMPLOYERID" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvI7i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI7y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI8C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI8S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CREUSER" length="38" name="CREUSER" sourceType="VARCHAR" talendType="id_String" xmi:id="_hvvI8i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI8y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI9C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_hvvI9S9FEe2bhPDHDhYMWg"/>
+        </feature>
+        <feature label="CREDATE" length="10" name="CREDATE" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_hvvI9i9FEe2bhPDHDhYMWg" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_hvvI9y9FEe2bhPDHDhYMWg"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_hvvI-C9FEe2bhPDHDhYMWg" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" xmi:id="_hvvI-S9FEe2bhPDHDhYMWg"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c09e46e8-6b89-41f6-8864-c158b09ec41b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qVW+fE2iC9bPMiYfwmLUIkbjFkaZU6gdtyZqUK8QRCv02Jvoc+j+bcF1ZeOOXyq2v60AlsEWD9/5&#13;
+ExTsBPmu1Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6e24c178-0a61-4736-acf9-6680d8d3c223"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4rn3lioEO4QWXkBR+QM4V55LVsoOYMvKDb3exDUUD1UyFXquZaGzwD+Ir43DBhV71JakHJuOfA+D&#13;
+I2sfexNZ6w==</DigestValue></Reference></SignedInfo><SignatureValue>a+lJpmfE9TzlfMpm0Q9yMxeIthFdT/B6kcE8GdPfHu48bpMB52wS2TqS8hB7L3NApnUmE+2Hzw6w&#13;
+aU/dIpyEqdW748rSUwdPWfUoYUNHCoboXxAUfInERd2Sl3iaPXDAQuQuz6Bf/LNrQG/NBRJ9l8Fr&#13;
+8XXcVuVSX0Y2OR8OO/apL8pCznudx227KI0o/3zvg9mCvPjHhRfXoHuj3+ngpwyA1EK4pubFil1E&#13;
+3IiwxhtPQUNX3Jb31CNuNaeSj/dkzIWLl/zTbpKxAHpCr+8vjTFTXMjvLXQxgOHgTt/C1pbyK8xV&#13;
+Jj2vw+/VZcIPUVoM0p88TGVBUhprl3NDILC1yw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6e24c178-0a61-4736-acf9-6680d8d3c223" Target="#_c09e46e8-6b89-41f6-8864-c158b09ec41b"><Timestamp>2022-12-02 10:57:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

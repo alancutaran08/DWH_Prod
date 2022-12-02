@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:E1Gl7HKyq/MjO7fvvq9NWC/Kz99rptefRV+vmsvO"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:eu1z5zGalN2+HdusltKrkhYw6gLznDiOhPm11X/q"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hIQA7ZGgVgL+YT2n6xU6299ZTPTncD+OM6r2NPFi"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VWPm1NPEOba00oglWJOhwRvr5t5XWSq7HfXLIoVb"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -135,7 +135,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qJYKUygCAnnB67z8oJsGFDxWfBvVoS9yuvgHtlfd2vF0b+iaBXJ1A3gfgg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:r0FgF8xn6XAYfSkmGAPi//OYBJSIWDSdy/UtOjMjfa9kAgMbAn+BTcpMqQ=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -161,7 +161,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MFFO5hpJVsr/TIMJy8eWdcllj818bhgLYYFwZeFtfCsyexwEG93hOvfirQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PytiNI4nQCcZuheZFKtCeHtvROMIOTkrarV3q+SCeG0IsWHD89rxBUwiDQ=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -189,13 +189,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HuO5J1JiGoMcotkV1Ew6VWs5SVmIqjLX6+BV6osri/9yq0BLb6MnjqyuYg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:G9kW1uL81OdlD/vhgrjNO3zRU1FtxxOxxvqLGlGVE/dgdURU2NyAThrnQw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT&#13;&#10;GAM.ACID&#13;&#10;,CONCAT(GAM.SCHM_CODE,' ',SCHM_DESC)&#13;&#10;,GAM.SCHM_TYPE &#13;&#10;,CONCAT(GAM.GL_SUB_HEAD_CODE,' ',GL_SUB_HEAD_DESC)  &#13;&#10;,cast(GAM.FORACID as varchar(20)) &#13;&#10;,ACCT_NAME&#13;&#10;,TRAN_DATE_BAL * -1  &#13;&#10;,SANCT_LIM &#13;&#10;,ACCT_OPN_DATE &#13;&#10;,CASE WHEN GAM.SCHM_CODE = 'PLSEC' THEN (SELECT NEXT_DMD_DATE FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND FLOW_ID = 'INDEM')&#13;&#10;&#9;ELSE LAM.EI_PERD_END_DATE END&#13;&#10;,DPD_CNTR&#13;&#10;,CONCAT(ACD.MAIN_CLASSIFICATION_USER,' ',(SELECT REF_DESC FROM FIN_REFERENCE_CODE_TABLE RCT WHERE REF_CODE = ACD.MAIN_CLASSIFICATION_USER AND REF_REC_TYPE = 'BG')) &#13;&#10;,(SELECT SUM(FLOW_AMT) FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND CURRENT_INT_REC_FLG = 'Y')  &#13;&#10;,LAM.REP_PERD_MTHS &#13;&#10;,CAST(CUST_DOB as varchar(10)) &#13;&#10;,GAM.CIF_ID&#13;&#10;,ACCT_MGR_USER_ID&#13;&#10;,MISC.EMPLOYERID&#13;&#10;,MISC.STRTEXT4&#13;&#10;,CONCAT(LAM.DMD_SATISFY_MTHD,' - ',(CASE WHEN LAM.DMD_SATISFY_MTHD = 'E' THEN 'Recover up to Effective amount'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'B' THEN 'Bill to the Employer'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'D' THEN 'Electronics Clearing'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'N' THEN 'No Batch Recovery'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'P' THEN 'Post Dated Chq' ELSE NULL END))&#13;&#10;,GAC.FREE_TEXT_15&#13;&#10;,GAM.CHRG_LEVEL_CODE&#13;&#10;,CASE WHEN LAM.CHRGE_OFF_FLG = 'Y' then 1 else (TRAN_DATE_BAL * -1) end&#13;&#10;,CASE WHEN FIN_ACCOUNT.CUST_HLTH = 'A' THEN 'LOW RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'B' THEN 'LOW RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'C' THEN 'NORMAL RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'D' THEN 'NORMAL RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'E' THEN 'HIGH RISK'&#13;&#10;WHEN FIN_ACCOUNT.CUST_HLTH = 'F' THEN 'HIGH RISK - PEP' END,&#13;&#10;(select distinct PROPERTY_BUILDER_NAME from FIN_COLTRL_IPROP_DT_TABLE cid where acid = gam.acid)&#13;&#10;,gac.FREE_CODE_10&#13;&#10;,gac.free_TEXT_14&#13;&#10;FROM FIN_GENERAL_ACCT_MAST_TABLE GAM&#13;&#10;LEFT JOIN FIN_EOD_ACCT_BAL_TABLE EAB&#13;&#10;ON GAM.ACID = EAB.ACID  AND &quot;+context.Extractdate+&quot; BETWEEN EOD_DATE AND END_EOD_DATE&#13;&#10;LEFT JOIN FIN_MISCELLANEOUSINFO MISC&#13;&#10;ON GAM.CIF_ID = MISC.ORGKEY AND TYPE = 'CURRENT_EMPLOYMENT' AND (MISC.EMPLOYERID IS NOT NULL OR STRTEXT4 IS NOT NULL) &#13;&#10;LEFT JOIN  FIN_GEN_SCHM_PARM_TABLE GSP&#13;&#10;ON GAM.SCHM_CODE = GSP.SCHM_CODE&#13;&#10;LEFT JOIN FIN_LA_ACCT_MAST_TABLE LAM&#13;&#10;ON GAM.ACID = LAM.ACID&#13;&#10;LEFT JOIN FIN_GL_SUB_HEAD_TABLE GSH&#13;&#10;ON GAM.GL_SUB_HEAD_CODE = GSH.GL_SUB_HEAD_CODE AND GAM.SOL_ID = GSH.SOL_ID AND GAM.ACCT_CRNCY_CODE = GSH.CRNCY_CODE&#13;&#10;LEFT JOIN FIN_ASST_CLASS_DETAIL_TBL ACD&#13;&#10;ON GAM.ACID = ACD.B2K_ID AND ACD.B2K_TYPE = 'ACCNT' AND ACD.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_GEN_ACCT_CLASS_TABLE GAC &#13;&#10;ON GAM.ACID = GAC.ACID AND GAC.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_ACCOUNT &#13;&#10;ON GAM.CIF_ID = FIN_ACCOUNT.ORGKEY  &#13;&#10;WHERE GAM.SCHM_TYPE IN ('LAA', 'CLA')&#13;&#10;AND GAM.ACCT_CRNCY_CODE = 'PHP'&#13;&#10;AND TRAN_DATE_BAL &lt;&gt; 0&#13;&#10;AND GAM.DEL_FLG = 'N'&#13;&#10;AND GAM.ACCT_OPN_DATE &lt;= &quot;+context.Extractdate&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT&#13;&#10;GAM.ACID&#13;&#10;,CONCAT(GAM.SCHM_CODE,' ',SCHM_DESC)&#13;&#10;,GAM.SCHM_TYPE &#13;&#10;,CONCAT(GAM.GL_SUB_HEAD_CODE,' ',GL_SUB_HEAD_DESC)  &#13;&#10;,cast(GAM.FORACID as varchar(20)) &#13;&#10;,ACCT_NAME&#13;&#10;,TRAN_DATE_BAL * -1  &#13;&#10;,SANCT_LIM &#13;&#10;,ACCT_OPN_DATE &#13;&#10;,CASE WHEN GAM.SCHM_CODE = 'PLSEC' THEN (SELECT NEXT_DMD_DATE FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND FLOW_ID = 'INDEM')&#13;&#10;&#9;ELSE LAM.EI_PERD_END_DATE END&#13;&#10;,DPD_CNTR&#13;&#10;,CONCAT(ACD.MAIN_CLASSIFICATION_USER,' ',(SELECT REF_DESC FROM FIN_REFERENCE_CODE_TABLE RCT WHERE REF_CODE = ACD.MAIN_CLASSIFICATION_USER AND REF_REC_TYPE = 'BG')) &#13;&#10;,(SELECT SUM(FLOW_AMT) FROM FIN_LA_REP_SHDL_TABLE LRS WHERE ACID = GAM.ACID AND CURRENT_INT_REC_FLG = 'Y')  &#13;&#10;,LAM.REP_PERD_MTHS &#13;&#10;,CAST(CUST_DOB as varchar(10)) &#13;&#10;,GAM.CIF_ID&#13;&#10;,ACCT_MGR_USER_ID&#13;&#10;,MISC.EMPLOYERID&#13;&#10;,MISC.STRTEXT4&#13;&#10;,CONCAT(LAM.DMD_SATISFY_MTHD,' - ',(CASE WHEN LAM.DMD_SATISFY_MTHD = 'E' THEN 'Recover up to Effective amount'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'B' THEN 'Bill to the Employer'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'D' THEN 'Electronics Clearing'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'N' THEN 'No Batch Recovery'&#13;&#10;WHEN LAM.DMD_SATISFY_MTHD = 'P' THEN 'Post Dated Chq' ELSE NULL END))&#13;&#10;,GAC.FREE_TEXT_15&#13;&#10;,GAM.CHRG_LEVEL_CODE&#13;&#10;,CASE WHEN LAM.CHRGE_OFF_FLG = 'Y' then 1 else (TRAN_DATE_BAL * -1) end&#13;&#10;,CASE WHEN FIN_ACCOUNTS.CUST_HLTH = 'A' THEN 'LOW RISK'&#13;&#10;WHEN FIN_ACCOUNTS.CUST_HLTH = 'B' THEN 'LOW RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNTS.CUST_HLTH = 'C' THEN 'NORMAL RISK'&#13;&#10;WHEN FIN_ACCOUNTS.CUST_HLTH = 'D' THEN 'NORMAL RISK - PEP'&#13;&#10;WHEN FIN_ACCOUNTS.CUST_HLTH = 'E' THEN 'HIGH RISK'&#13;&#10;WHEN FIN_ACCOUNTS.CUST_HLTH = 'F' THEN 'HIGH RISK - PEP' END,&#13;&#10;(select distinct PROPERTY_BUILDER_NAME from FIN_COLTRL_IPROP_DT_TABLE cid where acid = gam.acid)&#13;&#10;,gac.FREE_CODE_10&#13;&#10;,gac.free_TEXT_14&#13;&#10;FROM FIN_GENERAL_ACCT_MAST_TABLE GAM&#13;&#10;LEFT JOIN FIN_EOD_ACCT_BAL_TABLE EAB&#13;&#10;ON GAM.ACID = EAB.ACID  AND &quot;+context.Extractdate+&quot; BETWEEN EOD_DATE AND END_EOD_DATE&#13;&#10;LEFT JOIN FIN_MISCELLANEOUSINFO MISC&#13;&#10;ON GAM.CIF_ID = MISC.ORGKEY AND TYPE = 'CURRENT_EMPLOYMENT' AND (MISC.EMPLOYERID IS NOT NULL OR STRTEXT4 IS NOT NULL) &#13;&#10;LEFT JOIN  FIN_GEN_SCHM_PARM_TABLE GSP&#13;&#10;ON GAM.SCHM_CODE = GSP.SCHM_CODE&#13;&#10;LEFT JOIN FIN_LA_ACCT_MAST_TABLE LAM&#13;&#10;ON GAM.ACID = LAM.ACID&#13;&#10;LEFT JOIN FIN_GL_SUB_HEAD_TABLE GSH&#13;&#10;ON GAM.GL_SUB_HEAD_CODE = GSH.GL_SUB_HEAD_CODE AND GAM.SOL_ID = GSH.SOL_ID AND GAM.ACCT_CRNCY_CODE = GSH.CRNCY_CODE&#13;&#10;LEFT JOIN FIN_ASST_CLASS_DETAIL_TBL ACD&#13;&#10;ON GAM.ACID = ACD.B2K_ID AND ACD.B2K_TYPE = 'ACCNT' AND ACD.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_GEN_ACCT_CLASS_TABLE GAC &#13;&#10;ON GAM.ACID = GAC.ACID AND GAC.BANK_ID = '01'&#13;&#10;LEFT JOIN FIN_ACCOUNTS &#13;&#10;ON GAM.CIF_ID = FIN_ACCOUNTS.ORGKEY  &#13;&#10;WHERE GAM.SCHM_TYPE IN ('LAA', 'CLA')&#13;&#10;AND GAM.ACCT_CRNCY_CODE = 'PHP'&#13;&#10;AND TRAN_DATE_BAL &lt;&gt; 0&#13;&#10;AND GAM.DEL_FLG = 'N'&#13;&#10;AND GAM.ACCT_OPN_DATE &lt;= &quot;+context.Extractdate&#13;&#10;&#13;&#10;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -425,7 +425,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0oMq3H/E4+pTSzD2LcwIBatj/tu/agMUNgT92vS6lKBXsvE9QHjdW8QtcQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rMwMDvvDH5m647r0QNfNtk27jY5H2zLNzkGNHsiy1lWvT6r/bhm1jb2r6A=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -469,7 +469,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBCEDWDV&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:UhgOJ6/S7WK9n7NOh2GgK0HaRNpEV63+VXtIi3uG20f3cAZta2YdZ1cYVg=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iDzh8zy46DxLkLtVe75qJHoRJRHaJOD4DvViwJLGuT9TSSn8UvcdMZ4/7Q=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -513,7 +513,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;RBMAINEX&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;etldevacc&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Dqjx2FFEdGkmiWjrUYa370Ze7WJzN59bf+DooEUGeK7cWnOGKTXeE6d0Xw=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:A7gZcVKXFENk1l96XX9z21QzqZHxZhI39HhyIL3RRwDL1emwDcaQ8C6SuQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FIN_DM_LPA_FOR_COLLECTION&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -762,7 +762,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LFrNJpjjbuvNr3moq1y8rcz2r4gXS9sWCRp/zBT5"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:G9uW0WG4JxjnlH3M7EBlTdzrtSit8IoxZndpY53U"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -811,7 +811,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4cJ56NsUn4EbUqs+vX0ATvesYu0992RX90BR6Mhd"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qUPJtAjX1XV/5hZqTCEViZVXiQJvs9+7/V7Bjgas"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -861,7 +861,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:i1gjmPgugjtNCFPfj0KWTEqpCPU8ZL9Sn+uodzmV"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2fbGnvn3dZF1ut93R4cKquNN2QiyPT9/1/Cs+gfd"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1167,13 +1167,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_46a780ce-a708-4bf9-85f4-2b84a7de6c28"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oAVfhvbbhAKJwDRb2ZysybzljCsjKkftWKuSP5PT7fMzOhcMJJtYByhqtomyPXdFI1YJoTuFaQTs&#13;
-kms59UQlQw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3bb0bb04-c5b9-4e1f-ab2e-abb0e4d825f2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+5gSPadYrHyqta/jismfEzUBU1D6EzpxwLy+mVHfS8YGOmLYJ0q52j8YIZbr1FKxGhxxLWhVx0sL&#13;
-JeNZav5fkQ==</DigestValue></Reference></SignedInfo><SignatureValue>adsvUndtN5j8HpKhGlOhZ8aqgN+bzcsfgPwvrsxMAbnGUcdJY0GRSxRAzE9utH4T3nfr/tHZXtCb&#13;
-NMYAA6RWSlG3v/afYI6BnBz6QRjy43UBmkDQ67SIBz/WAa3EZWTTJdm7RTTvcUT22T8czjZotMJz&#13;
-wRicZ1hJbjF8oWXtzwg/sILmfNArAZ8V0elsJ3dRNW52bAHs7HlQGhse75imzWP2c6MFPZ0RaIaV&#13;
-jJGecESsHVPjYhxXtxOhyF3gpHbjqWgxDdi2OOsRQt72cnuv7yXfoKd6rEHcnlGbsJH6NTbD0a71&#13;
-QoI+B5uahUL8WaZ0w4PDz6SwNbcazC6BJha+TA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a139fdec-7bec-4a57-a2a0-9fa51d8b91f8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>j2kAfGUHalxo3LIbTjR9lAnB+kyLaCmJhk1EC4FFxXttLDxBlvn+yGlRorrgumPlc3tCG1Zl+Qme&#13;
+xrKnak6V6A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1bf2d8fa-c66b-418a-9570-80dc5a45f970"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QHbeirD1P7qf1t85nq4lNCbd2XwptZGb0Adh13w11RNxltpZX/MpSYiZjAbRyidL4TyREQp9yVSz&#13;
+iEhOiLtJpw==</DigestValue></Reference></SignedInfo><SignatureValue>Eto42glg2deQeV3AEoi9clSsTHhIWC7Fkg/gW1elZyO6G3YowXbEitkr2NXbypbZhke4HUHxuP/R&#13;
+fTQrLlsrwMUy7zwwbvqecNLA6ByowUf9AqgdCG4w9XN4qxuQ6bvW1I1fcI9PPVjWenDoV5gPr4U1&#13;
+uDaccviC0/9F61lAYZZXrnUQ5Acev/VMdP+cQ6oMriEMQT0mszsbyaoTlufLNMDRtR94VxEclCC/&#13;
+IEaz/9Fop0KZEAU1RRjekK21WIHjh78kWOzmLGVgq0aTWYqUVmRvYqSFXsEfuSun1l9BWKz23Ra+&#13;
+aK9kwxeBTm8lZoVLrrNz+u1F49hPHkevHThyIQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1195,4 +1195,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3bb0bb04-c5b9-4e1f-ab2e-abb0e4d825f2" Target="#_46a780ce-a708-4bf9-85f4-2b84a7de6c28"><Timestamp>2022-11-30 08:29:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1bf2d8fa-c66b-418a-9570-80dc5a45f970" Target="#_a139fdec-7bec-4a57-a2a0-9fa51d8b91f8"><Timestamp>2022-12-02 03:56:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
